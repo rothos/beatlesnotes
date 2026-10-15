@@ -139,7 +139,7 @@
       }
       void text;
     }
-    let pop = null;
+    let pop = null, shownAt = 0;
     const hide = () => { if (pop) { pop.remove(); pop = null; } };
     const show = (el) => {
       hide();
@@ -159,6 +159,7 @@
       pop.style.left = left + "px";
       pop.style.top = window.scrollY + r.bottom + 8 + "px";
       pop.addEventListener("mouseleave", hide);
+      shownAt = window.scrollY;
     };
     prose.addEventListener("mouseover", (e) => { const t = e.target.closest(".gl-term"); if (t) show(t); });
     prose.addEventListener("mouseout", (e) => {
@@ -169,7 +170,7 @@
     prose.addEventListener("focusout", () => setTimeout(() => { if (pop && !pop.contains(document.activeElement)) hide(); }, 100));
     prose.addEventListener("click", (e) => { const t = e.target.closest(".gl-term"); if (t) { pop ? hide() : show(t); } });
     document.addEventListener("keydown", (e) => { if (e.key === "Escape") hide(); });
-    window.addEventListener("scroll", hide, { passive: true });
+    window.addEventListener("scroll", () => { if (pop && Math.abs(window.scrollY - shownAt) > 60) hide(); }, { passive: true });
   }
 
   // ---------------------------------------------------------------- highlight search terms (?hl=…)

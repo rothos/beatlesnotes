@@ -1,5 +1,5 @@
 +++
-title = "Notes on \"Maggie Mae\" and other \"Get Back\" session fragments"
+title = "“Maggie Mae” and other “Get Back” session fragments"
 slug = "mmfrag"
 kind = "song"
 series = "172"
@@ -11,7 +11,7 @@ source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/mmfrag.shtml"
 
 [[parts]]
 id = "main"
-title = "Notes on \"Maggie Mae\" and other \"Get Back\" session fragments"
+title = "“Maggie Mae” and other “Get Back” session fragments"
 series = "172"
 code = "MMFRAG"
 [parts.meta]

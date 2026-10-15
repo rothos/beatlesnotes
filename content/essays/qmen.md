@@ -1,5 +1,5 @@
 +++
-title = "Notes on the \"Quarrymen Sessions\""
+title = "The “Quarrymen Sessions”"
 slug = "qmen"
 kind = "essay"
 series = "197.1"
@@ -11,7 +11,7 @@ source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/qmen.shtml"
 
 [[parts]]
 id = "main"
-title = "Notes on the \"Quarrymen Sessions\""
+title = "The “Quarrymen Sessions”"
 series = "197.1"
 code = "QMEN.1"
 

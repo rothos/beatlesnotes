@@ -192,6 +192,14 @@
     });
   }
 
+  // ---------------------------------------------------------------- a random note, preferring unread ones
+  document.querySelectorAll("[data-random]").forEach((b) => b.addEventListener("click", () => {
+    const urls = b.dataset.urls.split(" ").filter(Boolean);
+    const unread = urls.filter((u) => !PN.isRead(PN.slugFromHref(u)));
+    const pool = unread.length ? unread : urls;
+    location.href = root + pool[Math.floor(Math.random() * pool.length)];
+  }));
+
   // ---------------------------------------------------------------- keyboard
   document.addEventListener("keydown", (e) => {
     if (e.defaultPrevented || e.altKey) return;

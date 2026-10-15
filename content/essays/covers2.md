@@ -1,5 +1,5 @@
 +++
-title = "Notes on the cover songs on the \"With The Beatles\" album"
+title = "The cover songs on the “With The Beatles” album"
 slug = "covers2"
 kind = "covers"
 series = "42"
@@ -11,7 +11,7 @@ source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/covers2.shtml"
 
 [[parts]]
 id = "main"
-title = "Notes on the cover songs on the \"With The Beatles\" album"
+title = "The cover songs on the “With The Beatles” album"
 series = "42"
 code = "COVERS2"
 

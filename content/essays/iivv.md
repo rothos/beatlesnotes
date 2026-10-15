@@ -1,5 +1,5 @@
 +++
-title = "Notes on Three Simple Songs That Didn't Make It"
+title = "Three Simple Songs That Didn't Make It"
 slug = "iivv"
 kind = "multi"
 series = "200"
@@ -11,7 +11,7 @@ source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/iivv.shtml"
 
 [[parts]]
 id = "main"
-title = "Notes on Three Simple Songs That Didn't Make It"
+title = "Three Simple Songs That Didn't Make It"
 series = "200"
 code = "IIVV"
 

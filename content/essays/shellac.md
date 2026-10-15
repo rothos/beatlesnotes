@@ -1,5 +1,5 @@
 +++
-title = "Notes on the \"Percy Phillips Shellac\""
+title = "The “Percy Phillips Shellac”"
 slug = "shellac"
 kind = "multi"
 series = "199"
@@ -11,7 +11,7 @@ source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/shellac.shtml"
 
 [[parts]]
 id = "main"
-title = "Notes on the \"Percy Phillips Shellac\""
+title = "The “Percy Phillips Shellac”"
 series = "199"
 code = "SHELLAC"
 

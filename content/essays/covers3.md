@@ -1,5 +1,5 @@
 +++
-title = "Notes on the cover songs on the \"Beatles For Sale\" album"
+title = "The cover songs on the “Beatles For Sale” album"
 slug = "covers3"
 kind = "covers"
 series = "64"
@@ -11,7 +11,7 @@ source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/covers3.shtml"
 
 [[parts]]
 id = "main"
-title = "Notes on the cover songs on the \"Beatles For Sale\" album"
+title = "The cover songs on the “Beatles For Sale” album"
 series = "64"
 code = "COVERS3"
 

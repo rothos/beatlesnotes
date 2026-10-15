@@ -1,5 +1,5 @@
 +++
-title = "Notes on the cover songs on the \"Long Tall Sally\" EP"
+title = "The cover songs on the “Long Tall Sally” EP"
 slug = "ltsep"
 kind = "covers"
 series = "48"
@@ -11,7 +11,7 @@ source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/ltsep.shtml"
 
 [[parts]]
 id = "main"
-title = "Notes on the cover songs on the \"Long Tall Sally\" EP"
+title = "The cover songs on the “Long Tall Sally” EP"
 series = "48"
 code = "LTSEP"
 

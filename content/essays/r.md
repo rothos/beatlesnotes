@@ -1,5 +1,5 @@
 +++
-title = "Revolution\" and \"Revolution 1"
+title = "“Revolution” and “Revolution 1”"
 slug = "r"
 kind = "song"
 series = "129"
@@ -11,7 +11,7 @@ source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/r.shtml"
 
 [[parts]]
 id = "main"
-title = "Revolution\" and \"Revolution 1"
+title = "“Revolution” and “Revolution 1”"
 series = "129"
 code = "R"
 [parts.meta]

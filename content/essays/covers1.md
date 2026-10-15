@@ -1,5 +1,5 @@
 +++
-title = "Notes on the cover songs on the \"Please Please Me\" album"
+title = "The cover songs on the “Please Please Me” album"
 slug = "covers1"
 kind = "covers"
 series = "35"
@@ -11,7 +11,7 @@ source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/covers1.shtml"
 
 [[parts]]
 id = "main"
-title = "Notes on the cover songs on the \"Please Please Me\" album"
+title = "The cover songs on the “Please Please Me” album"
 series = "35"
 code = "COVERS1"
 

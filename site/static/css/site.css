@@ -564,3 +564,4 @@ dialog.search::backdrop { background: rgb(10 14 24 / 0.45); backdrop-filter: blu
 .beat .bnote { font: italic 400 0.72em/1.25 var(--sans); color: var(--pencil); max-width: 9rem; }
 .rail[hidden] { display: block; visibility: hidden; }
 .prose > .part:first-child > h2:first-child { border-top: 0; padding-top: 0; margin-top: 0.5em; }
+.linkbtn { background: none; border: 0; padding: 0; color: var(--staff); cursor: pointer; text-decoration: underline; text-underline-offset: 0.2em; font: inherit; }

@@ -1,5 +1,5 @@
 +++
-title = "An Introduction to Notes on the Abbey Road \"Medley\""
+title = "An Introduction to Notes on the Abbey Road “Medley”"
 slug = "medley"
 kind = "essay"
 series = "192"
@@ -11,7 +11,7 @@ source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/medley.shtml"
 
 [[parts]]
 id = "main"
-title = "An Introduction to Notes on the Abbey Road \"Medley\""
+title = "An Introduction to Notes on the Abbey Road “Medley”"
 series = "192"
 code = "MEDLEY"
 +++

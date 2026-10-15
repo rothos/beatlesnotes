@@ -402,6 +402,8 @@ def main():
         g["see"] = [{"slug": s, "title": essays[s]["title"]} for s in hits[:5]]
         g["count"] = len(hits)
 
+    config["note_urls"] = [essays[s]["url"] for s in series_order if essays[s]["folder"] == "essays"]
+
     # ---------------------------------------------------------------- write pages
     def write(rel: str, template: str, **ctx):
         depth = rel.count("/")

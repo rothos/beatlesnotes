@@ -1,5 +1,5 @@
 +++
-title = "\"Alternate\" versions — which are the best?"
+title = "“Alternate” versions — which are the best?"
 slug = "bestalts"
 kind = "extra"
 series = "Extra"
@@ -11,7 +11,7 @@ source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/bestalts.shtml"
 
 [[parts]]
 id = "main"
-title = "\"Alternate\" versions — which are the best?"
+title = "“Alternate” versions — which are the best?"
 series = "Extra"
 code = "BESTALTS"
 +++

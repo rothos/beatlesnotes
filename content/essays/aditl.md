@@ -1,5 +1,5 @@
 +++
-title = "Notes on the \"Reprise\" and \"A Day In The Life\""
+title = "The “Reprise” and “A Day In The Life”"
 slug = "aditl"
 kind = "multi"
 series = "117"
@@ -11,7 +11,7 @@ source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/aditl.shtml"
 
 [[parts]]
 id = "main"
-title = "Notes on the \"Reprise\" and \"A Day In The Life\""
+title = "The “Reprise” and “A Day In The Life”"
 series = "117"
 code = "ADITL"
 

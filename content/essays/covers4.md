@@ -1,5 +1,5 @@
 +++
-title = "Notes on the cover songs on the \"Help!\" and \"Beatles VI\" albums"
+title = "The cover songs on the “Help!” and “Beatles VI” albums"
 slug = "covers4"
 kind = "covers"
 series = "76"
@@ -11,7 +11,7 @@ source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/covers4.shtml"
 
 [[parts]]
 id = "main"
-title = "Notes on the cover songs on the \"Help!\" and \"Beatles VI\" albums"
+title = "The cover songs on the “Help!” and “Beatles VI” albums"
 series = "76"
 code = "COVERS4"
 

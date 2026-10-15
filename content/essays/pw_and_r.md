@@ -1,5 +1,5 @@
 +++
-title = "Paperback Writer\" and \"Rain"
+title = "“Paperback Writer” and “Rain”"
 slug = "pw_and_r"
 kind = "multi"
 series = "91"
@@ -11,7 +11,7 @@ source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/pw_and_r.shtml"
 
 [[parts]]
 id = "main"
-title = "Paperback Writer\" and \"Rain"
+title = "“Paperback Writer” and “Rain”"
 series = "91"
 code = "PW_AND_R"
 

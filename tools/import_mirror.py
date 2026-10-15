@@ -362,8 +362,15 @@ def pre_text(pre: Tag) -> str:
 
 def title_from_h1(h: str) -> str:
     h = re.sub(r"\s+", " ", h).strip()
-    m = re.match(r'^Notes on "(.*)"$', h)
-    return m.group(1) if m else h
+    m = re.match(r'^Notes on "([^"]*)"$', h)
+    if m:
+        return m.group(1)
+    # several quoted titles, or a descriptive heading: keep it, with typographic quotes
+    h = re.sub(r'"([^"]*)"', r"“\1”", h)
+    if h.startswith("Notes on "):   # the page already says "Notes on …"
+        h = h[len("Notes on "):]
+        h = h[0].upper() + h[1:]
+    return h
 
 
 def series_info(s: str):

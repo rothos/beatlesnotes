@@ -1,5 +1,5 @@
 +++
-title = "An introduction to notes on John's Triple Crown: \"Strawberry Fields Forever\", \"A Day In The Life\", and \"I Am The Walrus\""
+title = "An introduction to notes on John's Triple Crown: “Strawberry Fields Forever”, “A Day In The Life”, and “I Am The Walrus”"
 slug = "triple"
 kind = "essay"
 series = "23.1"
@@ -11,7 +11,7 @@ source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/triple.shtml"
 
 [[parts]]
 id = "main"
-title = "An introduction to notes on John's Triple Crown: \"Strawberry Fields Forever\", \"A Day In The Life\", and \"I Am The Walrus\""
+title = "An introduction to notes on John's Triple Crown: “Strawberry Fields Forever”, “A Day In The Life”, and “I Am The Walrus”"
 series = "23.1"
 code = "TRIPLE.1"
 
