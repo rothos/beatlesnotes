@@ -14,7 +14,7 @@
 
   const LEGENDS = {
     key: () => FIFTHS.map((n, i) => `<span class="lg"><i style="background: ${COLORS[i]}"></i>${n}</span>`).join("") +
-      `<span class="lg muted">darker shade: minor key</span>`,
+      `<span class="lg muted"><i class="lg-minor" style="background: var(--pencil); position: relative"></i>dot: minor key</span>`,
     mode: () => `<span class="lg"><i style="background: var(--staff)"></i>Major</span><span class="lg"><i style="background: var(--ink)"></i>Minor</span>`,
     written: () => `<span class="lg"><i style="background: oklch(0.88 0.09 250)"></i>1989</span><span class="lg"><i style="background: oklch(0.63 0.09 250)"></i>1994</span><span class="lg"><i style="background: oklch(0.28 0.09 250)"></i>2001</span>`,
     read: () => {

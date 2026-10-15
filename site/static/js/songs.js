@@ -118,11 +118,11 @@
         const x = c + r * Math.cos(a), y = c + r * Math.sin(a);
         const rr = dot(n);
         const base = COLORS[mode === "minor" ? FIFTHS.indexOf((pc + 9) % 12) : i];
-        const fill = mode === "minor" ? `color-mix(in oklab, ${base} 58%, #10131c)` : base;
+        const fill = base;  // minor keys keep their colour; the inner ring says they are minor
         svg += `<g><title>${label} ${mode}: ${n} song${n === 1 ? "" : "s"}</title>`;
         if (rr) svg += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${rr.toFixed(1)}" fill="${fill}"/>`;
         else svg += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="3" fill="var(--rule)"/>`;
-        svg += `<text x="${x.toFixed(1)}" y="${(y + 4).toFixed(1)}" text-anchor="middle" font-size="${mode === "major" ? 12.5 : 11}" font-weight="${n ? 600 : 400}" ${rr > 14 ? (mode === "minor" ? 'fill="#fff"' : 'fill="#10131c"') : ""}>${n ? label : ""}</text></g>`;
+        svg += `<text x="${x.toFixed(1)}" y="${(y + 4).toFixed(1)}" text-anchor="middle" font-size="${mode === "major" ? 12.5 : 11}" font-weight="${n ? 600 : 400}" ${rr > 14 ? 'fill="#10131c"' : ""}>${n ? label : ""}</text></g>`;
       });
     });
     svg += `<text x="${c}" y="${c - 4}" text-anchor="middle" font-size="12" fill="var(--pencil)">major outside</text><text x="${c}" y="${c + 12}" text-anchor="middle" font-size="12" fill="var(--pencil)">minor inside</text></svg>`;

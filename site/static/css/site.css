@@ -195,11 +195,17 @@ main { min-height: 60vh; }
   background: var(--kc);
   transition: transform 0.12s ease, box-shadow 0.12s ease;
 }
-.tile.minor { background: color-mix(in oklab, var(--kc) 58%, #10131c); }
+.tile { position: relative; }
+/* minor keys: same colour as the major key on that tonic, marked with a dot */
+.tile.minor::after, .keychip.minor::after, .lg-minor::after {
+  content: ""; position: absolute; inset: 0; margin: auto; width: 34%; height: 34%;
+  border-radius: 50%; background: var(--paper);
+}
 .tile.nokey { background: var(--paper-3); background-image: repeating-linear-gradient(45deg, transparent 0 3px, var(--rule) 3px 4px); }
 .tile:hover, .tile:focus-visible { transform: scale(1.35); box-shadow: 0 0 0 2px var(--paper), 0 0 0 3.5px var(--ink); position: relative; z-index: 2; }
 .canon[data-color="mode"] .tile { background: var(--staff); opacity: 0.85; }
 .canon[data-color="mode"] .tile.minor { background: var(--ink); opacity: 1; }
+.canon:not([data-color="key"]) .tile.minor::after { display: none; }
 .canon[data-color="written"] .tile { background: oklch(calc(0.88 - var(--w, 0) * 0.05) 0.09 250); }
 .canon[data-color="read"] .tile { background: var(--paper-3); }
 .canon[data-color="read"] .tile.is-read { background: var(--staff); }
@@ -263,7 +269,7 @@ main { min-height: 60vh; }
 .meta-meter dd { font: 500 1.05rem/1.3 var(--serif); }
 .meta-cd, .meta-us_release, .meta-uk_release { }
 .keychip { display: inline-block; width: 0.72em; height: 0.72em; border-radius: 2px; margin-right: 0.4em; vertical-align: 0.02em; background: var(--kc); }
-.keychip.minor { background: color-mix(in oklab, var(--kc) 58%, #10131c); }
+.keychip { position: relative; }
 
 /* the form strip */
 .form { margin: 0.4rem 0 1.2rem; }
