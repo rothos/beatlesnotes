@@ -1,0 +1,48 @@
+{% set META_LABELS = [
+  ('key', 'Key'), ('meter', 'Meter'), ('composer', 'Composer'), ('influential_version', 'Influential version'),
+  ('influential_versions', 'Influential versions'), ('recorded', 'Recorded'), ('uk_release', 'UK release'),
+  ('us_release', 'US release'), ('cd', 'CD'), ('with_billy_preston', 'With Billy Preston')
+] %}
+
+{% macro keychip(k) -%}
+{% if k %}<span class="keychip {{ k.mode }}" style="--kc: {{ k.color }}" title="{{ k.label }}"></span>{% endif %}
+{%- endmacro %}
+
+{% macro meta_block(part) %}
+{% set meta = part.meta or {} %}
+<dl class="meta">
+  {% for k, label in META_LABELS if meta[k] %}
+  <div class="meta-{{ k }}">
+    <dt>{{ label }}</dt>
+    <dd>{% if k == 'key' %}{{ keychip(part.key_info) }}{% endif %}{{ meta[k] }}</dd>
+  </div>
+  {% endfor %}
+</dl>
+{% endmacro %}
+
+{% macro form_strip(part) %}
+{% if part.form_parts %}
+<div class="form" data-form>
+  <p class="form-label">Form</p>
+  <ol class="form-strip">
+    {% for s in part.form_parts %}
+    <li class="sec sec-{{ s.type }}" data-section="{{ s.label }}"{% if s.note %} title="{{ s.label }} ({{ s.note }})"{% endif %}>
+      <span>{{ s.label }}</span>{% if s.note %}<small>{{ s.note }}</small>{% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+  {% if part.meta.form_raw %}
+  <details class="form-raw"><summary>As written, with repeat marks</summary><pre>{{ part.meta.form_raw }}</pre></details>
+  {% endif %}
+</div>
+{% endif %}
+{% endmacro %}
+
+{% macro listen(title) -%}
+{% set q = ('The Beatles ' ~ title) | urlencode %}
+<span class="listen">Listen:
+  <a class="ext" rel="noopener" href="https://open.spotify.com/search/{{ q }}">Spotify</a>,
+  <a class="ext" rel="noopener" href="https://music.apple.com/search?term={{ q }}">Apple Music</a>,
+  <a class="ext" rel="noopener" href="https://www.youtube.com/results?search_query={{ q }}">YouTube</a>
+</span>
+{%- endmacro %}

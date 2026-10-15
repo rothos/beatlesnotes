@@ -1,0 +1,143 @@
+{% extends "base.html" %}
+{% from "_macros.html" import meta_block, form_strip, listen, keychip %}
+{% set main = e.parts[0] %}
+{% set num = (e.series or '').split('.')[0] %}
+{% block description %}{% if e.kind == 'original' %}Original release of {% endif %}Alan W. Pollack’s Notes on “{{ e.title }}”{% if num %}, no. {{ num }} in his musicological series on the songs of the Beatles{% endif %}.{% endblock %}
+{% block bodyclass %}page-essay kind-{{ e.kind }}{% endblock %}
+
+{% block main %}
+<article class="essay" data-slug="{{ e.slug }}" data-series="{{ e.series }}" data-meter="{{ main.meter_short or '' }}"
+  {% if series_prev %}data-prev="{{ root }}{{ series_prev.url }}"{% endif %} {% if series_next %}data-next="{{ root }}{{ series_next.url }}"{% endif %}>
+
+  <aside class="rail" aria-label="Outline">
+    <nav class="toc" id="toc">
+      <p class="toc-title"><a href="#top">{{ e.title }}</a></p>
+      {% for block in r.toc %}
+        {% if r.toc|length > 1 and block.part.title and not loop.first %}
+        <p class="toc-part"><a href="#{{ block.part.id }}">{{ block.part.title }}</a></p>
+        {% endif %}
+        <ol>
+        {% for item in block['items'] %}
+          <li class="lvl{{ item.level }}"><a href="#{{ item.id }}">{{ item.text }}</a></li>
+        {% endfor %}
+        </ol>
+      {% endfor %}
+    </nav>
+  </aside>
+
+  <div class="col">
+    {% if e.kind == 'original' %}
+    <p class="banner">This is an earlier version (no. {{ e.series }}), kept for the record. <a href="{{ root }}notes/{{ e.slug.split('.')[0] }}.html">Read the current revision</a>.</p>
+    {% endif %}
+
+    <header class="essay-head" id="top">
+      <p class="kicker">
+        {% if e.kind == 'extra' %}Notes on … extras{% elif num %}Notes on … no. {{ num }}{% endif %}
+      </p>
+      <h1>{{ e.title }}</h1>
+      {% if main.meta %}
+        {{ meta_block(main) }}
+        {{ form_strip(main) }}
+      {% endif %}
+      <div class="essay-actions">
+        {% if main.meta %}{{ listen(e.title) }}{% endif %}
+        {% if versions|length > 1 %}
+        <span class="versions">Versions:
+          {% for v in versions %}<a href="{{ root }}{{ v.url }}"{% if v.slug == e.slug %} aria-current="page"{% endif %}>{{ v.series }}</a>{% if not loop.last %}, {% endif %}{% endfor %}
+        </span>
+        {% endif %}
+        {% if e.folder == 'essays' %}<button type="button" class="readbtn" data-read-toggle aria-pressed="false">Mark as read</button>{% endif %}
+      </div>
+    </header>
+
+    <div class="prose">
+    {% for p in r.parts %}
+      {% if loop.index0 > 0 or (p.part.id != 'main' and r.parts|length > 1) %}
+      <section class="part" id="{{ p.part.id }}">
+        {% if loop.index0 > 0 %}
+        <header class="part-head">
+          {% if p.part.series %}<p class="kicker">No. {{ p.part.series }}</p>{% endif %}
+          <h2 class="part-title">{{ p.part.title }}</h2>
+          {% if p.part.meta %}{{ meta_block(p.part) }}{{ form_strip(p.part) }}{{ listen(p.part.title) }}{% endif %}
+        </header>
+        {% endif %}
+        {{ p.html | safe }}
+      </section>
+      {% else %}
+      <section class="part" id="{{ p.part.id }}">{{ p.html | safe }}</section>
+      {% endif %}
+    {% endfor %}
+
+    {% if e.signoff is defined %}
+    <p class="signoff">Regards,<br>Alan{% if e.signoff %} <span class="code">({{ e.signoff }})</span>{% endif %}</p>
+    {% endif %}
+    </div>
+
+    <footer class="essay-foot">
+      {% if songs and e.folder == 'essays' %}
+      <section class="foot-block">
+        <h2>On record</h2>
+        <ul class="onrecord">
+          {% for s in songs %}
+          <li>{{ keychip(s.key_info) }}<a href="{{ root }}{{ s.href }}">{{ s.title }}</a>
+            {% if s.release_slug %}<span class="muted">first released on <a href="{{ root }}albums.html#{{ s.release_slug }}">{{ s.release }}</a> ({{ s.year }}){% if s.recorded %}, recorded {{ s.recorded }}{% endif %}{% if s.canon %}, canon no. {{ s.canon }}{% endif %}</span>{% else %}<span class="muted">{{ s.release }}</span>{% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+
+      {% if backlinks %}
+      <section class="foot-block">
+        <h2>Mentioned in {{ backlinks|length }} other note{{ 's' if backlinks|length != 1 }}</h2>
+        <ul class="backlinks">
+          {% for b in backlinks %}<li><a href="{{ root }}{{ b.url }}">{{ b.title }}</a></li>{% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+
+      {% if e.revisions %}
+      <section class="foot-block">
+        <h2>Revision history</h2>
+        <table class="revisions">
+          <tbody>
+          {% for rv in e.revisions %}
+            <tr><td class="num">{{ rv.version }}</td><td><time>{{ rv.date }}</time></td>
+            <td>{% if rv.link %}<a href="{{ root }}originals/{{ rv.link.split('/')[-1].replace('.md','') }}.html">{{ rv.note }}</a>{% else %}{{ rv.note }}{% endif %}</td></tr>
+          {% endfor %}
+          </tbody>
+        </table>
+      </section>
+      {% endif %}
+
+      {% if series_prev or series_next or album_prev or album_next %}
+      <nav class="pager" aria-label="Continue reading">
+        {% if series_prev or series_next %}
+        <div class="pager-row">
+          <p class="pager-label">In Pollack’s order</p>
+          {% if series_prev %}<a class="prev" rel="prev" href="{{ root }}{{ series_prev.url }}"><small>Previous</small>{{ series_prev.title }}</a>{% endif %}
+          {% if series_next %}<a class="next" rel="next" href="{{ root }}{{ series_next.url }}"><small>Next</small>{{ series_next.title }}</a>{% endif %}
+        </div>
+        {% endif %}
+        {% if album_prev or album_next %}
+        <div class="pager-row">
+          <p class="pager-label">In release order</p>
+          {% if album_prev %}<a class="prev" href="{{ root }}{{ album_prev.url }}"><small>Previous</small>{{ album_prev.title }}</a>{% endif %}
+          {% if album_next %}<a class="next" href="{{ root }}{{ album_next.url }}"><small>Next</small>{{ album_next.title }}</a>{% endif %}
+        </div>
+        {% endif %}
+      </nav>
+      {% endif %}
+
+      <p class="copyright">{{ e.copyright or 'Copyright © Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place.' }}
+        <a class="ext" rel="noopener" href="{{ e.source }}">Source page</a></p>
+    </footer>
+  </div>
+</article>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ root }}assets/js/glossary-data.js" defer></script>
+<script src="{{ root }}assets/js/charts.js" defer></script>
+<script src="{{ root }}assets/js/essay.js" defer></script>
+{% endblock %}

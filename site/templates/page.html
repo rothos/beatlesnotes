@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block bodyclass %}page-prose{% endblock %}
+{% block main %}
+<article class="essay">
+  <aside class="rail" aria-label="Outline">
+    {% if p.toc %}
+    <nav class="toc" id="toc"><p class="toc-title"><a href="#top">{{ p.title }}</a></p>
+      <ol>{% for item in p.toc %}<li class="lvl{{ item.level }}"><a href="#{{ item.id }}">{{ item.text }}</a></li>{% endfor %}</ol>
+    </nav>
+    {% endif %}
+  </aside>
+  <div class="col">
+    <header class="essay-head" id="top">
+      <h1>{{ p.title }}</h1>
+      <p class="byline">By {{ p.author }}</p>
+    </header>
+    <div class="prose">{{ p.html | safe }}</div>
+    <footer class="essay-foot">
+      <p class="copyright">First published in <i>Soundscapes</i>. <a class="ext" rel="noopener" href="{{ p.source }}">Source page</a></p>
+    </footer>
+  </div>
+</article>
+{% endblock %}
+{% block scripts %}<script src="{{ root }}assets/js/essay.js" defer></script>{% endblock %}

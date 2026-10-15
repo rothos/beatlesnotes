@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% from "_macros.html" import keychip %}
+{% block bodyclass %}page-songs wide{% endblock %}
+{% block main %}
+<header class="pagehead">
+  <h1>All songs</h1>
+  <p class="lede">The 212 songs of the official canon (187 originals, 24 covers and one traditional), plus the unreleased songs Pollack wrote about. Click a column heading to sort.</p>
+</header>
+
+<form class="filters" id="filters" role="search" aria-label="Filter songs">
+  <label class="f-q"><span>Title</span><input type="search" name="q" placeholder="Filter by title" autocomplete="off"></label>
+  <label><span>Key</span><select name="key"><option value="">Any key</option></select></label>
+  <label><span>Mode</span><select name="mode"><option value="">Major or minor</option><option value="major">Major</option><option value="minor">Minor</option></select></label>
+  <label><span>Meter</span><select name="meter"><option value="">Any meter</option></select></label>
+  <label><span>Release</span><select name="release"><option value="">Any release</option></select></label>
+  <label><span>Kind</span><select name="kind"><option value="">Originals and covers</option><option value="original">Originals</option><option value="cover">Covers</option><option value="extra">Unreleased</option></select></label>
+  <label class="f-unread"><input type="checkbox" name="unread"> <span>Unread only</span></label>
+  <output id="count" class="count"></output>
+</form>
+
+<div class="tablewrap">
+<table class="songtable" id="songtable">
+  <thead>
+    <tr>
+      <th scope="col" data-sort="canon" class="num" aria-sort="ascending"><button type="button">Canon</button></th>
+      <th scope="col" data-sort="title"><button type="button">Song</button></th>
+      <th scope="col" data-sort="key"><button type="button">Key</button></th>
+      <th scope="col" data-sort="meter"><button type="button">Meter</button></th>
+      <th scope="col" data-sort="release"><button type="button">First released on</button></th>
+      <th scope="col" data-sort="recorded" class="num"><button type="button">Recorded</button></th>
+      <th scope="col" data-sort="series" class="num"><button type="button">Note no.</button></th>
+      <th scope="col" data-sort="written" class="num"><button type="button">Written</button></th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for s in songs %}
+    <tr data-i="{{ loop.index0 }}" data-href="{{ s.href }}">
+      <td class="num">{{ s.canon or '—' }}</td>
+      <td class="t"><a href="{{ s.href }}">{{ s.title }}</a>{% if s.kind == 'cover' %} <span class="tag">cover</span>{% elif s.kind == 'traditional' %} <span class="tag">trad.</span>{% elif s.kind == 'extra' %} <span class="tag">unreleased</span>{% endif %}</td>
+      <td class="k">{{ keychip(s.key_info) }}{{ s.key }}</td>
+      <td>{{ s.meter_short or s.meter }}</td>
+      <td>{% if s.release_slug %}<a href="albums.html#{{ s.release_slug }}">{{ s.release }}</a> <span class="muted">{{ s.year }}</span>{% else %}<span class="muted">{{ s.release }}</span>{% endif %}</td>
+      <td class="num">{{ s.recorded }}</td>
+      <td class="num">{{ s.series }}</td>
+      <td class="num">{{ s.written }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+
+<section class="stats" id="stats" aria-label="Keys and meters across the canon">
+  <h2>Keys across the canon</h2>
+  <p class="muted">How often each key appears as a song’s home key, using the key Pollack gives at the top of each note. It follows the filters above.</p>
+  <div class="keywheel" id="keywheel"></div>
+</section>
+{% endblock %}
+{% block scripts %}
+<script src="{{ root }}assets/js/songs-data.js" defer></script>
+<script src="{{ root }}assets/js/songs.js" defer></script>
+{% endblock %}

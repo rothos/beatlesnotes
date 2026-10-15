@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block bodyclass %}page-series{% endblock %}
+{% block main %}
+<header class="pagehead">
+  <h1>The series, in order</h1>
+  <p class="lede">{{ series.intro | replace(' Here we have ordered this massive work in five categories. And, for your convenience, we\'ve added an alphabetical, a canonical and a chronological index as well as a short introduction.', '') }}</p>
+  <p class="muted">Groupings and introductions by Ger Tillekens. Years are when Pollack first wrote the note, and when he revised it. Check marks show what you’ve read in this browser.</p>
+</header>
+
+{% for c in series.categories %}
+<section class="series-cat" id="{{ c.id }}">
+  <div class="cat-head">
+    <p class="range">{{ c.from }}–{{ c.to }}</p>
+    <h2>{{ c.title }}</h2>
+    <p>{{ c.intro or c.description }}</p>
+  </div>
+  <ol class="series-list">
+    {% for ent in c.entries %}
+    <li data-slug="{{ ent.slug }}">
+      <span class="no">{{ ent.no | int if ent.no.isdigit() else ent.no }}</span>
+      {% if ent.href %}<a href="{{ ent.href }}">{{ ent.title }}</a>{% else %}<span>{{ ent.title }}</span>{% endif %}
+      <span class="yrs">{{ ent.years | replace('; ', ', rev. ') }}</span>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+{% endfor %}
+
+<section class="series-cat" id="extras">
+  <div class="cat-head">
+    <p class="range">196–200</p>
+    <h2>Extras</h2>
+    <p>After finishing the canon, Pollack added notes on recordings outside it, and looked back on the project in an interview.</p>
+  </div>
+  <ol class="series-list">
+    <li><span class="no">196</span><a href="pages/interview.html">“I was nervously waiting …”, an interview with Ian Hammond</a></li>
+    <li data-slug="qmen"><span class="no">197</span><a href="notes/qmen.html">The Quarrymen sessions</a></li>
+    <li data-slug="cytmb"><span class="no">198</span><a href="notes/cytmb.html">Can You Take Me Back</a></li>
+    <li data-slug="shellac"><span class="no">199</span><a href="notes/shellac.html">The Percy Phillips shellac</a></li>
+    <li data-slug="iivv"><span class="no">200</span><a href="notes/iivv.html">Three simple songs that didn’t make it</a></li>
+    <li data-slug="bestalts"><span class="no"></span><a href="notes/bestalts.html">“Alternate” versions: which are the best?</a></li>
+    <li data-slug="noteson"><span class="no"></span><a href="notes/noteson.html">Frequently asked questions about the series</a></li>
+  </ol>
+</section>
+{% endblock %}
+{% block scripts %}<script src="{{ root }}assets/js/lists.js" defer></script>{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block bodyclass %}page-about{% endblock %}
+{% block main %}
+<article class="essay">
+  <aside class="rail"></aside>
+  <div class="col">
+    <header class="essay-head"><h1>About this edition</h1></header>
+    <div class="prose">
+      <p>Alan W. Pollack posted the first of his <i>Notes on …</i> to the Usenet group rec.music.beatles over Memorial Day weekend, 1989, with “We Can Work It Out”. He finished the official canon in February 2000 with “Her Majesty”, and kept revising for another year. The notes were turned into web pages by Ed Chen, Mike Markowski, Bruce Dumes and Maurizio Codogno, then indexed and published by Ger Tillekens in the Dutch journal <i>Soundscapes</i>.</p>
+      <p>This edition takes that text unchanged and re-sets it for reading on any screen. Nothing in the notes has been rewritten. What’s new is the way you get around:</p>
+      <ul>
+        <li>Full-text search across every note (press <kbd>/</kbd>).</li>
+        <li>Chord charts redrawn as bars, which you can play in the browser.</li>
+        <li>A form strip for each song, linked to Pollack’s section-by-section walkthrough.</li>
+        <li>Backlinks: each note lists the other notes that mention it.</li>
+        <li>Reading order both by Pollack’s numbering and by release, with keyboard shortcuts.</li>
+        <li>A sortable, filterable table of every song, by key, meter, release and recording date.</li>
+        <li>A glossary, with definitions shown in place as you read.</li>
+        <li>Reading settings for theme, typeface, size, spacing and width, plus a record of what you’ve read. Both are kept only in your browser.</li>
+        <li>Pollack’s earlier versions of {{ essays.values() | selectattr('folder', 'equalto', 'originals') | list | length }} notes, linked from each note’s revision history.</li>
+      </ul>
+
+      <h2>Background reading</h2>
+      <ul>
+        <li><a href="pages/odyssey.html">A Beatles’ Odyssey</a>: Ger Tillekens on Pollack’s ten-year journey through the songs.</li>
+        <li><a href="pages/interview.html">“I was nervously waiting …”</a>: Ian Hammond interviews Pollack on finishing the series.</li>
+        <li><a href="notes/noteson.html">Notes on the Notes on …</a>: Pollack’s own FAQ about the series.</li>
+        <li><a href="notes/copyright.html">Copyright</a>: Pollack’s terms for redistribution.</li>
+      </ul>
+
+      <h2>How it’s made</h2>
+      <p>The words and the data are kept apart from the design. Each note is a plain Markdown file with its song details (key, meter, form, recording and release dates) in a header block. The indexes are JSON files. Templates, one stylesheet and a few scripts turn them into this site, and changing the design never touches the text.</p>
+      <p>Sources: the <a class="ext" href="https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/awp-notes_on.shtml"><i>Soundscapes</i> pages</a>, also mirrored at <a class="ext" href="https://awpnoteson.info/">awpnoteson.info</a>. Chord playback is a rough guide made from Pollack’s chord symbols. It is not a recording, and charts are only drawn where the typed chart can be read reliably.</p>
+    </div>
+  </div>
+</article>
+{% endblock %}

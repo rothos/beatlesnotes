@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% from "_macros.html" import keychip %}
+{% block bodyclass %}page-home{% endblock %}
+{% block main %}
+<section class="hero">
+  <div class="hero-text">
+    <h1>Notes on … every Beatles song</h1>
+    <p class="lede">Between May 1989 and February 2000 the musicologist Alan W. Pollack wrote a close analysis of every song the Beatles released: its key, its form, its chords and the small surprises that make it work. This is all {{ n_essays }} of his notes, re-set for reading.</p>
+  </div>
+
+  <figure class="canon" aria-labelledby="canon-cap">
+    <div class="canon-controls" role="group" aria-label="Colour the songs by">
+      <span>Colour by</span>
+      <button type="button" data-color="key" aria-pressed="true">Key</button>
+      <button type="button" data-color="mode" aria-pressed="false">Major or minor</button>
+      <button type="button" data-color="written" aria-pressed="false">Year Pollack wrote it</button>
+      <button type="button" data-color="read" aria-pressed="false">What you’ve read</button>
+    </div>
+    <ol class="canon-grid" id="canon-grid">
+      {% for rel in releases %}
+        {% set fresh = rel.tracks | selectattr('first') | rejectattr('double') | list %}
+        {% if fresh %}
+        <li class="canon-rel" data-format="{{ rel.format }}">
+          <a class="canon-rel-name" href="albums.html#{{ rel.slug }}">{{ rel.title }}</a>
+          <ol>
+          {% for t in fresh %}
+            {% set s = songs | selectattr('canon', 'equalto', t.canon) | first %}
+            <li><a class="tile{% if s.key_info %} {{ s.key_info.mode }}{% else %} nokey{% endif %}"
+                   href="{{ s.href or '#' }}" {% if s.key_info %}style="--kc: {{ s.key_info.color }}"{% endif %}
+                   data-written="{{ s.written }}" data-href="{{ s.href }}"
+                   aria-label="{{ s.title }}{% if s.key %}, {{ s.key }}{% endif %}"
+                   data-tip="{{ s.title }}|{{ s.key }}|{{ rel.title }} ({{ rel.year }})"></a></li>
+          {% endfor %}
+          </ol>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ol>
+    <figcaption id="canon-cap">
+      <span class="canon-legend" id="canon-legend"></span>
+      <span class="canon-tip" id="canon-tip" aria-live="polite">The official canon, in order of first release: one square per song. Point at a square to see what it is.</span>
+    </figcaption>
+  </figure>
+</section>
+
+<section class="ways">
+  <div class="way">
+    <h2><a href="series.html#a">New to music theory? Start with the first 28</a></h2>
+    <p>Pollack’s first notes, starting with “We Can Work It Out”, double as a short course in the ideas the rest of the series relies on: harmonic rhythm, the V-of-V, cross relations, phrasing. Read them in order. The <a href="glossary.html">glossary</a> fills in the terms.</p>
+  </div>
+  <div class="way">
+    <h2><a href="albums.html">Go album by album</a></h2>
+    <p>Every single, EP and LP from “Love Me Do” to “Let It Be”, with each track linked to its note.</p>
+  </div>
+  <div class="way">
+    <h2><a href="songs.html">Find a song</a></h2>
+    <p>Sort and filter all {{ songs|length }} canonical songs by key, meter, year, album or recording date.</p>
+  </div>
+  <div class="way">
+    <h2><a href="projects.html">Follow the recording sessions</a></h2>
+    <p>Tuomas Eerola’s chronology groups the songs into twelve recording projects, from September 1962 to January 1970.</p>
+  </div>
+</section>
+
+<section class="series-strip">
+  <h2>The series in five parts</h2>
+  <ol class="parts5">
+    {% for c in series.categories %}
+    <li><a href="series.html#{{ c.id }}"><span class="range">{{ c.from }}–{{ c.to }}</span><strong>{{ c.title }}</strong></a></li>
+    {% endfor %}
+    <li><a href="series.html#extras"><span class="range">196–200</span><strong>Extras: the interview, the Quarrymen, outtakes</strong></a></li>
+  </ol>
+</section>
+
+<section class="charts-note">
+  <h2>The chord charts play</h2>
+  <p>Pollack’s ASCII chord charts are redrawn as bars of music. Press the play button beside any chart to hear the progression, with each bar lit up as it sounds. The original typewriter version is one click away.</p>
+  <figure class="chart demo" data-fig="5.2"><pre class="chart-src">      |e       |-       |
+   G:  vi
+
+      |A7      |-       |
+       V-of-V
+
+      |C       |-       |G       |-       |
+       IV                I</pre><figcaption>The intro to “She Loves You” (<a href="notes/sly.html#fig-5-2">figure 5.2</a>)</figcaption></figure>
+</section>
+{% endblock %}
+{% block scripts %}
+<script src="{{ root }}assets/js/charts.js" defer></script>
+<script src="{{ root }}assets/js/home.js" defer></script>
+{% endblock %}

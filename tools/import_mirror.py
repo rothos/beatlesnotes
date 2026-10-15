@@ -665,7 +665,18 @@ def import_canon():
             })
     # footnote + intro text
     intro = s.find(string=re.compile("The official Beatles' canon covers")).find_parent("td").get_text(" ", strip=True)
-    return {"intro": re.sub(r"\s*\[\s*1\s*\]\s*", " ", intro).strip(), "releases": releases}
+    notes = []
+    anchor = s.find("a", attrs={"name": "Note01"})
+    if anchor:
+        for tr in [anchor.find_parent("tr")] + anchor.find_parent("tr").find_all_next("tr"):
+            tds = tr.find_all("td", recursive=False)
+            if len(tds) < 2 or tds[1].find("img", src=re.compile("UP.GIF")):
+                break
+            lead = re.sub(r"\s+", " ", "".join(t if isinstance(t, str) else t.get_text(" ") for t in tds[-1].children if getattr(t, "name", None) not in ("ul", "audio"))).strip()
+            items = [li.get_text(" ", strip=True) for li in tds[-1].find_all("li")]
+            if lead or items:
+                notes.append({"text": re.sub(r"^1\.\s*", "", lead), "items": items})
+    return {"intro": re.sub(r"\s*\[\s*1\s*\]\s*", " ", intro).strip(), "notes": notes, "releases": releases}
 
 
 def import_projects():

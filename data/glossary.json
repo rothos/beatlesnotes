@@ -1,0 +1,494 @@
+[
+ {
+  "id": "roman-numerals",
+  "term": "Roman numerals",
+  "match": [
+   "Roman numeral"
+  ],
+  "def": "Pollack labels each chord by the scale degree it is built on, so a progression can be compared across keys. Upper case means a major chord (I, IV, V), lower case a minor chord (ii, iii, vi). In G major, I is G, IV is C, V is D and vi is E minor.",
+  "example": "In the chord charts the letter names sit on top and the numerals underneath.",
+  "inline": false
+ },
+ {
+  "id": "chord-letters",
+  "term": "Chord letter case",
+  "match": [],
+  "def": "In the charts a capital letter is a major chord and a lower-case letter is a minor chord: “e” is E minor, “E” is E major, “f#” is F-sharp minor. A dash (–) means the chord carries on through the bar.",
+  "inline": false
+ },
+ {
+  "id": "home-key",
+  "term": "home key",
+  "aka": [
+   "tonic"
+  ],
+  "match": [
+   "home key",
+   "tonic"
+  ],
+  "def": "The key a song is centred on and normally ends in. Its first chord, I, is the tonic: the point of rest that the harmony pulls back to."
+ },
+ {
+  "id": "dominant",
+  "term": "dominant",
+  "aka": [],
+  "match": [
+   "dominant"
+  ],
+  "def": "The chord on the fifth degree of the key (V). It creates the strongest pull back to the tonic. In C major the dominant is G, or G7 with a seventh added."
+ },
+ {
+  "id": "subdominant",
+  "term": "subdominant",
+  "aka": [],
+  "match": [
+   "subdominant"
+  ],
+  "def": "The chord on the fourth degree of the key (IV): F in C major. It moves away from the tonic more gently than the dominant does."
+ },
+ {
+  "id": "diatonic",
+  "term": "diatonic",
+  "match": [
+   "diatonic",
+   "diatonically"
+  ],
+  "def": "Belonging to the notes of the current key’s scale. A major key has seven diatonic chords (I, ii, iii, IV, V, vi and vii°), and anything else is chromatic or borrowed."
+ },
+ {
+  "id": "chromatic",
+  "term": "chromatic",
+  "match": [
+   "chromatic",
+   "chromaticism",
+   "chromatically"
+  ],
+  "def": "Using notes from outside the current key’s scale, often moving by half steps. Chromatic chords add colour and surprise to a diatonic progression."
+ },
+ {
+  "id": "harmonic-rhythm",
+  "term": "harmonic rhythm",
+  "match": [
+   "harmonic rhythm"
+  ],
+  "def": "How often the chords change: every bar, every two bars, twice a bar. A sudden speeding up or slowing down of the harmonic rhythm is one of the devices Pollack points out most often.",
+  "example": "“She Loves You” mostly changes chord every two bars, then briefly every bar."
+ },
+ {
+  "id": "secondary-dominant",
+  "term": "V-of-V",
+  "aka": [
+   "secondary dominant",
+   "applied dominant"
+  ],
+  "match": [
+   "V-of-V",
+   "secondary dominant",
+   "V-of-ii",
+   "V-of-vi",
+   "V-of-IV",
+   "V-of-iii"
+  ],
+  "def": "A chord borrowed to act as the dominant of a chord other than the tonic. V-of-V is the dominant of the dominant: in G major that is A major (or A7), which leads naturally to D. Pollack writes others the same way: V-of-vi, V-of-IV and so on.",
+  "example": "The intro of “She Loves You” goes e minor, A7 (V-of-V), C, G."
+ },
+ {
+  "id": "cross-relation",
+  "term": "cross relation",
+  "aka": [
+   "false relation"
+  ],
+  "match": [
+   "cross relation",
+   "cross-relation",
+   "false relation"
+  ],
+  "def": "When a note and a chromatically altered version of it (C and C♯, say) sound in neighbouring chords in different voices or parts. The clash gives a bittersweet edge, and it often follows a V-of-V or a borrowed chord."
+ },
+ {
+  "id": "borrowed-chord",
+  "term": "borrowed chord",
+  "aka": [
+   "modal mixture"
+  ],
+  "match": [
+   "borrowed",
+   "modal mixture",
+   "parallel minor"
+  ],
+  "def": "A chord taken from the parallel key, the major or minor key on the same tonic. The commonest in the Beatles is the minor iv in a major key: C minor instead of C major in G.",
+  "example": "“She Loves You” uses the minor iv (C minor in G) in both its verse and refrain."
+ },
+ {
+  "id": "flat-vii",
+  "term": "flat-VII",
+  "aka": [
+   "♭VII"
+  ],
+  "match": [
+   "flat-VII",
+   "flat VII"
+  ],
+  "def": "A major chord built on the lowered seventh degree of a major key: B♭ in C, or E♭ in F. It is borrowed from the Mixolydian mode and gives a bluesy or modal colour typical of 1960s rock.",
+  "example": "The long coda of “Hey Jude” cycles F, E♭ (flat-VII), B♭, F."
+ },
+ {
+  "id": "flat-vi",
+  "term": "flat-VI",
+  "aka": [
+   "♭VI"
+  ],
+  "match": [
+   "flat-VI",
+   "flat-III",
+   "flat-II"
+  ],
+  "def": "Like flat-VII, a major chord on a lowered scale degree, borrowed from the parallel minor: A♭ in C. Flat-III (E♭ in C) and flat-II (D♭ in C) work the same way."
+ },
+ {
+  "id": "mixolydian",
+  "term": "Mixolydian",
+  "match": [
+   "Mixolydian"
+  ],
+  "def": "A mode that is a major scale with a lowered seventh (G to G on the white keys). Songs with a Mixolydian flavour lean on the flat-VII chord and avoid the leading note."
+ },
+ {
+  "id": "dorian",
+  "term": "Dorian",
+  "match": [
+   "Dorian"
+  ],
+  "def": "A mode that is a natural minor scale with a raised sixth (D to D on the white keys). It sounds minor but less dark, and often brings a major IV chord in a minor key."
+ },
+ {
+  "id": "aeolian",
+  "term": "Aeolian",
+  "aka": [
+   "natural minor"
+  ],
+  "match": [
+   "Aeolian",
+   "natural minor"
+  ],
+  "def": "The natural minor scale (A to A on the white keys), with no raised leading note. Aeolian progressions such as vi–IV–V or i–♭VII–♭VI avoid the pull of a major V chord."
+ },
+ {
+  "id": "pentatonic",
+  "term": "pentatonic",
+  "match": [
+   "pentatonic"
+  ],
+  "def": "A five-note scale with no half steps, such as C D E G A. It runs through blues, folk and rock melodies and guitar riffs."
+ },
+ {
+  "id": "relative-minor",
+  "term": "relative minor",
+  "aka": [
+   "relative major"
+  ],
+  "match": [
+   "relative minor",
+   "relative major"
+  ],
+  "def": "The minor key that shares a major key’s notes, built on its sixth degree: A minor is the relative minor of C major. Moving between the two is one of the gentlest key changes there is."
+ },
+ {
+  "id": "modulation",
+  "term": "modulation",
+  "aka": [
+   "key change"
+  ],
+  "match": [
+   "modulation",
+   "modulate",
+   "modulates",
+   "modulating",
+   "key change"
+  ],
+  "def": "A move from one key to another that the music settles into, as opposed to a passing touch of colour. Pollack separates real modulations from brief tonicizations."
+ },
+ {
+  "id": "tonicization",
+  "term": "tonicization",
+  "match": [
+   "tonicization",
+   "tonicize",
+   "tonicized",
+   "tonicizes"
+  ],
+  "def": "Briefly treating a chord other than I as if it were a temporary tonic, usually by approaching it through its own dominant (a V-of chord), without really changing key."
+ },
+ {
+  "id": "pivot-chord",
+  "term": "pivot chord",
+  "match": [
+   "pivot chord",
+   "pivot"
+  ],
+  "def": "A chord that belongs to both the old key and the new one, used to slide smoothly from one to the other. In Pollack’s charts it gets two numerals, one for each key."
+ },
+ {
+  "id": "cadence",
+  "term": "cadence",
+  "match": [
+   "cadence",
+   "cadences",
+   "cadential"
+  ],
+  "def": "A chord progression that closes a phrase, like punctuation. The main kinds are authentic (V–I, a full stop), plagal (IV–I), half (ending on V, a comma) and deceptive (V going somewhere other than I)."
+ },
+ {
+  "id": "plagal",
+  "term": "plagal cadence",
+  "aka": [
+   "Amen cadence"
+  ],
+  "match": [
+   "plagal"
+  ],
+  "def": "IV moving to I, the “Amen” of hymns. It is softer than the dominant’s V–I. Pollack notes how often the Beatles end phrases or whole songs this way."
+ },
+ {
+  "id": "deceptive-cadence",
+  "term": "deceptive cadence",
+  "match": [
+   "deceptive cadence",
+   "deceptive"
+  ],
+  "def": "A V chord that resolves somewhere other than the expected I, most often to vi. It keeps the music moving when the ear expects it to stop."
+ },
+ {
+  "id": "half-cadence",
+  "term": "half cadence",
+  "match": [
+   "half cadence",
+   "half-cadence"
+  ],
+  "def": "A phrase that stops on V, leaving the harmony open and waiting for what comes next."
+ },
+ {
+  "id": "added-sixth",
+  "term": "added sixth",
+  "match": [
+   "added sixth",
+   "added-sixth",
+   "added 6th"
+  ],
+  "def": "A major triad with the sixth above the root added on top: G–B–D–E. Pollack calls it a “free” dissonance, there for colour rather than to resolve anywhere.",
+  "example": "The famous final “yeah” of “She Loves You” is a G6 chord."
+ },
+ {
+  "id": "suspension",
+  "term": "suspension",
+  "aka": [
+   "sus chord"
+  ],
+  "match": [
+   "suspension",
+   "suspended",
+   "sus4"
+  ],
+  "def": "A note held over from one chord into the next, where it clashes, before stepping down into the new chord. A sus4 chord replaces the third with the fourth, like a suspension that never resolves."
+ },
+ {
+  "id": "appoggiatura",
+  "term": "appoggiatura",
+  "match": [
+   "appoggiatura",
+   "appoggiaturas"
+  ],
+  "def": "A dissonant melody note that lands on a strong beat and then resolves by step to a chord tone. It is a leaning, expressive sigh."
+ },
+ {
+  "id": "dissonance",
+  "term": "dissonance",
+  "aka": [
+   "consonance"
+  ],
+  "match": [
+   "dissonance",
+   "dissonant",
+   "consonance"
+  ],
+  "def": "A combination of notes heard as tense or unstable (seconds, sevenths, the tritone), as opposed to consonances that sound at rest (thirds, fifths, octaves). Classical practice expects dissonances to resolve, and pop is freer."
+ },
+ {
+  "id": "pedal-point",
+  "term": "pedal point",
+  "aka": [
+   "pedal"
+  ],
+  "match": [
+   "pedal point",
+   "pedal"
+  ],
+  "def": "A note held or repeated (usually in the bass) while the chords above it change, sometimes clashing with them."
+ },
+ {
+  "id": "ostinato",
+  "term": "ostinato",
+  "match": [
+   "ostinato",
+   "ostinati"
+  ],
+  "def": "A short musical figure repeated over and over: a bass line, a rhythm or a riff. Pollack’s charts sometimes shorten it to “ost.”."
+ },
+ {
+  "id": "riff",
+  "term": "riff",
+  "match": [
+   "riff",
+   "riffs"
+  ],
+  "def": "A short, catchy instrumental figure, usually on guitar, that recurs through a song and often defines it. It is rock’s word for an ostinato."
+ },
+ {
+  "id": "inversion",
+  "term": "inversion",
+  "aka": [],
+  "match": [
+   "inversion",
+   "inverted",
+   "first inversion",
+   "second inversion"
+  ],
+  "def": "A chord with a note other than its root in the bass. Pollack uses figured-bass numbers for these: 6/3 (or just 6) for first inversion, with the third in the bass, and 6/4 for second inversion, with the fifth in the bass."
+ },
+ {
+  "id": "phrasing",
+  "term": "phrasing",
+  "aka": [
+   "four-square"
+  ],
+  "match": [
+   "phrasing",
+   "four-square",
+   "foursquare"
+  ],
+  "def": "How a section’s bars group into phrases. “Four-square” phrasing is the symmetrical norm of 4 + 4 bars. Pollack keeps track of every three-, five- or seven-bar phrase that breaks it."
+ },
+ {
+  "id": "verse",
+  "term": "verse",
+  "match": [],
+  "def": "The section that tells the story, with new words each time it returns over much the same music.",
+  "inline": false
+ },
+ {
+  "id": "refrain",
+  "term": "refrain",
+  "aka": [
+   "chorus"
+  ],
+  "match": [
+   "refrain"
+  ],
+  "def": "A section that returns with the same words each time, usually carrying the title. Pollack keeps it distinct from the bridge, and discusses the difference in his notes on “All My Loving”."
+ },
+ {
+  "id": "bridge",
+  "term": "bridge",
+  "aka": [
+   "middle eight"
+  ],
+  "match": [
+   "middle eight",
+   "middle-eight"
+  ],
+  "def": "A contrasting section, often eight bars long, that departs from the verse, usually in harmony, before leading back to it. The British name is the middle eight."
+ },
+ {
+  "id": "hook",
+  "term": "hook",
+  "match": [
+   "hook",
+   "hooks"
+  ],
+  "def": "A short, memorable phrase, melodic or instrumental, built to catch the ear. It is often the title line."
+ },
+ {
+  "id": "intro-outro",
+  "term": "intro and outro",
+  "aka": [
+   "coda"
+  ],
+  "match": [
+   "outro",
+   "coda"
+  ],
+  "def": "The opening and closing sections, outside the main verse-and-refrain cycle. Pollack records whether an outro fades out or has a “complete ending”, a decisive final chord."
+ },
+ {
+  "id": "syncopation",
+  "term": "syncopation",
+  "match": [
+   "syncopation",
+   "syncopated"
+  ],
+  "def": "Accenting a note off the beat, or just ahead of it, so that it cuts against the regular pulse. It gives a phrase drive and swing."
+ },
+ {
+  "id": "backbeat",
+  "term": "backbeat",
+  "match": [
+   "backbeat",
+   "back beat"
+  ],
+  "def": "The emphasis on beats 2 and 4 of a 4/4 bar, usually on the snare drum, that is basic to rock ’n’ roll."
+ },
+ {
+  "id": "triplet",
+  "term": "triplet",
+  "match": [
+   "triplet",
+   "triplets"
+  ],
+  "def": "Three notes in the time normally taken by two. Steady triplets give a 12/8 or shuffle feel."
+ },
+ {
+  "id": "melisma",
+  "term": "melisma",
+  "match": [
+   "melisma",
+   "melismatic"
+  ],
+  "def": "Singing one syllable across several notes, as opposed to the one-note-per-syllable setting usual in pop lyrics."
+ },
+ {
+  "id": "tritone",
+  "term": "tritone",
+  "match": [
+   "tritone"
+  ],
+  "def": "The interval of three whole steps (C to F♯), halfway across the octave and the most unstable interval. It sits inside every dominant seventh chord."
+ },
+ {
+  "id": "twelve-bar",
+  "term": "12-bar blues",
+  "match": [
+   "12-bar",
+   "twelve-bar",
+   "12 bar"
+  ],
+  "def": "The standard blues form: twelve bars of I (four bars), IV (two), I (two), V, IV, I and a turnaround. It underlies many early rock ’n’ roll songs the Beatles covered."
+ },
+ {
+  "id": "open-fifths",
+  "term": "open fifth",
+  "match": [
+   "open fifth",
+   "open fifths",
+   "parallel fifths"
+  ],
+  "def": "Two notes a fifth apart with no third between them, so the chord is neither major nor minor. It sounds bare and archaic, and Pollack hears it in Lennon and McCartney’s vocal harmonies."
+ },
+ {
+  "id": "complete-ending",
+  "term": "complete ending",
+  "match": [
+   "complete ending"
+  ],
+  "def": "Pollack’s term for an outro that stops on a decisive final chord, as opposed to a fade-out."
+ }
+]

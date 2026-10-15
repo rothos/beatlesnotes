@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block bodyclass %}page-projects{% endblock %}
+{% block main %}
+<header class="pagehead">
+  <h1>Recording projects</h1>
+  <p class="lede">{{ projects.intro | replace('Notes ... On Series', 'Notes on … series') | replace('ordened', 'ordered') | replace('succesive', 'successive') | replace('renown', 'renowned') }}</p>
+  <p class="muted">{{ projects.credit }}</p>
+</header>
+
+<div class="timeline">
+{% for per in projects.periods %}
+  <section class="period">
+    <h2>{{ per.title }}</h2>
+    {% for pr in per.projects %}
+    <section class="project" id="project-{{ pr.no }}">
+      <header>
+        <p class="pno">{{ pr.no }}</p>
+        <h3>{{ pr.title }}</h3>
+        <p class="span">{{ pr.span }}</p>
+      </header>
+      <ol class="sessions">
+        {% for s in pr.songs %}
+        <li data-slug="{{ (s.href or '').split('/')[-1].split('.')[0] }}"><time>{{ s.date }}</time> {% if s.href %}<a href="{{ s.href }}">{{ s.title }}</a>{% else %}{{ s.title }}{% endif %}</li>
+        {% endfor %}
+      </ol>
+    </section>
+    {% endfor %}
+  </section>
+{% endfor %}
+</div>
+{% endblock %}
+{% block scripts %}<script src="{{ root }}assets/js/lists.js" defer></script>{% endblock %}

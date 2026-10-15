@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block bodyclass %}page-albums{% endblock %}
+{% block main %}
+<header class="pagehead">
+  <h1>Releases</h1>
+  <p class="lede">The official canon, release by release, after Ger Tillekens. Songs that appeared earlier on another record are listed in grey. “MD” numbers refer to Ian MacDonald’s <i>Revolution in the Head</i>.</p>
+  <nav class="jump" aria-label="Jump to an album">
+    {% for r in canon.releases if r.format == 'LP' %}<a href="#{{ r.slug }}">{{ r.title }}</a>{% endfor %}
+  </nav>
+</header>
+
+<ol class="releases">
+{% for r in canon.releases %}
+  <li class="release fmt-{{ r.format|lower }}" id="{{ r.slug }}">
+    {% if r.cover %}<img class="cover" src="img/{{ r.cover }}" alt="Cover of {{ r.title }}" width="200" height="200" loading="lazy">{% else %}<div class="cover disc" aria-hidden="true"><span>{{ r.format }}</span></div>{% endif %}
+    <div class="release-body">
+      <h2><span class="fmt">{{ r.format }}</span> {{ r.title }}</h2>
+      <p class="muted">{{ r.info[0]|upper ~ r.info[1:] if r.info else '' }}</p>
+      <ol class="tracks">
+      {% for t in r.tracks %}
+        <li class="{{ 'first' if t.first else 'repeat' }}">
+          <span class="cn">{{ t.canon }}</span>
+          {% if t.href %}<a href="{{ t.href }}">{{ t.title }}</a>{% else %}<span>{{ t.title }}</span>{% endif %}
+          {% if t.kind == 'cover' %}<span class="tag">cover</span>{% endif %}{% if t.double %}<span class="tag">variant</span>{% endif %}
+          {% if t.note %}<span class="muted">({{ t.note }})</span>{% endif %}
+          {% if t.md %}<span class="md">MD {{ t.md }}</span>{% endif %}
+        </li>
+      {% endfor %}
+      </ol>
+    </div>
+  </li>
+{% endfor %}
+</ol>
+
+<section class="prose narrow">
+  <h2>What counts as the canon</h2>
+  <p>{{ canon.intro }}</p>
+  {% for n in canon.notes %}
+  <p>{{ n.text }}</p>
+  {% if n['items'] %}<ul>{% for it in n['items'] %}<li>{{ it | replace(' ,', ',') | replace(' ;', ';') }}</li>{% endfor %}</ul>{% endif %}
+  {% endfor %}
+  <p class="muted">Notes by Ger Tillekens. Pollack’s own discussion of the fragment is <a href="notes/cytmb.html">Notes on “Can You Take Me Back”</a>.</p>
+</section>
+{% endblock %}

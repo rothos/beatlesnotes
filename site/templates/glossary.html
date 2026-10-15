@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block bodyclass %}page-glossary{% endblock %}
+{% block main %}
+<header class="pagehead">
+  <h1>Glossary</h1>
+  <p class="lede">The terms Pollack uses most, in plain language. Inside the notes, the first use of each term is underlined with dots: hover over it or tap it to see the definition.</p>
+  <p class="muted">These definitions were written for this edition, not by Pollack. Each entry links to notes where he puts the idea to work.</p>
+  <label class="gl-filter"><span>Filter</span> <input type="search" id="gl-q" placeholder="e.g. cadence" autocomplete="off"></label>
+</header>
+
+<dl class="glossary" id="glossary">
+{% for g in glossary | sort(attribute='term') %}
+  <div class="gl-entry" id="{{ g.id }}">
+    <dt>{{ g.term }}{% if g.aka %} <span class="aka">also {{ g.aka | join(', ') }}</span>{% endif %}</dt>
+    <dd>
+      <p>{{ g.def }}</p>
+      {% if g.example %}<p class="gl-ex">{{ g.example }}</p>{% endif %}
+      {% if g.see %}<p class="gl-see">Heard in {% for s in g.see %}<a href="notes/{{ s.slug }}.html">{{ s.title }}</a>{% if not loop.last %}, {% endif %}{% endfor %}.</p>{% endif %}
+    </dd>
+  </div>
+{% endfor %}
+</dl>
+{% endblock %}
+{% block scripts %}<script src="{{ root }}assets/js/lists.js" defer></script>{% endblock %}
