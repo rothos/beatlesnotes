@@ -27,7 +27,7 @@
 
   <div class="col">
     {% if e.kind == 'original' %}
-    <p class="banner">This is an earlier version (no. {{ e.series }}), kept for the record. <a href="{{ root }}notes/{{ e.slug.split('.')[0] }}.html">Read the current revision</a>.</p>
+    <p class="banner">This is an earlier version (no. {{ e.series }}), kept for the record. <a href="{{ root }}note-{{ e.slug.split('.')[0] }}.html">Read the current revision</a>.</p>
     {% endif %}
 
     <header class="essay-head" id="top">

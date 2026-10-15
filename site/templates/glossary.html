@@ -15,7 +15,7 @@
     <dd>
       <p>{{ g.def }}</p>
       {% if g.example %}<p class="gl-ex">{{ g.example }}</p>{% endif %}
-      {% if g.see %}<p class="gl-see">Heard in {% for s in g.see %}<a href="notes/{{ s.slug }}.html">{{ s.title }}</a>{% if not loop.last %}, {% endif %}{% endfor %}.</p>{% endif %}
+      {% if g.see %}<p class="gl-see">Heard in {% for s in g.see %}<a href="note-{{ s.slug }}.html">{{ s.title }}</a>{% if not loop.last %}, {% endif %}{% endfor %}.</p>{% endif %}
     </dd>
   </div>
 {% endfor %}

@@ -27,7 +27,7 @@
     },
     readCount: () => readSet.size,
     slugFromHref(href) {
-      const m = /(?:^|\/)notes\/([\w.\-]+)\.html/.exec(href || "");
+      const m = /(?:^|\/)note-([\w.\-]+)\.html/.exec(href || "");
       return m ? m[1] : null;
     },
   });

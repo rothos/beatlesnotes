@@ -20,7 +20,7 @@
       </header>
       <ol class="sessions">
         {% for s in pr.songs %}
-        <li data-slug="{{ (s.href or '').split('/')[-1].split('.')[0] }}"><time>{{ s.date }}</time> {% if s.href %}<a href="{{ s.href }}">{{ s.title }}</a>{% else %}{{ s.title }}{% endif %}</li>
+        <li data-slug="{{ (s.href or '').split('#')[0].replace('note-', '').replace('.html', '') }}"><time>{{ s.date }}</time> {% if s.href %}<a href="{{ s.href }}">{{ s.title }}</a>{% else %}{{ s.title }}{% endif %}</li>
         {% endfor %}
       </ol>
     </section>

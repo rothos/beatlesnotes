@@ -164,15 +164,15 @@ class Renderer:
             return href
         if href.startswith("site:"):
             page, _, frag = href[5:].partition("#")
-            return f"{self.root}{page}.html" + (f"#{frag}" if frag else "")
+            return f"{self.root}{page.replace('/', '-').replace('pages-', 'page-')}.html" + (f"#{frag}" if frag else "")
         m = re.match(r"^(?:\.\./(essays|originals)/)?([\w.\-]+)\.md(#.*)?$", href)
         if m:
             folder = m.group(1) or ("originals" if self.here == "originals" else "essays")
             slug, frag = m.group(2), m.group(3) or ""
             if folder == "essays":
                 self.links.add(slug)
-                return f"{self.root}notes/{slug}.html{frag}"
-            return f"{self.root}originals/{slug}.html{frag}"
+                return f"{self.root}note-{slug}.html{frag}"
+            return f"{self.root}original-{slug}.html{frag}"
         if href.startswith("../img/"):
             return f"{self.root}img/{href[7:]}"
         return href
@@ -268,7 +268,9 @@ def main():
             fm, body = read_doc(p)
             fm["folder"] = kind_dir
             fm["body_md"] = body
-            fm["url"] = f"{'notes' if kind_dir == 'essays' else 'originals'}/{fm['slug']}.html"
+            # every page lives in one folder, so browsers that scope local-file storage
+            # to a folder (Firefox) share reading state across the whole site
+            fm["url"] = f"{'note' if kind_dir == 'essays' else 'original'}-{fm['slug']}.html"
             for part in fm.get("parts", []):
                 meta = part.get("meta", {})
                 part["key_info"] = parse_key(meta.get("key"))
@@ -402,7 +404,7 @@ def main():
 
     rendered = {}
     for slug, e in essays.items():
-        R.reset("../", "originals" if e["folder"] == "originals" else "essays")
+        R.reset("", "originals" if e["folder"] == "originals" else "essays")
         chunks = re.split(r"^::: part (\S+)\s*$", e["body_md"], flags=re.M)
         parts_html = []
         part_meta = {p["id"]: p for p in e.get("parts", [])}
@@ -427,7 +429,7 @@ def main():
             })
 
     # ---------------------------------------------------------------- glossary: where each term is used
-    plain_by_slug = {d["u"].split("/")[-1][:-5]: d["x"].lower() for d in search_docs}
+    plain_by_slug = {d["u"].removeprefix("note-")[:-5]: d["x"].lower() for d in search_docs}
     for g in glossary:
         forms = [g["term"], *g.get("aka", []), *g.get("match", [])]
         pat = re.compile(r"\b(" + "|".join(re.escape(f.lower()).replace("\\-", "[- ]") for f in forms) + r")\b")
@@ -457,7 +459,7 @@ def main():
         for v in sorted(essays):
             if v == base or re.fullmatch(re.escape(base) + r"\.\d", v):
                 versions.append(essays[v])
-        R.reset("../", "originals" if e["folder"] == "originals" else "essays")
+        R.reset("", "originals" if e["folder"] == "originals" else "essays")
         for rv in e.get("revisions", []):
             if rv.get("link"):
                 rv["href"] = R.map_link(rv["link"])
@@ -470,12 +472,12 @@ def main():
     pages = {}
     for p in sorted((CONTENT / "pages").glob("*.md")):
         fm, body = read_doc(p)
-        R.reset("../", "pages")
+        R.reset("", "pages")
         R.toc = []
         fm["html"] = R.render(body)
         fm["toc"] = list(R.toc)
         pages[fm["slug"]] = fm
-        write(f"pages/{fm['slug']}.html", "page.html", p=fm, title=fm["title"])
+        write(f"page-{fm['slug']}.html", "page.html", p=fm, title=fm["title"])
 
     by_canon_grid = [s for s in songs if s["canon"]]
     config["key_colors"] = KEY_COLORS
