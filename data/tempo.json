@@ -1,0 +1,1259 @@
+{
+ "source": "Isophonics reference annotations for The Beatles (beat tracks), Centre for Digital Music, Queen Mary University of London",
+ "url": "http://isophonics.net/content/reference-annotations-beatles",
+ "songs": [
+  {
+   "title": "I Saw Her Standing There",
+   "key": "isawherstandingthere",
+   "album": "Please Please Me",
+   "bpm": 161,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Misery",
+   "key": "misery",
+   "album": "Please Please Me",
+   "bpm": 132,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Anna (Go To Him)",
+   "key": "anna",
+   "album": "Please Please Me",
+   "bpm": 110,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Chains",
+   "key": "chains",
+   "album": "Please Please Me",
+   "bpm": 129,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Boys",
+   "key": "boys",
+   "album": "Please Please Me",
+   "bpm": 144,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Ask Me Why",
+   "key": "askmewhy",
+   "album": "Please Please Me",
+   "bpm": 136,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Please Please Me",
+   "key": "pleasepleaseme",
+   "album": "Please Please Me",
+   "bpm": 140,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Love Me Do",
+   "key": "lovemedo",
+   "album": "Please Please Me",
+   "bpm": 148,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "P. S. I Love You",
+   "key": "psiloveyou",
+   "album": "Please Please Me",
+   "bpm": 136,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Baby It's You",
+   "key": "babyitsyou",
+   "album": "Please Please Me",
+   "bpm": 112,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Do You Want To Know A Secret",
+   "key": "doyouwanttoknowasecret",
+   "album": "Please Please Me",
+   "bpm": 123,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "A Taste Of Honey",
+   "key": "atasteofhoney",
+   "album": "Please Please Me",
+   "bpm": 101,
+   "beats_per_bar": 3
+  },
+  {
+   "title": "There's A Place",
+   "key": "theresaplace",
+   "album": "Please Please Me",
+   "bpm": 140,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Twist And Shout",
+   "key": "twistandshout",
+   "album": "Please Please Me",
+   "bpm": 126,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "It Won't Be Long",
+   "key": "itwontbelong",
+   "album": "With the Beatles",
+   "bpm": 133,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "All I've Got To Do",
+   "key": "allivegottodo",
+   "album": "With the Beatles",
+   "bpm": 120,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "All My Loving",
+   "key": "allmyloving",
+   "album": "With the Beatles",
+   "bpm": 157,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Don't Bother Me",
+   "key": "dontbotherme",
+   "album": "With the Beatles",
+   "bpm": 172,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Little Child",
+   "key": "littlechild",
+   "album": "With the Beatles",
+   "bpm": 152,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Till There Was You",
+   "key": "tilltherewasyou",
+   "album": "With the Beatles",
+   "bpm": 123,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Please Mister Postman",
+   "key": "pleasemisterpostman",
+   "album": "With the Beatles",
+   "bpm": 123,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Roll Over Beethoven",
+   "key": "rolloverbeethoven",
+   "album": "With the Beatles",
+   "bpm": 162,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Hold Me Tight",
+   "key": "holdmetight",
+   "album": "With the Beatles",
+   "bpm": 136,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "You Really Got A Hold On Me",
+   "key": "youreallygotaholdonme",
+   "album": "With the Beatles",
+   "bpm": 77,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "I Wanna Be Your Man",
+   "key": "iwannabeyourman",
+   "album": "With the Beatles",
+   "bpm": 99,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Devil In Her Heart",
+   "key": "devilinherheart",
+   "album": "With the Beatles",
+   "bpm": 120,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Not A Second Time",
+   "key": "notasecondtime",
+   "album": "With the Beatles",
+   "bpm": 126,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Money",
+   "key": "money",
+   "album": "With the Beatles",
+   "bpm": 129,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "A Hard Day's Night",
+   "key": "aharddaysnight",
+   "album": "A Hard Day's Night",
+   "bpm": 140,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "I Should Have Known Better",
+   "key": "ishouldhaveknownbetter",
+   "album": "A Hard Day's Night",
+   "bpm": 129,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "If I Fell",
+   "key": "ififell",
+   "album": "A Hard Day's Night",
+   "bpm": 108,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "I'm Happy Just To Dance With You",
+   "key": "imhappyjusttodancewithyou",
+   "album": "A Hard Day's Night",
+   "bpm": 132,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "And I Love Her",
+   "key": "andiloveher",
+   "album": "A Hard Day's Night",
+   "bpm": 115,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Tell Me Why",
+   "key": "tellmewhy",
+   "album": "A Hard Day's Night",
+   "bpm": 157,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Can't Buy Me Love",
+   "key": "cantbuymelove",
+   "album": "A Hard Day's Night",
+   "bpm": 172,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Any Time At All",
+   "key": "anytimeatall",
+   "album": "A Hard Day's Night",
+   "bpm": 140,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "I'll Cry Instead",
+   "key": "illcryinstead",
+   "album": "A Hard Day's Night",
+   "bpm": 97,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Things We Said Today",
+   "key": "thingswesaidtoday",
+   "album": "A Hard Day's Night",
+   "bpm": 136,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "When I Get Home",
+   "key": "whenigethome",
+   "album": "A Hard Day's Night",
+   "bpm": 126,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "You Can't Do That",
+   "key": "youcantdothat",
+   "album": "A Hard Day's Night",
+   "bpm": 129,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "I'll Be Back",
+   "key": "illbeback",
+   "album": "A Hard Day's Night",
+   "bpm": 123,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "No Reply",
+   "key": "noreply",
+   "album": "Beatles for Sale",
+   "bpm": 126,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "I'm a Loser",
+   "key": "imaloser",
+   "album": "Beatles for Sale",
+   "bpm": 90,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Baby's In Black",
+   "key": "babysinblack",
+   "album": "Beatles for Sale",
+   "bpm": 68,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Rock and Roll Music",
+   "key": "rockandrollmusic",
+   "album": "Beatles for Sale",
+   "bpm": 167,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "I'll Follow the Sun",
+   "key": "illfollowthesun",
+   "album": "Beatles for Sale",
+   "bpm": 133,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Mr. Moonlight",
+   "key": "mrmoonlight",
+   "album": "Beatles for Sale",
+   "bpm": 126,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Kansas City- Hey, Hey, Hey, Hey",
+   "key": "kansascityheyheyheyhey",
+   "album": "Beatles for Sale",
+   "bpm": 132,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Eight Days a Week",
+   "key": "eightdaysaweek",
+   "album": "Beatles for Sale",
+   "bpm": 140,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Words of Love",
+   "key": "wordsoflove",
+   "album": "Beatles for Sale",
+   "bpm": 123,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Honey Don't",
+   "key": "honeydont",
+   "album": "Beatles for Sale",
+   "bpm": 162,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Every Little Thing",
+   "key": "everylittlething",
+   "album": "Beatles for Sale",
+   "bpm": 123,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "I Don't Want to Spoil the Party",
+   "key": "idontwanttospoiltheparty",
+   "album": "Beatles for Sale",
+   "bpm": 96,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "What You're Doing",
+   "key": "whatyouredoing",
+   "album": "Beatles for Sale",
+   "bpm": 129,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Everybody's Trying to Be My Baby",
+   "key": "everybodystryingtobemybaby",
+   "album": "Beatles for Sale",
+   "bpm": 172,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Help!",
+   "key": "help",
+   "album": "Help!",
+   "bpm": 95,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "The Night Before",
+   "key": "thenightbefore",
+   "album": "Help!",
+   "bpm": 172,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "You've Got To Hide Your Love Away",
+   "key": "youvegottohideyourloveaway",
+   "album": "Help!",
+   "bpm": 185,
+   "beats_per_bar": 3
+  },
+  {
+   "title": "I Need You",
+   "key": "ineedyou",
+   "album": "Help!",
+   "bpm": 136,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Another Girl",
+   "key": "anothergirl",
+   "album": "Help!",
+   "bpm": 88,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "You're Going To Lose That Girl",
+   "key": "youregoingtolosethatgirl",
+   "album": "Help!",
+   "bpm": 132,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Ticket To Ride",
+   "key": "tickettoride",
+   "album": "Help!",
+   "bpm": 123,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Act Naturally",
+   "key": "actnaturally",
+   "album": "Help!",
+   "bpm": 93,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "It's Only Love",
+   "key": "itsonlylove",
+   "album": "Help!",
+   "bpm": 112,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "You Like Me Too Much",
+   "key": "youlikemetoomuch",
+   "album": "Help!",
+   "bpm": 178,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Tell Me What You See",
+   "key": "tellmewhatyousee",
+   "album": "Help!",
+   "bpm": 136,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "I've Just Seen a Face",
+   "key": "ivejustseenaface",
+   "album": "Help!",
+   "bpm": 120,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Yesterday",
+   "key": "yesterday",
+   "album": "Help!",
+   "bpm": 96,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Dizzy Miss Lizzy",
+   "key": "dizzymisslizzy",
+   "album": "Help!",
+   "bpm": 136,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Drive My Car",
+   "key": "drivemycar",
+   "album": "Rubber Soul",
+   "bpm": 123,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Norwegian Wood (This Bird Has Flown)",
+   "key": "norwegianwood",
+   "album": "Rubber Soul",
+   "bpm": 178,
+   "beats_per_bar": 3
+  },
+  {
+   "title": "You Won't See Me",
+   "key": "youwontseeme",
+   "album": "Rubber Soul",
+   "bpm": 115,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Nowhere Man",
+   "key": "nowhereman",
+   "album": "Rubber Soul",
+   "bpm": 120,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Think For Yourself",
+   "key": "thinkforyourself",
+   "album": "Rubber Soul",
+   "bpm": 129,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "The Word",
+   "key": "theword",
+   "album": "Rubber Soul",
+   "bpm": 122,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Michelle",
+   "key": "michelle",
+   "album": "Rubber Soul",
+   "bpm": 117,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "What Goes On",
+   "key": "whatgoeson",
+   "album": "Rubber Soul",
+   "bpm": 97,
+   "beats_per_bar": 2
+  },
+  {
+   "title": "Girl",
+   "key": "girl",
+   "album": "Rubber Soul",
+   "bpm": 96,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "I'm Looking Through You",
+   "key": "imlookingthroughyou",
+   "album": "Rubber Soul",
+   "bpm": 86,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "In My Life",
+   "key": "inmylife",
+   "album": "Rubber Soul",
+   "bpm": 103,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Wait",
+   "key": "wait",
+   "album": "Rubber Soul",
+   "bpm": 129,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "If I Needed Someone",
+   "key": "ifineededsomeone",
+   "album": "Rubber Soul",
+   "bpm": 126,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Run For Your Life",
+   "key": "runforyourlife",
+   "album": "Rubber Soul",
+   "bpm": 89,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Taxman",
+   "key": "taxman",
+   "album": "Revolver",
+   "bpm": 133,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Eleanor Rigby",
+   "key": "eleanorrigby",
+   "album": "Revolver",
+   "bpm": 140,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "I'm Only Sleeping",
+   "key": "imonlysleeping",
+   "album": "Revolver",
+   "bpm": 103,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Love You To",
+   "key": "loveyouto",
+   "album": "Revolver",
+   "bpm": 126,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Here, There And Everywhere",
+   "key": "herethereandeverywhere",
+   "album": "Revolver",
+   "bpm": 83,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Yellow Submarine",
+   "key": "yellowsubmarine",
+   "album": "Revolver",
+   "bpm": 110,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "She Said She Said",
+   "key": "shesaidshesaid",
+   "album": "Revolver",
+   "bpm": 107,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Good Day Sunshine",
+   "key": "gooddaysunshine",
+   "album": "Revolver",
+   "bpm": 117,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "And Your Bird Can Sing",
+   "key": "andyourbirdcansing",
+   "album": "Revolver",
+   "bpm": 132,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "For No One",
+   "key": "fornoone",
+   "album": "Revolver",
+   "bpm": 162,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Doctor Robert",
+   "key": "doctorrobert",
+   "album": "Revolver",
+   "bpm": 162,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "I Want To Tell You",
+   "key": "iwanttotellyou",
+   "album": "Revolver",
+   "bpm": 126,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Got To Get You Into My Life",
+   "key": "gottogetyouintomylife",
+   "album": "Revolver",
+   "bpm": 136,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Tomorrow Never Knows",
+   "key": "tomorrowneverknows",
+   "album": "Revolver",
+   "bpm": 126,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Sgt. Pepper's Lonely Hearts Club Band",
+   "key": "sgtpepperslonelyheartsclubband",
+   "album": "Sgt. Pepper's Lonely Hearts Club Band",
+   "bpm": 96,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "With A Little Help From My Friends",
+   "key": "withalittlehelpfrommyfriends",
+   "album": "Sgt. Pepper's Lonely Hearts Club Band",
+   "bpm": 112,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Lucy In The Sky With Diamonds",
+   "key": "lucyintheskywithdiamonds",
+   "album": "Sgt. Pepper's Lonely Hearts Club Band",
+   "bpm": 129,
+   "beats_per_bar": 3
+  },
+  {
+   "title": "Getting Better",
+   "key": "gettingbetter",
+   "album": "Sgt. Pepper's Lonely Hearts Club Band",
+   "bpm": 123,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Fixing A Hole",
+   "key": "fixingahole",
+   "album": "Sgt. Pepper's Lonely Hearts Club Band",
+   "bpm": 112,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "She's Leaving Home",
+   "key": "shesleavinghome",
+   "album": "Sgt. Pepper's Lonely Hearts Club Band",
+   "bpm": 126,
+   "beats_per_bar": 3
+  },
+  {
+   "title": "Being For The Benefit Of Mr. Kite!",
+   "key": "beingforthebenefitofmrkite",
+   "album": "Sgt. Pepper's Lonely Hearts Club Band",
+   "bpm": 114,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Within You Without You",
+   "key": "withinyouwithoutyou",
+   "album": "Sgt. Pepper's Lonely Hearts Club Band",
+   "bpm": 126,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "When I'm Sixty-Four",
+   "key": "whenimsixtyfour",
+   "album": "Sgt. Pepper's Lonely Hearts Club Band",
+   "bpm": 140,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Lovely Rita",
+   "key": "lovelyrita",
+   "album": "Sgt. Pepper's Lonely Hearts Club Band",
+   "bpm": 88,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Good Morning Good Morning",
+   "key": "goodmorninggoodmorning",
+   "album": "Sgt. Pepper's Lonely Hearts Club Band",
+   "bpm": 123,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Sgt. Pepper's Lonely Hearts Club Band (Reprise)",
+   "key": "sgtpepperslonelyheartsclubband",
+   "album": "Sgt. Pepper's Lonely Hearts Club Band",
+   "bpm": 120,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "A Day In The Life",
+   "key": "adayinthelife",
+   "album": "Sgt. Pepper's Lonely Hearts Club Band",
+   "bpm": 81,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Magical Mystery Tour",
+   "key": "magicalmysterytour",
+   "album": "Magical Mystery Tour",
+   "bpm": 85,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "The Fool On The Hill",
+   "key": "thefoolonthehill",
+   "album": "Magical Mystery Tour",
+   "bpm": 73,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Flying",
+   "key": "flying",
+   "album": "Magical Mystery Tour",
+   "bpm": 92,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Blue Jay Way",
+   "key": "bluejayway",
+   "album": "Magical Mystery Tour",
+   "bpm": 100,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Your Mother Should Know",
+   "key": "yourmothershouldknow",
+   "album": "Magical Mystery Tour",
+   "bpm": 117,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "I Am The Walrus",
+   "key": "iamthewalrus",
+   "album": "Magical Mystery Tour",
+   "bpm": 86,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Hello Goodbye",
+   "key": "hellogoodbye",
+   "album": "Magical Mystery Tour",
+   "bpm": 99,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Strawberry Fields Forever",
+   "key": "strawberryfieldsforever",
+   "album": "Magical Mystery Tour",
+   "bpm": 98,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Penny Lane",
+   "key": "pennylane",
+   "album": "Magical Mystery Tour",
+   "bpm": 115,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Baby You're A Rich Man",
+   "key": "babyyourearichman",
+   "album": "Magical Mystery Tour",
+   "bpm": 97,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "All You Need Is Love",
+   "key": "allyouneedislove",
+   "album": "Magical Mystery Tour",
+   "bpm": 103,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Back in the USSR",
+   "key": "backintheussr",
+   "album": "The Beatles",
+   "bpm": 144,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Dear Prudence",
+   "key": "dearprudence",
+   "album": "The Beatles",
+   "bpm": 76,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Glass Onion",
+   "key": "glassonion",
+   "album": "The Beatles",
+   "bpm": 120,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Ob-La-Di, Ob-La-Da",
+   "key": "obladioblada",
+   "album": "The Beatles",
+   "bpm": 112,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Wild Honey Pie",
+   "key": "wildhoneypie",
+   "album": "The Beatles",
+   "bpm": 90,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "The Continuing Story of Bungalow Bill",
+   "key": "thecontinuingstoryofbungalowbill",
+   "album": "The Beatles",
+   "bpm": 115,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "While My Guitar Gently Weeps",
+   "key": "whilemyguitargentlyweeps",
+   "album": "The Beatles",
+   "bpm": 115,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Happiness is a Warm Gun",
+   "key": "happinessisawarmgun",
+   "album": "The Beatles",
+   "bpm": 140,
+   "beats_per_bar": 3
+  },
+  {
+   "title": "Martha My Dear",
+   "key": "marthamydear",
+   "album": "The Beatles",
+   "bpm": 89,
+   "beats_per_bar": 2
+  },
+  {
+   "title": "I'm So Tired",
+   "key": "imsotired",
+   "album": "The Beatles",
+   "bpm": 72,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Black Bird",
+   "key": "blackbird",
+   "album": "The Beatles",
+   "bpm": 94,
+   "beats_per_bar": 2
+  },
+  {
+   "title": "Piggies",
+   "key": "piggies",
+   "album": "The Beatles",
+   "bpm": 92,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Rocky Raccoon",
+   "key": "rockyraccoon",
+   "album": "The Beatles",
+   "bpm": 81,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Don't Pass Me By",
+   "key": "dontpassmeby",
+   "album": "The Beatles",
+   "bpm": 85,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Why Don't We Do It In The Road",
+   "key": "whydontwedoitintheroad",
+   "album": "The Beatles",
+   "bpm": 94,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "I Will",
+   "key": "iwill",
+   "album": "The Beatles",
+   "bpm": 103,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Julia",
+   "key": "julia",
+   "album": "The Beatles",
+   "bpm": 67,
+   "beats_per_bar": 2
+  },
+  {
+   "title": "Birthday",
+   "key": "birthday",
+   "album": "The Beatles",
+   "bpm": 140,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Yer Blues",
+   "key": "yerblues",
+   "album": "The Beatles",
+   "bpm": 152,
+   "beats_per_bar": 3
+  },
+  {
+   "title": "Mother Nature's Son",
+   "key": "mothernaturesson",
+   "album": "The Beatles",
+   "bpm": 85,
+   "beats_per_bar": 2
+  },
+  {
+   "title": "Everybody's Got Something To Hide Except Me and My Monkey",
+   "key": "everybodysgotsomethingtohideexceptmeandmymonkey",
+   "album": "The Beatles",
+   "bpm": 117,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Sexy Sadie",
+   "key": "sexysadie",
+   "album": "The Beatles",
+   "bpm": 76,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Helter Skelter",
+   "key": "helterskelter",
+   "album": "The Beatles",
+   "bpm": 83,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Long Long Long",
+   "key": "longlonglong",
+   "album": "The Beatles",
+   "bpm": 105,
+   "beats_per_bar": 3
+  },
+  {
+   "title": "Revolution 1",
+   "key": "revolution1",
+   "album": "The Beatles",
+   "bpm": 99,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Honey Pie",
+   "key": "honeypie",
+   "album": "The Beatles",
+   "bpm": 138,
+   "beats_per_bar": 2
+  },
+  {
+   "title": "Savoy Truffle",
+   "key": "savoytruffle",
+   "album": "The Beatles",
+   "bpm": 120,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Cry Baby Cry",
+   "key": "crybabycry",
+   "album": "The Beatles",
+   "bpm": 77,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Good Night",
+   "key": "goodnight",
+   "album": "The Beatles",
+   "bpm": 66,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Come Together",
+   "key": "cometogether",
+   "album": "Abbey Road",
+   "bpm": 83,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Something",
+   "key": "something",
+   "album": "Abbey Road",
+   "bpm": 66,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Maxwell's Silver Hammer",
+   "key": "maxwellssilverhammer",
+   "album": "Abbey Road",
+   "bpm": 132,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Oh! Darling",
+   "key": "ohdarling",
+   "album": "Abbey Road",
+   "bpm": 172,
+   "beats_per_bar": 12
+  },
+  {
+   "title": "Octopus's Garden",
+   "key": "octopussgarden",
+   "album": "Abbey Road",
+   "bpm": 92,
+   "beats_per_bar": 2
+  },
+  {
+   "title": "I Want You",
+   "key": "iwantyou",
+   "album": "Abbey Road",
+   "bpm": 140,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Here Comes The Sun",
+   "key": "herecomesthesun",
+   "album": "Abbey Road",
+   "bpm": 129,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Because",
+   "key": "because",
+   "album": "Abbey Road",
+   "bpm": 81,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "You Never Give Me Your Money",
+   "key": "younevergivemeyourmoney",
+   "album": "Abbey Road",
+   "bpm": 89,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Sun King",
+   "key": "sunking",
+   "album": "Abbey Road",
+   "bpm": 75,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Mean Mr Mustard",
+   "key": "meanmrmustard",
+   "album": "Abbey Road",
+   "bpm": 101,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Polythene Pam",
+   "key": "polythenepam",
+   "album": "Abbey Road",
+   "bpm": 165,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "She Came In Through The Bathroom Window",
+   "key": "shecameinthroughthebathroomwindow",
+   "album": "Abbey Road",
+   "bpm": 81,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Golden Slumbers",
+   "key": "goldenslumbers",
+   "album": "Abbey Road",
+   "bpm": 81,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Carry That Weight",
+   "key": "carrythatweight",
+   "album": "Abbey Road",
+   "bpm": 85,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "The End",
+   "key": "theend",
+   "album": "Abbey Road",
+   "bpm": 123,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Her Majesty",
+   "key": "hermajesty",
+   "album": "Abbey Road",
+   "bpm": 101,
+   "beats_per_bar": 2
+  },
+  {
+   "title": "Two of Us",
+   "key": "twoofus",
+   "album": "Let It Be",
+   "bpm": 110,
+   "beats_per_bar": 2
+  },
+  {
+   "title": "Dig a Pony",
+   "key": "digapony",
+   "album": "Let It Be",
+   "bpm": 117,
+   "beats_per_bar": 3
+  },
+  {
+   "title": "Across the Universe",
+   "key": "acrosstheuniverse",
+   "album": "Let It Be",
+   "bpm": 152,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "I Me Mine",
+   "key": "imemine",
+   "album": "Let It Be",
+   "bpm": 180,
+   "beats_per_bar": 3
+  },
+  {
+   "title": "Dig It",
+   "key": "digit",
+   "album": "Let It Be",
+   "bpm": 157,
+   "beats_per_bar": 3
+  },
+  {
+   "title": "Let It Be",
+   "key": "letitbe",
+   "album": "Let It Be",
+   "bpm": 70,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Maggie Mae",
+   "key": "maggiemae",
+   "album": "Let It Be",
+   "bpm": 85,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "I've Got A Feeling",
+   "key": "ivegotafeeling",
+   "album": "Let It Be",
+   "bpm": 83,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "One After 909",
+   "key": "oneafter909",
+   "album": "Let It Be",
+   "bpm": 91,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "The Long and Winding Road",
+   "key": "thelongandwindingroad",
+   "album": "Let It Be",
+   "bpm": 66,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "For You Blue",
+   "key": "foryoublue",
+   "album": "Let It Be",
+   "bpm": 129,
+   "beats_per_bar": 4
+  },
+  {
+   "title": "Get Back",
+   "key": "getback",
+   "album": "Let It Be",
+   "bpm": 123,
+   "beats_per_bar": 4
+  }
+ ]
+}

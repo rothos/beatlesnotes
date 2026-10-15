@@ -6,7 +6,7 @@
 {% block bodyclass %}page-essay kind-{{ e.kind }}{% endblock %}
 
 {% block main %}
-<article class="essay" data-slug="{{ e.slug }}" data-series="{{ e.series }}" data-meter="{{ main.meter_short or '' }}"
+<article class="essay" data-slug="{{ e.slug }}" data-series="{{ e.series }}" data-meter="{{ main.meter_short or '' }}"{% if main.bpm %} data-bpm="{{ main.bpm }}" data-bpb="{{ main.bpb }}"{% endif %}
   {% if series_prev %}data-prev="{{ root }}{{ series_prev.url }}"{% endif %} {% if series_next %}data-next="{{ root }}{{ series_next.url }}"{% endif %}>
 
   <aside class="rail" aria-label="Outline">
@@ -53,7 +53,7 @@
     <div class="prose">
     {% for p in r.parts %}
       {% if loop.index0 > 0 or (p.part.id != 'main' and r.parts|length > 1) %}
-      <section class="part" id="{{ p.part.id }}">
+      <section class="part" id="{{ p.part.id }}"{% if p.part.bpm %} data-bpm="{{ p.part.bpm }}" data-bpb="{{ p.part.bpb }}"{% endif %}{% if p.part.meter_short %} data-meter="{{ p.part.meter_short }}"{% endif %}>
         {% if loop.index0 > 0 %}
         <header class="part-head">
           {% if p.part.series %}<p class="kicker">No. {{ p.part.series }}</p>{% endif %}

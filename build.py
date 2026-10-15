@@ -233,6 +233,13 @@ def main():
     projects = load_json("projects.json")
     alphabet = load_json("alphabet.json")
     glossary = load_json("glossary.json") if (DATA / "glossary.json").exists() else []
+    tempo_data = load_json("tempo.json") if (DATA / "tempo.json").exists() else {"songs": []}
+    tempos = {t["key"]: t for t in tempo_data["songs"]}
+
+    def tempo_key(title):
+        t = title.lower().replace("&", "and")
+        t = re.sub(r"\(.*?\)", "", t)
+        return re.sub(r"[^a-z0-9]+", "", t)
 
     # ---------------------------------------------------------------- essays
     essays: dict[str, dict] = {}
@@ -247,6 +254,9 @@ def main():
                 part["key_info"] = parse_key(meta.get("key"))
                 part["meter_short"] = parse_meter(meta.get("meter"))
                 part["form_parts"] = parse_form(meta.get("form"))
+                t = tempos.get(tempo_key(part.get("title", ""))) if meta else None
+                if t:
+                    part["bpm"], part["bpb"] = t["bpm"], t["beats_per_bar"]
             essays[fm["slug"]] = fm
 
     def resolve(link: str | None):

@@ -27,6 +27,7 @@ data/               WHAT — structured indexes (JSON)
   projects.json       twelve recording projects (Eerola)
   alphabet.json       alphabetical index with MacDonald numbers
   glossary.json       definitions written for this edition
+  tempo.json          record tempos from the Isophonics beat annotations (tools/import_tempo.py)
 site/               HOW — presentation only
   site.toml           title, base URL
   templates/*.html    Jinja templates
@@ -51,7 +52,8 @@ tools/import_mirror.py   one-time importer from the mirror (read-only source)
 ## Features
 
 - Full-text search over every note (`/` or ⌘K), with matches highlighted on the page you open.
-- Chord charts as bars, with Web Audio playback, a tempo slider and the typed version a click away.
+- Chord charts as bars, with Web Audio playback starting at the record's tempo (measured from the
+  Isophonics beat annotations for the 12 studio albums; 120 bpm elsewhere), a tempo slider, and the typed version a click away.
 - A form strip for each song, linked to the section walkthrough.
 - The canon as a grid on the home page, coloured by key, by mode, by year written or by what you've read.
 - A sortable, filterable song table with a shareable URL and a circle-of-fifths summary of keys.

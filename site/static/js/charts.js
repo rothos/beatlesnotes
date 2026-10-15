@@ -13,7 +13,17 @@
   const LABEL_RE = /^\s*(chords?|bass(?:line)?|bottom|top|melody|tune|guitar|piano|organ|voices?|vocal|harmony)\s*:\s*$/i;
   const KEY_RE = /^\s*([A-Ga-g](?:#|b|-flat|-sharp)?)\s*:\s*$/;
 
+  const FIGURE_RE = /^(\(?[A-Ga-g](?:#|b(?![a-z])|-flat|-sharp)?)(7)?(6\/4|6\/3|6\/5|4\/3|4\/2)(\)?)$/;
+  const INVERSION = { "6/3": 1, "6/5": 1, "6/4": 2, "4/3": 2, "4/2": 3 };
+
   function parseChord(tok, prev) {
+    const fm = FIGURE_RE.exec(tok);
+    if (fm) {
+      const base = parseChord(fm[1] + (fm[2] || "") + (/^(6\/5|4\/3|4\/2)$/.test(fm[3]) ? "7" : "") + fm[4], null);
+      if (!base) return null;
+      const inv = INVERSION[fm[3]];
+      return Object.assign(base, { text: tok, bass: (base.pc + base.iv[Math.min(inv, base.iv.length - 1)]) % 12 });
+    }
     if (QUALITY_ONLY.test(tok) && prev) {
       const name = (prev.minor ? prev.root.toLowerCase() : prev.root.toUpperCase()) + prev.acc + tok.replace(/^-/, "");
       const c = parseChord(name, null);
@@ -94,7 +104,7 @@
         if (HOLD.test(x.t)) { beats.push({ hold: true, c: x.c, text: "–" }); ok++; return; }
         const ch = role === "chords" || role === "bass" ? parseChord(x.t, prev) : null;
         if (ch) { beats.push({ chord: ch, c: x.c, text: ch.text }); prev = ch; ok++; }
-        else { beats.push({ text: x.t, c: x.c }); bad++; }
+        else { beats.push({ text: x.t, c: x.c, word: true }); bad++; }
       });
       return { s: b.s, e: b.e, beats, open: b.open };
     });
@@ -154,7 +164,8 @@
       const hasNumerals = after.some((a) => a.numeral);
       let r = readBars(line, bl, role);
       const avg = r.n / Math.max(1, r.bars.length);
-      if (role === "chords" && (r.bad > 0 || r.ok === 0 || (!hasNumerals && avg > 2.5))) {
+      const mostlyChords = r.ok > 0 && r.bad <= Math.max(1, Math.floor(r.ok / 3));
+      if (role === "chords" && (!mostlyChords || (r.bad > 0 && !hasNumerals) || (!hasNumerals && avg > 2.5))) {
         role = "other";
         r = readBars(line, bl, role);
       }
@@ -230,9 +241,8 @@
     return { notes, bass };
   }
 
-  function strike(t, dur, v, vel) {
-    const out = ctx.createGain();
-    out.connect(master);
+  function strike(bus, oscs, t, dur, v, vel) {
+    const out = bus;
     const end = t + dur;
     const all = v.notes.map((m) => [m, 0.16]).concat([[v.bass, 0.32]]);
     all.forEach(([m, amp]) => {
@@ -248,6 +258,7 @@
         const o = ctx.createOscillator();
         o.type = type; o.frequency.value = midiHz(m); o.detune.value = cents;
         o.connect(g); o.start(t); o.stop(end + 0.3);
+        oscs.push(o);
       });
     });
   }
@@ -259,8 +270,14 @@
     current.btn.setAttribute("aria-pressed", "false");
     current.btn.setAttribute("aria-label", "Play this progression");
     current.btn.innerHTML = PLAY_ICON;
-    try { current.out && current.out.disconnect(); } catch (e) { /* ignore */ }
-    if (master) { master.gain.cancelScheduledValues(ctx.currentTime); master.gain.setTargetAtTime(0, ctx.currentTime, 0.03); setTimeout(() => master && (master.gain.value = 0.22), 120); }
+    // notes are scheduled ahead of time: fade this performance's bus out, then cancel every oscillator
+    const { bus, oscs } = current;
+    const now = ctx.currentTime;
+    bus.gain.cancelScheduledValues(now);
+    bus.gain.setValueAtTime(bus.gain.value, now);
+    bus.gain.linearRampToValueAtTime(0, now + 0.04);
+    oscs.forEach((o) => { try { o.stop(now + 0.05); } catch (e) { /* already stopped */ } });
+    setTimeout(() => { try { bus.disconnect(); } catch (e) { /* ignore */ } }, 120);
     current = null;
   }
 
@@ -271,6 +288,9 @@
     const secPerBeat = 60 / bpm;
     const barDur = secPerBeat * beatsPerBar;
     const t0 = ctx.currentTime + 0.08;
+    const bus = ctx.createGain();
+    bus.connect(master);
+    const oscs = [];
     const timers = [];
     let t = t0, last = null, voicing = null;
     const barEls = fig.querySelectorAll(".bars .bar[data-playable]");
@@ -300,17 +320,17 @@
           const chord = e.b.chord || last;
           if (!chord) return;
           voicing = e.b.chord ? voice(chord, voicing && voicing.notes) : voicing || voice(chord, null);
-          strike(st, en - st, voicing, e.b.chord ? (chord.implied ? 0.55 : 1) : 0.5);
+          strike(bus, oscs, st, en - st, voicing, e.b.chord ? (chord.implied ? 0.55 : 1) : 0.5);
           last = chord;
         });
         t += barDur;
       });
     });
-    timers.push(setTimeout(stop, (t - ctx.currentTime) * 1000 + 300));
+    timers.push(setTimeout(() => { if (current && current.fig === fig) stop(); }, (t - ctx.currentTime) * 1000 + 300));
     btn.setAttribute("aria-pressed", "true");
     btn.setAttribute("aria-label", "Stop");
     btn.innerHTML = STOP_ICON;
-    current = { fig, btn, timers };
+    current = { fig, btn, timers, bus, oscs };
   }
 
   const PLAY_ICON = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 1.2v9.6L10.5 6z" fill="currentColor"/></svg>';
@@ -330,7 +350,8 @@
     wrap.innerHTML =
       `<div class="bars-head"><button type="button" class="playbtn" aria-pressed="false" aria-label="Play this progression">${PLAY_ICON}</button>` +
       (key ? `<span class="bars-key">in ${escapeHtml(key)}</span>` : "") +
-      `<label class="tempo" for="${tempoId}">Tempo <input id="${tempoId}" type="range" min="50" max="180" step="2" value="${opts.bpm || 104}"><output>${opts.bpm || 104} bpm</output></label></div>`;
+      `<label class="tempo" for="${tempoId}">Tempo <input id="${tempoId}" type="range" min="40" max="220" step="1" value="${opts.bpm || 120}"><output>${opts.bpm || 120} bpm</output></label>` +
+      (opts.recorded ? `<span class="tempo-note" title="Measured from the Isophonics beat annotations of the record">the record’s tempo</span>` : "") + `</div>`;
     model.systems.forEach((sys) => {
       const row = document.createElement("div");
       row.className = "bar-row" + (sys.role === "bass" ? " bassline" : sys.role === "other" ? " otherline" : "");
@@ -342,7 +363,7 @@
         if (sys.role === "chords") b.dataset.playable = "";
         b.innerHTML = (bar.beats.length ? bar.beats : [{ hold: true, text: "" }]).map((bt) => {
           const ch = bt.chord ? prettyChord(bt.text) : bt.hold ? "–" : escapeHtml(bt.text || "");
-          const cls = bt.hold || bt.empty ? "ch hold" : "ch";
+          const cls = bt.hold || bt.empty ? "ch hold" : bt.word ? "ch word" : "ch";
           return `<span class="beat"><span class="${cls}">${ch || "&nbsp;"}</span><span class="rn">${bt.rn ? prettyNumeral(bt.rn) : ""}</span>` +
             (bt.rn2 ? `<span class="rn rn2">${prettyNumeral(bt.rn2)}</span>` : "") +
             (bt.note ? `<span class="bnote">${escapeHtml(bt.note)}</span>` : "") + `</span>`;
@@ -374,13 +395,16 @@
   else {
     global.PNCharts = api;
     const init = () => {
-      const art = document.querySelector("article.essay");
-      const meter = art && art.dataset.meter;
-      const m = /^(\d+)\/(\d+)/.exec(meter || "");
-      let beats = m ? +m[1] : 4;
-      if (m && m[2] === "8" && beats % 3 === 0) beats = beats / 3;  // compound meters: count the big beats
-      if (beats < 2 || beats > 7) beats = 4;
-      document.querySelectorAll("figure.chart").forEach((f) => render(f, { beatsPerBar: beats }));
+      document.querySelectorAll("figure.chart").forEach((f) => {
+        const host = f.closest("[data-bpm]") || f.closest("[data-meter]") || document.querySelector("article.essay") || document.body;
+        const meterHost = f.closest("[data-meter]") || host;
+        const m = /^(\d+)\/(\d+)/.exec(meterHost.dataset.meter || "");
+        let beats = host.dataset.bpb ? +host.dataset.bpb : m ? +m[1] : 4;
+        if (!host.dataset.bpb && m && m[2] === "8" && beats % 3 === 0) beats = beats / 3;  // compound meters: count the big beats
+        if (beats < 2 || beats > 7) beats = 4;
+        const bpm = host.dataset.bpm ? +host.dataset.bpm : null;
+        render(f, { beatsPerBar: beats, bpm: bpm || 120, recorded: !!bpm });
+      });
       document.addEventListener("keydown", (e) => { if (e.key === "Escape") stop(); });
     };
     if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init); else init();
