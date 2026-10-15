@@ -61,12 +61,16 @@
     sync();
     // reaching the end of a note after a while counts as reading it
     const opened = Date.now();
+    const MIN_MS = 20000;
     const end = art.querySelector(".signoff") || art.querySelector(".essay-foot");
     if (end && "IntersectionObserver" in window) {
+      let visible = false, timer = null;
+      const mark = () => { if (visible && !PN.isRead(slug)) { PN.setRead(slug, true); sync(); io.disconnect(); } };
       const io = new IntersectionObserver((entries) => {
-        if (entries.some((en) => en.isIntersecting) && Date.now() - opened > 20000 && !PN.isRead(slug)) {
-          PN.setRead(slug, true); sync(); io.disconnect();
-        }
+        visible = entries.some((en) => en.isIntersecting);
+        clearTimeout(timer);
+        // if the end is on screen before 20 s have passed, check again once they have
+        if (visible) timer = setTimeout(mark, Math.max(0, MIN_MS - (Date.now() - opened)));
       });
       io.observe(end);
     }
