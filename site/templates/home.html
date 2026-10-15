@@ -13,7 +13,7 @@
       <span>Colour by</span>
       <button type="button" data-color="key" aria-pressed="true">Key</button>
       <button type="button" data-color="mode" aria-pressed="false">Major or minor</button>
-      <button type="button" data-color="written" aria-pressed="false">Year Pollack wrote it</button>
+      <button type="button" data-color="written" aria-pressed="false">When Pollack wrote it</button>
       <button type="button" data-color="read" aria-pressed="false">What you’ve read</button>
     </div>
     <ol class="canon-grid" id="canon-grid">
@@ -29,7 +29,7 @@
                    href="{{ s.href or '#' }}" {% if s.key_info %}style="--kc: {{ s.key_info.color }}"{% endif %}
                    data-written="{{ s.written }}" data-href="{{ s.href }}"
                    aria-label="{{ s.title }}{% if s.key %}, {{ s.key }}{% endif %}"
-                   data-tip="{{ s.title }}|{{ s.key }}|{{ rel.title }} ({{ rel.year }})"></a></li>
+                   data-tip="{{ s.title }}|{{ s.key }}|{{ rel.title }} ({{ rel.year }})|{{ s.written | nicedate }}"></a></li>
           {% endfor %}
           </ol>
         </li>

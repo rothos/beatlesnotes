@@ -32,7 +32,7 @@
 
     <header class="essay-head" id="top">
       <p class="kicker">
-        {% if e.kind == 'extra' %}Notes on … extras{% elif num %}Notes on … no. {{ num }}{% endif %}
+        {% if e.kind == 'extra' %}Notes on … extras{% elif num %}Notes on … no. {{ num }}{% endif %}{% if e.written_date %}, first posted {{ e.written_date | nicedate }}{% if e.revised_date and e.revised_date[:4] != e.written_date[:4] %}, revised {{ e.revised_date[:4] }}{% endif %}{% endif %}
       </p>
       <h1>{{ e.title }}</h1>
       {% if main.meta %}

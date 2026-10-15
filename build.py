@@ -109,6 +109,24 @@ def parse_form(s: str | None):
     return out
 
 
+def signoff_date(code: str | None):
+    """Pollack signs off "Alan (031200#5.1)": MMDDYY, then the note number."""
+    m = re.match(r"(\d\d)(\d\d)(\d\d)", code or "")
+    if not m:
+        return None
+    mm, dd, yy = m.groups()
+    return f"{'19' if int(yy) > 50 else '20'}{yy}-{mm}-{dd}"
+
+
+def essay_dates(fm):
+    """(first written, last revised) as ISO dates, from the revision history and the sign-off."""
+    dates = sorted(r["date"] for r in fm.get("revisions", []) if r.get("date"))
+    so = signoff_date(fm.get("signoff"))
+    first = dates[0] if dates else so
+    last = max([d for d in dates + [so] if d], default=None)
+    return first, last
+
+
 def release_year(info: str):
     m = re.search(r"\b(19\d\d)\b", info or "")
     return int(m.group(1)) if m else None
@@ -225,6 +243,8 @@ def main():
 
     env = Environment(loader=FileSystemLoader(SITE / "templates"), autoescape=select_autoescape(["html"]),
                       trim_blocks=True, lstrip_blocks=True)
+    MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+    env.filters["nicedate"] = lambda d: f"{int(d[8:10])} {MONTHS[int(d[5:7]) - 1]} {d[:4]}" if d and len(d) >= 10 else (d or "")
     env.filters["tojson_attr"] = lambda v: html.escape(json.dumps(v, ensure_ascii=False))
     config = tomllib.loads((SITE / "site.toml").read_text())
 
@@ -257,6 +277,7 @@ def main():
                 t = tempos.get(tempo_key(part.get("title", ""))) if meta else None
                 if t:
                     part["bpm"], part["bpb"] = t["bpm"], t["beats_per_bar"]
+            fm["written_date"], fm["revised_date"] = essay_dates(fm)
             essays[fm["slug"]] = fm
 
     def resolve(link: str | None):
@@ -327,7 +348,8 @@ def main():
                 "href": tr["href"], "slug": e["slug"] if e else None,
                 "release": rel["title"], "release_format": rel["format"], "release_no": rel["no"], "release_slug": rel["slug"],
                 "year": rel["year"], "series": al.get("no") or (part or {}).get("series") or (e or {}).get("series", ""),
-                "written": al.get("year", ""), "macdonald": al.get("macdonald", ""),
+                "written": (e or {}).get("written_date") or "", "revised": (e or {}).get("revised_date") or "",
+                "macdonald": al.get("macdonald", ""),
                 "key": meta.get("key", ""), "key_info": (part or {}).get("key_info"),
                 "meter": meta.get("meter", ""), "meter_short": (part or {}).get("meter_short"),
                 "form": (part or {}).get("form_parts", []),
@@ -353,7 +375,8 @@ def main():
             meta = part["meta"]
             songs.append({"canon": "", "md": "", "title": part["title"], "kind": "extra", "note": None, "href": href,
                           "slug": slug, "release": "Not on an official release", "release_format": "", "release_no": None,
-                          "release_slug": "", "year": None, "series": part.get("series", ""), "written": "", "macdonald": "",
+                          "release_slug": "", "year": None, "series": part.get("series", ""), "written": e.get("written_date") or "",
+                          "revised": e.get("revised_date") or "", "macdonald": "",
                           "key": meta.get("key", ""), "key_info": part.get("key_info"), "meter": meta.get("meter", ""),
                           "meter_short": part.get("meter_short"), "form": part.get("form_parts", []),
                           "composer": meta.get("composer", ""), "recorded": meta.get("recorded", ""), "project": None, "project_title": ""})

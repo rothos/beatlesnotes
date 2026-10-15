@@ -16,7 +16,7 @@
     key: () => FIFTHS.map((n, i) => `<span class="lg"><i style="background: ${COLORS[i]}"></i>${n}</span>`).join("") +
       `<span class="lg muted"><i class="lg-minor" style="background: var(--pencil); position: relative"></i>dot: minor key</span>`,
     mode: () => `<span class="lg"><i style="background: var(--staff)"></i>Major</span><span class="lg"><i style="background: var(--ink)"></i>Minor</span>`,
-    written: () => `<span class="lg"><i style="background: oklch(0.88 0.09 250)"></i>1989</span><span class="lg"><i style="background: oklch(0.63 0.09 250)"></i>1994</span><span class="lg"><i style="background: oklch(0.28 0.09 250)"></i>2001</span>`,
+    written: () => `<span class="lg ramp-legend"><span>May 1989</span><i class="ramp"></i><span>2001</span></span><span class="lg muted">when Pollack first posted the note</span>`,
     read: () => {
       const n = tiles.filter((t) => t.classList.contains("is-read")).length;
       return `<span class="lg"><i style="background: var(--staff)"></i>Read (${n} of ${tiles.length})</span><span class="lg"><i style="background: var(--paper-3)"></i>Not yet</span>`;
@@ -28,9 +28,11 @@
     tiles.forEach((t) => t.classList.toggle("is-read", !!PN.isRead(PN.slugFromHref(t.getAttribute("href")))));
   }
 
+  // position of each note's first posting between May 1989 and the end of 2001, as 0..1
+  const T0 = Date.UTC(1989, 4, 1), T1 = Date.UTC(2001, 11, 31);
   tiles.forEach((t) => {
-    const y = parseInt(t.dataset.written, 10);
-    if (y) t.style.setProperty("--w", Math.min(12, y - 1989));
+    const d = Date.parse(t.dataset.written || "");
+    if (!isNaN(d)) t.style.setProperty("--w", Math.max(0, Math.min(1, (d - T0) / (T1 - T0))).toFixed(3));
   });
 
   function setMode(mode) {
@@ -43,9 +45,9 @@
 
   const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
   function show(t) {
-    const [title, key, rel] = (t.dataset.tip || "").split("|");
+    const [title, key, rel, written] = (t.dataset.tip || "").split("|");
     const read = t.classList.contains("is-read") ? ", read" : "";
-    tip.innerHTML = `<strong>${esc(title)}</strong>${key ? ", " + esc(key) : ""}. ${esc(rel)}${read}.`;
+    tip.innerHTML = `<strong>${esc(title)}</strong>${key ? ", " + esc(key) : ""}. ${esc(rel)}${written ? ". Note first posted " + esc(written) : ""}${read}.`;
   }
   fig.addEventListener("mouseover", (e) => { const t = e.target.closest(".tile"); if (t) show(t); });
   fig.addEventListener("focusin", (e) => { const t = e.target.closest(".tile"); if (t) show(t); });

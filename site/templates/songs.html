@@ -29,7 +29,7 @@
       <th scope="col" data-sort="release"><button type="button">First released on</button></th>
       <th scope="col" data-sort="recorded" class="num"><button type="button">Recorded</button></th>
       <th scope="col" data-sort="series" class="num"><button type="button">Note no.</button></th>
-      <th scope="col" data-sort="written" class="num"><button type="button">Written</button></th>
+      <th scope="col" data-sort="written" class="num"><button type="button">Note written</button></th>
     </tr>
   </thead>
   <tbody>
@@ -42,7 +42,7 @@
       <td>{% if s.release_slug %}<a href="albums.html#{{ s.release_slug }}">{{ s.release }}</a> <span class="muted">{{ s.year }}</span>{% else %}<span class="muted">{{ s.release }}</span>{% endif %}</td>
       <td class="num">{{ s.recorded }}</td>
       <td class="num">{{ s.series }}</td>
-      <td class="num">{{ s.written }}</td>
+      <td class="num"{% if s.written %} title="First posted {{ s.written | nicedate }}{% if s.revised and s.revised != s.written %}; last revised {{ s.revised | nicedate }}{% endif %}"{% endif %}>{{ s.written[:4] }}</td>
     </tr>
   {% endfor %}
   </tbody>
