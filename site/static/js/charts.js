@@ -241,9 +241,9 @@
     return { notes, bass };
   }
 
-  function strike(bus, oscs, t, dur, v, vel) {
-    const out = bus;
-    const end = t + dur;
+  // Start a chord at time t; it sustains until release() is called with the time the next chord starts.
+  function strike(bus, oscs, t, v, vel) {
+    const voices = [];
     const all = v.notes.map((m) => [m, 0.16]).concat([[v.bass, 0.32]]);
     all.forEach(([m, amp]) => {
       const g = ctx.createGain();
@@ -251,26 +251,39 @@
       g.gain.setValueAtTime(0.0001, t);
       g.gain.exponentialRampToValueAtTime(a, t + 0.012);
       g.gain.exponentialRampToValueAtTime(a * 0.45, t + 0.35);
-      g.gain.setValueAtTime(a * 0.45, Math.max(t + 0.35, end - 0.08));
-      g.gain.exponentialRampToValueAtTime(0.0001, end + 0.25);
-      g.connect(out);
-      [["triangle", 0], ["sine", 4]].forEach(([type, cents]) => {
+      g.connect(bus);
+      const os = [["triangle", 0], ["sine", 4]].map(([type, cents]) => {
         const o = ctx.createOscillator();
         o.type = type; o.frequency.value = midiHz(m); o.detune.value = cents;
-        o.connect(g); o.start(t); o.stop(end + 0.3);
+        o.connect(g); o.start(t);
         oscs.push(o);
+        return o;
       });
+      voices.push({ g, os, a, t });
+    });
+    return voices;
+  }
+
+  function release(voices, t) {
+    voices.forEach(({ g, os, a, t: t0 }) => {
+      const at = Math.max(t, t0 + 0.02);
+      g.gain.cancelScheduledValues(at);
+      g.gain.setValueAtTime(at < t0 + 0.35 ? a : a * 0.45, at);
+      g.gain.exponentialRampToValueAtTime(0.0001, at + 0.25);
+      os.forEach((o) => { try { o.stop(at + 0.3); } catch (e) { /* already stopped */ } });
     });
   }
 
   function stop() {
     if (!current) return;
+    clearInterval(current.tick);
+    current.cleanup();
     current.timers.forEach(clearTimeout);
     current.fig.querySelectorAll(".bar.playing").forEach((b) => b.classList.remove("playing"));
     current.btn.setAttribute("aria-pressed", "false");
     current.btn.setAttribute("aria-label", "Play this progression");
     current.btn.innerHTML = PLAY_ICON;
-    // notes are scheduled ahead of time: fade this performance's bus out, then cancel every oscillator
+    // fade this performance's bus out, then cancel every oscillator it started
     const { bus, oscs } = current;
     const now = ctx.currentTime;
     bus.gain.cancelScheduledValues(now);
@@ -281,56 +294,83 @@
     current = null;
   }
 
-  function play(fig, model, btn, bpm, beatsPerBar) {
-    if (current && current.fig === fig) { stop(); return; }
-    stop();
-    audio();
-    const secPerBeat = 60 / bpm;
-    const barDur = secPerBeat * beatsPerBar;
-    const t0 = ctx.currentTime + 0.08;
-    const bus = ctx.createGain();
-    bus.connect(master);
-    const oscs = [];
-    const timers = [];
-    let t = t0, last = null, voicing = null;
+  // Turn the parsed chart into a timeline measured in beats.
+  function timeline(fig, model, beatsPerBar) {
+    const events = [];   // { beat, chord?, hold?, bar? }
     const barEls = fig.querySelectorAll(".bars .bar[data-playable]");
-    let barIndex = 0;
+    let beat = 0, barIndex = 0;
     model.systems.forEach((sys) => {
       if (sys.role !== "chords") return;
       sys.bars.forEach((bar) => {
         const el = barEls[barIndex++];
         const width = Math.max(1, bar.e - bar.s);
-        const events = bar.beats.filter((b) => b.chord || b.hold || b.empty).map((b) => ({
+        const evs = bar.beats.filter((b) => b.chord || b.hold || b.empty).map((b) => ({
           b, at: Math.min(beatsPerBar - 1, Math.max(0, Math.round(((b.c - bar.s - 1) / width) * beatsPerBar))),
         }));
         // two chords on the same beat: spread them evenly instead
-        for (let i = 1; i < events.length; i++) if (events[i].at <= events[i - 1].at) {
-          events.forEach((e, j) => (e.at = (j * beatsPerBar) / events.length)); break;
+        for (let i = 1; i < evs.length; i++) if (evs[i].at <= evs[i - 1].at) {
+          evs.forEach((e, j) => (e.at = (j * beatsPerBar) / evs.length)); break;
         }
-        if (!events.length) events.push({ b: { hold: true }, at: 0 });
-        if (events[0].at > 0) events.unshift({ b: { hold: true }, at: 0 });
-        const barStart = t;
-        timers.push(setTimeout(() => {
-          fig.querySelectorAll(".bar.playing").forEach((x) => x.classList.remove("playing"));
-          el && el.classList.add("playing");
-        }, Math.max(0, (barStart - ctx.currentTime) * 1000)));
-        events.forEach((e, j) => {
-          const st = barStart + e.at * secPerBeat;
-          const en = j + 1 < events.length ? barStart + events[j + 1].at * secPerBeat : barStart + barDur;
-          const chord = e.b.chord || last;
-          if (!chord) return;
-          voicing = e.b.chord ? voice(chord, voicing && voicing.notes) : voicing || voice(chord, null);
-          strike(bus, oscs, st, en - st, voicing, e.b.chord ? (chord.implied ? 0.55 : 1) : 0.5);
-          last = chord;
-        });
-        t += barDur;
+        if (!evs.length || evs[0].at > 0) evs.unshift({ b: { hold: true }, at: 0 });
+        evs.forEach((e, j) => events.push({ beat: beat + e.at, chord: e.b.chord || null, implied: e.b.chord && e.b.chord.implied, bar: j === 0 ? el : null }));
+        beat += beatsPerBar;
       });
     });
-    timers.push(setTimeout(() => { if (current && current.fig === fig) stop(); }, (t - ctx.currentTime) * 1000 + 300));
+    return { events, total: beat };
+  }
+
+  function play(fig, model, btn, slider, beatsPerBar) {
+    if (current && current.fig === fig) { stop(); return; }
+    stop();
+    audio();
+    const { events, total } = timeline(fig, model, beatsPerBar);
+    const bus = ctx.createGain();
+    bus.connect(master);
+    const oscs = [], timers = [];
+    // tempo can change at any moment: keep an anchor (beat, time) and the current seconds-per-beat
+    let spb = 60 / +slider.value;
+    let anchorBeat = 0, anchorTime = ctx.currentTime + 0.08;
+    const timeOf = (b) => anchorTime + (b - anchorBeat) * spb;
+    let next = 0, sounding = null, last = null, voicing = null, finished = false;
+
+    const tick = () => {
+      const horizon = ctx.currentTime + 0.15;
+      while (next < events.length && timeOf(events[next].beat) < horizon) {
+        const ev = events[next++];
+        const t = Math.max(timeOf(ev.beat), ctx.currentTime);
+        if (ev.bar) {
+          const el = ev.bar;
+          timers.push(setTimeout(() => {
+            fig.querySelectorAll(".bar.playing").forEach((x) => x.classList.remove("playing"));
+            el && el.classList.add("playing");
+          }, Math.max(0, (t - ctx.currentTime) * 1000)));
+        }
+        const chord = ev.chord || last;
+        if (!chord) continue;
+        voicing = ev.chord ? voice(chord, voicing && voicing.notes) : voicing || voice(chord, null);
+        if (sounding) release(sounding, t);
+        sounding = strike(bus, oscs, t, voicing, ev.chord ? (ev.implied ? 0.55 : 1) : 0.5);
+        last = chord;
+      }
+      if (next >= events.length && !finished && timeOf(total) < horizon) {
+        finished = true;
+        const end = timeOf(total);
+        if (sounding) release(sounding, end);
+        timers.push(setTimeout(() => { if (current && current.fig === fig) stop(); }, (end - ctx.currentTime) * 1000 + 350));
+      }
+    };
+    const onTempo = () => {
+      if (!current || current.fig !== fig) return;
+      const now = ctx.currentTime;
+      if (now > anchorTime) { anchorBeat += (now - anchorTime) / spb; anchorTime = now; }
+      spb = 60 / +slider.value;
+    };
+    slider.addEventListener("input", onTempo);
     btn.setAttribute("aria-pressed", "true");
     btn.setAttribute("aria-label", "Stop");
     btn.innerHTML = STOP_ICON;
-    current = { fig, btn, timers, bus, oscs };
+    current = { fig, btn, timers, bus, oscs, tick: setInterval(tick, 25), cleanup: () => slider.removeEventListener("input", onTempo) };
+    tick();
   }
 
   const PLAY_ICON = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 1.2v9.6L10.5 6z" fill="currentColor"/></svg>';
@@ -387,7 +427,7 @@
     const slider = wrap.querySelector(".tempo input");
     const out = wrap.querySelector(".tempo output");
     slider.addEventListener("input", () => { out.textContent = slider.value + " bpm"; });
-    btn.addEventListener("click", () => play(fig, model, btn, +slider.value, beatsPerBar));
+    btn.addEventListener("click", () => play(fig, model, btn, slider, beatsPerBar));
   }
 
   const api = { parse, parseChord, render, stop };
