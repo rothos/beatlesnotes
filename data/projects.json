@@ -1,0 +1,1377 @@
+{
+ "intro": "The Beatles consciously developed their compositions as recordings. To study the development of their style Tuomas Eerola ordened all 187 songs and 25 covers chronologically in twelve succesive \"recording projects.\" Each project spans a time unit of about seven months. All links point to Alan W. Pollack's renown Notes ... On Series.",
+ "credit": "Tuomas Eerola; published as Appendix 2 of Heinonen & Eerola (1998), “Songwriting, recording, and style change”, Beatlestudies 1, University of Jyväskylä.",
+ "periods": [
+  {
+   "title": "Early period",
+   "projects": [
+    {
+     "no": 1,
+     "title": "Please Please Me",
+     "span": "4.9.1962 - 28.4.63",
+     "songs": [
+      {
+       "no": "001",
+       "date": "04.09.62",
+       "title": "Love Me Do",
+       "link": "../essays/lmd.md"
+      },
+      {
+       "no": "002",
+       "date": "04.09.62",
+       "title": "P.S. I Love You",
+       "link": "../essays/psily.md"
+      },
+      {
+       "no": "003",
+       "date": "11.09.62",
+       "title": "Please Please Me",
+       "link": "../essays/ppm.md"
+      },
+      {
+       "no": "004",
+       "date": "26.11.62",
+       "title": "Ask Me Why",
+       "link": "../essays/amw.md"
+      },
+      {
+       "no": "005",
+       "date": "11.02.63",
+       "title": "I Saw Her Standing There",
+       "link": "../essays/ishst.md"
+      },
+      {
+       "no": "006",
+       "date": "11.02.63",
+       "title": "Misery",
+       "link": "../essays/m1.md"
+      },
+      {
+       "no": "C01",
+       "date": "11.02.63",
+       "title": "Anna (Go To Him)",
+       "link": "../essays/covers1.md#q1"
+      },
+      {
+       "no": "C02",
+       "date": "11.02.63",
+       "title": "Chains",
+       "link": "../essays/covers1.md#q2"
+      },
+      {
+       "no": "C03",
+       "date": "11.02.63",
+       "title": "Boys",
+       "link": "../essays/covers1.md#q3"
+      },
+      {
+       "no": "C04",
+       "date": "11.02.63",
+       "title": "Baby It's You",
+       "link": "../essays/covers1.md#q4"
+      },
+      {
+       "no": "007",
+       "date": "11.02.63",
+       "title": "Do You Want To Know A Secret",
+       "link": "../essays/dywtkas.md"
+      },
+      {
+       "no": "C05",
+       "date": "11.02.63",
+       "title": "A Taste of Honey",
+       "link": "../essays/covers1.md#q5"
+      },
+      {
+       "no": "008",
+       "date": "11.02.63",
+       "title": "There's A Place",
+       "link": "../essays/tap.md"
+      },
+      {
+       "no": "C06",
+       "date": "11.02.63",
+       "title": "Twist and Shout",
+       "link": "../essays/covers1.md#q6"
+      },
+      {
+       "no": "009",
+       "date": "05.03.63",
+       "title": "From Me To You",
+       "link": "../essays/fmty.md"
+      },
+      {
+       "no": "010",
+       "date": "05.03.63",
+       "title": "Thank You Girl",
+       "link": "../essays/tyg.md"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "title": "With The Beatles",
+     "span": "1.5.1963 - 30.11.63",
+     "songs": [
+      {
+       "no": "011",
+       "date": "01.07.63",
+       "title": "She Loves You",
+       "link": "../essays/sly.md"
+      },
+      {
+       "no": "012",
+       "date": "01.07.63",
+       "title": "I'll Get You",
+       "link": "../essays/igy.md"
+      },
+      {
+       "no": "C07",
+       "date": "18.07.63",
+       "title": "You Really Got A Hold On Me",
+       "link": "../essays/covers2.md#q4"
+      },
+      {
+       "no": "C08",
+       "date": "18.07.63",
+       "title": "Devil In Her Heart",
+       "link": "../essays/covers2.md#q5"
+      },
+      {
+       "no": "C09",
+       "date": "18.07.63",
+       "title": "Money (That's What I Want)",
+       "link": "../essays/covers2.md#q6"
+      },
+      {
+       "no": "C10",
+       "date": "18.07.63",
+       "title": "Till There Was You",
+       "link": "../essays/covers2.md#q1"
+      },
+      {
+       "no": "013",
+       "date": "30.07.63",
+       "title": "It Won't Be Long",
+       "link": "../essays/iwbl.md"
+      },
+      {
+       "no": "014",
+       "date": "30.07.63",
+       "title": "All My Loving",
+       "link": "../essays/aml.md"
+      },
+      {
+       "no": "C11",
+       "date": "30.07.63",
+       "title": "Please Mister Postman",
+       "link": "../essays/covers2.md#q2"
+      },
+      {
+       "no": "C12",
+       "date": "30.07.63",
+       "title": "Roll Over Beethoven",
+       "link": "../essays/covers2.md#q3"
+      },
+      {
+       "no": "015",
+       "date": "11.09.63",
+       "title": "All I've Got To Do",
+       "link": "../essays/aigtd.md"
+      },
+      {
+       "no": "016",
+       "date": "11.09.63",
+       "title": "Don't Bother Me",
+       "link": "../essays/dbm.md"
+      },
+      {
+       "no": "017",
+       "date": "11.09.63",
+       "title": "Little Child",
+       "link": "../essays/lc.md"
+      },
+      {
+       "no": "018",
+       "date": "11.09.63",
+       "title": "I Wanna Be Your Man",
+       "link": "../essays/iwbym.md"
+      },
+      {
+       "no": "019",
+       "date": "11.09.63",
+       "title": "Not A Second Time",
+       "link": "../essays/nast.md"
+      },
+      {
+       "no": "020",
+       "date": "12.09.63",
+       "title": "Hold Me Tight",
+       "link": "../essays/hmt.md"
+      },
+      {
+       "no": "021",
+       "date": "17.10.63",
+       "title": "I Want To Hold Your Hand",
+       "link": "../essays/iwthyh.md"
+      },
+      {
+       "no": "022",
+       "date": "17.10.63",
+       "title": "This Boy",
+       "link": "../essays/tb.md"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "title": "A Hard Day's Night",
+     "span": "1.12.1963 - 30.6.64",
+     "songs": [
+      {
+       "no": "023",
+       "date": "29.01.64",
+       "title": "Can't Buy Me Love",
+       "link": "../essays/cbml.md"
+      },
+      {
+       "no": "024",
+       "date": "25.02.64",
+       "title": "I Should Have Known Better",
+       "link": "../essays/ishkb.md"
+      },
+      {
+       "no": "025",
+       "date": "25.02.64",
+       "title": "And I Love Her",
+       "link": "../essays/ailh.md"
+      },
+      {
+       "no": "026",
+       "date": "25.02.64",
+       "title": "You Can't Do That",
+       "link": "../essays/ycdt.md"
+      },
+      {
+       "no": "027",
+       "date": "27.02.64",
+       "title": "If I Fell",
+       "link": "../essays/iif.md"
+      },
+      {
+       "no": "028",
+       "date": "27.02.64",
+       "title": "Tell Me Why",
+       "link": "../essays/tmw.md"
+      },
+      {
+       "no": "C13",
+       "date": "01.03.64",
+       "title": "Long Tall Sally",
+       "link": "../essays/ltsep.md#q1"
+      },
+      {
+       "no": "029",
+       "date": "01.03.64",
+       "title": "I Call Your Name",
+       "link": "../essays/icyn.md"
+      },
+      {
+       "no": "030",
+       "date": "01.03.64",
+       "title": "I'm Happy Just To Dance With You",
+       "link": "../essays/ihjtdwy.md"
+      },
+      {
+       "no": "031",
+       "date": "16.04.64",
+       "title": "A Hard Day's Night",
+       "link": "../essays/ahdn.md"
+      },
+      {
+       "no": "C14",
+       "date": "01.06.64",
+       "title": "Slow Down",
+       "link": "../essays/ltsep.md#q2"
+      },
+      {
+       "no": "C15",
+       "date": "01.06.64",
+       "title": "Matchbox",
+       "link": "../essays/ltsep.md#q3"
+      },
+      {
+       "no": "032",
+       "date": "01.06.64",
+       "title": "I'll Cry Instead",
+       "link": "../essays/ici.md"
+      },
+      {
+       "no": "033",
+       "date": "01.06.64",
+       "title": "I'll Be Back",
+       "link": "../essays/ibb.md"
+      },
+      {
+       "no": "034",
+       "date": "02.06.64",
+       "title": "Any Time At All",
+       "link": "../essays/ataa.md"
+      },
+      {
+       "no": "035",
+       "date": "02.06.64",
+       "title": "Things We Said Today",
+       "link": "../essays/twst.md"
+      },
+      {
+       "no": "036",
+       "date": "02.06.64",
+       "title": "When I Get Home",
+       "link": "../essays/wigh.md"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "title": "Beatles For Sale",
+     "span": "1.7.1964 - 31.1.65",
+     "songs": [
+      {
+       "no": "037",
+       "date": "11.08.64",
+       "title": "Baby's In Black",
+       "link": "../essays/bib.md"
+      },
+      {
+       "no": "038",
+       "date": "14.08.64",
+       "title": "I'm A Loser",
+       "link": "../essays/ial.md"
+      },
+      {
+       "no": "039",
+       "date": "29.09.64",
+       "title": "Every Little Thing",
+       "link": "../essays/elt.md"
+      },
+      {
+       "no": "040",
+       "date": "29.09.64",
+       "title": "I Don't Want To Spoil The Party",
+       "link": "../essays/idwtstp.md"
+      },
+      {
+       "no": "041",
+       "date": "29.09.64",
+       "title": "What You're Doing",
+       "link": "../essays/wyd.md"
+      },
+      {
+       "no": "042",
+       "date": "30.09.64",
+       "title": "No Reply",
+       "link": "../essays/nr.md"
+      },
+      {
+       "no": "043",
+       "date": "06.10.64",
+       "title": "Eight Days A Week",
+       "link": "../essays/edaw.md"
+      },
+      {
+       "no": "044",
+       "date": "08.10.64",
+       "title": "She's A Woman",
+       "link": "../essays/saw.md"
+      },
+      {
+       "no": "045",
+       "date": "18.10.64",
+       "title": "I Feel Fine",
+       "link": "../essays/iff.md"
+      },
+      {
+       "no": "C16",
+       "date": "18.10.64",
+       "title": "Rock And Roll Music",
+       "link": "../essays/covers3.md#q1"
+      },
+      {
+       "no": "046",
+       "date": "18.10.64",
+       "title": "I'll Follow The Sun",
+       "link": "../essays/ifts.md"
+      },
+      {
+       "no": "C17",
+       "date": "18.10.64",
+       "title": "Mr. Moonlight",
+       "link": "../essays/covers3.md#q2"
+      },
+      {
+       "no": "C18",
+       "date": "18.10.64",
+       "title": "Kansas City - Hey, Hey, Hey, Hey",
+       "link": "../essays/covers3.md#q3"
+      },
+      {
+       "no": "C19",
+       "date": "18.10.64",
+       "title": "Words Of Love",
+       "link": "../essays/covers3.md#q4"
+      },
+      {
+       "no": "C20",
+       "date": "18.10.64",
+       "title": "Everybody's Trying To Be My Baby",
+       "link": "../essays/covers3.md#q6"
+      },
+      {
+       "no": "C21",
+       "date": "26.10.64",
+       "title": "Honey Don't",
+       "link": "../essays/covers3.md#q5"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "title": "Help!",
+     "span": "1.2.1965 - 30.8.65",
+     "songs": [
+      {
+       "no": "047",
+       "date": "15.02.65",
+       "title": "I Need You",
+       "link": "../essays/iny.md"
+      },
+      {
+       "no": "048",
+       "date": "15.02.65",
+       "title": "Another Girl",
+       "link": "../essays/ag.md"
+      },
+      {
+       "no": "049",
+       "date": "15.02.65",
+       "title": "Ticket To Ride",
+       "link": "../essays/ttr.md"
+      },
+      {
+       "no": "050",
+       "date": "16.02.65",
+       "title": "Yes It Is",
+       "link": "../essays/yii.md"
+      },
+      {
+       "no": "051",
+       "date": "17.02.65",
+       "title": "The Night Before",
+       "link": "../essays/tnb.md"
+      },
+      {
+       "no": "052",
+       "date": "17.02.65",
+       "title": "You Like Me Too Much",
+       "link": "../essays/ylmtm.md"
+      },
+      {
+       "no": "053",
+       "date": "18.02.65",
+       "title": "You've Got To Hide Your Love Away",
+       "link": "../essays/ygthyla.md"
+      },
+      {
+       "no": "054",
+       "date": "18.02.65",
+       "title": "Tell Me What You See",
+       "link": "../essays/tmwys.md"
+      },
+      {
+       "no": "055",
+       "date": "19.02.65",
+       "title": "You're Going To Lose That Girl",
+       "link": "../essays/ygtltg.md"
+      },
+      {
+       "no": "056",
+       "date": "13.04.65",
+       "title": "Help!",
+       "link": "../essays/h.md"
+      },
+      {
+       "no": "C22",
+       "date": "10.05.65",
+       "title": "Bad Boy",
+       "link": "../essays/covers4.md#q2"
+      },
+      {
+       "no": "C23",
+       "date": "10.05.65",
+       "title": "Dizzy Miss Lizzy",
+       "link": "../essays/covers4.md#q3"
+      },
+      {
+       "no": "057",
+       "date": "14.06.65",
+       "title": "I'm Down",
+       "link": "../essays/id.md"
+      },
+      {
+       "no": "058",
+       "date": "14.06.65",
+       "title": "I've Just Seen A Face",
+       "link": "../essays/ijsaf.md"
+      },
+      {
+       "no": "059",
+       "date": "14.06.65",
+       "title": "Yesterday",
+       "link": "../essays/y.md"
+      },
+      {
+       "no": "060",
+       "date": "15.06.65",
+       "title": "It's Only Love",
+       "link": "../essays/iol.md"
+      },
+      {
+       "no": "C24",
+       "date": "17.06.65",
+       "title": "Act Naturally",
+       "link": "../essays/covers4.md#q1"
+      },
+      {
+       "no": "061",
+       "date": "17.06.65",
+       "title": "Wait",
+       "link": "../essays/w.md"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Experimental period",
+   "projects": [
+    {
+     "no": 6,
+     "title": "Rubber Soul",
+     "span": "1.9.1965 - 31.3.66",
+     "songs": [
+      {
+       "no": "062",
+       "date": "12.10.65",
+       "title": "Norwegian Wood (This Bird Has Flown)",
+       "link": "../essays/nw.md"
+      },
+      {
+       "no": "063",
+       "date": "12.10.65",
+       "title": "Run For Your Life",
+       "link": "../essays/rfyl.md"
+      },
+      {
+       "no": "064",
+       "date": "13.10.65",
+       "title": "Drive My Car",
+       "link": "../essays/dmc.md"
+      },
+      {
+       "no": "065",
+       "date": "16.10.65",
+       "title": "Day Tripper",
+       "link": "../essays/dt.md"
+      },
+      {
+       "no": "066",
+       "date": "16.10.65",
+       "title": "If I Needed Someone",
+       "link": "../essays/iins.md"
+      },
+      {
+       "no": "067",
+       "date": "18.10.65",
+       "title": "In My Life",
+       "link": "../essays/iml.md"
+      },
+      {
+       "no": "068",
+       "date": "20.10.65",
+       "title": "We Can Work It Out",
+       "link": "../essays/wcwio.md"
+      },
+      {
+       "no": "069",
+       "date": "03.11.65",
+       "title": "Michelle",
+       "link": "../essays/m4.md"
+      },
+      {
+       "no": "070",
+       "date": "04.11.65",
+       "title": "What Goes On",
+       "link": "../essays/wgo.md"
+      },
+      {
+       "no": "071",
+       "date": "06.11.65",
+       "title": "I'm Looking Through You",
+       "link": "../essays/ilty.md"
+      },
+      {
+       "no": "072",
+       "date": "08.11.65",
+       "title": "Think For Yourself",
+       "link": "../essays/tfy.md"
+      },
+      {
+       "no": "073",
+       "date": "10.11.65",
+       "title": "The Word",
+       "link": "../essays/tw.md"
+      },
+      {
+       "no": "074",
+       "date": "11.11.65",
+       "title": "You Won't See Me",
+       "link": "../essays/ywsm.md"
+      },
+      {
+       "no": "075",
+       "date": "11.11.65",
+       "title": "Girl",
+       "link": "../essays/g.md"
+      },
+      {
+       "no": "076",
+       "date": "21.11.65",
+       "title": "Nowhere Man",
+       "link": "../essays/nm.md"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "title": "Revolver",
+     "span": "1.4.1966 - 31.10.66",
+     "songs": [
+      {
+       "no": "077",
+       "date": "07.04.66",
+       "title": "Got To Get You Into My Life",
+       "link": "../essays/gtgyiml.md"
+      },
+      {
+       "no": "078",
+       "date": "11.04.66",
+       "title": "Love You To",
+       "link": "../essays/lyt.md"
+      },
+      {
+       "no": "079",
+       "date": "13.04.66",
+       "title": "Paperback Writer",
+       "link": "../essays/pw_and_r.md#q1"
+      },
+      {
+       "no": "080",
+       "date": "14.04.66",
+       "title": "Rain",
+       "link": "../essays/pw_and_r.md#q2"
+      },
+      {
+       "no": "081",
+       "date": "17.04.66",
+       "title": "Doctor Robert",
+       "link": "../essays/dr.md"
+      },
+      {
+       "no": "082",
+       "date": "20.04.66",
+       "title": "Taxman",
+       "link": "../essays/t.md"
+      },
+      {
+       "no": "083",
+       "date": "20.04.66",
+       "title": "And Your Bird Can Sing",
+       "link": "../essays/aybcs.md"
+      },
+      {
+       "no": "084",
+       "date": "22.04.66",
+       "title": "Tomorrow Never Knows",
+       "link": "../essays/tnk.md"
+      },
+      {
+       "no": "085",
+       "date": "27.04.66",
+       "title": "I'm Only Sleeping",
+       "link": "../essays/ios.md"
+      },
+      {
+       "no": "086",
+       "date": "29.04.66",
+       "title": "Eleanor Rigby",
+       "link": "../essays/er.md"
+      },
+      {
+       "no": "087",
+       "date": "09.05.66",
+       "title": "For No One",
+       "link": "../essays/fno.md"
+      },
+      {
+       "no": "088",
+       "date": "26.05.66",
+       "title": "Yellow Submarine",
+       "link": "../essays/ys.md"
+      },
+      {
+       "no": "089",
+       "date": "02.06.66",
+       "title": "I Want To Tell You",
+       "link": "../essays/iwtty.md"
+      },
+      {
+       "no": "090",
+       "date": "07.06.66",
+       "title": "Good Day Sunshine",
+       "link": "../essays/gds.md"
+      },
+      {
+       "no": "091",
+       "date": "14.06.66",
+       "title": "Here, There, And Everywhere",
+       "link": "../essays/htae.md"
+      },
+      {
+       "no": "092",
+       "date": "21.06.66",
+       "title": "She Said She Said",
+       "link": "../essays/ssss.md"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "title": "Sgt. Pepper's",
+     "span": "1.11.1966 - 30.4.67",
+     "songs": [
+      {
+       "no": "093",
+       "date": "24.11.66",
+       "title": "Strawberry Fields Forever",
+       "link": "../essays/sff.md"
+      },
+      {
+       "no": "094",
+       "date": "06.12.66",
+       "title": "When I'm Sixty-Four",
+       "link": "../essays/wisf.md"
+      },
+      {
+       "no": "095",
+       "date": "29.12.66",
+       "title": "Penny Lane",
+       "link": "../essays/pl.md"
+      },
+      {
+       "no": "096",
+       "date": "19.01.67",
+       "title": "A Day In The Life",
+       "link": "../essays/aditl.md#q2"
+      },
+      {
+       "no": "097",
+       "date": "01.02.67",
+       "title": "Sgt. Pepper's Lonely Hearts Club Band",
+       "link": "../essays/splhcb.md"
+      },
+      {
+       "no": "098",
+       "date": "08.02.67",
+       "title": "Good Morning, Good Morning",
+       "link": "../essays/gmgm.md#q1"
+      },
+      {
+       "no": "099",
+       "date": "09.02.67",
+       "title": "Fixing A Hole",
+       "link": "../essays/fah.md"
+      },
+      {
+       "no": "100",
+       "date": "13.02.67",
+       "title": "Only A Northern Song",
+       "link": "../essays/oans.md"
+      },
+      {
+       "no": "101",
+       "date": "17.02.67",
+       "title": "Being For The Benefit Of Mr. Kite",
+       "link": "../essays/bftbomk.md"
+      },
+      {
+       "no": "102",
+       "date": "23.02.67",
+       "title": "Lovely Rita",
+       "link": "../essays/lr.md"
+      },
+      {
+       "no": "103",
+       "date": "01.03.67",
+       "title": "Lucy In The Sky With Diamonds",
+       "link": "../essays/litswd.md"
+      },
+      {
+       "no": "104",
+       "date": "09.03.67",
+       "title": "Getting Better",
+       "link": "../essays/gb.md"
+      },
+      {
+       "no": "105",
+       "date": "15.03.67",
+       "title": "Within You Without You",
+       "link": "../essays/wywy.md"
+      },
+      {
+       "no": "106",
+       "date": "17.03.67",
+       "title": "She's Leaving Home",
+       "link": "../essays/slh.md"
+      },
+      {
+       "no": "107",
+       "date": "29.03.67",
+       "title": "With A Little Help From My Friends",
+       "link": "../essays/walhfmf.md"
+      },
+      {
+       "no": "108",
+       "date": "01.04.67",
+       "title": "Sgt. Pepper's Lonely Hearts Club Band (Reprise)",
+       "link": "../essays/aditl.md#q1"
+      },
+      {
+       "no": "109",
+       "date": "25.04.67",
+       "title": "Magical Mystery Tour",
+       "link": "../essays/mmt.md"
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "title": "Magical Mystery Tour",
+     "span": "1.5.1967 - 31.3.68",
+     "songs": [
+      {
+       "no": "110",
+       "date": "11.05.67",
+       "title": "Baby You're A Rich Man",
+       "link": "../essays/byarm.md"
+      },
+      {
+       "no": "111",
+       "date": "12.05.67",
+       "title": "All Together Now",
+       "link": "../essays/atn.md"
+      },
+      {
+       "no": "112",
+       "date": "17.05.67",
+       "title": "You Know My Name (Look Up The Number)",
+       "link": "../essays/ykmnlutn.md"
+      },
+      {
+       "no": "113",
+       "date": "25.05.67",
+       "title": "It's All Too Much",
+       "link": "../essays/iatm.md"
+      },
+      {
+       "no": "114",
+       "date": "14.06.67",
+       "title": "All You Need Is Love",
+       "link": "../essays/aynil.md"
+      },
+      {
+       "no": "115",
+       "date": "22.08.67",
+       "title": "Your Mother Should Know",
+       "link": "../essays/ymsk.md"
+      },
+      {
+       "no": "116",
+       "date": "05.09.67",
+       "title": "I Am The Walrus",
+       "link": "../essays/iatw.md"
+      },
+      {
+       "no": "117",
+       "date": "06.09.67",
+       "title": "Blue Jay Way",
+       "link": "../essays/bjw.md"
+      },
+      {
+       "no": "118",
+       "date": "08.09.67",
+       "title": "Flying",
+       "link": "../essays/f.md"
+      },
+      {
+       "no": "119",
+       "date": "25.09.67",
+       "title": "The Fool On The Hill",
+       "link": "../essays/foth.md"
+      },
+      {
+       "no": "120",
+       "date": "02.10.67",
+       "title": "Hello Goodbye",
+       "link": "../essays/hg.md"
+      },
+      {
+       "no": "121",
+       "date": "12.01.68",
+       "title": "The Inner Light",
+       "link": "../essays/til.md"
+      },
+      {
+       "no": "122",
+       "date": "03.02.68",
+       "title": "Lady Madonna",
+       "link": "../essays/lm.md"
+      },
+      {
+       "no": "123",
+       "date": "04.02.68",
+       "title": "Across The Universe",
+       "link": "../essays/atu.md"
+      },
+      {
+       "no": "124",
+       "date": "11.02.68",
+       "title": "Hey Bulldog",
+       "link": "../essays/hb.md"
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "title": "White Album",
+     "span": "1.4.1968 - 31.10.68",
+     "songs": [
+      {
+       "no": "125",
+       "date": "30.05.68",
+       "title": "Revolution",
+       "link": "../essays/r.md"
+      },
+      {
+       "no": "126",
+       "date": "30.05.68",
+       "title": "Revolution (1)",
+       "link": "../essays/r.md"
+      },
+      {
+       "no": "127",
+       "date": "30.05.68",
+       "title": "Revolution #9",
+       "link": "../essays/r9.md"
+      },
+      {
+       "no": "128",
+       "date": "05.06.68",
+       "title": "Don't Pass Me By",
+       "link": "../essays/dpmb.md"
+      },
+      {
+       "no": "129",
+       "date": "11.06.68",
+       "title": "Blackbird",
+       "link": "../essays/b3.md"
+      },
+      {
+       "no": "130",
+       "date": "27.06.68",
+       "title": "Everybody's Got Something To Hide Except For Me And My Monkey",
+       "link": "../essays/egsthefmamm.md"
+      },
+      {
+       "no": "131",
+       "date": "28.06.68",
+       "title": "Good Night",
+       "link": "../essays/gn.md"
+      },
+      {
+       "no": "132",
+       "date": "03.07.68",
+       "title": "Ob-La-Di, Ob-La-Da",
+       "link": "../essays/oo.md"
+      },
+      {
+       "no": "133",
+       "date": "16.07.68",
+       "title": "Cry Baby Cry",
+       "link": "../essays/cbc.md"
+      },
+      {
+       "no": "134",
+       "date": "18.07.68",
+       "title": "Helter Skelter",
+       "link": "../essays/hs.md"
+      },
+      {
+       "no": "135",
+       "date": "19.07.68",
+       "title": "Sexy Sadie",
+       "link": "../essays/ss.md"
+      },
+      {
+       "no": "136",
+       "date": "25.07.68",
+       "title": "While My Guitar Gently Weeps",
+       "link": "../essays/wmggw.md"
+      },
+      {
+       "no": "137",
+       "date": "29.07.68",
+       "title": "Hey Jude",
+       "link": "../essays/hj.md"
+      },
+      {
+       "no": "138",
+       "date": "09.08.68",
+       "title": "Mother Nature's Son",
+       "link": "../essays/mns.md"
+      },
+      {
+       "no": "139",
+       "date": "13.08.68",
+       "title": "Yer Blues",
+       "link": "../essays/yb.md"
+      },
+      {
+       "no": "140",
+       "date": "15.08.68",
+       "title": "Rocky Raccoon",
+       "link": "../essays/rr.md"
+      },
+      {
+       "no": "141",
+       "date": "20.08.68",
+       "title": "Wild Honey Pie",
+       "link": "../essays/whp.md"
+      },
+      {
+       "no": "142",
+       "date": "22.08.68",
+       "title": "Back In The USSR",
+       "link": "../essays/bitu.md"
+      },
+      {
+       "no": "143",
+       "date": "28.08.68",
+       "title": "Dear Prudence",
+       "link": "../essays/dp.md"
+      },
+      {
+       "no": "144",
+       "date": "11.09.68",
+       "title": "Glass Onion",
+       "link": "../essays/go.md"
+      },
+      {
+       "no": "145",
+       "date": "16.09.68",
+       "title": "Can You Take Me Back",
+       "link": "../essays/cytmb.md"
+      },
+      {
+       "no": "146",
+       "date": "16.09.68",
+       "title": "I Will",
+       "link": "../essays/iw.md"
+      },
+      {
+       "no": "147",
+       "date": "18.09.68",
+       "title": "Birthday",
+       "link": "../essays/b.md"
+      },
+      {
+       "no": "148",
+       "date": "19.09.68",
+       "title": "Piggies",
+       "link": "../essays/p.md"
+      },
+      {
+       "no": "149",
+       "date": "23.09.68",
+       "title": "Happiness Is A Warm Gun",
+       "link": "../essays/hiawg.md"
+      },
+      {
+       "no": "150",
+       "date": "01.10.68",
+       "title": "Honey Pie",
+       "link": "../essays/hp.md"
+      },
+      {
+       "no": "151",
+       "date": "03.10.68",
+       "title": "Savoy Truffle",
+       "link": "../essays/st.md"
+      },
+      {
+       "no": "152",
+       "date": "04.10.68",
+       "title": "Martha My Dear",
+       "link": "../essays/mmd.md"
+      },
+      {
+       "no": "153",
+       "date": "07.10.68",
+       "title": "Long, Long, Long",
+       "link": "../essays/lll.md"
+      },
+      {
+       "no": "154",
+       "date": "08.10.68",
+       "title": "I'm So Tired",
+       "link": "../essays/ist.md"
+      },
+      {
+       "no": "155",
+       "date": "09.10.68",
+       "title": "The Continuing Story Of Bungalow Bill",
+       "link": "../essays/tcsobb.md"
+      },
+      {
+       "no": "156",
+       "date": "09.10.68",
+       "title": "Why Don't We Do It In the Road",
+       "link": "../essays/wdwdiitr.md"
+      },
+      {
+       "no": "157",
+       "date": "13.10.68",
+       "title": "Julia",
+       "link": "../essays/j.md"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Late period",
+   "projects": [
+    {
+     "no": 11,
+     "title": "Let It Be",
+     "span": "1.11.1968 - 31.1.1969",
+     "songs": [
+      {
+       "no": "C25",
+       "date": "24.01.69",
+       "title": "Maggie Mae",
+       "link": "../essays/mmfrag.md"
+      },
+      {
+       "no": "158",
+       "date": "25.01.69",
+       "title": "For You Blue",
+       "link": "../essays/fyb.md"
+      },
+      {
+       "no": "159",
+       "date": "25.01.69",
+       "title": "Let It Be",
+       "link": "../essays/lib.md"
+      },
+      {
+       "no": "160",
+       "date": "26.01.69",
+       "title": "Dig It",
+       "link": "../essays/di.md"
+      },
+      {
+       "no": "161",
+       "date": "27.01.69",
+       "title": "Get Back",
+       "link": "../essays/gb2.md"
+      },
+      {
+       "no": "162",
+       "date": "28.01.69",
+       "title": "Don't Let Me Down",
+       "link": "../essays/dlmd.md"
+      },
+      {
+       "no": "163",
+       "date": "30.01.69",
+       "title": "Dig A Pony",
+       "link": "../essays/dap.md"
+      },
+      {
+       "no": "164",
+       "date": "30.01.69",
+       "title": "I've Got A Feeling",
+       "link": "../essays/igaf.md"
+      },
+      {
+       "no": "165",
+       "date": "30.01.69",
+       "title": "One After 909",
+       "link": "../essays/oa909.md"
+      },
+      {
+       "no": "166",
+       "date": "31.01.69",
+       "title": "Two Of Us",
+       "link": "../essays/tou.md"
+      },
+      {
+       "no": "167",
+       "date": "31.01.69",
+       "title": "The Long And Winding Road",
+       "link": "../essays/tlawr.md"
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "title": "Abbey Road",
+     "span": "1.2.1969 - 3.1.1970",
+     "songs": [
+      {
+       "no": "168",
+       "date": "22.02.69",
+       "title": "I Want You (She's So Heavy)",
+       "link": "../essays/iwyssh.md"
+      },
+      {
+       "no": "169",
+       "date": "25.02.69",
+       "title": "Old Brown Shoe",
+       "link": "../essays/obs.md"
+      },
+      {
+       "no": "170",
+       "date": "25.02.69",
+       "title": "Something",
+       "link": "../essays/s.md"
+      },
+      {
+       "no": "171",
+       "date": "14.04.69",
+       "title": "The Ballad Of John And Yoko",
+       "link": "../essays/tbojay.md"
+      },
+      {
+       "no": "172",
+       "date": "20.04.69",
+       "title": "Oh! Darling",
+       "link": "../essays/od.md"
+      },
+      {
+       "no": "173",
+       "date": "26.04.69",
+       "title": "Octopus's Garden",
+       "link": "../essays/og.md"
+      },
+      {
+       "no": "174",
+       "date": "06.05.69",
+       "title": "You Never Give Me Your Money",
+       "link": "../essays/yngmym.md"
+      },
+      {
+       "no": "175",
+       "date": "02.07.69",
+       "title": "Golden Slumbers",
+       "link": "../essays/gs.md"
+      },
+      {
+       "no": "176",
+       "date": "02.07.69",
+       "title": "Carry That Weight",
+       "link": "../essays/ctw.md"
+      },
+      {
+       "no": "177",
+       "date": "02.07.69",
+       "title": "Her Majesty",
+       "link": "../essays/hm.md"
+      },
+      {
+       "no": "178",
+       "date": "07.07.69",
+       "title": "Here Comes The Sun",
+       "link": "../essays/hcts.md"
+      },
+      {
+       "no": "179",
+       "date": "09.07.69",
+       "title": "Maxwell's Silver Hammer",
+       "link": "../essays/msh.md"
+      },
+      {
+       "no": "180",
+       "date": "21.07.69",
+       "title": "Come Together",
+       "link": "../essays/ct.md"
+      },
+      {
+       "no": "181",
+       "date": "23.07.69",
+       "title": "The End",
+       "link": "../essays/te.md"
+      },
+      {
+       "no": "182",
+       "date": "24.07.69",
+       "title": "Sun King",
+       "link": "../essays/sk.md"
+      },
+      {
+       "no": "183",
+       "date": "24.07.69",
+       "title": "Mean Mr Mustard",
+       "link": "../essays/mmm.md"
+      },
+      {
+       "no": "184",
+       "date": "25.07.69",
+       "title": "Polythene Pam",
+       "link": "../essays/pp.md"
+      },
+      {
+       "no": "185",
+       "date": "25.07.69",
+       "title": "She Came In Through The Bathroom Window",
+       "link": "../essays/scittbw.md"
+      },
+      {
+       "no": "186",
+       "date": "01.08.69",
+       "title": "Because",
+       "link": "../essays/b4.md"
+      },
+      {
+       "no": "187",
+       "date": "03.01.70",
+       "title": "I Me Mine",
+       "link": "../essays/imm.md"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

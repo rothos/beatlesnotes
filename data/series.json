@@ -1,0 +1,1455 @@
+{
+ "intro": "In 1989 the American musicologist Alan W. Pollack started to analyze the songs of the Beatles. He published his first results on internet. In 1991 — after he had finished the work on 28 songs — he bravely decided to do the whole lot of them. About ten years later, in 2000 he completed the analysis of the official Beatles' canon, consisting of 187 songs and 25 covers. Here we have ordered this massive work in five categories. And, for your convenience, we've added an alphabetical, a canonical and a chronological index as well as a short introduction.",
+ "categories": [
+  {
+   "id": "a",
+   "title": "The first 28 song analyses",
+   "from": 1,
+   "to": 28,
+   "description": "Pollack started his series with a selection of songs from the Beatles' songbook. Looking at these songs, Pollack concentrates on the central elements and characteristics of the musical idiom of the 'Fab Four'. Next to insightful analyses, this series offers a short course in the necessary musicological concepts.",
+   "entries": [
+    {
+     "no": "001",
+     "title": "We Can Work It Out",
+     "link": "../essays/wcwio.md",
+     "years": "1989; 2000",
+     "macdonald": "68"
+    },
+    {
+     "no": "002",
+     "title": "Eight Days A Week",
+     "link": "../essays/edaw.md",
+     "years": "1989; 2000",
+     "macdonald": "43"
+    },
+    {
+     "no": "003",
+     "title": "And I Love Her",
+     "link": "../essays/ailh.md",
+     "years": "1989; 2000",
+     "macdonald": "25"
+    },
+    {
+     "no": "004",
+     "title": "Day Tripper",
+     "link": "../essays/dt.md",
+     "years": "1989; 2000",
+     "macdonald": "65"
+    },
+    {
+     "no": "005",
+     "title": "She Loves You",
+     "link": "../essays/sly.md",
+     "years": "1989; 2000",
+     "macdonald": "12"
+    },
+    {
+     "no": "006",
+     "title": "Help!",
+     "link": "../essays/h.md",
+     "years": "1989; 2000",
+     "macdonald": "56"
+    },
+    {
+     "no": "007",
+     "title": "You're Going To Lose That Girl",
+     "link": "../essays/ygtltg.md",
+     "years": "1989; 2000",
+     "macdonald": "55"
+    },
+    {
+     "no": "008",
+     "title": "No Reply",
+     "link": "../essays/nr.md",
+     "years": "1989; 2000",
+     "macdonald": "42"
+    },
+    {
+     "no": "009",
+     "title": "You Won't See Me",
+     "link": "../essays/ywsm.md",
+     "years": "1989; 2000",
+     "macdonald": "75"
+    },
+    {
+     "no": "010",
+     "title": "It Won't Be Long",
+     "link": "../essays/iwbl.md",
+     "years": "1989; 2000",
+     "macdonald": "14"
+    },
+    {
+     "no": "011",
+     "title": "Good Day Sunshine",
+     "link": "../essays/gds.md",
+     "years": "1989; 2000",
+     "macdonald": "90"
+    },
+    {
+     "no": "012",
+     "title": "She Said She Said",
+     "link": "../essays/ssss.md",
+     "years": "1989; 2000",
+     "macdonald": "92"
+    },
+    {
+     "no": "013",
+     "title": "You Never Give Me Your Money",
+     "link": "../essays/yngmym.md",
+     "years": "1989; 2000",
+     "macdonald": "173"
+    },
+    {
+     "no": "014",
+     "title": "Hey Jude",
+     "link": "../essays/hj.md",
+     "years": "1990; 2000",
+     "macdonald": "137"
+    },
+    {
+     "no": "015",
+     "title": "I Should Have Known Better",
+     "link": "../essays/ishkb.md",
+     "years": "1990; 2000",
+     "macdonald": "26"
+    },
+    {
+     "no": "016",
+     "title": "Thank You Girl",
+     "link": "../essays/tyg.md",
+     "years": "1990; 2000",
+     "macdonald": "11"
+    },
+    {
+     "no": "017",
+     "title": "Any Time At All",
+     "link": "../essays/ataa.md",
+     "years": "1990; 2000",
+     "macdonald": "34"
+    },
+    {
+     "no": "018",
+     "title": "You've Got To Hide Your Love Away",
+     "link": "../essays/ygthyla.md",
+     "years": "1990; 2000",
+     "macdonald": "53"
+    },
+    {
+     "no": "019",
+     "title": "I'll Be Back",
+     "link": "../essays/ibb.md",
+     "years": "1990; 2000",
+     "macdonald": "33"
+    },
+    {
+     "no": "020",
+     "title": "Birthday",
+     "link": "../essays/b.md",
+     "years": "1990; 2000",
+     "macdonald": "146"
+    },
+    {
+     "no": "021",
+     "title": "Love Me Do",
+     "link": "../essays/lmd.md",
+     "years": "1990; 2000",
+     "macdonald": "1"
+    },
+    {
+     "no": "022",
+     "title": "Please Please Me",
+     "link": "../essays/ppm.md",
+     "years": "1990; 2000",
+     "macdonald": "3"
+    },
+    {
+     "no": "023",
+     "title": "Intro to 'Strawberry Fields Forever',",
+     "link": "../essays/triple.md",
+     "years": "1990; 2000",
+     "macdonald": "93, 96, 116"
+    },
+    {
+     "no": "024",
+     "title": "Things We Said Today",
+     "link": "../essays/twst.md",
+     "years": "1991; 2001",
+     "macdonald": "35"
+    },
+    {
+     "no": "025",
+     "title": "While My Guitar Gently Weeps",
+     "link": "../essays/wmggw.md",
+     "years": "1991; 2001",
+     "macdonald": "136"
+    },
+    {
+     "no": "026",
+     "title": "I Saw Her Standing There",
+     "link": "../essays/ishst.md",
+     "years": "1991; 2001",
+     "macdonald": "6"
+    },
+    {
+     "no": "027",
+     "title": "All My Loving",
+     "link": "../essays/aml.md",
+     "years": "1991; 2001",
+     "macdonald": "15"
+    },
+    {
+     "no": "028",
+     "title": "From Me To You",
+     "link": "../essays/fmty.md",
+     "years": "1991; 2001",
+     "macdonald": "10"
+    }
+   ],
+   "intro": "Pollack started his series with choosing 28 songs more or less arbitrarily from the songbook of the Beatles. These articles are especially interesting, because Pollack spices his analyses with some lucid explanations of his musicological insights and knowledge. If you are unknown in musicological territory, the best you can do is to read these pieces in numerical order. You'll find the index here down below. From the left to the right in the columns you'll see Pollack's number of the song, the title of the song, the year of publication and the number of the song in Ian MacDonald's book Revolution in the Head , as this last book gives some usefull information for those who want to know more about it than just the musicological aspects."
+  },
+  {
+   "id": "b",
+   "title": "Beatlemania (1962-1964)",
+   "from": 29,
+   "to": 64,
+   "description": "In their first years as song writers and performers, the Beatles developed their own style of popular music out of the roots of American rock 'n' roll and rhythm and blues. Here Pollack analyses the peculiarities of these early Beatles' songs. This series of 36 pieces includes the first singles and songs on the albums Please Please Me , With The Beatles , A Hard Days Night , and Beatles For Sale .",
+   "entries": [
+    {
+     "no": "029",
+     "title": "Misery",
+     "link": "../essays/m1.md",
+     "years": "1991; 2001",
+     "macdonald": "8"
+    },
+    {
+     "no": "030",
+     "title": "P.S. I Love You",
+     "link": "../essays/psily.md",
+     "years": "1991; 2001",
+     "macdonald": "2"
+    },
+    {
+     "no": "031",
+     "title": "There's A Place",
+     "link": "../essays/tap.md",
+     "years": "1991; 2001",
+     "macdonald": "5"
+    },
+    {
+     "no": "032",
+     "title": "Do You Want To Know A Secret",
+     "link": "../essays/dywtkas.md",
+     "years": "1991; 2001",
+     "macdonald": "7"
+    },
+    {
+     "no": "033",
+     "title": "Ask Me Why",
+     "link": "../essays/amw.md",
+     "years": "1991; 2001",
+     "macdonald": "4"
+    },
+    {
+     "no": "034",
+     "title": "I'll Get You",
+     "link": "../essays/igy.md",
+     "years": "1991; 2001",
+     "macdonald": "13"
+    },
+    {
+     "no": "035",
+     "title": "Cover Songs on 'Please Please Me'",
+     "link": "../essays/covers1.md",
+     "years": "1991",
+     "macdonald": "9b, 9d, 9c,9e, 6b, 9f"
+    },
+    {
+     "no": "036",
+     "title": "All I've Got To Do",
+     "link": "../essays/aigtd.md",
+     "years": "1991",
+     "macdonald": "18"
+    },
+    {
+     "no": "037",
+     "title": "Don't Bother Me",
+     "link": "../essays/dbm.md",
+     "years": "1991",
+     "macdonald": "20"
+    },
+    {
+     "no": "038",
+     "title": "Little Child",
+     "link": "../essays/lc.md",
+     "years": "1991",
+     "macdonald": "17"
+    },
+    {
+     "no": "039",
+     "title": "Hold Me Tight",
+     "link": "../essays/hmt.md",
+     "years": "1991",
+     "macdonald": "9"
+    },
+    {
+     "no": "040",
+     "title": "I Wanna Be Your Man",
+     "link": "../essays/iwbym.md",
+     "years": "1991",
+     "macdonald": "16"
+    },
+    {
+     "no": "041",
+     "title": "Not A Second Time",
+     "link": "../essays/nast.md",
+     "years": "1991",
+     "macdonald": "19"
+    },
+    {
+     "no": "042",
+     "title": "Cover Songs on 'With The Beatles'",
+     "link": "../essays/covers2.md",
+     "years": "1991",
+     "macdonald": "13e, 13f, 14b,13b, 13d, 13c"
+    },
+    {
+     "no": "043",
+     "title": "I Want To Hold Your Hand",
+     "link": "../essays/iwthyh.md",
+     "years": "1991",
+     "macdonald": "21"
+    },
+    {
+     "no": "044",
+     "title": "This Boy",
+     "link": "../essays/tb.md",
+     "years": "1991",
+     "macdonald": "22"
+    },
+    {
+     "no": "045",
+     "title": "Can't Buy Me Love",
+     "link": "../essays/cbml.md",
+     "years": "1992",
+     "macdonald": "23"
+    },
+    {
+     "no": "046",
+     "title": "You Can't Do That",
+     "link": "../essays/ycdt.md",
+     "years": "1992",
+     "macdonald": "24"
+    },
+    {
+     "no": "047",
+     "title": "I Call Your Name",
+     "link": "../essays/icyn.md",
+     "years": "1992",
+     "macdonald": "30"
+    },
+    {
+     "no": "048",
+     "title": "Cover Songs on 'Long Tall Sally'",
+     "link": "../essays/ltsep.md",
+     "years": "1992",
+     "macdonald": "29b, 32b, 31b"
+    },
+    {
+     "no": "049",
+     "title": "A Hard Day's Night",
+     "link": "../essays/ahdn.md",
+     "years": "1992",
+     "macdonald": "31"
+    },
+    {
+     "no": "050",
+     "title": "If I Fell",
+     "link": "../essays/iif.md",
+     "years": "1992",
+     "macdonald": "28"
+    },
+    {
+     "no": "051",
+     "title": "I'm Happy Just To Dance With You",
+     "link": "../essays/ihjtdwy.md",
+     "years": "1992",
+     "macdonald": "29"
+    },
+    {
+     "no": "052",
+     "title": "Tell Me Why",
+     "link": "../essays/tmw.md",
+     "years": "1992",
+     "macdonald": "27"
+    },
+    {
+     "no": "053",
+     "title": "I'll Cry Instead",
+     "link": "../essays/ici.md",
+     "years": "1992",
+     "macdonald": "32"
+    },
+    {
+     "no": "054",
+     "title": "When I Get Home",
+     "link": "../essays/wigh.md",
+     "years": "1992",
+     "macdonald": "36"
+    },
+    {
+     "no": "055",
+     "title": "I Feel Fine",
+     "link": "../essays/iff.md",
+     "years": "1992",
+     "macdonald": "45"
+    },
+    {
+     "no": "056",
+     "title": "She's A Woman",
+     "link": "../essays/saw.md",
+     "years": "1992",
+     "macdonald": "44"
+    },
+    {
+     "no": "057",
+     "title": "I'm A Loser",
+     "link": "../essays/ial.md",
+     "years": "1992",
+     "macdonald": "38"
+    },
+    {
+     "no": "058",
+     "title": "Notes on the 'Notes on ...' Series",
+     "link": "../essays/noteson.md",
+     "years": "1993",
+     "macdonald": ""
+    },
+    {
+     "no": "059",
+     "title": "Baby's In Black",
+     "link": "../essays/bib.md",
+     "years": "1992",
+     "macdonald": "37"
+    },
+    {
+     "no": "060",
+     "title": "I'll Follow The Sun",
+     "link": "../essays/ifts.md",
+     "years": "1992",
+     "macdonald": "46"
+    },
+    {
+     "no": "061",
+     "title": "Every Little Thing",
+     "link": "../essays/elt.md",
+     "years": "1992",
+     "macdonald": "39"
+    },
+    {
+     "no": "062",
+     "title": "I Don't Want To Spoil The Party",
+     "link": "../essays/idwtstp.md",
+     "years": "1992",
+     "macdonald": "40"
+    },
+    {
+     "no": "063",
+     "title": "What You're Doing",
+     "link": "../essays/wyd.md",
+     "years": "1992",
+     "macdonald": "41"
+    },
+    {
+     "no": "064",
+     "title": "Cover Songs on 'Beatles For Sale'",
+     "link": "../essays/covers3.md",
+     "years": "1992",
+     "macdonald": "46c, 38b, 44b,46d, 46e, 46b"
+    }
+   ],
+   "intro": "At the end of 1962 the Beatles released their first single Love Me Do / P.S. I Love You . It was followed shortly in January 1963 by their second one Please Please Me / Ask Me Why . Then, in April From Me To You / Thank You Girl appeared. The same month saw their first album: Please Please Me . It was followed in August by the single She Loves You / I'll Get You . Next in November the public could buy both the single I Want To Hold Your Hand / This Boy and the album With The Beatles . It started the Beatlemania, that reigned high in 1964. That year the group released the single Can't Buy Me Love / You Can't Do That in February, followed in June by the EP Long Tall Sally with the original I Call Your Name and three cover songs. One month later, in July, already the single A Hard Day's Night / Things We Said Today and the album A Hard Day's Night were available to the public. In November of the same year the single I Feel Fine / She's A Woman and the album Beatles For Sale were released. All in all this output totals to eight singles, one EP and four albums, of which the songs are analyzed here by Alan W. Pollack."
+  },
+  {
+   "id": "c",
+   "title": "Becoming artists (1965-1966)",
+   "from": 65,
+   "to": 103,
+   "description": "In the middle of the sixties rock musicians began to see themselves as artists. The Beatles stood at the front of this movement, treating their music as an artistic expression of their emotions and a serious reflection of their feelings. As a result, growing further away from their musical roots, the songs on the albums Help! , Rubber Soul and Revolver show a growing independency of style.",
+   "entries": [
+    {
+     "no": "065",
+     "title": "Ticket To Ride",
+     "link": "../essays/ttr.md",
+     "years": "1992",
+     "macdonald": "47"
+    },
+    {
+     "no": "066",
+     "title": "Yes It Is",
+     "link": "../essays/yii.md",
+     "years": "1992",
+     "macdonald": "50"
+    },
+    {
+     "no": "067",
+     "title": "Tell Me What You See",
+     "link": "../essays/tmwys.md",
+     "years": "1992",
+     "macdonald": "54"
+    },
+    {
+     "no": "068",
+     "title": "You Like Me Too Much",
+     "link": "../essays/ylmtm.md",
+     "years": "1992",
+     "macdonald": "52"
+    },
+    {
+     "no": "069",
+     "title": "I'm Down",
+     "link": "../essays/id.md",
+     "years": "1992",
+     "macdonald": "58"
+    },
+    {
+     "no": "070",
+     "title": "The Night Before",
+     "link": "../essays/tnb.md",
+     "years": "1992",
+     "macdonald": "51"
+    },
+    {
+     "no": "071",
+     "title": "I Need You",
+     "link": "../essays/iny.md",
+     "years": "1992",
+     "macdonald": "49"
+    },
+    {
+     "no": "072",
+     "title": "Another Girl",
+     "link": "../essays/ag.md",
+     "years": "1992",
+     "macdonald": "48"
+    },
+    {
+     "no": "073",
+     "title": "It's Only Love",
+     "link": "../essays/iol.md",
+     "years": "1993",
+     "macdonald": "60"
+    },
+    {
+     "no": "074",
+     "title": "I've Just Seen A Face",
+     "link": "../essays/ijsaf.md",
+     "years": "1993",
+     "macdonald": "57"
+    },
+    {
+     "no": "075",
+     "title": "Yesterday",
+     "link": "../essays/y.md",
+     "years": "1993",
+     "macdonald": "59"
+    },
+    {
+     "no": "076",
+     "title": "Cover Songs on 'Help!' and 'Beatles VI'",
+     "link": "../essays/covers4.md",
+     "years": "1993",
+     "macdonald": "60b, 56c, 56b"
+    },
+    {
+     "no": "077",
+     "title": "Drive My Car",
+     "link": "../essays/dmc.md",
+     "years": "1993; 2001",
+     "macdonald": "64"
+    },
+    {
+     "no": "078",
+     "title": "Norwegian Wood (This Bird Has Flown)",
+     "link": "../essays/nw.md",
+     "years": "1993",
+     "macdonald": "63"
+    },
+    {
+     "no": "079",
+     "title": "Nowhere Man",
+     "link": "../essays/nm.md",
+     "years": "1993",
+     "macdonald": "69"
+    },
+    {
+     "no": "080",
+     "title": "Think For Yourself",
+     "link": "../essays/tfy.md",
+     "years": "1993",
+     "macdonald": "73"
+    },
+    {
+     "no": "081",
+     "title": "The Word",
+     "link": "../essays/tw.md",
+     "years": "1993",
+     "macdonald": "74"
+    },
+    {
+     "no": "082",
+     "title": "Michelle",
+     "link": "../essays/m4.md",
+     "years": "1993",
+     "macdonald": "71"
+    },
+    {
+     "no": "083",
+     "title": "What Goes On",
+     "link": "../essays/wgo.md",
+     "years": "1993",
+     "macdonald": "72"
+    },
+    {
+     "no": "084",
+     "title": "Girl",
+     "link": "../essays/g.md",
+     "years": "1993",
+     "macdonald": "76"
+    },
+    {
+     "no": "085",
+     "title": "I'm Looking Through You",
+     "link": "../essays/ilty.md",
+     "years": "1993",
+     "macdonald": "70"
+    },
+    {
+     "no": "086",
+     "title": "In My Life",
+     "link": "../essays/iml.md",
+     "years": "1993",
+     "macdonald": "67"
+    },
+    {
+     "no": "087",
+     "title": "Wait",
+     "link": "../essays/w.md",
+     "years": "1993",
+     "macdonald": "61"
+    },
+    {
+     "no": "088",
+     "title": "If I Needed Someone",
+     "link": "../essays/iins.md",
+     "years": "1993",
+     "macdonald": "66"
+    },
+    {
+     "no": "089",
+     "title": "Run For Your Life",
+     "link": "../essays/rfyl.md",
+     "years": "1993",
+     "macdonald": "62"
+    },
+    {
+     "no": "090",
+     "title": "Frequently Asked Questions About the 'Notes on...' Series",
+     "link": "../essays/noteson.md",
+     "years": "1993",
+     "macdonald": ""
+    },
+    {
+     "no": "091",
+     "title": "'Paperback Writer' and 'Rain'",
+     "link": "../essays/pw_and_r.md",
+     "years": "1993",
+     "macdonald": "80, 81"
+    },
+    {
+     "no": "092",
+     "title": "Taxman",
+     "link": "../essays/t.md",
+     "years": "1994",
+     "macdonald": "84"
+    },
+    {
+     "no": "093",
+     "title": "Eleanor Rigby",
+     "link": "../essays/er.md",
+     "years": "1994",
+     "macdonald": "86"
+    },
+    {
+     "no": "094",
+     "title": "I'm Only Sleeping",
+     "link": "../essays/ios.md",
+     "years": "1994",
+     "macdonald": "85"
+    },
+    {
+     "no": "095",
+     "title": "Love You To",
+     "link": "../essays/lyt.md",
+     "years": "1994",
+     "macdonald": "79"
+    },
+    {
+     "no": "096",
+     "title": "Here, There, and Everywhere",
+     "link": "../essays/htae.md",
+     "years": "1994",
+     "macdonald": "91"
+    },
+    {
+     "no": "097",
+     "title": "Yellow Submarine",
+     "link": "../essays/ys.md",
+     "years": "1994",
+     "macdonald": "88"
+    },
+    {
+     "no": "098",
+     "title": "And Your Bird Can Sing",
+     "link": "../essays/aybcs.md",
+     "years": "1995",
+     "macdonald": "83"
+    },
+    {
+     "no": "099",
+     "title": "For No One",
+     "link": "../essays/fno.md",
+     "years": "1995",
+     "macdonald": "87"
+    },
+    {
+     "no": "100",
+     "title": "Doctor Robert",
+     "link": "../essays/dr.md",
+     "years": "1995",
+     "macdonald": "82"
+    },
+    {
+     "no": "101",
+     "title": "I Want To Tell You",
+     "link": "../essays/iwtty.md",
+     "years": "1995",
+     "macdonald": "89"
+    },
+    {
+     "no": "102",
+     "title": "Got To Get You Into My Life",
+     "link": "../essays/gtgyiml.md",
+     "years": "1995",
+     "macdonald": "78"
+    },
+    {
+     "no": "103",
+     "title": "Tomorrow Never Knows",
+     "link": "../essays/tnk.md",
+     "years": "1995",
+     "macdonald": "77"
+    }
+   ],
+   "intro": "In the middle of the sixties rock musicians began to see themselves as artists. The Beatles stood at the front of this movement, treating their music as an artistic expression of their emotions and a serious reflection of their feelings. The Beatles already departed from their image as teenage stars with their first single of the year 1965 Ticket To Ride / Yes It Is , which appeared in April. This tendency became stronger in their summer single Help! / I'm Down , released in July, and the sound tracks on on the album with the same name, released in August. December saw the album Rubber Soul and the single Day Tripper / We Can Work It Out . The Beatles started late in 1966. In July they released the single Paperback Writer / Rain . One month later, in August, the album Revolver followed step. As Pollack shows in his analyses the development of the group in these years is ruled by a growing independency from their musical roots."
+  },
+  {
+   "id": "d",
+   "title": "The studio years (1967-1968)",
+   "from": 104,
+   "to": 160,
+   "description": "From 1967 on the Beatles operated as a studio group. A number of themes and techniques, Pollack writes, which appear with gathering momentum on their earlier albums and singles now can be seen to converge and blossom fully forth during this psychedelic musical season on albums like Sgt. Pepper's , Magical Mystery Tour , the White Album and Yellow Submarine",
+   "entries": [
+    {
+     "no": "104",
+     "title": "Penny Lane",
+     "link": "../essays/pl.md",
+     "years": "1995",
+     "macdonald": "95"
+    },
+    {
+     "no": "105",
+     "title": "Strawberry Fields Forever",
+     "link": "../essays/sff.md",
+     "years": "1995",
+     "macdonald": "93"
+    },
+    {
+     "no": "106",
+     "title": "Sgt. Pepper's Lonely Hearts Club Band",
+     "link": "../essays/splhcb.md",
+     "years": "1995",
+     "macdonald": "97"
+    },
+    {
+     "no": "107",
+     "title": "With A Little Help From My Friends",
+     "link": "../essays/walhfmf.md",
+     "years": "1995",
+     "macdonald": "107"
+    },
+    {
+     "no": "108",
+     "title": "Lucy In The Sky With Diamonds",
+     "link": "../essays/litswd.md",
+     "years": "1995",
+     "macdonald": "103"
+    },
+    {
+     "no": "109",
+     "title": "Getting Better",
+     "link": "../essays/gb.md",
+     "years": "1995",
+     "macdonald": "104"
+    },
+    {
+     "no": "110",
+     "title": "Fixing A Hole",
+     "link": "../essays/fah.md",
+     "years": "1996",
+     "macdonald": "99"
+    },
+    {
+     "no": "111",
+     "title": "She's Leaving Home",
+     "link": "../essays/slh.md",
+     "years": "1996",
+     "macdonald": "106"
+    },
+    {
+     "no": "112",
+     "title": "Being For The Benefit Of Mr. Kite",
+     "link": "../essays/bftbomk.md",
+     "years": "1996",
+     "macdonald": "101"
+    },
+    {
+     "no": "113",
+     "title": "Within You Without You",
+     "link": "../essays/wywy.md",
+     "years": "1996",
+     "macdonald": "105"
+    },
+    {
+     "no": "114",
+     "title": "When I'm Sixty-Four",
+     "link": "../essays/wisf.md",
+     "years": "1996",
+     "macdonald": "94"
+    },
+    {
+     "no": "115",
+     "title": "Lovely Rita",
+     "link": "../essays/lr.md",
+     "years": "1996",
+     "macdonald": "102"
+    },
+    {
+     "no": "116",
+     "title": "Good Morning, Good Morning",
+     "link": "../essays/gmgm.md",
+     "years": "1996",
+     "macdonald": "98"
+    },
+    {
+     "no": "117",
+     "title": "'Reprise' and 'A Day In The Life'",
+     "link": "../essays/aditl.md",
+     "years": "1996",
+     "macdonald": "108, 96"
+    },
+    {
+     "no": "118",
+     "title": "All You Need Is Love",
+     "link": "../essays/aynil.md",
+     "years": "1996",
+     "macdonald": "114"
+    },
+    {
+     "no": "119",
+     "title": "Baby You're A Rich Man",
+     "link": "../essays/byarm.md",
+     "years": "1996",
+     "macdonald": "110"
+    },
+    {
+     "no": "120",
+     "title": "Hello Goodbye",
+     "link": "../essays/hg.md",
+     "years": "1996",
+     "macdonald": "120"
+    },
+    {
+     "no": "121",
+     "title": "I Am The Walrus",
+     "link": "../essays/iatw.md",
+     "years": "1996",
+     "macdonald": "116"
+    },
+    {
+     "no": "122",
+     "title": "Magical Mystery Tour",
+     "link": "../essays/mmt.md",
+     "years": "1996",
+     "macdonald": "109"
+    },
+    {
+     "no": "123",
+     "title": "The Fool On The Hill",
+     "link": "../essays/foth.md",
+     "years": "1996",
+     "macdonald": "119"
+    },
+    {
+     "no": "124",
+     "title": "Flying",
+     "link": "../essays/f.md",
+     "years": "1996",
+     "macdonald": "118"
+    },
+    {
+     "no": "125",
+     "title": "Blue Jay Way",
+     "link": "../essays/bjw.md",
+     "years": "1997",
+     "macdonald": "117"
+    },
+    {
+     "no": "126",
+     "title": "Your Mother Should Know",
+     "link": "../essays/ymsk.md",
+     "years": "1997",
+     "macdonald": "115"
+    },
+    {
+     "no": "127",
+     "title": "Lady Madonna",
+     "link": "../essays/lm.md",
+     "years": "1997",
+     "macdonald": "122"
+    },
+    {
+     "no": "128",
+     "title": "The Inner Light",
+     "link": "../essays/til.md",
+     "years": "1997",
+     "macdonald": "121"
+    },
+    {
+     "no": "129",
+     "title": "'Revolution' and 'Revolution 1'",
+     "link": "../essays/r.md",
+     "years": "1997",
+     "macdonald": "132, 125"
+    },
+    {
+     "no": "130",
+     "title": "Back In The USSR",
+     "link": "../essays/bitu.md",
+     "years": "1997",
+     "macdonald": "142"
+    },
+    {
+     "no": "131",
+     "title": "Dear Prudence",
+     "link": "../essays/dp.md",
+     "years": "1997",
+     "macdonald": "143"
+    },
+    {
+     "no": "132",
+     "title": "Glass Onion",
+     "link": "../essays/go.md",
+     "years": "1997",
+     "macdonald": "144"
+    },
+    {
+     "no": "133",
+     "title": "Ob-La-Di, Ob-La-Da",
+     "link": "../essays/oo.md",
+     "years": "1997",
+     "macdonald": "131"
+    },
+    {
+     "no": "134",
+     "title": "Wild Honey Pie",
+     "link": "../essays/whp.md",
+     "years": "1997",
+     "macdonald": "141"
+    },
+    {
+     "no": "135",
+     "title": "The Continuing Story Of Bungalow Bill",
+     "link": "../essays/tcsobb.md",
+     "years": "1997",
+     "macdonald": "154"
+    },
+    {
+     "no": "136",
+     "title": "Happiness Is A Warm Gun",
+     "link": "../essays/hiawg.md",
+     "years": "1997",
+     "macdonald": "148"
+    },
+    {
+     "no": "137",
+     "title": "Martha My Dear",
+     "link": "../essays/mmd.md",
+     "years": "1997",
+     "macdonald": "151"
+    },
+    {
+     "no": "138",
+     "title": "I'm So Tired",
+     "link": "../essays/ist.md",
+     "years": "1997",
+     "macdonald": "153"
+    },
+    {
+     "no": "139",
+     "title": "Blackbird",
+     "link": "../essays/b3.md",
+     "years": "1997",
+     "macdonald": "128"
+    },
+    {
+     "no": "140",
+     "title": "Piggies",
+     "link": "../essays/p.md",
+     "years": "1998",
+     "macdonald": "147"
+    },
+    {
+     "no": "141",
+     "title": "Rocky Raccoon",
+     "link": "../essays/rr.md",
+     "years": "1998",
+     "macdonald": "140"
+    },
+    {
+     "no": "142",
+     "title": "Don't Pass Me By",
+     "link": "../essays/dpmb.md",
+     "years": "1998",
+     "macdonald": "126"
+    },
+    {
+     "no": "143",
+     "title": "Why Don't We Do It In The Road",
+     "link": "../essays/wdwdiitr.md",
+     "years": "1998",
+     "macdonald": "155"
+    },
+    {
+     "no": "144",
+     "title": "I Will",
+     "link": "../essays/iw.md",
+     "years": "1998",
+     "macdonald": "145"
+    },
+    {
+     "no": "145",
+     "title": "Julia",
+     "link": "../essays/j.md",
+     "years": "1998",
+     "macdonald": "156"
+    },
+    {
+     "no": "146",
+     "title": "Yer Blues",
+     "link": "../essays/yb.md",
+     "years": "1998",
+     "macdonald": "139"
+    },
+    {
+     "no": "147",
+     "title": "Mother Nature's Son",
+     "link": "../essays/mns.md",
+     "years": "1998",
+     "macdonald": "138"
+    },
+    {
+     "no": "148",
+     "title": "Everybody's Got Something To Hide Except For Me And My Monkey",
+     "link": "../essays/egsthefmamm.md",
+     "years": "1998",
+     "macdonald": "129"
+    },
+    {
+     "no": "149",
+     "title": "Sexy Sadie",
+     "link": "../essays/ss.md",
+     "years": "1998",
+     "macdonald": "135"
+    },
+    {
+     "no": "150",
+     "title": "Helter Skelter",
+     "link": "../essays/hs.md",
+     "years": "1998",
+     "macdonald": "134"
+    },
+    {
+     "no": "151",
+     "title": "Long, Long, Long",
+     "link": "../essays/lll.md",
+     "years": "1998",
+     "macdonald": "152"
+    },
+    {
+     "no": "152",
+     "title": "Honey Pie",
+     "link": "../essays/hp.md",
+     "years": "1998",
+     "macdonald": "149"
+    },
+    {
+     "no": "153",
+     "title": "Savoy Truffle",
+     "link": "../essays/st.md",
+     "years": "1998",
+     "macdonald": "150"
+    },
+    {
+     "no": "154",
+     "title": "Cry Baby Cry",
+     "link": "../essays/cbc.md",
+     "years": "1998",
+     "macdonald": "133"
+    },
+    {
+     "no": "155",
+     "title": "Revolution #9",
+     "link": "../essays/r9.md",
+     "years": "1998",
+     "macdonald": "127"
+    },
+    {
+     "no": "156",
+     "title": "Good Night",
+     "link": "../essays/gn.md",
+     "years": "1998",
+     "macdonald": "130"
+    },
+    {
+     "no": "157",
+     "title": "Only A Northern Song",
+     "link": "../essays/oans.md",
+     "years": "1998",
+     "macdonald": "100"
+    },
+    {
+     "no": "158",
+     "title": "All Together Now",
+     "link": "../essays/atn.md",
+     "years": "1998",
+     "macdonald": "111"
+    },
+    {
+     "no": "159",
+     "title": "Hey Bulldog",
+     "link": "../essays/hb.md",
+     "years": "1998",
+     "macdonald": "124"
+    },
+    {
+     "no": "160",
+     "title": "It's All Too Much",
+     "link": "../essays/iatm.md",
+     "years": "1998",
+     "macdonald": "113"
+    }
+   ],
+   "intro": "In 1967 the Beatles withdrew in the recording studio. Because of this the years 1967 and 1968 have become known as their studio years. The output was as psychedelic in content as impressive from a musical perspective. In February 1967 the group released the single Penny Lane / Strawberry Fields Forever ; followed in June by the album Sgt. Pepper's Lonely Hearts Club Band . Next in July the public got the surprise of the single All You Need Is Love / Baby You're A Rich Man . Then in November the single Hello Goodbye / I'm The Walrus was released, which already in December was followed by the double EP Magical Mystery Tour . March 1968 saw the single Lady Madonna / The Inner Light and the last days of August Hey Jude / Revolution . In July the cartoon movie Yellow Submarine made its way into the theaters (the songs were released on album in January 1969). The lack of albums that year was filled up in November with the White Album ."
+  },
+  {
+   "id": "e",
+   "title": "Get back (1969-1970)",
+   "from": 161,
+   "to": 195,
+   "description": "In their last years as a recording group the final split of the group slowly becomes visible in the growing number of solo projects. As an antidote in January 1969 the Beatles initiated their Get Back project at the Twickenham Film Studios in London. Some of the results of this tribute to their roots are collected on the last albums Abbey Road and Let It Be . To his analyses of these songs Pollack adds his views on the two original songs on the recent Anthology CD's.",
+   "entries": [
+    {
+     "no": "161",
+     "title": "Get Back",
+     "link": "../essays/gb2.md",
+     "years": "1999",
+     "macdonald": "160"
+    },
+    {
+     "no": "162",
+     "title": "Don't Let Me Down",
+     "link": "../essays/dlmd.md",
+     "years": "1999",
+     "macdonald": "159"
+    },
+    {
+     "no": "163",
+     "title": "The Ballad Of John And Yoko",
+     "link": "../essays/tbojay.md",
+     "years": "1999",
+     "macdonald": "168"
+    },
+    {
+     "no": "164",
+     "title": "Old Brown Shoe",
+     "link": "../essays/obs.md",
+     "years": "1999",
+     "macdonald": "169"
+    },
+    {
+     "no": "165",
+     "title": "Let It Be",
+     "link": "../essays/lib.md",
+     "years": "1999",
+     "macdonald": "164"
+    },
+    {
+     "no": "166",
+     "title": "You Know My Name (Look Up The Number)",
+     "link": "../essays/ykmnlutn.md",
+     "years": "1999",
+     "macdonald": "112"
+    },
+    {
+     "no": "167",
+     "title": "Two Of Us",
+     "link": "../essays/tou.md",
+     "years": "1999",
+     "macdonald": "161"
+    },
+    {
+     "no": "168",
+     "title": "Dig A Pony",
+     "link": "../essays/dap.md",
+     "years": "1999",
+     "macdonald": "157"
+    },
+    {
+     "no": "169",
+     "title": "Across The Universe",
+     "link": "../essays/atu.md",
+     "years": "1999",
+     "macdonald": "123"
+    },
+    {
+     "no": "170",
+     "title": "I Me Mine",
+     "link": "../essays/imm.md",
+     "years": "1999",
+     "macdonald": "186"
+    },
+    {
+     "no": "171",
+     "title": "Dig It",
+     "link": "../essays/di.md",
+     "years": "1999",
+     "macdonald": "162"
+    },
+    {
+     "no": "172",
+     "title": "Maggie Mae",
+     "link": "../essays/mmfrag.md",
+     "years": "1999",
+     "macdonald": "161b"
+    },
+    {
+     "no": "173",
+     "title": "I've Got A Feeling",
+     "link": "../essays/igaf.md",
+     "years": "1999",
+     "macdonald": "158"
+    },
+    {
+     "no": "174",
+     "title": "One After 909",
+     "link": "../essays/oa909.md",
+     "years": "1999",
+     "macdonald": "166"
+    },
+    {
+     "no": "175",
+     "title": "The Long And Winding Road",
+     "link": "../essays/tlawr.md",
+     "years": "1999",
+     "macdonald": "165"
+    },
+    {
+     "no": "176",
+     "title": "For You Blue",
+     "link": "../essays/fyb.md",
+     "years": "1999",
+     "macdonald": "163"
+    },
+    {
+     "no": "177",
+     "title": "Come Together",
+     "link": "../essays/ct.md",
+     "years": "1999",
+     "macdonald": "179"
+    },
+    {
+     "no": "178",
+     "title": "Something",
+     "link": "../essays/s.md",
+     "years": "1999",
+     "macdonald": "170"
+    },
+    {
+     "no": "179",
+     "title": "Maxwell's Silver Hammer",
+     "link": "../essays/msh.md",
+     "years": "1999",
+     "macdonald": "178"
+    },
+    {
+     "no": "180",
+     "title": "Oh! Darling",
+     "link": "../essays/od.md",
+     "years": "1999",
+     "macdonald": "171"
+    },
+    {
+     "no": "181",
+     "title": "Octopus's Garden",
+     "link": "../essays/og.md",
+     "years": "1999",
+     "macdonald": "172"
+    },
+    {
+     "no": "182",
+     "title": "I Want You (She's So Heavy)",
+     "link": "../essays/iwyssh.md",
+     "years": "1999",
+     "macdonald": "167"
+    },
+    {
+     "no": "183",
+     "title": "Here Comes The Sun",
+     "link": "../essays/hcts.md",
+     "years": "1999",
+     "macdonald": "177"
+    },
+    {
+     "no": "184",
+     "title": "Because",
+     "link": "../essays/b4.md",
+     "years": "1999",
+     "macdonald": "185"
+    },
+    {
+     "no": "185",
+     "title": "Sun King",
+     "link": "../essays/sk.md",
+     "years": "1999",
+     "macdonald": "181"
+    },
+    {
+     "no": "186",
+     "title": "Mean Mr Mustard",
+     "link": "../essays/mmm.md",
+     "years": "1999",
+     "macdonald": "182"
+    },
+    {
+     "no": "187",
+     "title": "Polythene Pam",
+     "link": "../essays/pp.md",
+     "years": "1999",
+     "macdonald": "183"
+    },
+    {
+     "no": "188",
+     "title": "She Came In Through The Bathroom Window",
+     "link": "../essays/scittbw.md",
+     "years": "2000",
+     "macdonald": "184"
+    },
+    {
+     "no": "189",
+     "title": "Golden Slumbers",
+     "link": "../essays/gs.md",
+     "years": "2000",
+     "macdonald": "175"
+    },
+    {
+     "no": "190",
+     "title": "Carry That Weight",
+     "link": "../essays/ctw.md",
+     "years": "2000",
+     "macdonald": "176"
+    },
+    {
+     "no": "191",
+     "title": "The End",
+     "link": "../essays/te.md",
+     "years": "2000",
+     "macdonald": "180"
+    },
+    {
+     "no": "192",
+     "title": "The \"Abbey Road\" Medley",
+     "link": "../essays/medley.md",
+     "years": "2000",
+     "macdonald": "181, 182, 183, 184, 175, 176, 180"
+    },
+    {
+     "no": "193",
+     "title": "Her Majesty",
+     "link": "../essays/hm.md",
+     "years": "2000",
+     "macdonald": "174"
+    },
+    {
+     "no": "194",
+     "title": "Free As A Bird",
+     "link": "../essays/faab.md",
+     "years": "1995",
+     "macdonald": "187"
+    },
+    {
+     "no": "195",
+     "title": "Real Love",
+     "link": "../essays/rl.md",
+     "years": "1995",
+     "macdonald": "188"
+    },
+    {
+     "no": "196",
+     "title": "Ian Hammond Interviews Alan W. Pollack",
+     "link": "../essays/interview.md",
+     "years": "2000",
+     "macdonald": ""
+    },
+    {
+     "no": "197",
+     "title": "Quarrymen Sessions",
+     "link": "../essays/qmen.md",
+     "years": "2000",
+     "macdonald": ""
+    },
+    {
+     "no": "198",
+     "title": "Can You Take Me Back",
+     "link": "../essays/cytmb.md",
+     "years": "2001",
+     "macdonald": ""
+    },
+    {
+     "no": "199",
+     "title": "Percy Phillips Shellac",
+     "link": "../essays/shellac.md",
+     "years": "2001",
+     "macdonald": "E1b, E1"
+    },
+    {
+     "no": "200",
+     "title": "Notes on Three Simple Songs That Didn't Make It",
+     "link": "../essays/iivv.md",
+     "years": "2001",
+     "macdonald": "U73, U54, U38c"
+    }
+   ],
+   "intro": "In the last years of their career the final split of the group already became visible in the growing number of solo projects. As an antidote to their conflicts in January 1969 the Beatles initiated their Get Back project at the Twickenham Film Studios in London. In April they released the single Get Back / Don't Let Me Down , followed in May by The Ballad Of John And Yoko / Old Brown Shoe . Some of the other results of this tribute to their roots are collected on the album Abbey Road (September 1969), the single Let It Be / You Know My Name (March 1970) and the last album Let It Be (May 1970). To his analyses of these songs Pollack adds his views on the two original songs on the recent Anthology CD's: Free As A Bird and Real Love ."
+  }
+ ]
+}

@@ -1,0 +1,1570 @@
+[
+ {
+  "no": "023",
+  "title": "A Day In The Life",
+  "link": "../essays/triple.md",
+  "year": "2000",
+  "macdonald": "96"
+ },
+ {
+  "no": "117",
+  "title": "A Day In The Life",
+  "link": "../essays/aditl.md#q2",
+  "year": "1996",
+  "macdonald": "96"
+ },
+ {
+  "no": "049",
+  "title": "A Hard Day's Night",
+  "link": "../essays/ahdn.md",
+  "year": "1992",
+  "macdonald": "31"
+ },
+ {
+  "no": "35e",
+  "title": "A Taste of Honey",
+  "link": "../essays/covers1.md#q5",
+  "year": "1991",
+  "macdonald": "9b"
+ },
+ {
+  "no": "169",
+  "title": "Across The Universe",
+  "link": "../essays/atu.md",
+  "year": "1999",
+  "macdonald": "123"
+ },
+ {
+  "no": "76a",
+  "title": "Act Naturally",
+  "link": "../essays/covers4.md#q1",
+  "year": "1993",
+  "macdonald": "60b"
+ },
+ {
+  "no": "036",
+  "title": "All I've Got To Do",
+  "link": "../essays/aigtd.md",
+  "year": "1991",
+  "macdonald": "18"
+ },
+ {
+  "no": "027",
+  "title": "All My Loving",
+  "link": "../essays/aml.md",
+  "year": "2001",
+  "macdonald": "15"
+ },
+ {
+  "no": "158",
+  "title": "All Together Now",
+  "link": "../essays/atn.md",
+  "year": "1998",
+  "macdonald": "111"
+ },
+ {
+  "no": "118",
+  "title": "All You Need Is Love",
+  "link": "../essays/aynil.md",
+  "year": "1996",
+  "macdonald": "114"
+ },
+ {
+  "no": "003",
+  "title": "And I Love Her",
+  "link": "../essays/ailh.md",
+  "year": "2000",
+  "macdonald": "25"
+ },
+ {
+  "no": "098",
+  "title": "And Your Bird Can Sing",
+  "link": "../essays/aybcs.md",
+  "year": "1995",
+  "macdonald": "83"
+ },
+ {
+  "no": "35a",
+  "title": "Anna (Go To Him)",
+  "link": "../essays/covers1.md#q1",
+  "year": "1991",
+  "macdonald": "9b"
+ },
+ {
+  "no": "072",
+  "title": "Another Girl",
+  "link": "../essays/ag.md",
+  "year": "1992",
+  "macdonald": "48"
+ },
+ {
+  "no": "017",
+  "title": "Any Time At All",
+  "link": "../essays/ataa.md",
+  "year": "2000",
+  "macdonald": "34"
+ },
+ {
+  "no": "033",
+  "title": "Ask Me Why",
+  "link": "../essays/amw.md",
+  "year": "2001",
+  "macdonald": "4"
+ },
+ {
+  "no": "35d",
+  "title": "Baby It's You",
+  "link": "../essays/covers1.md#q4",
+  "year": "1991",
+  "macdonald": "9e"
+ },
+ {
+  "no": "119",
+  "title": "Baby You're A Rich Man",
+  "link": "../essays/byarm.md",
+  "year": "1996",
+  "macdonald": "110"
+ },
+ {
+  "no": "059",
+  "title": "Baby's In Black",
+  "link": "../essays/bib.md",
+  "year": "1992",
+  "macdonald": "37"
+ },
+ {
+  "no": "130",
+  "title": "Back In The USSR",
+  "link": "../essays/bitu.md",
+  "year": "1997",
+  "macdonald": "142"
+ },
+ {
+  "no": "76b",
+  "title": "Bad Boy",
+  "link": "../essays/covers4.md#q2",
+  "year": "1993",
+  "macdonald": "56c"
+ },
+ {
+  "no": "184",
+  "title": "Because",
+  "link": "../essays/b4.md",
+  "year": "1999",
+  "macdonald": "185"
+ },
+ {
+  "no": "112",
+  "title": "Being For The Benefit Of Mr. Kite",
+  "link": "../essays/bftbomk.md",
+  "year": "1996",
+  "macdonald": "101"
+ },
+ {
+  "no": "020",
+  "title": "Birthday",
+  "link": "../essays/b.md",
+  "year": "2000",
+  "macdonald": "146"
+ },
+ {
+  "no": "139",
+  "title": "Blackbird",
+  "link": "../essays/b3.md",
+  "year": "1997",
+  "macdonald": "128"
+ },
+ {
+  "no": "125",
+  "title": "Blue Jay Way",
+  "link": "../essays/bjw.md",
+  "year": "1997",
+  "macdonald": "117"
+ },
+ {
+  "no": "35c",
+  "title": "Boys",
+  "link": "../essays/covers1.md#q3",
+  "year": "1991",
+  "macdonald": "9c"
+ },
+ {
+  "no": "198",
+  "title": "Can You Take Me Back",
+  "link": "../essays/cytmb.md",
+  "year": "2001",
+  "macdonald": ""
+ },
+ {
+  "no": "045",
+  "title": "Can't Buy Me Love",
+  "link": "../essays/cbml.md",
+  "year": "1992",
+  "macdonald": "23"
+ },
+ {
+  "no": "190",
+  "title": "Carry That Weight",
+  "link": "../essays/ctw.md",
+  "year": "2000",
+  "macdonald": "176"
+ },
+ {
+  "no": "35b",
+  "title": "Chains",
+  "link": "../essays/covers1.md#q2",
+  "year": "1991",
+  "macdonald": "9d"
+ },
+ {
+  "no": "177",
+  "title": "Come Together",
+  "link": "../essays/ct.md",
+  "year": "1999",
+  "macdonald": "179"
+ },
+ {
+  "no": "154",
+  "title": "Cry Baby Cry",
+  "link": "../essays/cbc.md",
+  "year": "1998",
+  "macdonald": "133"
+ },
+ {
+  "no": "004",
+  "title": "Day Tripper",
+  "link": "../essays/dt.md",
+  "year": "2000",
+  "macdonald": "65"
+ },
+ {
+  "no": "131",
+  "title": "Dear Prudence",
+  "link": "../essays/dp.md",
+  "year": "1997",
+  "macdonald": "143"
+ },
+ {
+  "no": "42e",
+  "title": "Devil In Her Heart",
+  "link": "../essays/covers2.md#q5",
+  "year": "1991",
+  "macdonald": "13d"
+ },
+ {
+  "no": "168",
+  "title": "Dig A Pony",
+  "link": "../essays/dap.md",
+  "year": "1999",
+  "macdonald": "157"
+ },
+ {
+  "no": "171",
+  "title": "Dig It",
+  "link": "../essays/di.md",
+  "year": "1999",
+  "macdonald": "162"
+ },
+ {
+  "no": "76c",
+  "title": "Dizzy Miss Lizzy",
+  "link": "../essays/covers4.md#q3",
+  "year": "1993",
+  "macdonald": "56b"
+ },
+ {
+  "no": "032",
+  "title": "Do You Want To Know A Secret",
+  "link": "../essays/dywtkas.md",
+  "year": "2001",
+  "macdonald": "7"
+ },
+ {
+  "no": "100",
+  "title": "Doctor Robert",
+  "link": "../essays/dr.md",
+  "year": "1995",
+  "macdonald": "82"
+ },
+ {
+  "no": "037",
+  "title": "Don't Bother Me",
+  "link": "../essays/dbm.md",
+  "year": "1991",
+  "macdonald": "20"
+ },
+ {
+  "no": "162",
+  "title": "Don't Let Me Down",
+  "link": "../essays/dlmd.md",
+  "year": "1999",
+  "macdonald": "159"
+ },
+ {
+  "no": "142",
+  "title": "Don't Pass Me By",
+  "link": "../essays/dpmb.md",
+  "year": "1998",
+  "macdonald": "126"
+ },
+ {
+  "no": "077",
+  "title": "Drive My Car",
+  "link": "../essays/dmc.md",
+  "year": "2001",
+  "macdonald": "64"
+ },
+ {
+  "no": "002",
+  "title": "Eight Days A Week",
+  "link": "../essays/edaw.md",
+  "year": "2000",
+  "macdonald": "43"
+ },
+ {
+  "no": "093",
+  "title": "Eleanor Rigby",
+  "link": "../essays/er.md",
+  "year": "1994",
+  "macdonald": "86"
+ },
+ {
+  "no": "061",
+  "title": "Every Little Thing",
+  "link": "../essays/elt.md",
+  "year": "1992",
+  "macdonald": "39"
+ },
+ {
+  "no": "148",
+  "title": "Everybody's Got Something To Hide Except For Me And My Monkey",
+  "link": "../essays/egsthefmamm.md",
+  "year": "1998",
+  "macdonald": "129"
+ },
+ {
+  "no": "64f",
+  "title": "Everybody's Trying To Be My Baby",
+  "link": "../essays/covers3.md#q6",
+  "year": "1992",
+  "macdonald": "46b"
+ },
+ {
+  "no": "110",
+  "title": "Fixing A Hole",
+  "link": "../essays/fah.md",
+  "year": "1996",
+  "macdonald": "99"
+ },
+ {
+  "no": "124",
+  "title": "Flying",
+  "link": "../essays/f.md",
+  "year": "1996",
+  "macdonald": "118"
+ },
+ {
+  "no": "099",
+  "title": "For No One",
+  "link": "../essays/fno.md",
+  "year": "1995",
+  "macdonald": "87"
+ },
+ {
+  "no": "176",
+  "title": "For You Blue",
+  "link": "../essays/fyb.md",
+  "year": "1999",
+  "macdonald": "163"
+ },
+ {
+  "no": "194",
+  "title": "Free As A Bird",
+  "link": "../essays/faab.md",
+  "year": "1995",
+  "macdonald": "187"
+ },
+ {
+  "no": "028",
+  "title": "From Me To You",
+  "link": "../essays/fmty.md",
+  "year": "2001",
+  "macdonald": "10"
+ },
+ {
+  "no": "161",
+  "title": "Get Back",
+  "link": "../essays/gb2.md",
+  "year": "1999",
+  "macdonald": "160"
+ },
+ {
+  "no": "109",
+  "title": "Getting Better",
+  "link": "../essays/gb.md",
+  "year": "1995",
+  "macdonald": "104"
+ },
+ {
+  "no": "084",
+  "title": "Girl",
+  "link": "../essays/g.md",
+  "year": "1993",
+  "macdonald": "76"
+ },
+ {
+  "no": "132",
+  "title": "Glass Onion",
+  "link": "../essays/go.md",
+  "year": "1997",
+  "macdonald": "144"
+ },
+ {
+  "no": "189",
+  "title": "Golden Slumbers",
+  "link": "../essays/gs.md",
+  "year": "2000",
+  "macdonald": "175"
+ },
+ {
+  "no": "011",
+  "title": "Good Day Sunshine",
+  "link": "../essays/gds.md",
+  "year": "2000",
+  "macdonald": "90"
+ },
+ {
+  "no": "116",
+  "title": "Good Morning, Good Morning",
+  "link": "../essays/gmgm.md#q1",
+  "year": "1996",
+  "macdonald": "98"
+ },
+ {
+  "no": "156",
+  "title": "Good Night",
+  "link": "../essays/gn.md",
+  "year": "1998",
+  "macdonald": "130"
+ },
+ {
+  "no": "102",
+  "title": "Got To Get You Into My Life",
+  "link": "../essays/gtgyiml.md",
+  "year": "1995",
+  "macdonald": "78"
+ },
+ {
+  "no": "136",
+  "title": "Happiness Is A Warm Gun",
+  "link": "../essays/hiawg.md",
+  "year": "1997",
+  "macdonald": "148"
+ },
+ {
+  "no": "120",
+  "title": "Hello Goodbye",
+  "link": "../essays/hg.md",
+  "year": "1996",
+  "macdonald": "120"
+ },
+ {
+  "no": "006",
+  "title": "Help!",
+  "link": "../essays/h.md",
+  "year": "2000",
+  "macdonald": "56"
+ },
+ {
+  "no": "150",
+  "title": "Helter Skelter",
+  "link": "../essays/hs.md",
+  "year": "1998",
+  "macdonald": "134"
+ },
+ {
+  "no": "193",
+  "title": "Her Majesty",
+  "link": "../essays/hm.md",
+  "year": "2000",
+  "macdonald": "174"
+ },
+ {
+  "no": "183",
+  "title": "Here Comes The Sun",
+  "link": "../essays/hcts.md",
+  "year": "1999",
+  "macdonald": "177"
+ },
+ {
+  "no": "096",
+  "title": "Here, There, And Everywhere",
+  "link": "../essays/htae.md",
+  "year": "1994",
+  "macdonald": "91"
+ },
+ {
+  "no": "159",
+  "title": "Hey Bulldog",
+  "link": "../essays/hb.md",
+  "year": "1998",
+  "macdonald": "124"
+ },
+ {
+  "no": "014",
+  "title": "Hey Jude",
+  "link": "../essays/hj.md",
+  "year": "2000",
+  "macdonald": "137"
+ },
+ {
+  "no": "039",
+  "title": "Hold Me Tight",
+  "link": "../essays/hmt.md",
+  "year": "1991",
+  "macdonald": "9"
+ },
+ {
+  "no": "64e",
+  "title": "Honey Don't",
+  "link": "../essays/covers3.md#q5",
+  "year": "1992",
+  "macdonald": "46e"
+ },
+ {
+  "no": "152",
+  "title": "Honey Pie",
+  "link": "../essays/hp.md",
+  "year": "1998",
+  "macdonald": "149"
+ },
+ {
+  "no": "023",
+  "title": "I Am The Walrus",
+  "link": "../essays/triple.md",
+  "year": "2000",
+  "macdonald": "116"
+ },
+ {
+  "no": "121",
+  "title": "I Am The Walrus",
+  "link": "../essays/iatw.md",
+  "year": "1996",
+  "macdonald": "116"
+ },
+ {
+  "no": "047",
+  "title": "I Call Your Name",
+  "link": "../essays/icyn.md",
+  "year": "1992",
+  "macdonald": "30"
+ },
+ {
+  "no": "062",
+  "title": "I Don't Want To Spoil The Party",
+  "link": "../essays/idwtstp.md",
+  "year": "1992",
+  "macdonald": "40"
+ },
+ {
+  "no": "055",
+  "title": "I Feel Fine",
+  "link": "../essays/iff.md",
+  "year": "1992",
+  "macdonald": "45"
+ },
+ {
+  "no": "170",
+  "title": "I Me Mine",
+  "link": "../essays/imm.md",
+  "year": "1999",
+  "macdonald": "186"
+ },
+ {
+  "no": "071",
+  "title": "I Need You",
+  "link": "../essays/iny.md",
+  "year": "1992",
+  "macdonald": "49"
+ },
+ {
+  "no": "026",
+  "title": "I Saw Her Standing There",
+  "link": "../essays/ishst.md",
+  "year": "2001",
+  "macdonald": "6"
+ },
+ {
+  "no": "015",
+  "title": "I Should Have Known Better",
+  "link": "../essays/ishkb.md",
+  "year": "2000",
+  "macdonald": "26"
+ },
+ {
+  "no": "040",
+  "title": "I Wanna Be Your Man",
+  "link": "../essays/iwbym.md",
+  "year": "1991",
+  "macdonald": "16"
+ },
+ {
+  "no": "043",
+  "title": "I Want To Hold Your Hand",
+  "link": "../essays/iwthyh.md",
+  "year": "1991",
+  "macdonald": "21"
+ },
+ {
+  "no": "101",
+  "title": "I Want To Tell You",
+  "link": "../essays/iwtty.md",
+  "year": "1995",
+  "macdonald": "89"
+ },
+ {
+  "no": "182",
+  "title": "I Want You (She's So Heavy)",
+  "link": "../essays/iwyssh.md",
+  "year": "1999",
+  "macdonald": "167"
+ },
+ {
+  "no": "144",
+  "title": "I Will",
+  "link": "../essays/iw.md",
+  "year": "1998",
+  "macdonald": "145"
+ },
+ {
+  "no": "019",
+  "title": "I'll Be Back",
+  "link": "../essays/ibb.md",
+  "year": "2000",
+  "macdonald": "33"
+ },
+ {
+  "no": "053",
+  "title": "I'll Cry Instead",
+  "link": "../essays/ici.md",
+  "year": "1992",
+  "macdonald": "32"
+ },
+ {
+  "no": "060",
+  "title": "I'll Follow The Sun",
+  "link": "../essays/ifts.md",
+  "year": "1992",
+  "macdonald": "46"
+ },
+ {
+  "no": "034",
+  "title": "I'll Get You",
+  "link": "../essays/igy.md",
+  "year": "2001",
+  "macdonald": "13"
+ },
+ {
+  "no": "057",
+  "title": "I'm A Loser",
+  "link": "../essays/ial.md",
+  "year": "1992",
+  "macdonald": "38"
+ },
+ {
+  "no": "069",
+  "title": "I'm Down",
+  "link": "../essays/id.md",
+  "year": "1992",
+  "macdonald": "58"
+ },
+ {
+  "no": "051",
+  "title": "I'm Happy Just To Dance With You",
+  "link": "../essays/ihjtdwy.md",
+  "year": "1992",
+  "macdonald": "29"
+ },
+ {
+  "no": "085",
+  "title": "I'm Looking Through You",
+  "link": "../essays/ilty.md",
+  "year": "1993",
+  "macdonald": "70"
+ },
+ {
+  "no": "094",
+  "title": "I'm Only Sleeping",
+  "link": "../essays/ios.md",
+  "year": "1994",
+  "macdonald": "85"
+ },
+ {
+  "no": "138",
+  "title": "I'm So Tired",
+  "link": "../essays/ist.md",
+  "year": "1997",
+  "macdonald": "153"
+ },
+ {
+  "no": "173",
+  "title": "I've Got A Feeling",
+  "link": "../essays/igaf.md",
+  "year": "1999",
+  "macdonald": "158"
+ },
+ {
+  "no": "074",
+  "title": "I've Just Seen A Face",
+  "link": "../essays/ijsaf.md",
+  "year": "1993",
+  "macdonald": "57"
+ },
+ {
+  "no": "050",
+  "title": "If I Fell",
+  "link": "../essays/iif.md",
+  "year": "1992",
+  "macdonald": "28"
+ },
+ {
+  "no": "088",
+  "title": "If I Needed Someone",
+  "link": "../essays/iins.md",
+  "year": "1993",
+  "macdonald": "66"
+ },
+ {
+  "no": "200b",
+  "title": "If You've Got Trouble",
+  "link": "../essays/iivv.md#q2",
+  "year": "2001",
+  "macdonald": "U54"
+ },
+ {
+  "no": "086",
+  "title": "In My Life",
+  "link": "../essays/iml.md",
+  "year": "1993",
+  "macdonald": "67"
+ },
+ {
+  "no": "199b",
+  "title": "In Spite Off All The Danger",
+  "link": "../essays/shellac.md#q2",
+  "year": "2001",
+  "macdonald": "E1"
+ },
+ {
+  "no": "010",
+  "title": "It Won't Be Long",
+  "link": "../essays/iwbl.md",
+  "year": "2000",
+  "macdonald": "14"
+ },
+ {
+  "no": "160",
+  "title": "It's All Too Much",
+  "link": "../essays/iatm.md",
+  "year": "1998",
+  "macdonald": "113"
+ },
+ {
+  "no": "073",
+  "title": "It's Only Love",
+  "link": "../essays/iol.md",
+  "year": "1993",
+  "macdonald": "60"
+ },
+ {
+  "no": "145",
+  "title": "Julia",
+  "link": "../essays/j.md",
+  "year": "1998",
+  "macdonald": "156"
+ },
+ {
+  "no": "127",
+  "title": "Lady Madonna",
+  "link": "../essays/lm.md",
+  "year": "1997",
+  "macdonald": "122"
+ },
+ {
+  "no": "200c",
+  "title": "Leave My Kitten Alone",
+  "link": "../essays/iivv.md#q3",
+  "year": "2001",
+  "macdonald": "U38c"
+ },
+ {
+  "no": "165",
+  "title": "Let It Be",
+  "link": "../essays/lib.md",
+  "year": "1999",
+  "macdonald": "164"
+ },
+ {
+  "no": "038",
+  "title": "Little Child",
+  "link": "../essays/lc.md",
+  "year": "1991",
+  "macdonald": "17"
+ },
+ {
+  "no": "151",
+  "title": "Long, Long, Long",
+  "link": "../essays/lll.md",
+  "year": "1998",
+  "macdonald": "152"
+ },
+ {
+  "no": "48a",
+  "title": "Long Tall Sally",
+  "link": "../essays/ltsep.md#q1",
+  "year": "1992",
+  "macdonald": "29b"
+ },
+ {
+  "no": "021",
+  "title": "Love Me Do",
+  "link": "../essays/lmd.md",
+  "year": "2000",
+  "macdonald": "1"
+ },
+ {
+  "no": "095",
+  "title": "Love You To",
+  "link": "../essays/lyt.md",
+  "year": "1994",
+  "macdonald": "79"
+ },
+ {
+  "no": "115",
+  "title": "Lovely Rita",
+  "link": "../essays/lr.md",
+  "year": "1996",
+  "macdonald": "102"
+ },
+ {
+  "no": "116",
+  "title": "Lovely Rita",
+  "link": "../essays/gmgm.md",
+  "year": "1996",
+  "macdonald": "102"
+ },
+ {
+  "no": "108",
+  "title": "Lucy In The Sky With Diamonds",
+  "link": "../essays/litswd.md",
+  "year": "1995",
+  "macdonald": "103"
+ },
+ {
+  "no": "172",
+  "title": "Maggie Mae",
+  "link": "../essays/mmfrag.md",
+  "year": "1999",
+  "macdonald": "161b"
+ },
+ {
+  "no": "122",
+  "title": "Magical Mystery Tour",
+  "link": "../essays/mmt.md",
+  "year": "1996",
+  "macdonald": "109"
+ },
+ {
+  "no": "137",
+  "title": "Martha My Dear",
+  "link": "../essays/mmd.md",
+  "year": "1997",
+  "macdonald": "151"
+ },
+ {
+  "no": "48c",
+  "title": "Matchbox",
+  "link": "../essays/ltsep.md#q3",
+  "year": "1992",
+  "macdonald": "31b"
+ },
+ {
+  "no": "179",
+  "title": "Maxwell's Silver Hammer",
+  "link": "../essays/msh.md",
+  "year": "1999",
+  "macdonald": "178"
+ },
+ {
+  "no": "186",
+  "title": "Mean Mr Mustard",
+  "link": "../essays/mmm.md",
+  "year": "1999",
+  "macdonald": "182"
+ },
+ {
+  "no": "64c",
+  "title": "Medley: Kansas City - Hey, Hey, Hey, Hey",
+  "link": "../essays/covers3.md#q3",
+  "year": "1992",
+  "macdonald": "44b"
+ },
+ {
+  "no": "082",
+  "title": "Michelle",
+  "link": "../essays/m4.md",
+  "year": "1993",
+  "macdonald": "71"
+ },
+ {
+  "no": "029",
+  "title": "Misery",
+  "link": "../essays/m1.md",
+  "year": "2001",
+  "macdonald": "8"
+ },
+ {
+  "no": "42f",
+  "title": "Money (That's What I Want)",
+  "link": "../essays/covers2.md#q6",
+  "year": "1991",
+  "macdonald": "13c"
+ },
+ {
+  "no": "147",
+  "title": "Mother Nature's Son",
+  "link": "../essays/mns.md",
+  "year": "1998",
+  "macdonald": "138"
+ },
+ {
+  "no": "64b",
+  "title": "Mr. Moonlight",
+  "link": "../essays/covers3.md#q2",
+  "year": "1992",
+  "macdonald": "38b"
+ },
+ {
+  "no": "008",
+  "title": "No Reply",
+  "link": "../essays/nr.md",
+  "year": "2000",
+  "macdonald": "42"
+ },
+ {
+  "no": "078",
+  "title": "Norwegian Wood (This Bird Has Flown)",
+  "link": "../essays/nw.md",
+  "year": "1993",
+  "macdonald": "63"
+ },
+ {
+  "no": "041",
+  "title": "Not A Second Time",
+  "link": "../essays/nast.md",
+  "year": "1991",
+  "macdonald": "19"
+ },
+ {
+  "no": "079",
+  "title": "Nowhere Man",
+  "link": "../essays/nm.md",
+  "year": "1993",
+  "macdonald": "69"
+ },
+ {
+  "no": "133",
+  "title": "Ob-La-Di, Ob-La-Da",
+  "link": "../essays/oo.md",
+  "year": "1997",
+  "macdonald": "131"
+ },
+ {
+  "no": "181",
+  "title": "Octopus's Garden",
+  "link": "../essays/og.md",
+  "year": "1999",
+  "macdonald": "172"
+ },
+ {
+  "no": "180",
+  "title": "Oh! Darling",
+  "link": "../essays/od.md",
+  "year": "1999",
+  "macdonald": "171"
+ },
+ {
+  "no": "164",
+  "title": "Old Brown Shoe",
+  "link": "../essays/obs.md",
+  "year": "1999",
+  "macdonald": "169"
+ },
+ {
+  "no": "174",
+  "title": "One After 909",
+  "link": "../essays/oa909.md",
+  "year": "1999",
+  "macdonald": "166"
+ },
+ {
+  "no": "157",
+  "title": "Only A Northern Song",
+  "link": "../essays/oans.md",
+  "year": "1998",
+  "macdonald": "100"
+ },
+ {
+  "no": "030",
+  "title": "P.S. I Love You",
+  "link": "../essays/psily.md",
+  "year": "2001",
+  "macdonald": "2"
+ },
+ {
+  "no": "091",
+  "title": "Paperback Writer",
+  "link": "../essays/pw_and_r.md#q1",
+  "year": "1993",
+  "macdonald": "80"
+ },
+ {
+  "no": "104",
+  "title": "Penny Lane",
+  "link": "../essays/pl.md",
+  "year": "1995",
+  "macdonald": "95"
+ },
+ {
+  "no": "140",
+  "title": "Piggies",
+  "link": "../essays/p.md",
+  "year": "1998",
+  "macdonald": "147"
+ },
+ {
+  "no": "42b",
+  "title": "Please Mister Postman",
+  "link": "../essays/covers2.md#q2",
+  "year": "1991",
+  "macdonald": "13f"
+ },
+ {
+  "no": "022",
+  "title": "Please Please Me",
+  "link": "../essays/ppm.md",
+  "year": "2000",
+  "macdonald": "3"
+ },
+ {
+  "no": "187",
+  "title": "Polythene Pam",
+  "link": "../essays/pp.md",
+  "year": "1999",
+  "macdonald": "183"
+ },
+ {
+  "no": "091",
+  "title": "Rain",
+  "link": "../essays/pw_and_r.md#q2",
+  "year": "1993",
+  "macdonald": "81"
+ },
+ {
+  "no": "195",
+  "title": "Real Love",
+  "link": "../essays/rl.md",
+  "year": "1995",
+  "macdonald": "188"
+ },
+ {
+  "no": "129",
+  "title": "Revolution",
+  "link": "../essays/r.md",
+  "year": "1997",
+  "macdonald": "132"
+ },
+ {
+  "no": "129",
+  "title": "Revolution 1",
+  "link": "../essays/r.md",
+  "year": "1997",
+  "macdonald": "125"
+ },
+ {
+  "no": "155",
+  "title": "Revolution #9",
+  "link": "../essays/r9.md",
+  "year": "1998",
+  "macdonald": "127"
+ },
+ {
+  "no": "64a",
+  "title": "Rock And Roll Music",
+  "link": "../essays/covers3.md#q1",
+  "year": "1992",
+  "macdonald": "46c"
+ },
+ {
+  "no": "141",
+  "title": "Rocky Raccoon",
+  "link": "../essays/rr.md",
+  "year": "1998",
+  "macdonald": "140"
+ },
+ {
+  "no": "42c",
+  "title": "Roll Over Beethoven",
+  "link": "../essays/covers2.md#q3",
+  "year": "1991",
+  "macdonald": "14b"
+ },
+ {
+  "no": "089",
+  "title": "Run For Your Life",
+  "link": "../essays/rfyl.md",
+  "year": "1993",
+  "macdonald": "62"
+ },
+ {
+  "no": "153",
+  "title": "Savoy Truffle",
+  "link": "../essays/st.md",
+  "year": "1998",
+  "macdonald": "150"
+ },
+ {
+  "no": "149",
+  "title": "Sexy Sadie",
+  "link": "../essays/ss.md",
+  "year": "1998",
+  "macdonald": "135"
+ },
+ {
+  "no": "106",
+  "title": "Sgt. Pepper's Lonely Hearts Club Band",
+  "link": "../essays/splhcb.md",
+  "year": "1995",
+  "macdonald": "97"
+ },
+ {
+  "no": "117",
+  "title": "Sgt. Pepper's Lonely Hearts Club Band (Reprise)",
+  "link": "../essays/aditl.md#q1",
+  "year": "1996",
+  "macdonald": "108"
+ },
+ {
+  "no": "188",
+  "title": "She Came In Through The Bathroom Window",
+  "link": "../essays/scittbw.md",
+  "year": "2000",
+  "macdonald": "184"
+ },
+ {
+  "no": "005",
+  "title": "She Loves You",
+  "link": "../essays/sly.md",
+  "year": "2000",
+  "macdonald": "12"
+ },
+ {
+  "no": "012",
+  "title": "She Said She Said",
+  "link": "../essays/ssss.md",
+  "year": "2000",
+  "macdonald": "92"
+ },
+ {
+  "no": "056",
+  "title": "She's A Woman",
+  "link": "../essays/saw.md",
+  "year": "1992",
+  "macdonald": "44"
+ },
+ {
+  "no": "111",
+  "title": "She's Leaving Home",
+  "link": "../essays/slh.md",
+  "year": "1996",
+  "macdonald": "106"
+ },
+ {
+  "no": "48b",
+  "title": "Slow Down",
+  "link": "../essays/ltsep.md#q2",
+  "year": "1992",
+  "macdonald": "32b"
+ },
+ {
+  "no": "178",
+  "title": "Something",
+  "link": "../essays/s.md",
+  "year": "1999",
+  "macdonald": "170"
+ },
+ {
+  "no": "023",
+  "title": "Strawberry Fields Forever",
+  "link": "../essays/triple.md",
+  "year": "2000",
+  "macdonald": "93"
+ },
+ {
+  "no": "105",
+  "title": "Strawberry Fields Forever",
+  "link": "../essays/sff.md",
+  "year": "1995",
+  "macdonald": "93"
+ },
+ {
+  "no": "185",
+  "title": "Sun King",
+  "link": "../essays/sk.md",
+  "year": "1999",
+  "macdonald": "181"
+ },
+ {
+  "no": "092",
+  "title": "Taxman",
+  "link": "../essays/t.md",
+  "year": "1994",
+  "macdonald": "84"
+ },
+ {
+  "no": "067",
+  "title": "Tell Me What You See",
+  "link": "../essays/tmwys.md",
+  "year": "1992",
+  "macdonald": "54"
+ },
+ {
+  "no": "052",
+  "title": "Tell Me Why",
+  "link": "../essays/tmw.md",
+  "year": "1992",
+  "macdonald": "27"
+ },
+ {
+  "no": "016",
+  "title": "Thank You Girl",
+  "link": "../essays/tyg.md",
+  "year": "2000",
+  "macdonald": "11"
+ },
+ {
+  "no": "199a",
+  "title": "That'll Be The Day",
+  "link": "../essays/shellac.md#q1",
+  "year": "2001",
+  "macdonald": "E1b"
+ },
+ {
+  "no": "192",
+  "title": "The \"Abbey Road\" Medley",
+  "link": "../essays/medley.md",
+  "year": "2000",
+  "macdonald": "181, 182, 183, 184, 175, 176, 180"
+ },
+ {
+  "no": "163",
+  "title": "The Ballad Of John And Yoko",
+  "link": "../essays/tbojay.md",
+  "year": "1999",
+  "macdonald": "168"
+ },
+ {
+  "no": "135",
+  "title": "The Continuing Story Of Bungalow Bill",
+  "link": "../essays/tcsobb.md",
+  "year": "1997",
+  "macdonald": "154"
+ },
+ {
+  "no": "191",
+  "title": "The End",
+  "link": "../essays/te.md",
+  "year": "2000",
+  "macdonald": "180"
+ },
+ {
+  "no": "123",
+  "title": "The Fool On The Hill",
+  "link": "../essays/foth.md",
+  "year": "1996",
+  "macdonald": "119"
+ },
+ {
+  "no": "128",
+  "title": "The Inner Light",
+  "link": "../essays/til.md",
+  "year": "1997",
+  "macdonald": "121"
+ },
+ {
+  "no": "175",
+  "title": "The Long And Winding Road",
+  "link": "../essays/tlawr.md",
+  "year": "1999",
+  "macdonald": "165"
+ },
+ {
+  "no": "070",
+  "title": "The Night Before",
+  "link": "../essays/tnb.md",
+  "year": "1992",
+  "macdonald": "51"
+ },
+ {
+  "no": "081",
+  "title": "The Word",
+  "link": "../essays/tw.md",
+  "year": "1993",
+  "macdonald": "74"
+ },
+ {
+  "no": "031",
+  "title": "There's A Place",
+  "link": "../essays/tap.md",
+  "year": "2001",
+  "macdonald": "5"
+ },
+ {
+  "no": "024",
+  "title": "Things We Said Today",
+  "link": "../essays/twst.md",
+  "year": "2001",
+  "macdonald": "35"
+ },
+ {
+  "no": "080",
+  "title": "Think For Yourself",
+  "link": "../essays/tfy.md",
+  "year": "1993",
+  "macdonald": "73"
+ },
+ {
+  "no": "044",
+  "title": "This Boy",
+  "link": "../essays/tb.md",
+  "year": "1991",
+  "macdonald": "22"
+ },
+ {
+  "no": "065",
+  "title": "Ticket To Ride",
+  "link": "../essays/ttr.md",
+  "year": "1992",
+  "macdonald": "47"
+ },
+ {
+  "no": "42a",
+  "title": "Till There Was You",
+  "link": "../essays/covers2.md#q1",
+  "year": "1991",
+  "macdonald": "13e"
+ },
+ {
+  "no": "103",
+  "title": "Tomorrow Never Knows",
+  "link": "../essays/tnk.md",
+  "year": "1995",
+  "macdonald": "77"
+ },
+ {
+  "no": "200a",
+  "title": "Twelve-Bar Original",
+  "link": "../essays/iivv.md#q1",
+  "year": "2001",
+  "macdonald": "U73"
+ },
+ {
+  "no": "35f",
+  "title": "Twist and Shout",
+  "link": "../essays/covers1.md#q6",
+  "year": "1991",
+  "macdonald": "9f"
+ },
+ {
+  "no": "167",
+  "title": "Two Of Us",
+  "link": "../essays/tou.md",
+  "year": "1999",
+  "macdonald": "161"
+ },
+ {
+  "no": "087",
+  "title": "Wait",
+  "link": "../essays/w.md",
+  "year": "1993",
+  "macdonald": "61"
+ },
+ {
+  "no": "001",
+  "title": "We Can Work It Out",
+  "link": "../essays/wcwio.md",
+  "year": "2000",
+  "macdonald": "68"
+ },
+ {
+  "no": "083",
+  "title": "What Goes On",
+  "link": "../essays/wgo.md",
+  "year": "1993",
+  "macdonald": "72"
+ },
+ {
+  "no": "063",
+  "title": "What You're Doing",
+  "link": "../essays/wyd.md",
+  "year": "1992",
+  "macdonald": "41"
+ },
+ {
+  "no": "054",
+  "title": "When I Get Home",
+  "link": "../essays/wigh.md",
+  "year": "1992",
+  "macdonald": "36"
+ },
+ {
+  "no": "114",
+  "title": "When I'm Sixty-Four",
+  "link": "../essays/wisf.md",
+  "year": "1996",
+  "macdonald": "94"
+ },
+ {
+  "no": "025",
+  "title": "While My Guitar Gently Weeps",
+  "link": "../essays/wmggw.md",
+  "year": "2001",
+  "macdonald": "136"
+ },
+ {
+  "no": "143",
+  "title": "Why Don't We Do It In the Road",
+  "link": "../essays/wdwdiitr.md",
+  "year": "1998",
+  "macdonald": "155"
+ },
+ {
+  "no": "134",
+  "title": "Wild Honey Pie",
+  "link": "../essays/whp.md",
+  "year": "1997",
+  "macdonald": "141"
+ },
+ {
+  "no": "107",
+  "title": "With A Little Help From My Friends",
+  "link": "../essays/walhfmf.md",
+  "year": "1995",
+  "macdonald": "107"
+ },
+ {
+  "no": "113",
+  "title": "Within You Without You",
+  "link": "../essays/wywy.md",
+  "year": "1996",
+  "macdonald": "105"
+ },
+ {
+  "no": "64d",
+  "title": "Words Of Love",
+  "link": "../essays/covers3.md#q4",
+  "year": "1992",
+  "macdonald": "46d"
+ },
+ {
+  "no": "097",
+  "title": "Yellow Submarine",
+  "link": "../essays/ys.md",
+  "year": "1994",
+  "macdonald": "88"
+ },
+ {
+  "no": "146",
+  "title": "Yer Blues",
+  "link": "../essays/yb.md",
+  "year": "1998",
+  "macdonald": "139"
+ },
+ {
+  "no": "066",
+  "title": "Yes It Is",
+  "link": "../essays/yii.md",
+  "year": "1992",
+  "macdonald": "50"
+ },
+ {
+  "no": "075",
+  "title": "Yesterday",
+  "link": "../essays/y.md",
+  "year": "1993",
+  "macdonald": "59"
+ },
+ {
+  "no": "046",
+  "title": "You Can't Do That",
+  "link": "../essays/ycdt.md",
+  "year": "1992",
+  "macdonald": "24"
+ },
+ {
+  "no": "166",
+  "title": "You Know My Name (Look Up The Number)",
+  "link": "../essays/ykmnlutn.md",
+  "year": "1999",
+  "macdonald": "112"
+ },
+ {
+  "no": "068",
+  "title": "You Like Me Too Much",
+  "link": "../essays/ylmtm.md",
+  "year": "1992",
+  "macdonald": "52"
+ },
+ {
+  "no": "013",
+  "title": "You Never Give Me Your Money",
+  "link": "../essays/yngmym.md",
+  "year": "2000",
+  "macdonald": "173"
+ },
+ {
+  "no": "42d",
+  "title": "You Really Got A Hold On Me",
+  "link": "../essays/covers2.md#q4",
+  "year": "1991",
+  "macdonald": "13b"
+ },
+ {
+  "no": "009",
+  "title": "You Won't See Me",
+  "link": "../essays/ywsm.md",
+  "year": "2000",
+  "macdonald": "75"
+ },
+ {
+  "no": "007",
+  "title": "You're Going To Lose That Girl",
+  "link": "../essays/ygtltg.md",
+  "year": "2000",
+  "macdonald": "55"
+ },
+ {
+  "no": "018",
+  "title": "You've Got To Hide Your Love Away",
+  "link": "../essays/ygthyla.md",
+  "year": "2000",
+  "macdonald": "53"
+ },
+ {
+  "no": "126",
+  "title": "Your Mother Should Know",
+  "link": "../essays/ymsk.md",
+  "year": "1997",
+  "macdonald": "115"
+ }
+]

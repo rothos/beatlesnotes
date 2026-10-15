@@ -1,0 +1,2750 @@
+{
+ "intro": "The official Beatles' canon covers all songs the Beatles recorded and authorized for publication in their years as a performing group. In those years between 1962 and 1970 the Beatles released 219 songs or song variants, which are listed below in order of appearance. In this list there are 24 covers (C), and 1 traditional (T), leaving us with up to 194 released recordings of original Beatles' songs. Among those 194 we find 9 song variations and 1 song fragment. Of those 10 performances most authors of Beatles' books and commentaries discard 7 tracks as just variants or invalid members of the Beatles' songbook, leaving us with exactly 187 canonical Beatles' originals, 24 covers and 1 traditional: a total of 212 songs. The links on this page all point towards Alan W. Pollack's Notes on ... Series . MD-numbers refer to the standard \"MacDonald Verzeichnis\" of the Beatles' songs.",
+ "releases": [
+  {
+   "no": 1,
+   "format": "Single",
+   "title": "Love Me Do",
+   "info": "released: 05.10.1962 [UK] on Parlophone 45-R 4949",
+   "cover": null,
+   "tracks": [
+    {
+     "canon": "001",
+     "md": "001",
+     "title": "Love Me Do",
+     "link": "../essays/lmd.md",
+     "first": true,
+     "kind": "original",
+     "note": "with Ringo on drums"
+    },
+    {
+     "canon": "002",
+     "md": "002",
+     "title": "P.S. I Love You",
+     "link": "../essays/psily.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 2,
+   "format": "Single",
+   "title": "Please Please Me",
+   "info": "released: 11.01.1963 [UK] on Parlophone 45-R 4983",
+   "cover": null,
+   "tracks": [
+    {
+     "canon": "003",
+     "md": "003",
+     "title": "Please Please Me",
+     "link": "../essays/ppm.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "004",
+     "md": "004",
+     "title": "Ask Me Why",
+     "link": "../essays/amw.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 3,
+   "format": "LP",
+   "title": "Please Please Me",
+   "info": "released: 22.03.1963 [UK] on Parlophone PMC 1202 [mono]; Parlophone PCS 3042 [stereo]",
+   "cover": "Beatles_cover01.JPG",
+   "tracks": [
+    {
+     "canon": "005",
+     "md": "006",
+     "title": "I Saw Her Standing There",
+     "link": "../essays/ishst.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "006",
+     "md": "008",
+     "title": "Misery",
+     "link": "../essays/m1.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "C01",
+     "md": "009b",
+     "title": "Anna (Go To Him)",
+     "link": "../essays/covers1.md#q1",
+     "first": true,
+     "kind": "cover",
+     "note": null
+    },
+    {
+     "canon": "C02",
+     "md": "009d",
+     "title": "Chains",
+     "link": "../essays/covers1.md#q2",
+     "first": true,
+     "kind": "cover",
+     "note": null
+    },
+    {
+     "canon": "C03",
+     "md": "009c",
+     "title": "Boys",
+     "link": "../essays/covers1.md#q3",
+     "first": true,
+     "kind": "cover",
+     "note": null
+    },
+    {
+     "canon": "004",
+     "md": "004",
+     "title": "Ask Me Why",
+     "link": "../essays/amw.md",
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "003",
+     "md": "003",
+     "title": "Please Please Me",
+     "link": "../essays/ppm.md",
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "007",
+     "md": "001",
+     "title": "Love Me Do",
+     "link": "../essays/lmd.md",
+     "first": true,
+     "kind": "original",
+     "note": "drums played by Andy White"
+    },
+    {
+     "canon": "002",
+     "md": "002",
+     "title": "P.S. I Love You",
+     "link": "../essays/psily.md",
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "C04",
+     "md": "009e",
+     "title": "Baby It's You",
+     "link": "../essays/covers1.md#q4",
+     "first": true,
+     "kind": "cover",
+     "note": null
+    },
+    {
+     "canon": "008",
+     "md": "007",
+     "title": "Do You Want To Know A Secret",
+     "link": "../essays/dywtkas.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "C05",
+     "md": "006b",
+     "title": "A Taste of Honey",
+     "link": "../essays/covers1.md#q5",
+     "first": true,
+     "kind": "cover",
+     "note": null
+    },
+    {
+     "canon": "009",
+     "md": "005",
+     "title": "There's A Place",
+     "link": "../essays/tap.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "C06",
+     "md": "009f",
+     "title": "Twist and Shout",
+     "link": "../essays/covers1.md#q6",
+     "first": true,
+     "kind": "cover",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 4,
+   "format": "Single",
+   "title": "From Me To You",
+   "info": "released: 11.04.1963 [UK] on Parlophone R 5015",
+   "cover": null,
+   "tracks": [
+    {
+     "canon": "010",
+     "md": "010",
+     "title": "From Me To You",
+     "link": "../essays/fmty.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "011",
+     "md": "011",
+     "title": "Thank You Girl",
+     "link": "../essays/tyg.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 5,
+   "format": "Single",
+   "title": "She Loves You",
+   "info": "released: 23.08.1963 [UK] on Parlophone R 5055",
+   "cover": null,
+   "tracks": [
+    {
+     "canon": "012",
+     "md": "012",
+     "title": "She Loves You",
+     "link": "../essays/sly.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "013",
+     "md": "013",
+     "title": "I'll Get You",
+     "link": "../essays/igy.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 6,
+   "format": "LP",
+   "title": "With The Beatles",
+   "info": "released: 22.11.1963 [UK] on Parlophone PMC 1206 [mono]; Parlophone PCS 3045 [stereo]",
+   "cover": "Beatles_cover02.JPG",
+   "tracks": [
+    {
+     "canon": "014",
+     "md": "014",
+     "title": "It Won't Be Long",
+     "link": "../essays/iwbl.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "015",
+     "md": "018",
+     "title": "All I've Got To Do",
+     "link": "../essays/aigtd.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "016",
+     "md": "015",
+     "title": "All My Loving",
+     "link": "../essays/aml.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "017",
+     "md": "020",
+     "title": "Don't Bother Me",
+     "link": "../essays/dbm.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "018",
+     "md": "017",
+     "title": "Little Child",
+     "link": "../essays/lc.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "C07",
+     "md": "013e",
+     "title": "Till There Was You",
+     "link": "../essays/covers2.md#q1",
+     "first": true,
+     "kind": "cover",
+     "note": null
+    },
+    {
+     "canon": "C08",
+     "md": "013f",
+     "title": "Please Mister Postman",
+     "link": "../essays/covers2.md#q2",
+     "first": true,
+     "kind": "cover",
+     "note": null
+    },
+    {
+     "canon": "C09",
+     "md": "014b",
+     "title": "Roll Over Beethoven",
+     "link": "../essays/covers2.md#q3",
+     "first": true,
+     "kind": "cover",
+     "note": null
+    },
+    {
+     "canon": "019",
+     "md": "009",
+     "title": "Hold Me Tight",
+     "link": "../essays/hmt.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "C10",
+     "md": "013b",
+     "title": "You Really Got A Hold On Me",
+     "link": "../essays/covers2.md#q4",
+     "first": true,
+     "kind": "cover",
+     "note": null
+    },
+    {
+     "canon": "020",
+     "md": "016",
+     "title": "I Wanna Be Your Man",
+     "link": "../essays/iwbym.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "C11",
+     "md": "013d",
+     "title": "Devil In Her Heart",
+     "link": "../essays/covers2.md#q5",
+     "first": true,
+     "kind": "cover",
+     "note": null
+    },
+    {
+     "canon": "021",
+     "md": "019",
+     "title": "Not A Second Time",
+     "link": "../essays/nast.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "C12",
+     "md": "013c",
+     "title": "Money (That's What I Want)",
+     "link": "../essays/covers2.md#q6",
+     "first": true,
+     "kind": "cover",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 7,
+   "format": "Single",
+   "title": "I Want To Hold Your Hand",
+   "info": "released: 29.11.1963 [UK] on Parlophone R 5084",
+   "cover": null,
+   "tracks": [
+    {
+     "canon": "022",
+     "md": "021",
+     "title": "I Want To Hold Your Hand",
+     "link": "../essays/iwthyh.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "023",
+     "md": "022",
+     "title": "This Boy",
+     "link": "../essays/tb.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 8,
+   "format": "Single",
+   "title": "Komm, Gib Mir Deine Hand",
+   "info": "released: March 1964 [BRD]",
+   "cover": null,
+   "tracks": [
+    {
+     "canon": "024",
+     "md": "",
+     "title": "Komm, Gib Mir Deine Hand",
+     "link": null,
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "025",
+     "md": "",
+     "title": "Sie Liebt Dich",
+     "link": null,
+     "first": true,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 9,
+   "format": "Single",
+   "title": "Can't Buy Me Love",
+   "info": "released: 20.03.1964 [UK] on Parlophone R 5114",
+   "cover": null,
+   "tracks": [
+    {
+     "canon": "026",
+     "md": "023",
+     "title": "Can't Buy Me Love",
+     "link": "../essays/cbml.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "027",
+     "md": "024",
+     "title": "You Can't Do That",
+     "link": "../essays/ycdt.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 10,
+   "format": "EP",
+   "title": "Long Tall Sally",
+   "info": "released: 19.06.1964 [UK] on Parlophone GEP 8913",
+   "cover": null,
+   "tracks": [
+    {
+     "canon": "C13",
+     "md": "029b",
+     "title": "Long Tall Sally",
+     "link": "../essays/ltsep.md#q1",
+     "first": true,
+     "kind": "cover",
+     "note": null
+    },
+    {
+     "canon": "028",
+     "md": "030",
+     "title": "I Call Your Name",
+     "link": "../essays/icyn.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "C14",
+     "md": "032b",
+     "title": "Slow Down",
+     "link": "../essays/ltsep.md#q2",
+     "first": true,
+     "kind": "cover",
+     "note": null
+    },
+    {
+     "canon": "C15",
+     "md": "031b",
+     "title": "Matchbox",
+     "link": "../essays/ltsep.md#q3",
+     "first": true,
+     "kind": "cover",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 11,
+   "format": "Single",
+   "title": "A Hard Day's Night",
+   "info": "released: 10.07.1964 [UK] on Parlophone R 5160",
+   "cover": null,
+   "tracks": [
+    {
+     "canon": "029",
+     "md": "031",
+     "title": "A Hard Day's Night",
+     "link": "../essays/ahdn.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "030",
+     "md": "035",
+     "title": "Things We Said Today",
+     "link": "../essays/twst.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 12,
+   "format": "LP",
+   "title": "A Hard Day's Night",
+   "info": "released: 26.06.1964 [US]; 10.07.1964 [UK] on Parlophone PMC 1230 [mono]; Parlophone PCS 3058 [stereo]",
+   "cover": "Beatles_cover03.JPG",
+   "tracks": [
+    {
+     "canon": "029",
+     "md": "031",
+     "title": "A Hard Day's Night",
+     "link": "../essays/ahdn.md",
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "031",
+     "md": "026",
+     "title": "I Should Have Known Better",
+     "link": "../essays/ishkb.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "032",
+     "md": "028",
+     "title": "If I Fell",
+     "link": "../essays/iif.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "033",
+     "md": "029",
+     "title": "I'm Happy Just To Dance With You",
+     "link": "../essays/ihjtdwy.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "034",
+     "md": "025",
+     "title": "And I Love Her",
+     "link": "../essays/ailh.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "035",
+     "md": "027",
+     "title": "Tell Me Why",
+     "link": "../essays/tmw.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "026",
+     "md": "023",
+     "title": "Can't Buy Me Love",
+     "link": "../essays/cbml.md",
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "036",
+     "md": "034",
+     "title": "Any Time At All",
+     "link": "../essays/ataa.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "037",
+     "md": "032",
+     "title": "I'll Cry Instead",
+     "link": "../essays/ici.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "030",
+     "md": "035",
+     "title": "Things We Said Today",
+     "link": "../essays/twst.md",
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "038",
+     "md": "036",
+     "title": "When I Get Home",
+     "link": "../essays/wigh.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "027",
+     "md": "024",
+     "title": "You Can't Do That",
+     "link": "../essays/ycdt.md",
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "039",
+     "md": "033",
+     "title": "I'll Be Back",
+     "link": "../essays/ibb.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 13,
+   "format": "Single",
+   "title": "I Feel Fine",
+   "info": "released: 23.11.1964 [US]; 27.11.1964 [UK] on Parlophone R 5200",
+   "cover": null,
+   "tracks": [
+    {
+     "canon": "040",
+     "md": "045",
+     "title": "I Feel Fine",
+     "link": "../essays/iff.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "041",
+     "md": "044",
+     "title": "She's A Woman",
+     "link": "../essays/saw.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 14,
+   "format": "LP",
+   "title": "Beatles For Sale",
+   "info": "released: 04.12.1964 [UK] on Parlophone PMC 1240 [mono]; Parlophone PCS 3062 [stereo]",
+   "cover": "Beatles_cover04.JPG",
+   "tracks": [
+    {
+     "canon": "042",
+     "md": "042",
+     "title": "No Reply",
+     "link": "../essays/nr.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "043",
+     "md": "038",
+     "title": "I'm A Loser",
+     "link": "../essays/ial.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "044",
+     "md": "037",
+     "title": "Baby's In Black",
+     "link": "../essays/bib.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "C16",
+     "md": "046c",
+     "title": "Rock And Roll Music",
+     "link": "../essays/covers3.md#q1",
+     "first": true,
+     "kind": "cover",
+     "note": null
+    },
+    {
+     "canon": "045",
+     "md": "046",
+     "title": "I'll Follow The Sun",
+     "link": "../essays/ifts.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "C17",
+     "md": "038b",
+     "title": "Mr. Moonlight",
+     "link": "../essays/covers3.md#q2",
+     "first": true,
+     "kind": "cover",
+     "note": null
+    },
+    {
+     "canon": "C18",
+     "md": "044b",
+     "title": "Kansas City - Hey, Hey, Hey, Hey",
+     "link": "../essays/covers3.md#q3",
+     "first": true,
+     "kind": "cover",
+     "note": null
+    },
+    {
+     "canon": "046",
+     "md": "043",
+     "title": "Eight Days A Week",
+     "link": "../essays/edaw.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "C19",
+     "md": "046d",
+     "title": "Words Of Love",
+     "link": "../essays/covers3.md#q4",
+     "first": true,
+     "kind": "cover",
+     "note": null
+    },
+    {
+     "canon": "C20",
+     "md": "046e",
+     "title": "Honey Don't",
+     "link": "../essays/covers3.md#q5",
+     "first": true,
+     "kind": "cover",
+     "note": null
+    },
+    {
+     "canon": "047",
+     "md": "039",
+     "title": "Every Little Thing",
+     "link": "../essays/elt.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "048",
+     "md": "040",
+     "title": "I Don't Want To Spoil The Party",
+     "link": "../essays/idwtstp.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "049",
+     "md": "041",
+     "title": "What You're Doing",
+     "link": "../essays/wyd.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "C21",
+     "md": "046b",
+     "title": "Everybody's Trying To Be My Baby",
+     "link": "../essays/covers3.md#q6",
+     "first": true,
+     "kind": "cover",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 15,
+   "format": "Single",
+   "title": "Ticket To Ride",
+   "info": "released: 09.04.1965 [UK] on Parlophone R 5265",
+   "cover": null,
+   "tracks": [
+    {
+     "canon": "050",
+     "md": "047",
+     "title": "Ticket To Ride",
+     "link": "../essays/ttr.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "051",
+     "md": "050",
+     "title": "Yes It Is",
+     "link": "../essays/yii.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 16,
+   "format": "LP",
+   "title": "Beatles VI",
+   "info": "released: 14.06.1965 [US] on Capitol T 2358 [stereo]",
+   "cover": null,
+   "tracks": [
+    {
+     "canon": "C18",
+     "md": "044b",
+     "title": "Kansas City - Hey, Hey, Hey, Hey",
+     "link": "../essays/covers3.md#q3",
+     "first": false,
+     "kind": "cover",
+     "note": null
+    },
+    {
+     "canon": "046",
+     "md": "043",
+     "title": "Eight Days A Week",
+     "link": "../essays/edaw.md",
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "052",
+     "md": "052",
+     "title": "You Like Me Too Much",
+     "link": "../essays/ylmtm.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "C22",
+     "md": "056c",
+     "title": "Bad Boy",
+     "link": "../essays/covers4.md#q2",
+     "first": true,
+     "kind": "cover",
+     "note": null
+    },
+    {
+     "canon": "048",
+     "md": "040",
+     "title": "I Don't Want To Spoil The Party",
+     "link": "../essays/idwtstp.md",
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "C19",
+     "md": "046d",
+     "title": "Words Of Love",
+     "link": "../essays/covers3.md#q4",
+     "first": false,
+     "kind": "cover",
+     "note": null
+    },
+    {
+     "canon": "049",
+     "md": "041",
+     "title": "What You're Doing",
+     "link": "../essays/wyd.md",
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "051",
+     "md": "050",
+     "title": "Yes It Is",
+     "link": "../essays/yii.md",
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "C23",
+     "md": "056b",
+     "title": "Dizzy Miss Lizzy",
+     "link": "../essays/covers4.md#q3",
+     "first": true,
+     "kind": "cover",
+     "note": null
+    },
+    {
+     "canon": "053",
+     "md": "054",
+     "title": "Tell Me What You See",
+     "link": "../essays/tmwys.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "047",
+     "md": "039",
+     "title": "Every Little Thing",
+     "link": "../essays/elt.md",
+     "first": false,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 17,
+   "format": "Single",
+   "title": "Help!",
+   "info": "released: 19.07.1965 [US]; 23.07.1965 [UK] on Parlophone R 5305",
+   "cover": null,
+   "tracks": [
+    {
+     "canon": "054",
+     "md": "056",
+     "title": "Help!",
+     "link": "../essays/h.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "055",
+     "md": "058",
+     "title": "I'm Down",
+     "link": "../essays/id.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 18,
+   "format": "LP",
+   "title": "Help!",
+   "info": "released: 06.08.1965 [UK] on Parlophone PMC 1255 [mono]; Parlophone PCS 3071 [stereo]",
+   "cover": "Beatles_cover05.JPG",
+   "tracks": [
+    {
+     "canon": "054",
+     "md": "056",
+     "title": "Help!",
+     "link": "../essays/h.md",
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "056",
+     "md": "051",
+     "title": "The Night Before",
+     "link": "../essays/tnb.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "057",
+     "md": "053",
+     "title": "You've Got To Hide Your Love Away",
+     "link": "../essays/ygthyla.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "058",
+     "md": "049",
+     "title": "I Need You",
+     "link": "../essays/iny.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "059",
+     "md": "048",
+     "title": "Another Girl",
+     "link": "../essays/ag.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "060",
+     "md": "055",
+     "title": "You're Going To Lose That Girl",
+     "link": "../essays/ygtltg.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "050",
+     "md": "047",
+     "title": "Ticket To Ride",
+     "link": "../essays/ttr.md",
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "C24",
+     "md": "060b",
+     "title": "Act Naturally",
+     "link": "../essays/covers4.md#q1",
+     "first": true,
+     "kind": "cover",
+     "note": null
+    },
+    {
+     "canon": "061",
+     "md": "060",
+     "title": "It's Only Love",
+     "link": "../essays/iol.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "052",
+     "md": "052",
+     "title": "You Like Me Too Much",
+     "link": "../essays/ylmtm.md",
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "053",
+     "md": "054",
+     "title": "Tell Me What You See",
+     "link": "../essays/tmwys.md",
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "062",
+     "md": "057",
+     "title": "I've Just Seen A Face",
+     "link": "../essays/ijsaf.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "063",
+     "md": "059",
+     "title": "Yesterday",
+     "link": "../essays/y.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "C23",
+     "md": "056b",
+     "title": "Dizzy Miss Lizzy",
+     "link": "../essays/covers4.md#q3",
+     "first": false,
+     "kind": "cover",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 19,
+   "format": "Single",
+   "title": "We Can Work It Out",
+   "info": "released: 03.12.1965 [UK] on Parlophone R 5389 as double A-side single",
+   "cover": null,
+   "tracks": [
+    {
+     "canon": "064",
+     "md": "068",
+     "title": "We Can Work It Out",
+     "link": "../essays/wcwio.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "065",
+     "md": "065",
+     "title": "Day Tripper",
+     "link": "../essays/dt.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 20,
+   "format": "LP",
+   "title": "Rubber Soul",
+   "info": "released: 03.12.1965 [UK] on Parlophone PMC 1267 [mono]; Parlophone PCS 3075 [stereo]",
+   "cover": "Beatles_cover06.JPG",
+   "tracks": [
+    {
+     "canon": "066",
+     "md": "064",
+     "title": "Drive My Car",
+     "link": "../essays/dmc.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "067",
+     "md": "063",
+     "title": "Norwegian Wood (This Bird Has Flown)",
+     "link": "../essays/nw.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "068",
+     "md": "075",
+     "title": "You Won't See Me",
+     "link": "../essays/ywsm.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "069",
+     "md": "069",
+     "title": "Nowhere Man",
+     "link": "../essays/nm.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "070",
+     "md": "073",
+     "title": "Think For Yourself",
+     "link": "../essays/tfy.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "071",
+     "md": "074",
+     "title": "The Word",
+     "link": "../essays/tw.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "072",
+     "md": "071",
+     "title": "Michelle",
+     "link": "../essays/m4.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "073",
+     "md": "072",
+     "title": "What Goes On",
+     "link": "../essays/wgo.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "074",
+     "md": "076",
+     "title": "Girl",
+     "link": "../essays/g.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "075",
+     "md": "070",
+     "title": "I'm Looking Through You",
+     "link": "../essays/ilty.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "076",
+     "md": "067",
+     "title": "In My Life",
+     "link": "../essays/iml.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "077",
+     "md": "061",
+     "title": "Wait",
+     "link": "../essays/w.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "078",
+     "md": "066",
+     "title": "If I Needed Someone",
+     "link": "../essays/iins.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "079",
+     "md": "062",
+     "title": "Run For Your Life",
+     "link": "../essays/rfyl.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 25,
+   "format": "Single",
+   "title": "Paperback Writer",
+   "info": "released: 30.05.1966 [US]; 10.06.1966 [UK] on Parlophone R 5452 as double A-side single",
+   "cover": null,
+   "tracks": [
+    {
+     "canon": "080",
+     "md": "080",
+     "title": "Paperback Writer",
+     "link": "../essays/pw_and_r.md#q1",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "081",
+     "md": "081",
+     "title": "Rain",
+     "link": "../essays/pw_and_r.md#q2",
+     "first": true,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 21,
+   "format": "Single",
+   "title": "Eleanor Rigby",
+   "info": "released: 05.08.1966 [UK] on Parlophone R 5493 as double A-side single",
+   "cover": null,
+   "tracks": [
+    {
+     "canon": "082",
+     "md": "086",
+     "title": "Eleanor Rigby",
+     "link": "../essays/er.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "083",
+     "md": "088",
+     "title": "Yellow Submarine",
+     "link": "../essays/ys.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 22,
+   "format": "LP",
+   "title": "Revolver",
+   "info": "released: 05.08.1966 [UK] on Parlophone PMC 7009 [mono]; Parlophone PCS 7009 [stereo]",
+   "cover": "Beatles_cover07.JPG",
+   "tracks": [
+    {
+     "canon": "084",
+     "md": "084",
+     "title": "Taxman",
+     "link": "../essays/t.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "082",
+     "md": "086",
+     "title": "Eleanor Rigby",
+     "link": "../essays/er.md",
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "085",
+     "md": "085",
+     "title": "I'm Only Sleeping",
+     "link": "../essays/ios.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "086",
+     "md": "079",
+     "title": "Love You To",
+     "link": "../essays/lyt.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "087",
+     "md": "091",
+     "title": "Here, There, And Everywhere",
+     "link": "../essays/htae.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "083",
+     "md": "088",
+     "title": "Yellow Submarine",
+     "link": "../essays/ys.md",
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "088",
+     "md": "092",
+     "title": "She Said She Said",
+     "link": "../essays/ssss.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "089",
+     "md": "090",
+     "title": "Good Day Sunshine",
+     "link": "../essays/gds.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "090",
+     "md": "083",
+     "title": "And Your Bird Can Sing",
+     "link": "../essays/aybcs.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "091",
+     "md": "087",
+     "title": "For No One",
+     "link": "../essays/fno.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "092",
+     "md": "082",
+     "title": "Doctor Robert",
+     "link": "../essays/dr.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "093",
+     "md": "089",
+     "title": "I Want To Tell You",
+     "link": "../essays/iwtty.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "094",
+     "md": "078",
+     "title": "Got To Get You Into My Life",
+     "link": "../essays/gtgyiml.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "095",
+     "md": "077",
+     "title": "Tomorrow Never Knows",
+     "link": "../essays/tnk.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 23,
+   "format": "Single",
+   "title": "Strawberry Fields Forever",
+   "info": "released: 13.02.1967 [US]; 17.02.1967 [UK] on Parlophone R 5570 as double A-side single",
+   "cover": null,
+   "tracks": [
+    {
+     "canon": "096",
+     "md": "093",
+     "title": "Strawberry Fields Forever",
+     "link": "../essays/sff.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "097",
+     "md": "095",
+     "title": "Penny Lane",
+     "link": "../essays/pl.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 24,
+   "format": "LP",
+   "title": "Sgt. Pepper's Lonely Hearts Club Band",
+   "info": "released: 01.06.1967 [UK] on Parlophone PMC 7027 [mono]; Parlophone PCS 7027 [stereo]",
+   "cover": "Beatles_cover08.JPG",
+   "tracks": [
+    {
+     "canon": "098",
+     "md": "097",
+     "title": "Sgt. Pepper's Lonely Hearts Club Band",
+     "link": "../essays/splhcb.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "099",
+     "md": "107",
+     "title": "With A Little Help From My Friends",
+     "link": "../essays/walhfmf.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "101",
+     "md": "104",
+     "title": "Getting Better",
+     "link": "../essays/gb.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "102",
+     "md": "099",
+     "title": "Fixing A Hole",
+     "link": "../essays/fah.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "103",
+     "md": "106",
+     "title": "She's Leaving Home",
+     "link": "../essays/slh.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "104",
+     "md": "101",
+     "title": "Being For The Benefit Of Mr. Kite",
+     "link": "../essays/bftbomk.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "105",
+     "md": "105",
+     "title": "Within You Without You",
+     "link": "../essays/wywy.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "106",
+     "md": "094",
+     "title": "When I'm Sixty-Four",
+     "link": "../essays/wisf.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "107",
+     "md": "102",
+     "title": "Lovely Rita",
+     "link": "../essays/lr.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "108",
+     "md": "098",
+     "title": "Good Morning, Good Morning",
+     "link": "../essays/gmgm.md#q1",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "109",
+     "md": "108",
+     "title": "Sgt. Pepper's Lonely Hearts Club Band (Reprise)",
+     "link": "../essays/aditl.md#q1",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "110",
+     "md": "096",
+     "title": "A Day In The Life",
+     "link": "../essays/aditl.md#q2",
+     "first": true,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 26,
+   "format": "Single",
+   "title": "All You Need Is Love",
+   "info": "released: 07.07.1967 [UK] on Parlophone R 5620; the title song was aired on the Eurovision program \"Our World\" on 25.06.1967",
+   "cover": null,
+   "tracks": [
+    {
+     "canon": "111",
+     "md": "114",
+     "title": "All You Need Is Love",
+     "link": "../essays/aynil.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "112",
+     "md": "110",
+     "title": "Baby You're A Rich Man",
+     "link": "../essays/byarm.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 27,
+   "format": "Single",
+   "title": "Hello Goodbye",
+   "info": "released: 24.11.1967 [UK] on Parlophone R 5655",
+   "cover": null,
+   "tracks": [
+    {
+     "canon": "113",
+     "md": "120",
+     "title": "Hello Goodbye",
+     "link": "../essays/hg.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "114",
+     "md": "116",
+     "title": "I Am The Walrus",
+     "link": "../essays/iatw.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 28,
+   "format": "LP",
+   "title": "Magical Mystery Tour",
+   "info": "released: 27.11.1967 [US]",
+   "cover": "Beatles_cover09.JPG",
+   "tracks": [
+    {
+     "canon": "115",
+     "md": "109",
+     "title": "Magical Mystery Tour",
+     "link": "../essays/mmt.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "116",
+     "md": "119",
+     "title": "The Fool On The Hill",
+     "link": "../essays/foth.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "117",
+     "md": "118",
+     "title": "Flying",
+     "link": "../essays/f.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "118",
+     "md": "117",
+     "title": "Blue Jay Way",
+     "link": "../essays/bjw.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "119",
+     "md": "115",
+     "title": "Your Mother Should Know",
+     "link": "../essays/ymsk.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "114",
+     "md": "116",
+     "title": "I Am The Walrus",
+     "link": "../essays/iatw.md",
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "113",
+     "md": "120",
+     "title": "Hello Goodbye",
+     "link": "../essays/hg.md",
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "096",
+     "md": "093",
+     "title": "Strawberry Fields Forever",
+     "link": "../essays/sff.md",
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "097",
+     "md": "095",
+     "title": "Penny Lane",
+     "link": "../essays/pl.md",
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "112",
+     "md": "110",
+     "title": "Baby You're A Rich Man",
+     "link": "../essays/byarm.md",
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "120",
+     "md": "114",
+     "title": "All You Need Is Love (Refrain only)",
+     "link": null,
+     "first": true,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 29,
+   "format": "EP",
+   "title": "Magical Mystery Tour",
+   "info": "released: 08.12.1967 [UK] on Parlophone MMT-1 [mono] and SMMT-1 [stereo]",
+   "cover": null,
+   "tracks": [
+    {
+     "canon": "115",
+     "md": "109",
+     "title": "Magical Mystery Tour",
+     "link": "../essays/mmt.md",
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "119",
+     "md": "115",
+     "title": "Your Mother Should Know",
+     "link": "../essays/ymsk.md",
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "114",
+     "md": "116",
+     "title": "I Am The Walrus",
+     "link": "../essays/iatw.md",
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "116",
+     "md": "119",
+     "title": "The Fool On The Hill",
+     "link": "../essays/foth.md",
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "117",
+     "md": "118",
+     "title": "Flying",
+     "link": "../essays/f.md",
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "118",
+     "md": "117",
+     "title": "Blue Jay Way",
+     "link": "../essays/bjw.md",
+     "first": false,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 30,
+   "format": "Single",
+   "title": "Lady Madonna",
+   "info": "released: 15.03.1968 [UK] on Parlophone R 5675",
+   "cover": null,
+   "tracks": [
+    {
+     "canon": "121",
+     "md": "122",
+     "title": "Lady Madonna",
+     "link": "../essays/lm.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "122",
+     "md": "121",
+     "title": "The Inner Light",
+     "link": "../essays/til.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 31,
+   "format": "Single",
+   "title": "Hey Jude",
+   "info": "released: 26.08.1968 [US]; 30.08.1968 [UK] on Apple/Parlophone R 5722",
+   "cover": null,
+   "tracks": [
+    {
+     "canon": "123",
+     "md": "137",
+     "title": "Hey Jude",
+     "link": "../essays/hj.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "124",
+     "md": "132",
+     "title": "Revolution",
+     "link": "../essays/r.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 32,
+   "format": "LP",
+   "title": "The Beatles [White Album]",
+   "info": "released: 22.11.1968 [UK] on Parlophone PMC 7067-7068 [mono]; Parlophone PCS 7067-7068 [stereo]",
+   "cover": "Beatles_cover10.JPG",
+   "tracks": [
+    {
+     "canon": "125",
+     "md": "142",
+     "title": "Back In The USSR",
+     "link": "../essays/bitu.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "126",
+     "md": "143",
+     "title": "Dear Prudence",
+     "link": "../essays/dp.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "127",
+     "md": "144",
+     "title": "Glass Onion",
+     "link": "../essays/go.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "128",
+     "md": "131",
+     "title": "Ob-La-Di, Ob-La-Da",
+     "link": "../essays/oo.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "129",
+     "md": "141",
+     "title": "Wild Honey Pie",
+     "link": "../essays/whp.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "130",
+     "md": "154",
+     "title": "The Continuing Story Of Bungalow Bill",
+     "link": "../essays/tcsobb.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "131",
+     "md": "136",
+     "title": "While My Guitar Gently Weeps",
+     "link": "../essays/wmggw.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "132",
+     "md": "148",
+     "title": "Happiness Is A Warm Gun",
+     "link": "../essays/hiawg.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "133",
+     "md": "151",
+     "title": "Martha My Dear",
+     "link": "../essays/mmd.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "134",
+     "md": "153",
+     "title": "I'm So Tired",
+     "link": "../essays/ist.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "135",
+     "md": "128",
+     "title": "Blackbird",
+     "link": "../essays/b3.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "136",
+     "md": "147",
+     "title": "Piggies",
+     "link": "../essays/p.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "137",
+     "md": "140",
+     "title": "Rocky Raccoon",
+     "link": "../essays/rr.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "138",
+     "md": "126",
+     "title": "Don't Pass Me By",
+     "link": "../essays/dpmb.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "139",
+     "md": "155",
+     "title": "Why Don't We Do It In the Road",
+     "link": "../essays/wdwdiitr.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "140",
+     "md": "145",
+     "title": "I Will",
+     "link": "../essays/iw.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "141",
+     "md": "156",
+     "title": "Julia",
+     "link": "../essays/j.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "142",
+     "md": "146",
+     "title": "Birthday",
+     "link": "../essays/b.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "143",
+     "md": "139",
+     "title": "Yer Blues",
+     "link": "../essays/yb.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "144",
+     "md": "138",
+     "title": "Mother Nature's Son",
+     "link": "../essays/mns.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "145",
+     "md": "129",
+     "title": "Everybody's Got Something To Hide Except For Me And My Monkey",
+     "link": "../essays/egsthefmamm.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "146",
+     "md": "135",
+     "title": "Sexy Sadie",
+     "link": "../essays/ss.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "147",
+     "md": "134",
+     "title": "Helter Skelter",
+     "link": "../essays/hs.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "148",
+     "md": "152",
+     "title": "Long, Long, Long",
+     "link": "../essays/lll.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "149",
+     "md": "125",
+     "title": "Revolution (1)",
+     "link": "../essays/r.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "150",
+     "md": "149",
+     "title": "Honey Pie",
+     "link": "../essays/hp.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "151",
+     "md": "150",
+     "title": "Savoy Truffle",
+     "link": "../essays/st.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "152",
+     "md": "133",
+     "title": "Cry Baby Cry",
+     "link": "../essays/cbc.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "153",
+     "md": "",
+     "title": "Can You Take Me Back",
+     "link": "../essays/cytmb.md",
+     "first": true,
+     "kind": "original",
+     "note": "untitled song fragment"
+    },
+    {
+     "canon": "154",
+     "md": "127",
+     "title": "Revolution #9",
+     "link": "../essays/r9.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "155",
+     "md": "130",
+     "title": "Good Night",
+     "link": "../essays/gn.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 33,
+   "format": "LP",
+   "title": "Yellow Submarine",
+   "info": "released: 13.01.1969 [US]; 17.01.1969 [UK] on Parlophone PMC 7070 [mono]; Parlophone PCS 7070 [stereo]",
+   "cover": "Beatles_cover11.JPG",
+   "tracks": [
+    {
+     "canon": "083",
+     "md": "088",
+     "title": "Yellow Submarine",
+     "link": "../essays/ys.md",
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "156",
+     "md": "100",
+     "title": "Only A Northern Song",
+     "link": "../essays/oans.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "157",
+     "md": "111",
+     "title": "All Together Now",
+     "link": "../essays/atn.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "158",
+     "md": "124",
+     "title": "Hey Bulldog",
+     "link": "../essays/hb.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "159",
+     "md": "113",
+     "title": "It's All Too Much",
+     "link": "../essays/iatm.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "111",
+     "md": "114",
+     "title": "All You Need Is Love",
+     "link": "../essays/aynil.md",
+     "first": false,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 34,
+   "format": "Single",
+   "title": "Get Back",
+   "info": "released: 11.04.1969 [UK] on Apple/Parlophone R 5777",
+   "cover": null,
+   "tracks": [
+    {
+     "canon": "160",
+     "md": "160",
+     "title": "Get Back",
+     "link": "../essays/gb2.md",
+     "first": true,
+     "kind": "original",
+     "note": "with Billy Preston on piano"
+    },
+    {
+     "canon": "161",
+     "md": "159",
+     "title": "Don't Let Me Down",
+     "link": "../essays/dlmd.md",
+     "first": true,
+     "kind": "original",
+     "note": "with Billy Preston on piano"
+    }
+   ]
+  },
+  {
+   "no": 35,
+   "format": "Single",
+   "title": "The Ballad Of John And Yoko",
+   "info": "released: 30.05.1969 [UK] on Apple/Parlophone R 5786",
+   "cover": null,
+   "tracks": [
+    {
+     "canon": "162",
+     "md": "168",
+     "title": "The Ballad Of John And Yoko",
+     "link": "../essays/tbojay.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "163",
+     "md": "169",
+     "title": "Old Brown Shoe",
+     "link": "../essays/obs.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 36,
+   "format": "LP",
+   "title": "Abbey Road",
+   "info": "released: 26.09.1969 on [UK] Parlophone PCS 7088 [stereo]",
+   "cover": "Beatles_cover12.JPG",
+   "tracks": [
+    {
+     "canon": "164",
+     "md": "179",
+     "title": "Come Together",
+     "link": "../essays/ct.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "165",
+     "md": "170",
+     "title": "Something",
+     "link": "../essays/s.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "166",
+     "md": "178",
+     "title": "Maxwell's Silver Hammer",
+     "link": "../essays/msh.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "167",
+     "md": "171",
+     "title": "Oh! Darling",
+     "link": "../essays/od.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "168",
+     "md": "172",
+     "title": "Octopus's Garden",
+     "link": "../essays/og.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "169",
+     "md": "167",
+     "title": "I Want You (She's So Heavy)",
+     "link": "../essays/iwyssh.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "170",
+     "md": "177",
+     "title": "Here Comes The Sun",
+     "link": "../essays/hcts.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "171",
+     "md": "185",
+     "title": "Because",
+     "link": "../essays/b4.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "172",
+     "md": "173",
+     "title": "You Never Give Me Your Money",
+     "link": "../essays/yngmym.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "173",
+     "md": "181",
+     "title": "Sun King",
+     "link": "../essays/sk.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "174",
+     "md": "182",
+     "title": "Mean Mr Mustard",
+     "link": "../essays/mmm.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "175",
+     "md": "183",
+     "title": "Polythene Pam",
+     "link": "../essays/pp.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "176",
+     "md": "184",
+     "title": "She Came In Through The Bathroom Window",
+     "link": "../essays/scittbw.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "177",
+     "md": "175",
+     "title": "Golden Slumbers",
+     "link": "../essays/gs.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "178",
+     "md": "176",
+     "title": "Carry That Weight",
+     "link": "../essays/ctw.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "179",
+     "md": "180",
+     "title": "The End",
+     "link": "../essays/te.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "180",
+     "md": "174",
+     "title": "Her Majesty",
+     "link": "../essays/hm.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 37,
+   "format": "Single",
+   "title": "Let It Be",
+   "info": "released: 06.03.1969 [UK] on Apple/Parlophone R 5833",
+   "cover": null,
+   "tracks": [
+    {
+     "canon": "181",
+     "md": "164",
+     "title": "Let It Be",
+     "link": "../essays/lib.md",
+     "first": true,
+     "kind": "original",
+     "note": "with Billy Preston on piano"
+    },
+    {
+     "canon": "182",
+     "md": "112",
+     "title": "You Know My Name (Look Up The Number)",
+     "link": "../essays/ykmnlutn.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 38,
+   "format": "LP",
+   "title": "No One's Gonna Change Our World",
+   "info": "World Wildlife Fund Charity LP, released: 12.12.1969 [UK] on Regal Starline SRS 5013",
+   "cover": null,
+   "tracks": [
+    {
+     "canon": "183",
+     "md": "123",
+     "title": "Across The Universe",
+     "link": "../essays/atu.md",
+     "first": true,
+     "kind": "original",
+     "note": "with wildlife sound effects"
+    }
+   ]
+  },
+  {
+   "no": 39,
+   "format": "LP",
+   "title": "Let it Be",
+   "info": "released: 08.05.1970 [UK] on Apple/Parlophone PCS 7096 [stereo]",
+   "cover": "Beatles_cover13.JPG",
+   "tracks": [
+    {
+     "canon": "184",
+     "md": "161",
+     "title": "Two Of Us",
+     "link": "../essays/tou.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "185",
+     "md": "157",
+     "title": "Dig A Pony",
+     "link": "../essays/dap.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "186",
+     "md": "123",
+     "title": "Across The Universe",
+     "link": "../essays/atu.md",
+     "first": true,
+     "kind": "original",
+     "note": "remixed"
+    },
+    {
+     "canon": "187",
+     "md": "186",
+     "title": "I Me Mine",
+     "link": "../essays/imm.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "188",
+     "md": "162",
+     "title": "Dig It",
+     "link": "../essays/di.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "189",
+     "md": "164",
+     "title": "Let It Be",
+     "link": "../essays/lib.md",
+     "first": true,
+     "kind": "original",
+     "note": "with Billy Preston on piano; produced by Phil Spector"
+    },
+    {
+     "canon": "T01",
+     "md": "161b",
+     "title": "Maggie Mae",
+     "link": "../essays/mmfrag.md",
+     "first": true,
+     "kind": "traditional",
+     "note": null
+    },
+    {
+     "canon": "190",
+     "md": "158",
+     "title": "I've Got A Feeling",
+     "link": "../essays/igaf.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "191",
+     "md": "166",
+     "title": "One After 909",
+     "link": "../essays/oa909.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "192",
+     "md": "165",
+     "title": "The Long And Winding Road",
+     "link": "../essays/tlawr.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "193",
+     "md": "163",
+     "title": "For You Blue",
+     "link": "../essays/fyb.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "194",
+     "md": "160",
+     "title": "Get Back",
+     "link": "../essays/gb2.md",
+     "first": true,
+     "kind": "original",
+     "note": "with Billy Preston on piano; produced by Phil Spector"
+    }
+   ]
+  },
+  {
+   "no": 40,
+   "format": "Single",
+   "title": "Free As A Bird",
+   "info": "released: 04.12.1995 on Apple/EMI CDR 6422, CD-single",
+   "cover": null,
+   "tracks": [
+    {
+     "canon": "195",
+     "md": "187",
+     "title": "Free As A Bird",
+     "link": "../essays/faab.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  },
+  {
+   "no": 41,
+   "format": "Single",
+   "title": "Real Love",
+   "info": "released: 04.03.1996 on Apple/EMI CDR 6425, CD-single",
+   "cover": null,
+   "tracks": [
+    {
+     "canon": "196",
+     "md": "188",
+     "title": "Real Love",
+     "link": "../essays/rl.md",
+     "first": true,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "007",
+     "md": "",
+     "title": "Love Me Do , double of 001, but with Andy White sitting behind the drums;",
+     "link": null,
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "024",
+     "md": "",
+     "title": "Komm, Gib Mir Deine Hand , German version of 022: I Want To Hold Your Hand (same basic track with added vocals and handclaps);",
+     "link": null,
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "025",
+     "md": "",
+     "title": "Sie Liebt Dich , German version of 012: She Loves You (commonly taken as a complete rerecording of the original, but maybe just like 024 the same basic track with new vocals);",
+     "link": null,
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "120",
+     "md": "",
+     "title": "refrain of 111: All You Need Is Love ;",
+     "link": null,
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "186",
+     "md": "",
+     "title": "Across The Universe , remix by Phil Spector of 183: Across The Universe without wildlife sounds;",
+     "link": null,
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "189",
+     "md": "",
+     "title": "Let It Be , remix by Phil Spector of the single version 181: Let It Be (same take, but slightly longer and with a different solo guitar track);",
+     "link": null,
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "194",
+     "md": "",
+     "title": "Get Back , mixed by Phil Spector from a take that was recorded a day before (27.01.69) that of the single 160: Get Back ;",
+     "link": null,
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "153",
+     "md": "",
+     "title": "Can You Take Me Back (untitled song fragment by McCartney on the White Album).",
+     "link": null,
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "109",
+     "md": "",
+     "title": "the Reprise of 098: Sgt. Pepper's Lonely Hearts Club Band on the album with the same name;",
+     "link": null,
+     "first": false,
+     "kind": "original",
+     "note": null
+    },
+    {
+     "canon": "149",
+     "md": "",
+     "title": "Revolution 1 , a variant of 124: Revolution with slight but significant differences in the lyrics.",
+     "link": null,
+     "first": false,
+     "kind": "original",
+     "note": null
+    }
+   ]
+  }
+ ]
+}
