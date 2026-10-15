@@ -650,7 +650,7 @@ def import_canon():
             font = li.find("font")
             a = li.find("a")
             txt = li.get_text(" ", strip=True)
-            m = re.match(r"^(\w+)\s*(?:/\s*(MD\w+))?\s*:\s*(.*)$", txt)
+            m = re.match(r"^(\w+)(?:\s+\1)?\s*(?:/\s*(MD\w+))?\s*:\s*(.*)$", txt)  # source has "100 100 / MD103"
             if not m:
                 continue
             canon, md, rest = m.groups()

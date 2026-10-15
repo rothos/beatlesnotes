@@ -18,7 +18,7 @@
     {% for ent in c.entries %}
     <li data-slug="{{ ent.slug }}">
       <span class="no">{{ ent.no | int if ent.no.isdigit() else ent.no }}</span>
-      {% if ent.href %}<a href="{{ ent.href }}">{{ ent.title }}</a>{% else %}<span>{{ ent.title }}</span>{% endif %}
+      {% if ent.href %}<a href="{{ ent.href }}">{{ ent.title | trim(' ,') }}</a>{% else %}<span>{{ ent.title }}</span>{% endif %}
       <span class="yrs">{{ ent.years | replace('; ', ', rev. ') }}</span>
     </li>
     {% endfor %}
