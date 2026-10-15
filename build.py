@@ -424,6 +424,10 @@ def main():
         for v in sorted(essays):
             if v == base or re.fullmatch(re.escape(base) + r"\.\d", v):
                 versions.append(essays[v])
+        R.reset("../", "originals" if e["folder"] == "originals" else "essays")
+        for rv in e.get("revisions", []):
+            if rv.get("link"):
+                rv["href"] = R.map_link(rv["link"])
         bl = sorted((essays[s] for s in backlinks.get(slug, ())), key=lambda x: series_order.index(x["slug"]) if x["slug"] in series_order else 999)
         write(e["url"], "essay.html", e=e, r=rendered[slug], series_prev=sp, series_next=sn,
               album_prev=ap, album_next=an, versions=versions, backlinks=bl,

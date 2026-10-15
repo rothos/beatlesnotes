@@ -63,7 +63,7 @@ At the high level, I was amazed very early on at how often you'd find examples o
 
 *What were your worst mistakes?*
 
-Treating "[Drive My Car](../essays/dmc.md)" as if the home key were G. No contest. You, Ian, might rightfully choose my article on "[Revolution 9](../essays/r9.md)" for categorically dismissing the possibility of its containing the level of detailed compositional control you've suggested in your own essay on the track. \[[1](../essays/interview.md#Note1)\] On the other hand, I'm still not 100% sure I agree with you there :-)
+Treating "[Drive My Car](../essays/dmc.md)" as if the home key were G. No contest. You, Ian, might rightfully choose my article on "[Revolution 9](../essays/r9.md)" for categorically dismissing the possibility of its containing the level of detailed compositional control you've suggested in your own essay on the track. \[[1](site:pages/interview#Note1)\] On the other hand, I'm still not 100% sure I agree with you there :-)
 
 *Having now submitted all the songs to a more or less orthogonal treatment, how well did you find that the 'school' tools fitted the task?*
 

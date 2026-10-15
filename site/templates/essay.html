@@ -103,7 +103,7 @@
           <tbody>
           {% for rv in e.revisions %}
             <tr><td class="num">{{ rv.version }}</td><td><time>{{ rv.date }}</time></td>
-            <td>{% if rv.link %}<a href="{{ root }}originals/{{ rv.link.split('/')[-1].replace('.md','') }}.html">{{ rv.note }}</a>{% else %}{{ rv.note }}{% endif %}</td></tr>
+            <td>{% if rv.href %}<a href="{{ rv.href }}">{{ rv.note }}</a>{% else %}{{ rv.note }}{% endif %}</td></tr>
           {% endfor %}
           </tbody>
         </table>

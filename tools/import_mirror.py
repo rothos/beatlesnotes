@@ -58,6 +58,8 @@ def map_href(href: str, here: str) -> str | None:
     m = re.match(r"^([\w.\-]+?)\.shtml(?:\.html)?(#.*)?$", href)
     if m:
         slug, frag = m.group(1), m.group(2) or ""
+        if slug == "interview":   # by Ian Hammond: lives with the other non-Pollack pages
+            return "site:pages/interview" + frag
         if slug in INDEX_PAGES:
             target = INDEX_PAGES[slug]
             return target if "#" in target or not frag else target + frag
@@ -715,7 +717,9 @@ def import_about_page(path: Path, slug: str, author: str, title: str):
     events = page_events(path, "pages")
     md = []
     for ev in events:
-        if ev[0] == "para":
+        if ev[0] == "anchor":
+            md.append(f'<a id="{ev[1]}"></a>')
+        elif ev[0] == "para":
             md.append(ev[1])
         elif ev[0] == "list":
             md.append(ev[1])
