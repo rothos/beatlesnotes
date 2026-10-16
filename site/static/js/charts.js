@@ -329,14 +329,13 @@
         heads[0].label = labelBuf.pop() + heads[0].label;
         heads[0].role = rowRole(heads[0].label);
       }
-      // rows typed one above another sound together (a tune over its chords, voices, words over the
-      // music), unless the chart is one of the few where the next line simply follows on
+      // rows typed one above another sound together (a tune over its chords, voices, words over the music)
       let rows;
       const labelled = heads.some((h) => h.label);
       if (heads.length > 1 && !labelled && prevMulti && prevMulti.length === heads.length && prevMulti.some((r) => r.role === "chords")) {
         heads.forEach((h, n) => { h.role = prevMulti[n].label ? rowRole(prevMulti[n].label) : prevMulti[n].role; h.label = prevMulti[n].label; h.inherited = true; });
       }
-      if (heads.length > 1 && (labelled || heads[0].inherited || !opts.sequential)) { inferRoles(heads); rows = [heads]; }
+      if (heads.length > 1) { inferRoles(heads); rows = [heads]; }
       else rows = heads.map((h) => [h]);
 
       rows.forEach((group, gi) => {
@@ -344,6 +343,7 @@
         const sysRows = group.map((h) => {
           if (h.key) key = key || h.key;
           let role = h.role || "chords";
+          if (role === "bass" && opts.bassChords) role = "chords";
           if (role === "voice" && !isPitchLine(h.line, h.bl.first)) role = "other";
           if (role === "other") h.line = h.raw || h.line;
           const segs = segments(h.line, h.bl);
@@ -351,6 +351,13 @@
           const pk = h.pickup ? readBars(h.line, [h.pickup], role).bars[0] : null;
           return { label: h.label, role, r, segs, line: h.line, raw: h.raw, bl: h.bl, explicit: !!h.label, pickup: pk, voiceIndex: h.voiceIndex, pkHead: h.pickup };
         });
+        // a line whose bars are empty and whose words come after them ("||3rd refrain, only") is a caption
+        for (let k = sysRows.length - 1; k >= 0 && sysRows.length > 1; k--) {
+          const row = sysRows[k], src = row.raw || row.line;
+          const tail = src.slice(src.lastIndexOf("|") + 1).trim();
+          const blank = row.r.bars.every((bt) => bt.beats.every((x) => !(x.text || "").trim() && !x.chord && x.pitch === undefined));
+          if (!row.explicit && blank && /[a-z]{3}/i.test(tail)) { labelBuf.push(tail); sysRows.splice(k, 1); }
+        }
         const myAfter = lastGroup ? after : [];
         const hasNumerals = myAfter.some((a) => a.numeral);
         // a lone unlabelled row is only chords if it reads as chords
@@ -402,6 +409,9 @@
           note: lastGroup && prose.length ? prose.join(" ") : null,
         };
         out.rows.forEach((r) => { r.register = registerOf(r); });
+        // a tune over chords sits above them (the chords keep to about MIDI 56-68)
+        const firstChords = out.rows.findIndex((r) => r.role === "chords");
+        out.rows.forEach((r, n) => { if (r.role === "voice" && n < firstChords) r.register = Math.max(r.register, 72); });
         out.pickup = out.rows.some((r) => r.pickup);
         const virt = out.rows.find((r) => r.virtual);
         if (virt) out.virtual = { role: virt.role, label: virt.label };
@@ -622,11 +632,15 @@
         tr.last = chord;
         return { notes, vel: (ev.chord ? (chord.implied ? 0.55 : 1) : 0.5) * (ev.soft ? 0.7 : 1) };
       }
-      // the octave nearest the previous note of this line, starting from the line's register
+      // the octave closest to the previous note of this line, leaning toward the line's register so
+      // a run of fourths doesn't carry it off the keyboard
       const ref = tr.midi || ev.register;
-      let m = ev.register - 6 + ((ev.pitch - (ev.register - 6)) % 12 + 12) % 12;
-      while (m - ref > 6) m -= 12;
-      while (ref - m > 6) m += 12;
+      const pc = ((ev.pitch % 12) + 12) % 12;
+      let m = null, best = Infinity;
+      for (let c = pc + 24; c <= 96; c += 12) {
+        const cost = Math.abs(c - ref) + 0.5 * Math.abs(c - ev.register);
+        if (cost < best) { best = cost; m = c; }
+      }
       tr.midi = m;
       return { notes: [[m, ev.role === "bass" ? 0.34 : ev.register >= 66 ? 0.24 : 0.17]], vel: 1 };
     };
@@ -685,13 +699,35 @@
   const STOP_ICON = '<svg viewBox="0 0 12 12" aria-hidden="true"><rect x="2" y="2" width="8" height="8" fill="currentColor"/></svg>';
 
   // ------------------------------------------------------------------ rendering
-  // charts whose unlabelled bar lines follow one another rather than sounding together
-  const SEQUENTIAL = new Set(["121.1"]);
+  // charts that can't be read as typed: the reading drawn and played instead ("Show as typed" still
+  // shows Pollack's original). bassChords: the bass line is also the chords.
+  const HINTS = {
+    // I Am the Walrus, intro: the Topline and Bassline carry on through the last two systems (Pollack
+    // labels only the first, and leaves the IV7's D in the bass unwritten); the bass notes are the
+    // chords, and the top line makes E7 and D7 of the held E and D
+    "121.1": { bassChords: true, text: [
+      "          |B               |-      |",
+      "       A:  V-of-V (4 beats in the US, and 6 beats in the UK!)",
+      "",
+      " Topline: |D#      C#  F#  |B       A   D   |",
+      "Bassline: |B       A       |G       F       |",
+      "       A:  V-of-V",
+      "",
+      " Topline: |B             C |D               |",
+      "Bassline: |E               |-               |",
+      "           V7",
+      "",
+      " Topline: |D             B |C               |",
+      "Bassline: |D               |-               |",
+      "           IV7",
+    ].join("\n") },
+  };
 
   function render(fig, opts = {}) {
     const pre = fig.querySelector(".chart-src");
     if (!pre || fig.classList.contains("drawn")) return;
-    const model = parse(pre.textContent, { sequential: SEQUENTIAL.has(fig.dataset.fig) });
+    const hint = HINTS[fig.dataset.fig];
+    const model = parse(hint ? hint.text : pre.textContent, { bassChords: hint && hint.bassChords });
     if (!model.ok) { fig.classList.add("undrawn"); return; }
     const beatsPerBar = opts.beatsPerBar || 4;
     const wrap = document.createElement("div");
@@ -769,7 +805,7 @@
     wrap.querySelectorAll(".bar[data-slot]").forEach((b) => (b.title = "Play from here"));
   }
 
-  const api = { parse, parseChord, render, stop, timeline, SEQUENTIAL };
+  const api = { parse, parseChord, render, stop, timeline, HINTS };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else {
     global.PNCharts = api;
