@@ -420,6 +420,8 @@ figure.chart.drawn.show-src .chart-src { display: block; margin-top: 0.6rem; }
 .beat .ch sup { font-size: 0.68em; font-weight: 500; margin-left: 0.04em; }
 .beat .ch.hold { color: var(--pencil); font-weight: 400; }
 .beat .rn { font: 400 0.82em/1.3 var(--serif); color: var(--staff); font-variant-numeric: oldstyle-nums; white-space: nowrap; min-height: 1.3em; }
+.bar[data-slot] { cursor: pointer; }
+@media (hover: hover) { .bar[data-slot]:hover:not(.playing) { background: color-mix(in srgb, var(--record-soft) 45%, transparent); } }
 .bar.playing { background: var(--record-soft); }
 .bar.playing::after { content: ""; position: absolute; left: -1.5px; right: 0; top: -1px; height: 3px; background: var(--record); }
 /* rows typed one above another (soprano, alto, bass, chords ...) form one system, bar lined up with bar */

@@ -561,8 +561,13 @@
       });
     }
 
+    const heard = new Set();   // tracks that have sounded so far
     model.systems.forEach((sys) => {
       if (!sys.playable) return;
+      // a part this system doesn't write out falls silent, so a bass line's last note doesn't ring on under the next chords
+      const here = new Set(sys.rows.filter((r) => r.role !== "other").map((r) => trackOf(sys, r)));
+      heard.forEach((tr) => { if (!here.has(tr)) { events.push({ beat, track: tr, kind: "rest" }); heard.delete(tr); } });
+      here.forEach((tr) => heard.add(tr));
       const hasBass = sys.rows.some((r) => r.role === "bass");
       const voices = sys.rows.filter((r) => r.role === "voice").length;
       if (sys.pickup) {
@@ -588,8 +593,8 @@
     return { events, total: beat };
   }
 
-  function play(fig, model, btn, slider, beatsPerBar) {
-    if (current && current.fig === fig) { stop(); return; }
+  function play(fig, model, btn, slider, beatsPerBar, from) {
+    if (current && current.fig === fig && from === undefined) { stop(); return; }
     stop();
     audio();
     const { events, total } = timeline(model, beatsPerBar);
@@ -598,10 +603,42 @@
     const oscs = [], timers = [];
     // tempo can change at any moment: keep an anchor (beat, time) and the current seconds-per-beat
     let spb = 60 / +slider.value;
-    let anchorBeat = 0, anchorTime = ctx.currentTime + 0.08;
+    // starting from a bar part-way through: begin at that bar's slot event
+    let next = from ? Math.max(0, events.findIndex((e) => e.slot === from)) : 0;
+    let anchorBeat = next ? events[next].beat : 0, anchorTime = ctx.currentTime + 0.08;
     const timeOf = (b) => anchorTime + (b - anchorBeat) * spb;
-    let next = 0, finished = false;
+    let finished = false;
     const tracks = {};   // track -> { sounding, last chord, voicing, midi }
+
+    // what one event sounds, as [[midi, gain], …] and a velocity; keeps each track's chord, voicing and last note
+    const sound = (ev, tr) => {
+      if (ev.kind === "chord" || ev.kind === "hold") {
+        const chord = ev.chord || tr.last;
+        if (!chord) return null;
+        if (ev.chord) tr.voicing = voice(chord, tr.voicing && tr.voicing.notes);
+        else tr.voicing = tr.voicing || voice(chord, null);
+        const notes = tr.voicing.notes.map((m) => [m, 0.16]);
+        if (!ev.noBass) notes.push([tr.voicing.bass, 0.32]);
+        tr.last = chord;
+        return { notes, vel: (ev.chord ? (chord.implied ? 0.55 : 1) : 0.5) * (ev.soft ? 0.7 : 1) };
+      }
+      // the octave nearest the previous note of this line, starting from the line's register
+      const ref = tr.midi || ev.register;
+      let m = ev.register - 6 + ((ev.pitch - (ev.register - 6)) % 12 + 12) % 12;
+      while (m - ref > 6) m -= 12;
+      while (ref - m > 6) m += 12;
+      tr.midi = m;
+      return { notes: [[m, ev.role === "bass" ? 0.34 : ev.register >= 66 ? 0.24 : 0.17]], vel: 1 };
+    };
+    // run silently through the bars before the start, then sound whatever is still held there
+    const held = {};
+    for (let k = 0; k < next; k++) {
+      const ev = events[k];
+      if (ev.slot !== undefined) continue;
+      const tr = tracks[ev.track] || (tracks[ev.track] = {});
+      held[ev.track] = ev.kind === "rest" ? null : sound(ev, tr) || held[ev.track];
+    }
+    Object.entries(held).forEach(([k, h]) => { if (h) tracks[k].sounding = strike(bus, oscs, anchorTime, h.notes, h.vel * 0.8); });
 
     const tick = () => {
       const horizon = ctx.currentTime + 0.15;
@@ -618,27 +655,10 @@
         }
         const tr = tracks[ev.track] || (tracks[ev.track] = {});
         if (ev.kind === "rest") { if (tr.sounding) release(tr.sounding, t); tr.sounding = null; continue; }
-        let notes, vel = 1;
-        if (ev.kind === "chord" || ev.kind === "hold") {
-          const chord = ev.chord || tr.last;
-          if (!chord) continue;
-          if (ev.chord) tr.voicing = voice(chord, tr.voicing && tr.voicing.notes);
-          else tr.voicing = tr.voicing || voice(chord, null);
-          notes = tr.voicing.notes.map((m) => [m, 0.16]);
-          if (!ev.noBass) notes.push([tr.voicing.bass, 0.32]);
-          vel = (ev.chord ? (chord.implied ? 0.55 : 1) : 0.5) * (ev.soft ? 0.7 : 1);
-          tr.last = chord;
-        } else {
-          // the octave nearest the previous note of this line, starting from the line's register
-          const ref = tr.midi || ev.register;
-          let m = ev.register - 6 + ((ev.pitch - (ev.register - 6)) % 12 + 12) % 12;
-          while (m - ref > 6) m -= 12;
-          while (ref - m > 6) m += 12;
-          tr.midi = m;
-          notes = [[m, ev.role === "bass" ? 0.34 : ev.register >= 66 ? 0.24 : 0.17]];
-        }
+        const h = sound(ev, tr);
+        if (!h) continue;
         if (tr.sounding) release(tr.sounding, t);
-        tr.sounding = strike(bus, oscs, t, notes, vel);
+        tr.sounding = strike(bus, oscs, t, h.notes, h.vel);
       }
       if (next >= events.length && !finished && timeOf(total) < horizon) {
         finished = true;
@@ -740,6 +760,13 @@
     const out = wrap.querySelector(".tempo output");
     slider.addEventListener("input", () => { out.textContent = slider.value + " bpm"; });
     btn.addEventListener("click", () => play(fig, model, btn, slider, beatsPerBar));
+    // click any bar to play from there (but not when selecting text)
+    wrap.addEventListener("click", (e) => {
+      const bar = e.target.closest(".bar[data-slot]");
+      if (!bar || (window.getSelection && String(window.getSelection()))) return;
+      play(fig, model, btn, slider, beatsPerBar, +bar.dataset.slot);
+    });
+    wrap.querySelectorAll(".bar[data-slot]").forEach((b) => (b.title = "Play from here"));
   }
 
   const api = { parse, parseChord, render, stop, timeline, SEQUENTIAL };
