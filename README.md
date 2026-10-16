@@ -56,6 +56,8 @@ tools/import_mirror.py   one-time importer from the mirror (read-only source)
 - Full-text search over every note (`/` or ⌘K), with matches highlighted on the page you open.
 - Chord charts as bars, with Web Audio playback starting at the record's tempo (measured from the
   Isophonics beat annotations for the 12 studio albums; 120 bpm elsewhere), a tempo slider, and the typed version a click away.
+  Rows typed one above another (soprano, alto, bass line, melody over chords) are drawn as one system
+  and play together: chords as chords, a bass line low, other lines as single notes.
 - A form strip for each song, linked to the section walkthrough.
 - The canon as a grid on the home page, coloured by key, by who wrote it, by who sings, by year
   written or by what you've read (with a confirmed "clear").
