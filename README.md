@@ -57,8 +57,8 @@ tools/import_mirror.py   one-time importer from the mirror (read-only source)
 - Chord charts as bars, with Web Audio playback starting at the record's tempo (measured from the
   Isophonics beat annotations for the 12 studio albums; 120 bpm elsewhere), a tempo slider, and the typed version a click away.
 - A form strip for each song, linked to the section walkthrough.
-- The canon as a grid on the home page, coloured by key, by mode, by who wrote it, by who sings, by year
-  written or by what you've read.
+- The canon as a grid on the home page, coloured by key, by who wrote it, by who sings, by year
+  written or by what you've read (with a confirmed "clear").
 - Song facts from the Beatles DB on each note (main writer, lead vocal, length, Billboard rank) with a
   Wikipedia link, plus writer, singer and "Billboard top 50" filters in the song table.
 - A sortable, filterable song table with a shareable URL and a circle-of-fifths summary of keys.

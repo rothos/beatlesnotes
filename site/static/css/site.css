@@ -203,8 +203,6 @@ main { min-height: 60vh; }
 }
 .tile.nokey { background: var(--paper-3); background-image: repeating-linear-gradient(45deg, transparent 0 3px, var(--rule) 3px 4px); }
 .tile:hover, .tile:focus-visible { transform: scale(1.35); box-shadow: 0 0 0 2px var(--paper), 0 0 0 3.5px var(--ink); position: relative; z-index: 2; }
-.canon[data-color="mode"] .tile { background: var(--staff); opacity: 0.85; }
-.canon[data-color="mode"] .tile.minor { background: var(--ink); opacity: 1; }
 .canon:not([data-color="key"]) .tile.minor::after { display: none; }
 /* first-posted date: a continuous ramp from pale teal (1989) to deep violet (2001) */
 .canon[data-color="written"] .tile { background: oklch(calc(0.9 - var(--w, 0) * 0.55) calc(0.05 + var(--w, 0) * 0.1) calc(190 + var(--w, 0) * 105)); }
@@ -229,6 +227,9 @@ main { min-height: 60vh; }
 .canon-tip { display: block; min-height: 2.9em; max-width: 70ch; }
 .canon-tip strong { color: var(--ink); font-weight: 600; }
 .canon-legend { display: flex; flex-wrap: wrap; gap: 0.2rem 0.75rem; align-items: center; }
+.lg-clear { color: var(--ink-2); }
+.linkbtn:focus-visible { outline: 2px solid var(--staff); outline-offset: 2px; }
+.linkbtn.danger { color: var(--record); font-weight: 600; }
 .canon-legend .lg { display: inline-flex; align-items: center; gap: 0.3rem; white-space: nowrap; }
 .canon-legend i { width: 0.8rem; height: 0.8rem; border-radius: 2px; display: inline-block; }
 

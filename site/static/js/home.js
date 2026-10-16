@@ -15,14 +15,14 @@
   const LEGENDS = {
     key: () => FIFTHS.map((n, i) => `<span class="lg"><i style="background: ${COLORS[i]}"></i>${n}</span>`).join("") +
       `<span class="lg muted"><i class="lg-minor" style="background: var(--pencil); position: relative"></i>dot: minor key</span>`,
-    mode: () => `<span class="lg"><i style="background: var(--staff)"></i>Major</span><span class="lg"><i style="background: var(--ink)"></i>Minor</span>`,
     written: () => `<span class="lg ramp-legend"><span>May 1989</span><i class="ramp"></i><span>2001</span></span><span class="lg muted">when Pollack first posted the note</span>`,
     writer: () => people("writer", [["lennon", "Lennon"], ["mccartney", "McCartney"], ["lennon-mccartney", "Lennon and McCartney together"], ["harrison", "Harrison"], ["starkey", "Starr"], ["all", "All four"], ["group", "Two or three of them"], ["other", "Cover"], ["", "Not in the Beatles DB"]]) +
       `<span class="lg muted">the main writer, not the official credit</span>`,
     vocal: () => people("vocal", [["lennon", "Lennon"], ["mccartney", "McCartney"], ["lennon-mccartney", "Lennon and McCartney"], ["harrison", "Harrison"], ["starkey", "Starr"], ["all", "All four"], ["group", "Shared lead"], ["none", "Instrumental"], ["", "Not in the Beatles DB"]]),
     read: () => {
       const n = tiles.filter((t) => t.classList.contains("is-read")).length;
-      return `<span class="lg"><i style="background: var(--staff)"></i>Read (${n} of ${tiles.length})</span><span class="lg"><i style="background: var(--paper-3)"></i>Not yet</span>`;
+      return `<span class="lg"><i style="background: var(--staff)"></i>Read (${n} of ${tiles.length})</span><span class="lg"><i style="background: var(--paper-3)"></i>Not yet</span>` +
+        (PN.readCount() ? `<span class="lg-clear"><button type="button" class="linkbtn" data-clear="ask">Clear reading history</button></span>` : "");
     },
   };
 
@@ -48,7 +48,23 @@
     if (!isNaN(d)) t.style.setProperty("--w", Math.max(0, Math.min(1, (d - T0) / (T1 - T0))).toFixed(3));
   });
 
+  // clearing the reading history asks once, in place, before it forgets anything
+  legend.addEventListener("click", (e) => {
+    const b = e.target.closest("[data-clear]");
+    if (!b) return;
+    const box = b.parentElement;
+    if (b.dataset.clear === "ask") {
+      const n = PN.readCount();
+      box.innerHTML = `Forget all ${n} note${n === 1 ? "" : "s"} you’ve read? <button type="button" class="linkbtn danger" data-clear="yes">Clear</button> <button type="button" class="linkbtn" data-clear="no">Keep</button>`;
+      box.querySelector('[data-clear="no"]').focus();
+    } else {
+      if (b.dataset.clear === "yes") PN.clearRead();
+      legend.innerHTML = LEGENDS.read();
+    }
+  });
+
   function setMode(mode) {
+    if (!LEGENDS[mode]) mode = "key";
     fig.dataset.color = mode;
     fig.querySelectorAll("[data-color]").forEach((b) => { if (b.tagName === "BUTTON") b.setAttribute("aria-pressed", String(b.dataset.color === mode)); });
     legend.innerHTML = LEGENDS[mode]();
@@ -70,5 +86,5 @@
 
   markRead();
   setMode((window.PN && PN.store.get("pn-canon-color", "key")) || "key");
-  document.addEventListener("pn:read", markRead);
+  document.addEventListener("pn:read", () => { markRead(); if (fig.dataset.color === "read") legend.innerHTML = LEGENDS.read(); });
 })();

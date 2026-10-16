@@ -26,6 +26,11 @@
       document.dispatchEvent(new CustomEvent("pn:read", { detail: { slug, on } }));
     },
     readCount: () => readSet.size,
+    clearRead() {
+      readSet.clear();
+      store.set("pn-read", []);
+      document.dispatchEvent(new CustomEvent("pn:read", { detail: { slug: null, on: false } }));
+    },
     slugFromHref(href) {
       const m = /(?:^|\/)note-([\w.\-]+)\.html/.exec(href || "");
       return m ? m[1] : null;
