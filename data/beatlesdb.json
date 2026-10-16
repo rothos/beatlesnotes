@@ -9,9 +9,9 @@
     "twelvebaroriginal"
    ],
    "writer": "Lennon, McCartney, Harrison and Starr",
-   "writer_group": "group",
-   "vocal": null,
-   "vocal_group": null,
+   "writer_group": "all",
+   "vocal": "N/A",
+   "vocal_group": "none",
    "duration": 174,
    "billboard": null,
    "wikipedia": null
@@ -542,9 +542,9 @@
     "christmastime"
    ],
    "writer": "Lennon, McCartney, Harrison and Starr",
-   "writer_group": "group",
+   "writer_group": "all",
    "vocal": "Lennon, McCartney, Harrison and Starr",
-   "vocal_group": "group",
+   "vocal_group": "all",
    "duration": 183,
    "billboard": null,
    "wikipedia": null
@@ -922,7 +922,7 @@
     "flying"
    ],
    "writer": "Lennon, McCartney, Harrison and Starr",
-   "writer_group": "group",
+   "writer_group": "all",
    "vocal": "N/A",
    "vocal_group": "none",
    "duration": 137,
@@ -1937,7 +1937,7 @@
     "jessiesdream"
    ],
    "writer": "Lennon, McCartney, Harrison, Starr",
-   "writer_group": "group",
+   "writer_group": "all",
    "vocal": "N/A",
    "vocal_group": "none",
    "duration": 150,
@@ -2250,7 +2250,7 @@
     "maggiemae"
    ],
    "writer": "Traditional, arr. Lennon, McCartney, Harrison, Starr",
-   "writer_group": "group",
+   "writer_group": "all",
    "vocal": "Lennon",
    "vocal_group": "lennon",
    "duration": 40,
@@ -3088,7 +3088,7 @@
    "writer": "Isley, Isley, Isley",
    "writer_group": "other",
    "vocal": "Lennon, McCartney, Harrison and Starr",
-   "vocal_group": "group",
+   "vocal_group": "all",
    "duration": 135,
    "billboard": null,
    "wikipedia": null
@@ -4124,6 +4124,19 @@
    "duration": 149,
    "billboard": null,
    "wikipedia": "https://en.wikipedia.org/wiki/Your_Mother_Should_Know"
+  },
+  {
+   "title": "Can You Take Me Back",
+   "keys": [
+    "canyoutakemeback"
+   ],
+   "writer": "McCartney",
+   "writer_group": "mccartney",
+   "vocal": "McCartney",
+   "vocal_group": "mccartney",
+   "duration": 28,
+   "billboard": null,
+   "wikipedia": "https://en.wikipedia.org/wiki/Cry_Baby_Cry"
   }
  ]
 }

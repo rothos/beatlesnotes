@@ -38,11 +38,12 @@
     recorded: (s) => dateKey(s.recorded),
     series: (s) => numKey(s.series),
     written: (s) => s.written || "9999",
-    writer: (s) => (s.kind !== "original" ? "~" : WHO.indexOf(s.writer_group) + 10),
+    writer: (s) => (COVER(s) ? "~" : WHO.indexOf(s.writer_group) + 10),
     vocal: (s) => (s.vocal_group ? WHO.indexOf(s.vocal_group) + 10 : 99),
     duration: (s) => s.duration || 99999,
   };
-  const WHO = ["lennon", "mccartney", "lennon-mccartney", "harrison", "starkey", "group", "other", "none"];
+  const COVER = (s) => s.kind === "cover" || s.kind === "traditional";
+  const WHO = ["lennon", "mccartney", "lennon-mccartney", "harrison", "starkey", "all", "group", "other", "none"];
   let sortBy = "canon", dir = 1;
 
   function apply() {
@@ -58,7 +59,7 @@
       if (f.mode && (!s.key_info || s.key_info.mode !== f.mode)) ok = false;
       if (f.meter && s.meter_short !== f.meter) ok = false;
       if (f.release && s.release_slug !== f.release) ok = false;
-      if (f.writer && (s.kind !== "original" || s.writer_group !== f.writer)) ok = false;
+      if (f.writer && (COVER(s) || s.writer_group !== f.writer)) ok = false;
       if (f.vocal && s.vocal_group !== f.vocal) ok = false;
       if (f.hit && !s.billboard) ok = false;
       if (f.kind === "original" && s.kind !== "original") ok = false;

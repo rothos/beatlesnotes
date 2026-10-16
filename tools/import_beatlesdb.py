@@ -19,6 +19,14 @@ BEATLES = ("Lennon", "McCartney", "Harrison", "Starkey")
 ALIASES = {"12-Bar Original": ["Twelve-Bar Original"],
            "With a Little Help from My Friends": ["With A Little Help From Friends"],
            "Everybody's Got Something to Hide Except Me and My Monkey": ["Everybody's Got Something To Hide Except For Me And My Monkey"]}
+# songs the DB lacks or leaves incomplete, filled in by hand (sources in the comments)
+EXTRA = [
+    # the coda after "Cry Baby Cry" on the White Album: a McCartney improvisation from the "I Will"
+    # session, 16 September 1968; 28 seconds on the LP (the-paulmccartney-project.com, Wikipedia "Cry Baby Cry")
+    {"title": "Can You Take Me Back", "yendor": {"songwriter": "McCartney", "lead.vocal": "McCartney", "duration": 28},
+     "wikipedia": {"url": "https://en.wikipedia.org/wiki/Cry Baby Cry"}},
+]
+FIX = {"12-Bar Original": {"lead.vocal": "N/A"}}  # an instrumental
 
 
 def norm(title: str) -> str:
@@ -31,15 +39,16 @@ def group(credit: str | None, kind: str) -> str | None:
     """Collapse a free-text credit to one of a few groups the site can colour by.
 
     'McCartney, with Lennon' -> mccartney (the first name is the main one);
-    'Lennon and McCartney' -> lennon-mccartney; all four -> group; anyone else first -> other."""
+    'Lennon and McCartney' -> lennon-mccartney; all four -> all; any other mix -> group;
+    anyone else first -> other."""
     if not credit or credit.strip() in ("?", "N/A"):
         return "none" if kind == "vocal" and credit == "N/A" else None
     main = re.split(r",\s*with\b|\s\(", credit)[0]
     names = [n for n in BEATLES if n in main]
     if not names:
         return "other"
-    if len(names) == 4 or (kind == "vocal" and len(names) == 3):
-        return "group"
+    if len(names) == 4:
+        return "all"
     if names == ["Lennon", "McCartney"]:
         return "lennon-mccartney"
     if len(names) == 1:
@@ -53,7 +62,9 @@ def starr(credit):
 
 
 def main(src: Path):
-    songs = json.loads(src.read_text())
+    songs = json.loads(src.read_text()) + EXTRA
+    for s in songs:
+        s.setdefault("yendor", {}).update(FIX.get(s["title"], {}))
     out = []
     for s in songs:
         y = s.get("yendor") or {}

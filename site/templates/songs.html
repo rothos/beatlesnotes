@@ -14,8 +14,8 @@
   <label><span>Mode</span><select name="mode"><option value="">Major or minor</option><option value="major">Major</option><option value="minor">Minor</option></select></label>
   <label><span>Meter</span><select name="meter"><option value="">Any meter</option></select></label>
   <label><span>Release</span><select name="release"><option value="">Any release</option></select></label>
-  <label><span>Written by</span><select name="writer"><option value="">Anyone</option><option value="lennon">Lennon</option><option value="mccartney">McCartney</option><option value="lennon-mccartney">Lennon and McCartney together</option><option value="harrison">Harrison</option><option value="starkey">Starr</option><option value="group">Several of them</option></select></label>
-  <label><span>Sung by</span><select name="vocal"><option value="">Anyone</option><option value="lennon">Lennon</option><option value="mccartney">McCartney</option><option value="lennon-mccartney">Lennon and McCartney</option><option value="harrison">Harrison</option><option value="starkey">Starr</option><option value="group">Three or more</option><option value="none">Instrumental</option></select></label>
+  <label><span>Written by</span><select name="writer"><option value="">Anyone</option><option value="lennon">Lennon</option><option value="mccartney">McCartney</option><option value="lennon-mccartney">Lennon and McCartney together</option><option value="harrison">Harrison</option><option value="starkey">Starr</option><option value="all">All four</option><option value="group">Two or three of them</option></select></label>
+  <label><span>Sung by</span><select name="vocal"><option value="">Anyone</option><option value="lennon">Lennon</option><option value="mccartney">McCartney</option><option value="lennon-mccartney">Lennon and McCartney</option><option value="harrison">Harrison</option><option value="starkey">Starr</option><option value="group">Shared lead</option><option value="none">Instrumental</option></select></label>
   <label class="f-unread"><input type="checkbox" name="hit"> <span>Billboard top 50</span></label>
   <label><span>Kind</span><select name="kind"><option value="">Originals and covers</option><option value="original">Originals</option><option value="cover">Covers</option><option value="extra">Unreleased</option></select></label>
   <label class="f-unread"><input type="checkbox" name="unread"> <span>Unread only</span></label>
@@ -46,7 +46,7 @@
       <td class="t"><a href="{{ s.href }}">{{ s.title }}</a>{% if s.kind == 'cover' %} <span class="tag">cover</span>{% elif s.kind == 'traditional' %} <span class="tag">trad.</span>{% elif s.kind == 'extra' %} <span class="tag">unreleased</span>{% endif %}</td>
       <td class="k" title="{{ s.key }}">{{ keychip(s.key_info) }}{{ s.key }}</td>
       <td class="c-opt">{{ s.meter_short or s.meter }}</td>
-      <td class="who">{% if s.kind != 'original' %}<span class="muted">{{ s.composer or 'cover' }}</span>{% else %}{{ s.writer }}{% endif %}</td>
+      <td class="who">{% if s.kind in ('cover', 'traditional') %}<span class="muted">{{ s.composer or 'cover' }}</span>{% else %}{{ s.writer }}{% endif %}</td>
       <td class="who">{{ 'instrumental' if s.vocal == 'N/A' else s.vocal }}</td>
       <td class="num">{% if s.duration %}{{ s.duration // 60 }}:{{ '%02d' % (s.duration % 60) }}{% endif %}{% if s.billboard %} <span class="tag" title="No. {{ s.billboard }} of the Beatles’ 50 biggest US hits (Billboard)">#{{ s.billboard }}</span>{% endif %}</td>
       <td>{% if s.release_slug %}<a href="albums.html#{{ s.release_slug }}">{{ s.release }}</a> <span class="muted">{{ s.year }}</span>{% else %}<span class="muted">{{ s.release }}</span>{% endif %}</td>

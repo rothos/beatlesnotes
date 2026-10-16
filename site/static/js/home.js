@@ -17,9 +17,9 @@
       `<span class="lg muted"><i class="lg-minor" style="background: var(--pencil); position: relative"></i>dot: minor key</span>`,
     mode: () => `<span class="lg"><i style="background: var(--staff)"></i>Major</span><span class="lg"><i style="background: var(--ink)"></i>Minor</span>`,
     written: () => `<span class="lg ramp-legend"><span>May 1989</span><i class="ramp"></i><span>2001</span></span><span class="lg muted">when Pollack first posted the note</span>`,
-    writer: () => people("writer", [["lennon", "Lennon"], ["mccartney", "McCartney"], ["lennon-mccartney", "Lennon and McCartney together"], ["harrison", "Harrison"], ["starkey", "Starr"], ["group", "Several of them"], ["other", "Cover"], ["", "Not in the Beatles DB"]]) +
+    writer: () => people("writer", [["lennon", "Lennon"], ["mccartney", "McCartney"], ["lennon-mccartney", "Lennon and McCartney together"], ["harrison", "Harrison"], ["starkey", "Starr"], ["all", "All four"], ["group", "Two or three of them"], ["other", "Cover"], ["", "Not in the Beatles DB"]]) +
       `<span class="lg muted">the main writer, not the official credit</span>`,
-    vocal: () => people("vocal", [["lennon", "Lennon"], ["mccartney", "McCartney"], ["lennon-mccartney", "Lennon and McCartney"], ["harrison", "Harrison"], ["starkey", "Starr"], ["group", "Three or more"], ["none", "Instrumental"], ["", "Not in the Beatles DB"]]),
+    vocal: () => people("vocal", [["lennon", "Lennon"], ["mccartney", "McCartney"], ["lennon-mccartney", "Lennon and McCartney"], ["harrison", "Harrison"], ["starkey", "Starr"], ["all", "All four"], ["group", "Shared lead"], ["none", "Instrumental"], ["", "Not in the Beatles DB"]]),
     read: () => {
       const n = tiles.filter((t) => t.classList.contains("is-read")).length;
       return `<span class="lg"><i style="background: var(--staff)"></i>Read (${n} of ${tiles.length})</span><span class="lg"><i style="background: var(--paper-3)"></i>Not yet</span>`;
