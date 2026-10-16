@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,300..800;1,7..72,300..800&family=Schibsted+Grotesk:ital,wght@0,400..800;1,400..800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap">
-<link rel="stylesheet" href="{{ root }}assets/css/site.css">
+<link rel="stylesheet" href="{{ root }}assets/css/site.css?v={{ config.v }}">
 <script>/* apply saved reading settings before first paint */
 try{var s=JSON.parse(localStorage.getItem('pn-settings')||'{}'),d=document.documentElement;for(var k in s)d.dataset[k]=s[k]}catch(e){}</script>
 </head>
@@ -117,7 +117,7 @@ try{var s=JSON.parse(localStorage.getItem('pn-settings')||'{}'),d=document.docum
   <p class="search-hint" id="search-hint">Type a song title, or try “V-of-V”, “Mixolydian” or “cross relation”.</p>
 </dialog>
 
-<script src="{{ root }}assets/js/site.js" defer></script>
+<script src="{{ root }}assets/js/site.js?v={{ config.v }}" defer></script>
 {% block scripts %}{% endblock %}
 </body>
 </html>

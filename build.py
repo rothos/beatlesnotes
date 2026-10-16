@@ -14,6 +14,7 @@ from __future__ import annotations
 import html
 import json
 import re
+import time
 import shutil
 import sys
 import tomllib
@@ -454,6 +455,8 @@ def main():
         g["see"] = [{"slug": s, "title": essays[s]["title"]} for s in hits[:5]]
         g["count"] = len(hits)
 
+    # a version stamp for asset URLs, so browsers fetch new scripts and styles after each rebuild
+    config["v"] = str(int(time.time()))
     config["note_urls"] = [essays[s]["url"] for s in series_order if essays[s]["folder"] == "essays"]
 
     # ---------------------------------------------------------------- write pages

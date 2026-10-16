@@ -137,7 +137,7 @@
 {% endblock %}
 
 {% block scripts %}
-<script src="{{ root }}assets/js/glossary-data.js" defer></script>
-<script src="{{ root }}assets/js/charts.js" defer></script>
-<script src="{{ root }}assets/js/essay.js" defer></script>
+<script src="{{ root }}assets/js/glossary-data.js?v={{ config.v }}" defer></script>
+<script src="{{ root }}assets/js/charts.js?v={{ config.v }}" defer></script>
+<script src="{{ root }}assets/js/essay.js?v={{ config.v }}" defer></script>
 {% endblock %}
