@@ -17,7 +17,15 @@
     <dd>{% if k == 'key' %}{{ keychip(part.key_info) }}{% endif %}{{ meta[k] }}</dd>
   </div>
   {% endfor %}
+  {% set f = part.facts %}
+  {% if f %}
+  {% if f.writer and not meta.composer and f.writer_group != 'other' %}<div class="meta-db"><dt>Mainly written by</dt><dd>{{ f.writer }}</dd></div>{% endif %}
+  {% if f.vocal %}<div class="meta-db"><dt>Lead vocal</dt><dd>{{ 'None (instrumental)' if f.vocal == 'N/A' else f.vocal }}</dd></div>{% endif %}
+  {% if f.duration %}<div class="meta-db"><dt>Length</dt><dd>{{ f.duration // 60 }}:{{ '%02d' % (f.duration % 60) }}</dd></div>{% endif %}
+  {% if f.billboard %}<div class="meta-db"><dt>Billboard</dt><dd>No. {{ f.billboard }} of the Beatles’ 50 biggest US hits</dd></div>{% endif %}
+  {% endif %}
 </dl>
+{% if f %}<p class="meta-src">Key, meter, form and dates are Pollack’s. {% if f.vocal or f.duration %}Writer, vocal, length and chart place come from the <a href="about.html#facts">Beatles DB</a>.{% endif %}</p>{% endif %}
 {% endmacro %}
 
 {% macro form_strip(part) %}
@@ -38,7 +46,7 @@
 {% endif %}
 {% endmacro %}
 
-{% macro listen(title) -%}
+{% macro listen(title, facts=None) -%}
 {% set q = ('The Beatles ' ~ title) | urlencode %}
 <span class="listen">Listen:
   <a class="ext" rel="noopener" href="https://open.spotify.com/search/{{ q }}">Spotify</a>,
@@ -48,4 +56,7 @@
 <span class="listen">Lyrics:
   <a class="ext" rel="noopener" href="https://genius.com/search?q={{ q }}">Genius</a>
 </span>
+{% if facts and facts.wikipedia %}<span class="listen">Read more:
+  <a class="ext" rel="noopener" href="{{ facts.wikipedia }}">Wikipedia</a>
+</span>{% endif %}
 {%- endmacro %}

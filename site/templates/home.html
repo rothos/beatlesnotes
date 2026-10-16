@@ -13,6 +13,8 @@
       <span>Colour by</span>
       <button type="button" data-color="key" aria-pressed="true">Key</button>
       <button type="button" data-color="mode" aria-pressed="false">Major or minor</button>
+      <button type="button" data-color="writer" aria-pressed="false">Who wrote it</button>
+      <button type="button" data-color="vocal" aria-pressed="false">Who sings</button>
       <button type="button" data-color="written" aria-pressed="false">When Pollack wrote it</button>
       <button type="button" data-color="read" aria-pressed="false">What you’ve read</button>
     </div>
@@ -28,8 +30,9 @@
             <li><a class="tile{% if s.key_info %} {{ s.key_info.mode }}{% else %} nokey{% endif %}"
                    href="{{ s.href or '#' }}" {% if s.key_info %}style="--kc: {{ s.key_info.color }}"{% endif %}
                    data-written="{{ s.written }}" data-href="{{ s.href }}"
+                   data-writer="{{ 'other' if s.kind != 'original' else s.writer_group }}" data-vocal="{{ s.vocal_group }}"
                    aria-label="{{ s.title }}{% if s.key %}, {{ s.key }}{% endif %}"
-                   data-tip="{{ s.title }}|{{ s.key }}|{{ rel.title }} ({{ rel.year }})|{{ s.written | nicedate }}"></a></li>
+                   data-tip="{{ s.title }}|{{ s.key }}|{{ rel.title }} ({{ rel.year }})|{{ s.written | nicedate }}|{{ s.composer if s.kind != 'original' and s.composer else s.writer }}|{{ 'nobody (instrumental)' if s.vocal == 'N/A' else s.vocal }}"></a></li>
           {% endfor %}
           </ol>
         </li>

@@ -40,7 +40,7 @@
         {{ form_strip(main) }}
       {% endif %}
       <div class="essay-actions">
-        {% if main.meta %}{{ listen(e.title) }}{% endif %}
+        {% if main.meta %}{{ listen(e.title, main.facts) }}{% endif %}
         {% if versions|length > 1 %}
         <span class="versions">Versions:
           {% for v in versions %}<a href="{{ root }}{{ v.url }}"{% if v.slug == e.slug %} aria-current="page"{% endif %}>{{ v.series }}</a>{% if not loop.last %}, {% endif %}{% endfor %}
@@ -58,7 +58,7 @@
         <header class="part-head">
           {% if p.part.series %}<p class="kicker">No. {{ p.part.series }}</p>{% endif %}
           <h2 class="part-title">{{ p.part.title }}</h2>
-          {% if p.part.meta %}{{ meta_block(p.part) }}{{ form_strip(p.part) }}{{ listen(p.part.title) }}{% endif %}
+          {% if p.part.meta %}{{ meta_block(p.part) }}{{ form_strip(p.part) }}{{ listen(p.part.title, p.part.facts) }}{% endif %}
         </header>
         {% endif %}
         {{ p.html | safe }}

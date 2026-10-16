@@ -261,6 +261,13 @@ def main():
         t = re.sub(r"\(.*?\)", "", t)
         return re.sub(r"[^a-z0-9]+", "", t)
 
+    # song facts from the Beatles DB (tools/import_beatlesdb.py), by normalised title
+    facts = {}
+    if (DATA / "beatlesdb.json").exists():
+        for f in load_json("beatlesdb.json")["songs"]:
+            for k in f["keys"]:
+                facts.setdefault(k, f)
+
     # ---------------------------------------------------------------- essays
     essays: dict[str, dict] = {}
     for kind_dir in ("essays", "originals"):
@@ -279,6 +286,8 @@ def main():
                 t = tempos.get(tempo_key(part.get("title", ""))) if meta else None
                 if t:
                     part["bpm"], part["bpb"] = t["bpm"], t["beats_per_bar"]
+                if meta and kind_dir == "essays":
+                    part["facts"] = facts.get(tempo_key(part.get("title", "")))
             fm["written_date"], fm["revised_date"] = essay_dates(fm)
             essays[fm["slug"]] = fm
 
@@ -328,6 +337,11 @@ def main():
                 s["href"] = href_of(s["link"])
                 proj_by_link[s["link"]] = {"project": pr["no"], "project_title": pr["title"], "recorded": s["date"], "period": per["title"]}
 
+    def song_facts(fx):
+        return {"writer": fx.get("writer") or "", "writer_group": fx.get("writer_group") or "",
+                "vocal": fx.get("vocal") or "", "vocal_group": fx.get("vocal_group") or "",
+                "duration": fx.get("duration"), "billboard": fx.get("billboard"), "wikipedia": fx.get("wikipedia")}
+
     songs, seen = [], set()
     album_order = []
     for rel in canon["releases"]:
@@ -345,6 +359,7 @@ def main():
             meta = (part or {}).get("meta", {})
             al = alpha_by_link.get(tr["link"], {})
             pj = proj_by_link.get(tr["link"], {})
+            fx = facts.get(tempo_key(tr["title"])) or (part or {}).get("facts") or {}
             song = {
                 "canon": key, "md": tr["md"], "title": tr["title"], "kind": tr["kind"], "note": tr.get("note"),
                 "href": tr["href"], "slug": e["slug"] if e else None,
@@ -357,6 +372,7 @@ def main():
                 "form": (part or {}).get("form_parts", []),
                 "composer": meta.get("composer", ""),
                 "recorded": pj.get("recorded", ""), "project": pj.get("project"), "project_title": pj.get("project_title", ""),
+                **song_facts(fx),
             }
             songs.append(song)
             if e and e["slug"] not in album_order:
@@ -381,7 +397,8 @@ def main():
                           "revised": e.get("revised_date") or "", "macdonald": "",
                           "key": meta.get("key", ""), "key_info": part.get("key_info"), "meter": meta.get("meter", ""),
                           "meter_short": part.get("meter_short"), "form": part.get("form_parts", []),
-                          "composer": meta.get("composer", ""), "recorded": meta.get("recorded", ""), "project": None, "project_title": ""})
+                          "composer": meta.get("composer", ""), "recorded": meta.get("recorded", ""), "project": None, "project_title": "",
+                          **song_facts(part.get("facts") or {})})
 
     # songs that each essay covers (for album prev/next + song badges)
     songs_by_slug = defaultdict(list)
@@ -497,7 +514,8 @@ def main():
     (DIST / "assets/js/search-index.js").write_text(
         "window.PN_SEARCH=" + json.dumps(search_docs, ensure_ascii=False, separators=(",", ":")) + ";", encoding="utf-8")
     slim_songs = [{k: s[k] for k in ("canon", "title", "href", "release", "year", "series", "written", "key", "key_info",
-                                     "meter_short", "kind", "recorded", "project", "md", "release_slug")} for s in songs]
+                                     "meter_short", "kind", "recorded", "project", "md", "release_slug",
+                                     "writer_group", "vocal_group", "duration", "billboard")} for s in songs]
     (DIST / "assets/js/songs-data.js").write_text(
         "window.PN_SONGS=" + json.dumps(slim_songs, ensure_ascii=False, separators=(",", ":")) + ";", encoding="utf-8")
     (DIST / "assets/js/glossary-data.js").write_text(

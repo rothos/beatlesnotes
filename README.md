@@ -28,6 +28,8 @@ data/               WHAT — structured indexes (JSON)
   alphabet.json       alphabetical index with MacDonald numbers
   glossary.json       definitions written for this edition
   tempo.json          record tempos from the Isophonics beat annotations (tools/import_tempo.py)
+  beatlesdb.json      main writer, lead vocal, length, Billboard rank, Wikipedia link per song,
+                      from the Beatles DB (tools/import_beatlesdb.py)
 site/               HOW — presentation only
   site.toml           title, base URL
   templates/*.html    Jinja templates
@@ -55,7 +57,10 @@ tools/import_mirror.py   one-time importer from the mirror (read-only source)
 - Chord charts as bars, with Web Audio playback starting at the record's tempo (measured from the
   Isophonics beat annotations for the 12 studio albums; 120 bpm elsewhere), a tempo slider, and the typed version a click away.
 - A form strip for each song, linked to the section walkthrough.
-- The canon as a grid on the home page, coloured by key, by mode, by year written or by what you've read.
+- The canon as a grid on the home page, coloured by key, by mode, by who wrote it, by who sings, by year
+  written or by what you've read.
+- Song facts from the Beatles DB on each note (main writer, lead vocal, length, Billboard rank) with a
+  Wikipedia link, plus writer, singer and "Billboard top 50" filters in the song table.
 - A sortable, filterable song table with a shareable URL and a circle-of-fifths summary of keys.
 - Releases with covers, the series in Pollack's order, recording projects, and a glossary with
   definitions shown in place as you read.

@@ -17,11 +17,24 @@
       `<span class="lg muted"><i class="lg-minor" style="background: var(--pencil); position: relative"></i>dot: minor key</span>`,
     mode: () => `<span class="lg"><i style="background: var(--staff)"></i>Major</span><span class="lg"><i style="background: var(--ink)"></i>Minor</span>`,
     written: () => `<span class="lg ramp-legend"><span>May 1989</span><i class="ramp"></i><span>2001</span></span><span class="lg muted">when Pollack first posted the note</span>`,
+    writer: () => people("writer", [["lennon", "Lennon"], ["mccartney", "McCartney"], ["lennon-mccartney", "Lennon and McCartney together"], ["harrison", "Harrison"], ["starkey", "Starr"], ["group", "Several of them"], ["other", "Cover"], ["", "Not in the Beatles DB"]]) +
+      `<span class="lg muted">the main writer, not the official credit</span>`,
+    vocal: () => people("vocal", [["lennon", "Lennon"], ["mccartney", "McCartney"], ["lennon-mccartney", "Lennon and McCartney"], ["harrison", "Harrison"], ["starkey", "Starr"], ["group", "Three or more"], ["none", "Instrumental"], ["", "Not in the Beatles DB"]]),
     read: () => {
       const n = tiles.filter((t) => t.classList.contains("is-read")).length;
       return `<span class="lg"><i style="background: var(--staff)"></i>Read (${n} of ${tiles.length})</span><span class="lg"><i style="background: var(--paper-3)"></i>Not yet</span>`;
     },
   };
+
+  // legend entries with counts, skipping groups no song falls into
+  function people(attr, groups) {
+    return groups.map(([g, label]) => {
+      const n = tiles.filter((t) => t.dataset[attr] === g).length;
+      if (!n) return "";
+      const sw = g === "none" || !g ? `<i class="lg-hollow"></i>` : `<i style="background: var(--p-${g})"></i>`;
+      return `<span class="lg">${sw}${label} (${n})</span>`;
+    }).join("");
+  }
 
   function markRead() {
     if (!window.PN) return;
@@ -45,9 +58,11 @@
 
   const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
   function show(t) {
-    const [title, key, rel, written] = (t.dataset.tip || "").split("|");
+    const [title, key, rel, written, writer, vocal] = (t.dataset.tip || "").split("|");
     const read = t.classList.contains("is-read") ? ", read" : "";
-    tip.innerHTML = `<strong>${esc(title)}</strong>${key ? ", " + esc(key) : ""}. ${esc(rel)}${written ? ". Note first posted " + esc(written) : ""}${read}.`;
+    const mode = fig.dataset.color;
+    const who = mode === "writer" && writer ? `. Written by ${esc(writer)}` : mode === "vocal" && vocal ? `. Sung by ${esc(vocal)}` : "";
+    tip.innerHTML = `<strong>${esc(title)}</strong>${key ? ", " + esc(key) : ""}. ${esc(rel)}${who}${written ? ". Note first posted " + esc(written) : ""}${read}.`;
   }
   fig.addEventListener("mouseover", (e) => { const t = e.target.closest(".tile"); if (t) show(t); });
   fig.addEventListener("focusin", (e) => { const t = e.target.closest(".tile"); if (t) show(t); });
