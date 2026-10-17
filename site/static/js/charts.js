@@ -920,17 +920,23 @@
         const avail = wrap.clientWidth;
         if (!avail || it.box.scrollWidth <= avail + 1) return;   // (not laid out yet: wait for a resize)
         const rows = [...it.box.children];
-        const label = rows[0].querySelector(".row-label");
-        const room = avail - (label ? label.getBoundingClientRect().width : 0) - 4;
+        const room = avail - parseFloat(getComputedStyle(it.box).paddingLeft || 0) - 4;
         const widths = cellsOf(rows[0]).map((c) => c.getBoundingClientRect().width);
-        const groups = [];
-        let cur = [], used = 0;
-        widths.forEach((w, i) => {
-          if (cur.length && used + w > room) { groups.push(cur); cur = []; used = 0; }
-          cur.push(i); used += w;
-        });
-        if (cur.length) groups.push(cur);
-        if (groups.length < 2) return;
+        const pack = (max) => {   // whole bars into lines no wider than the room, at most max bars a line
+          const gs = [];
+          let cur = [], used = 0;
+          widths.forEach((w, i) => {
+            if (cur.length && (used + w > room || cur.length >= max)) { gs.push(cur); cur = []; used = 0; }
+            cur.push(i); used += w;
+          });
+          if (cur.length) gs.push(cur);
+          return gs;
+        };
+        // as many lines as needed, the bars shared evenly among them (4 bars: 2 + 2, not 3 + 1)
+        const greedy = pack(Infinity);
+        if (greedy.length < 2) return;
+        const even = pack(Math.ceil(widths.length / greedy.length));
+        const groups = even.length === greedy.length ? even : greedy;
         const cells = rows.map(cellsOf);
         it.parts = groups.map((g, gi) => {
           const part = it.box.cloneNode(false);
@@ -1047,8 +1053,9 @@
       const drvBars = sys.length;
       const showLabels = sys.rows.some((r) => r.label && !(sys.rows.length === 1 && r.role === "other"));
       const box = document.createElement("div");
-      box.className = "bar-system" + (sys.rows.length > 1 || showLabels ? " stacked" : "");
-      if (sys.rows.length > 1 || showLabels) box.style.setProperty("--n", nBars + (sys.pickup ? 1 : 0));
+      // every system is a grid of bars, so a wide one breaks into even pieces (fitSystems)
+      box.className = "bar-system stacked";
+      box.style.setProperty("--n", nBars + (sys.pickup ? 1 : 0));
       sys.rows.forEach((row) => {
         const r = document.createElement("div");
         r.className = "bar-row role-" + row.role;
@@ -1098,6 +1105,9 @@
       if (sys.after) { const p = document.createElement("p"); p.className = "bar-row-label after"; p.textContent = sys.after; wrap.appendChild(p); }
     });
     fig.insertBefore(wrap, pre);
+    // row labels and key names hang in one gutter, the same width for every system, so the bars line up
+    const hung = [...wrap.querySelectorAll(".row-label, .bar .keys")].map((el) => el.getBoundingClientRect().width);
+    if (hung.length) { wrap.classList.add("guttered"); wrap.style.setProperty("--gutter", Math.ceil(Math.max(...hung)) + 10 + "px"); }
     fitSystems(wrap);
     if (wrap.querySelector(".bar-row.keyed")) markLineStarts(wrap);
     fig.classList.add("drawn");
