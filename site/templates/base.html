@@ -3,11 +3,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{% if title %}{{ title }} — {% endif %}{{ config.title }}</title>
+<title>{% block fulltitle %}{% if title %}{{ title }} — {% endif %}{{ config.title }}{% endblock %}</title>
 <meta name="description" content="{% block description %}{{ config.subtitle }}{% endblock %}">
+{% block robots %}{% endblock %}
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232F5A9E'/%3E%3Ctext x='16' y='22' font-family='Georgia' font-size='15' fill='white' text-anchor='middle'%3E…%3C/text%3E%3C/svg%3E">
-{% if config.base_url %}<link rel="canonical" href="{{ config.base_url }}/{{ page_path }}">{% endif %}
+{% if config.base_url %}{% set page_url = config.base_url ~ "/" ~ (page_path | cleanurl) %}
+<link rel="canonical" href="{{ page_url }}">
+<meta property="og:type" content="{% block ogtype %}website{% endblock %}">
+<meta property="og:site_name" content="{{ config.title }}">
+<meta property="og:title" content="{{ self.fulltitle() }}">
+<meta property="og:description" content="{{ self.description() }}">
+<meta property="og:url" content="{{ page_url }}">
+<meta property="og:image" content="{{ config.base_url }}/assets/img/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+{% block jsonld %}{% endblock %}{% endif %}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,300..800;1,7..72,300..800&family=Schibsted+Grotesk:ital,wght@0,400..800;1,400..800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap">

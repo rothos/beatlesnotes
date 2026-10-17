@@ -309,6 +309,8 @@ def main():
     MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
     env.filters["nicedate"] = lambda d: f"{int(d[8:10])} {MONTHS[int(d[5:7]) - 1]} {d[:4]}" if d and len(d) >= 10 else (d or "")
     env.filters["tojson_attr"] = lambda v: html.escape(json.dumps(v, ensure_ascii=False))
+    # Cloudflare Pages serves /note-sly.html at /note-sly (and index.html at /), so canonical URLs drop the .html
+    env.filters["cleanurl"] = lambda p: re.sub(r"(^|/)index\.html$", r"\1", re.sub(r"\.html$", "", p)) if p != "index.html" else ""
     config = tomllib.loads((SITE / "site.toml").read_text())
 
     series = load_json("series.json")
@@ -530,6 +532,11 @@ def main():
         out.parent.mkdir(parents=True, exist_ok=True)
         t = env.get_template(template)
         out.write_text(smarten_html(t.render(root=root, config=config, page_path=rel, **ctx)), encoding="utf-8")
+        if rel != "404.html" and not (ctx.get("e") or {}).get("folder") == "originals":
+            e = ctx.get("e") or {}
+            sitemap.append((env.filters["cleanurl"](rel), e.get("revised_date") or e.get("written_date")))
+
+    sitemap: list[tuple[str, str | None]] = []
 
     for slug, e in essays.items():
         if e["folder"] == "essays":
@@ -547,7 +554,14 @@ def main():
             if rv.get("link"):
                 rv["href"] = R.map_link(rv["link"])
         bl = sorted((essays[s] for s in backlinks.get(slug, ())), key=lambda x: series_order.index(x["slug"]) if x["slug"] in series_order else 999)
-        write(e["url"], "essay.html", e=e, r=rendered[slug], series_prev=sp, series_next=sn,
+        ld = {"@context": "https://schema.org", "@type": "Article", "headline": f"Notes on “{e['title']}”",
+              "author": {"@type": "Person", "name": config["author"]},
+              "about": [{"@type": "MusicComposition", "name": pt["title"]} for pt in e["parts"]],
+              "isPartOf": {"@type": "WebSite", "name": config["title"], "url": config.get("base_url") or ""}}
+        if e.get("written_date"):
+            ld["datePublished"] = e["written_date"]
+            ld["dateModified"] = e.get("revised_date") or e["written_date"]
+        write(e["url"], "essay.html", e=e, ld=ld, r=rendered[slug], series_prev=sp, series_next=sn,
               album_prev=ap, album_next=an, versions=versions, backlinks=bl,
               songs=songs_by_slug.get(slug, []), title=e["title"])
 
@@ -572,6 +586,14 @@ def main():
     write("glossary.html", "glossary.html", glossary=glossary, title="Glossary")
     write("about.html", "about.html", pages=pages, essays=essays, title="About this edition")
     write("404.html", "404.html", title="Not found")
+
+    # ---------------------------------------------------------------- sitemap & robots, for search engines
+    if config.get("base_url"):
+        base = config["base_url"].rstrip("/")
+        urls = "".join(f"<url><loc>{base}/{u}</loc>{f'<lastmod>{d}</lastmod>' if d else ''}</url>\n" for u, d in sitemap)
+        (DIST / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n'
+                                          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + urls + "</urlset>\n", encoding="utf-8")
+        (DIST / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {base}/sitemap.xml\n", encoding="utf-8")
 
     # ---------------------------------------------------------------- static assets & data scripts
     shutil.copytree(SITE / "static", DIST / "assets")

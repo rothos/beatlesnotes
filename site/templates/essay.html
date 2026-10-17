@@ -2,7 +2,11 @@
 {% from "_macros.html" import meta_block, form_strip, listen, keychip %}
 {% set main = e.parts[0] %}
 {% set num = (e.series or '').split('.')[0] %}
-{% block description %}{% if e.kind == 'original' %}Original release of {% endif %}Alan W. Pollack’s Notes on “{{ e.title }}”{% if num %}, no. {{ num }} in his musicological series on the songs of the Beatles{% endif %}.{% endblock %}
+{% block fulltitle %}{% if e.kind == 'original' %}{{ e.title }} (original version) — {{ config.title }}{% elif e.parts | length > 1 %}{{ e.title }} — Alan W. Pollack’s Notes on the Beatles{% else %}Notes on “{{ e.title }}” (the Beatles) — Alan W. Pollack{% endif %}{% endblock %}
+{% block description %}{% if e.kind == 'original' %}Original release of {% endif %}Alan W. Pollack’s Notes on “{{ e.title }}”{% if num %}, no. {{ num }} in his musicological series on the songs of the Beatles{% endif %}: {% set k = (main.meta or {}).key %}{% if e.parts | length == 1 and k %}its key ({{ k | replace(" Major", " major") | replace(" Minor", " minor") }}), {% else %}its {% endif %}form, chords, melody and arrangement.{% endblock %}
+{% block robots %}{% if e.kind == 'original' %}<meta name="robots" content="noindex, follow">{% endif %}{% endblock %}
+{% block ogtype %}article{% endblock %}
+{% block jsonld %}<script type="application/ld+json">{{ ld | tojson }}</script>{% endblock %}
 {% block bodyclass %}page-essay kind-{{ e.kind }}{% endblock %}
 
 {% block main %}
