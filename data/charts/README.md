@@ -72,6 +72,10 @@ silent. Line rows up by meaning, not by spacing.
 iteration counts ("1", "2", ... over repeats) and rehearsal letters, which never get a row of their
 own. Put marks in the first row of a system. `| [5] D A | E |`.
 
+**Bar lengths.** `<3>` at the start of a bar makes that bar 3 beats long, for a 3/4 bar in a 4/4
+song (or `<2>`, `<5>`...). Use it where Pollack counts the bars out (4 3 4 3) or says the bar is
+short or long. It can go with a mark: `| [3] <3> D A |`.
+
 **Annotations.** `{...}` after an event (before or after `*n`) is a roman numeral or analysis
 label drawn under it: `f{i}`, `b-flat{iv 6/5}`, `E{V7}`, `D{IV7}`.
 

@@ -568,8 +568,12 @@
     // the events of one bar, each given its start ("at") and length in beats
     const bar = (src, role, prev, len) => {
       // "[5]" at the start of a bar: a measure number or count, printed small above the bar
+      // "<3>": this bar is 3 beats long (a 3/4 bar in a 4/4 song); with a mark, either order
       let mark = null;
-      src = src.replace(/^\s*\[([^\]]*)\]/, (x, t) => { mark = t; return ""; });
+      for (let k = 0; k < 2; k++) {
+        src = src.replace(/^\s*\[([^\]]*)\]/, (x, t) => { mark = t; return ""; });
+        src = src.replace(/^\s*<([\d.]+)>/, (x, n) => { if (len !== null) len = +n; return ""; });
+      }
       const toks = src.match(/[^\s{]*(?:\{[^}]*\})?[^\s{]*(?:\{[^}]*\})?/g).filter((t) => t.trim());
       const beats = toks.map((t) => event(t, role, prev));
       const fixed = beats.reduce((a, b) => a + (b.dur || 0), 0), free = beats.filter((b) => !b.dur).length;
@@ -764,14 +768,16 @@
         beat += len;
       }
       for (let i = 0; i < sys.length; i++) {
+        // a transcribed bar may have its own length ("<3>")
+        const barLen = Math.max(0, ...sys.rows.map((r) => (r.bars[i] && r.bars[i].len) || 0)) || beatsPerBar;
         events.push({ beat, slot: slot++ });
         sys.rows.forEach((row, ri) => {
           if (row.role === "other") return;
           const bar = row.bars[i];
           if (!bar) { if (row.role !== "chords") events.push({ beat, track: trackOf(sys, row), kind: "rest" }); return; }
-          barEvents(sys, row, ri, bar, beat, beatsPerBar, hasBass, voices);
+          barEvents(sys, row, ri, bar, beat, barLen, hasBass, voices);
         });
-        beat += beatsPerBar;
+        beat += barLen;
       }
     });
     events.sort((a, b) => a.beat - b.beat || (a.slot !== undefined ? -1 : 0) - (b.slot !== undefined ? -1 : 0));

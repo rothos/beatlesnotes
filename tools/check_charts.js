@@ -44,7 +44,7 @@ for (const id of ids) {
     s.rows.forEach((r) => {
       r.bars.forEach((b, bi) => {
         const end = Math.max(0, ...b.beats.map((x) => x.at + x.dur));
-        if (end > bpb + 1e-6) issues.push(`system ${si + 1}, ${r.label || r.role}, bar ${bi + 1}: events last ${end} beats`);
+        if (end > (b.len || bpb) + 1e-6) issues.push(`system ${si + 1}, ${r.label || r.role}, bar ${bi + 1}: events last ${end} beats`);
         b.beats.forEach((x) => { if (x.word && r.role !== "other") issues.push(`system ${si + 1}, ${r.label || r.role}, bar ${bi + 1}: can't read "${x.text}"`); });
       });
     });
