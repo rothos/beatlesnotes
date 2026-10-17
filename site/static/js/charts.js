@@ -266,6 +266,45 @@
     return { line, raw, bl, label: bl.prefix.trim(), role: "other" };
   }
 
+  // A tune drawn as a graph: each note on its own line by height, placed across the bar by when it
+  // falls (Norwegian Wood, 78.1). If no two lines have notes in the same place, lay them over one
+  // another as a single line of notes.
+  function mergeGraph(heads) {
+    if (heads.length < 3 || heads.some((h) => h.label || h.pickup || h.key || h.caption || h.bl.prefix.trim())) return null;
+    const bars = (l) => [...l].map((c, i) => (c === "|" ? i : -1)).filter((i) => i >= 0).join(",");
+    if (heads.some((h) => bars(h.line) !== bars(heads[0].line))) return null;
+    const width = Math.max(...heads.map((h) => h.line.length));
+    const out = Array(width).fill(" "), from = Array(width).fill(-1);
+    let rowsWithNotes = 0;
+    for (let r = 0; r < heads.length; r++) {
+      const toks = tokens(heads[r].line, 0).filter((x) => x.t !== "|");
+      if (toks.some((x) => pitchOf(x.t) === null && !HOLD.test(x.t))) return null;
+      if (toks.some((x) => pitchOf(x.t) !== null)) rowsWithNotes++;
+      for (const x of toks) for (let c = x.c; c < x.c + x.t.length; c++) {
+        if (from[c] >= 0) return null;   // two lines have notes in the same place: these sound together
+        from[c] = r;
+      }
+      [...heads[r].line].forEach((ch, c) => { if (ch !== " " && out[c] === " ") out[c] = ch; });
+    }
+    if (rowsWithNotes < 3) return null;
+    for (let c = 1; c < width; c++) if (from[c] >= 0 && from[c - 1] >= 0 && from[c] !== from[c - 1]) return null;  // notes would run together
+    const h = rowHead(out.join("").replace(/\s+$/, ""));
+    h.role = "voice";
+    // the graph gives each note's height: count up from the bottom line, each a step above the last
+    const rowMidi = [];
+    let last = null;
+    for (let r = heads.length - 1; r >= 0; r--) {
+      const t = tokens(heads[r].line, 0).find((x) => pitchOf(x.t) !== null);
+      if (!t) continue;
+      const pc = pitchOf(t.t);
+      let m = last === null ? 57 : last + 1;   // the lowest note between A3 and G#4
+      while (((m % 12) + 12) % 12 !== pc) m++;
+      rowMidi[r] = last = m;
+    }
+    h.graphMidi = from.map((r) => (r >= 0 ? rowMidi[r] : undefined));
+    return h;
+  }
+
   // roles for rows typed one above another without labels: the lowest row that looks like harmony
   // (minor chords in lower case, chord qualities, held chords) is the chords; note lines above it are voices
   function inferRoles(heads) {
@@ -301,8 +340,10 @@
       if (!isBarLine(line)) { labelBuf.push(line.trim()); continue; }
 
       // bar lines typed directly under one another
-      const heads = [rowHead(line)];
+      let heads = [rowHead(line)];
       while (i + 1 < lines.length && isBarLine(lines[i + 1])) heads.push(rowHead(lines[++i]));
+      const graph = mergeGraph(heads);
+      if (graph) heads = [graph];
       const first = heads[heads.length - 1].bl.first;
 
       // the annotation lines that follow: numerals, notes, and labelled note lines without bars
@@ -349,6 +390,7 @@
           const segs = segments(h.line, h.bl);
           let r = readBars(h.line, segs, role);
           const pk = h.pickup ? readBars(h.line, [h.pickup], role).bars[0] : null;
+          if (h.graphMidi) r.bars.forEach((b) => b.beats.forEach((bt) => { if (bt.pitch !== undefined) bt.midi = h.graphMidi[bt.c]; }));
           return { label: h.label, role, r, segs, line: h.line, raw: h.raw, bl: h.bl, explicit: !!h.label, pickup: pk, voiceIndex: h.voiceIndex, pkHead: h.pickup };
         });
         // a line whose bars are empty and whose words come after them ("||3rd refrain, only") is a caption
@@ -563,7 +605,7 @@
         const b = e.b;
         const ev = { beat: start + e.at, track: b.riff ? "r" : trackOf(sys, row), role: b.riff ? "voice" : row.role, register: b.riff ? 64 : row.register };
         if (b.chord) Object.assign(ev, { kind: "chord", chord: b.chord, noBass: hasBass, soft: voices > 0 });
-        else if (b.pitch !== undefined) Object.assign(ev, { kind: "note", pitch: b.pitch });
+        else if (b.pitch !== undefined) Object.assign(ev, { kind: "note", pitch: b.pitch, midi: b.midi });
         else if (b.rest) ev.kind = "rest";
         else if (row.role === "chords") Object.assign(ev, { kind: "hold", noBass: hasBass, soft: voices > 0 });
         else return;  // a held note simply keeps sounding
@@ -636,10 +678,13 @@
       // a run of fourths doesn't carry it off the keyboard
       const ref = tr.midi || ev.register;
       const pc = ((ev.pitch % 12) + 12) % 12;
-      let m = null, best = Infinity;
-      for (let c = pc + 24; c <= 96; c += 12) {
-        const cost = Math.abs(c - ref) + 0.5 * Math.abs(c - ev.register);
-        if (cost < best) { best = cost; m = c; }
+      let m = ev.midi;   // set when the chart shows the octave
+      if (m === undefined) {
+        let best = Infinity;
+        for (let c = pc + 24; c <= 96; c += 12) {
+          const cost = Math.abs(c - ref) + 0.5 * Math.abs(c - ev.register);
+          if (cost < best) { best = cost; m = c; }
+        }
       }
       tr.midi = m;
       return { notes: [[m, ev.role === "bass" ? 0.34 : ev.register >= 66 ? 0.24 : 0.17]], vel: 1 };
