@@ -1116,6 +1116,8 @@
     tg.type = "button"; tg.className = "chart-toggle"; tg.textContent = "Show as typed";
     tg.addEventListener("click", () => {
       const on = fig.classList.toggle("show-src");
+      // open the typed version under the caption, so the toggle stays where the pointer is
+      if (on) cap.after(pre); else fig.insertBefore(pre, wrap);
       tg.textContent = on ? "Hide typed version" : "Show as typed";
     });
     cap.appendChild(tg);
