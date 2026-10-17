@@ -1112,6 +1112,8 @@
     if (wrap.querySelector(".bar-row.keyed")) markLineStarts(wrap);
     fig.classList.add("drawn");
     const cap = fig.querySelector("figcaption") || fig.appendChild(document.createElement("figcaption"));
+    // the caption is a flex row; keep its text and links together as one item so the gap only falls before the toggle
+    if (cap.childNodes.length) { const words = document.createElement("span"); words.append(...cap.childNodes); cap.appendChild(words); }
     const tg = document.createElement("button");
     tg.type = "button"; tg.className = "chart-toggle"; tg.textContent = "Show as typed";
     tg.addEventListener("click", () => {
