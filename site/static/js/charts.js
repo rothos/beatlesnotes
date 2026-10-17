@@ -121,7 +121,7 @@
   // where a single note line sits: centre of its register, as a MIDI note
   function registerOf(row) {
     const l = (row.label || "").toLowerCase();
-    if (row.role === "bass") return 40;
+    if (row.role === "bass") return 45;
     if (!row.label && row.voiceIndex !== undefined) return [69, 62, 55, 50][Math.min(3, row.voiceIndex)];
     if (/tenor/.test(l)) return 55;
     if (/alto|inner|middle|mid/.test(l)) return 62;
@@ -524,8 +524,8 @@
       return m;
     });
     notes.sort((a, b) => a - b);
-    let bass = 36 + chord.bass;
-    if (bass > 45) bass -= 12;
+    let bass = 40 + chord.bass;   // E2 to D#3: low, but high enough for small speakers
+    if (bass > 51) bass -= 12;
     return { notes, bass };
   }
 
@@ -546,6 +546,16 @@
         oscs.push(o);
         return o;
       });
+      // a low note's fundamental is lost on laptop and phone speakers: add its 2nd-5th harmonics (a
+      // filtered sawtooth) so the ear still hears the pitch
+      if (m < 57) {
+        const o = ctx.createOscillator(), lp = ctx.createBiquadFilter(), sg = ctx.createGain();
+        o.type = "sawtooth"; o.frequency.value = midiHz(m);
+        lp.type = "lowpass"; lp.frequency.value = Math.min(1400, midiHz(m) * 5.5); lp.Q.value = 0.5;
+        sg.gain.value = 1;
+        o.connect(lp); lp.connect(sg); sg.connect(g); o.start(t);
+        oscs.push(o); os.push(o);
+      }
       return { g, os, a, t };
     });
   }
@@ -670,7 +680,7 @@
         if (ev.chord) tr.voicing = voice(chord, tr.voicing && tr.voicing.notes);
         else tr.voicing = tr.voicing || voice(chord, null);
         const notes = tr.voicing.notes.map((m) => [m, 0.16]);
-        if (!ev.noBass) notes.push([tr.voicing.bass, 0.32]);
+        if (!ev.noBass) notes.push([tr.voicing.bass, 0.26]);
         tr.last = chord;
         return { notes, vel: (ev.chord ? (chord.implied ? 0.55 : 1) : 0.5) * (ev.soft ? 0.7 : 1) };
       }
@@ -687,7 +697,7 @@
         }
       }
       tr.midi = m;
-      return { notes: [[m, ev.role === "bass" ? 0.34 : ev.register >= 66 ? 0.24 : 0.17]], vel: 1 };
+      return { notes: [[m, ev.role === "bass" ? 0.28 : ev.register >= 66 ? 0.24 : 0.17]], vel: 1 };
     };
     // run silently through the bars before the start, then sound whatever is still held there
     const held = {};
