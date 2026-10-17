@@ -50,12 +50,11 @@ SHARP_NAMES = {1: "C♯", 6: "F♯", 8: "G♯", 3: "D♯", 10: "A♯"}
 
 
 # one colour per key, in circle-of-fifths order: C G D A E B F♯ D♭ A♭ E♭ B♭ F.
-# The seven common keys F…B (about 200 of the 212 songs) split the wheel in 52° OKLCH steps,
-# so each gets its own hue: F orange, C rose, G violet, D blue, A teal, E green, B yellow.
-# The rare flat keys (1–4 songs each) fill the gap from B back to F as a warm ramp that darkens
-# step by step, pale lemon → gold → bronze → rust → maroon, so lightness tells them apart.
-KEY_COLORS = ["#CC5A7F", "#A269C9", "#4885DF", "#0098A5", "#189F5A", "#C7B62A",
-              "#E9E38A", "#E3AE28", "#A26E22", "#934319", "#78292C", "#C96811"]
+# Twelve equal 30° hue steps around the circle of fifths (OKLCH L 0.64, C 0.14, yellows lifted),
+# so related keys get related colours. The common keys F…B centre on red at D:
+# F purple, C magenta, G rose, D red, A orange, E yellow, B lime; then greens and blues for the flats.
+KEY_COLORS = ["#B66CBB", "#CC6490", "#D46660", "#CB7229", "#D8A730", "#B5C24E",
+              "#56AA5B", "#05A388", "#099EAB", "#0A97D1", "#6288E1", "#9379D7"]
 # Tillekens' seven doubles: listed on their records, but not counted in the canon of 212
 DOUBLES = {"007", "024", "025", "120", "186", "189", "194"}
 

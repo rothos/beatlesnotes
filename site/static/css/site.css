@@ -201,8 +201,6 @@ main { min-height: 60vh; }
   content: ""; position: absolute; inset: 0; margin: auto; width: 34%; height: 34%;
   border-radius: 50%; background: var(--paper);
 }
-/* F♯'s pale lemon is lighter than the paper, so its dot goes dark */
-.tile.minor[data-pc="6"]::after { background: #1A1D26; }
 .tile.nokey { background: var(--paper-3); background-image: repeating-linear-gradient(45deg, transparent 0 3px, var(--rule) 3px 4px); }
 .tile:hover, .tile:focus-visible { transform: scale(1.35); box-shadow: 0 0 0 2px var(--paper), 0 0 0 3.5px var(--ink); position: relative; z-index: 2; }
 .canon:not([data-color="key"]) .tile.minor::after { display: none; }
