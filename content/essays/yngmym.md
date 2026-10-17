@@ -132,7 +132,7 @@ Like section X, this section begins with an extended instrumental introduction t
 
 The first subsection (call it 'ZA') contains an eight-measure introduction followed by an unusual seven-and-a-half-measure verse.
 
-The introduction is one of the most interesting phrases in the entire song. The first four measures are in a chromatically inflected C major; the use of the D Major and E-flat chords being slightly unusual and uncannily foreshadowing the same chords being used again at the end of "["The End](te.md)":
+The introduction is one of the most interesting phrases in the entire song. The first four measures are in a chromatically inflected C major; the use of the D Major and E-flat chords being slightly unusual and uncannily foreshadowing the same chords being used again at the end of "[The End](te.md)":
 
 ```figure 13.4
    |C             |D             |E-flat   G      |

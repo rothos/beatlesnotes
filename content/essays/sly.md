@@ -111,7 +111,7 @@ Quite apart from its from harmonic implications already discussed, the added-six
 
 To borrow a phrase from ancient Greek drama, the song begins "in medias res." We get a little drum roll and the intro starts off as though the song were already in progress. The fact that the intro is actually nothing other than a variation on (an anticipation of?) the refrain is what creates this effect.
 
-The feeling of having started in the midst of the action is heightened by the opening chord progression. We're not "in" G as much as we are heading toward it. The intro is eight measure long and its phrasing pattern is 2 + 2 + 4, AA'A":
+The feeling of having started in the midst of the action is heightened by the opening chord progression. We're not "in" G as much as we are heading toward it. The intro is eight measure long and its phrasing pattern is 2 + 2 + 4, AA'A'':
 
 ```figure 5.2
    |e       |-       |

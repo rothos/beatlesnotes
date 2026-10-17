@@ -53,7 +53,7 @@ In spite of the fact that "She Said She Said" flaunts inscrutably psychedelic ly
 
 While this may seem obvious, it's a point worthy of emphasis: no matter how experimental they were in other aspects of composition, The Beatles with very rare exception, clung to such classic forms in their songs; it is as though they needed these forms as a bedrock on which to anchor their experiments lest they fall apart.
 
-The usage of asymmetric, acyclic (albeit clearly articulated) forms are rare enough in their output that their identification and examination as a group would itself make an interesting study. Start with "[Happiness Is A Warm Gun"](hiawg.md)" and "[You Never Give Me Your Money](yngmym.md)" and see how many more you can find!
+The usage of asymmetric, acyclic (albeit clearly articulated) forms are rare enough in their output that their identification and examination as a group would itself make an interesting study. Start with "[Happiness Is A Warm Gun](hiawg.md)" and "[You Never Give Me Your Money](yngmym.md)" and see how many more you can find!
 
 Going even further, I'm tempted to argue that it is no coincidence that the even fewer cases where they abandoned articulated form entirely, (e.g. "[Revolution #9](r9.md)", "What's the New Mary Jane") have turned out to be among their least popular work over the long run.
 
