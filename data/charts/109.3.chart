@@ -1,0 +1,10 @@
+# Getting Better, bridge (figure 109.3)
+# Ten bars: two of F G F G, then the refrain-like four-bar phrase played twice.
+key C
+
+system
+chords   | F{IV} G{V} F{IV} G{V} | F{IV} G{V} F{IV} G{V} |
+
+system
+caption 2X
+chords   | C{I} | d{ii} | e{iii} | F{IV} |

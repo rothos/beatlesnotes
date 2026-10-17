@@ -1,0 +1,10 @@
+# The Fool on the Hill, verse (figure 123.1)
+# Bars 1-4 sit over a D pedal. Pollack's "G added 6th" in bar 4 (G major 6/4 with an added sixth,
+# as he argues, not e7 in 4/2) is written G6/D.
+key D
+
+system
+chords   | D{I} | G/D{IV6/4} | D{I} | G6/D{IV} |
+
+system
+chords   | e{ii} A{V} | D{I} b{vi} | e{ii} A{V} |

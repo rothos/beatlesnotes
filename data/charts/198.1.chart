@@ -1,0 +1,25 @@
+# Can You Take Me Back, verse (figure 198.1): a rhythm chart of the sung phrases over twelve bars
+# Pollack types only the beat counts and where the words fall, in six lines of two bars. Words are
+# placed on the beat they sit over: "back?" on beat 4 of bar 3 (the hard accent "just before the
+# downbeat of measure 4"); "back" on the "&" of 4 in bars 7 and 10. His dashes are the held high
+# note (bar 7 into the first beat of bar 10) and the final melisma (to the end of bar 12).
+# Added: the chord row, for playback. The essay says the harmony is a pedal on the I chord as a
+# dominant seventh (F7) throughout; Pollack types no chords.
+#? Bar 10: "can.." placed on beat 2, from its column and the "..3" in the count; it may start on the "&" of 2.
+meter 4/4
+key F
+
+system mm. 1-4
+words "Count"  | 1 2 3 4 | 1 2 3 4 | 1 2 3 4 | 1 2 3 4 |
+words          | Can...*4 | where...*4 | can...*3 back? | r |
+chords         | F7{I} | - | - | - |
+
+system mm. 5-8
+words "Count"  | 1 2 3 4 | 1 2 3 4 | 1 2 3 4*0.5 &*0.5 | 1 2 3 4 |
+words          | Can...*4 | where...*4 | brother*2 take me*0.5 back*0.5 | - |
+chords         | F7{I} | - | - | - |
+
+system mm. 9-12
+words "Count"  | 1 2 3 4 | 1 2 ..3 4*0.5 &*0.5 | 1 2 3 4 | 1 2 3 4 |
+words          | - | -*1 can.. take me*0.5 back*0.5 | - | - |
+chords         | F7{I} | - | - | - |

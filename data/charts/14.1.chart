@@ -1,0 +1,9 @@
+# Hey Jude, verse (figure 14.1)
+# In the last bar F turns into F7 (V-of-IV) halfway through, leading into the bridge.
+key F
+
+system
+chords  | F{I} | C{V} | - | F{I} |
+
+system
+chords  | Bb{IV} | F{I} | C{V} | F{I} F7{(V-of-IV)} |

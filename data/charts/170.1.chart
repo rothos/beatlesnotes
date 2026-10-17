@@ -1,0 +1,8 @@
+# I Me Mine, intro (figure 170.1)
+# Pollack's "Intro ....." and "Verse ....." labels overlap at the sixth bar, where the intro is
+# elided with the first verse; they are kept as bar marks.
+meter 3/4
+key a
+
+system
+chords   | [Intro] a{i} | - | D{IV} | - | G{flat-VII} | [Verse] E7{V} a{i} | - |

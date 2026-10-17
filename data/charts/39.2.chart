@@ -1,0 +1,8 @@
+# Hold Me Tight, bridge (figure 39.2): seven bars, the snake-like inner line cliché over the chords
+# The "-" holds the B-flat over the g-minor bar. The final C is the elided first bar of what follows.
+#? Octave of the line cliché (A4-C5) is a guess, as in fig. 39.1.
+key F
+
+system
+voice "Line cliché"   | A4 | Ab4 | A4 | Bb4 | - | Bn4 | C5 |
+chords "Chords"       | F{I} | A-flat{flat-III} | F{I} | B-flat{IV} | g{ii} | G{V-of-V} | C{V} |

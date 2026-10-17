@@ -1,0 +1,7 @@
+# Another Girl, intro (figure 72.1)
+# The phrase ends on the downbeat of a fifth bar, which is the start of the verse ("A ...").
+key A
+
+system
+chords   | A{I} | D{IV} | A{I} | D{IV} | [Verse] A{I} |
+caption the A on the fifth downbeat begins the verse

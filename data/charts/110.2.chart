@@ -1,0 +1,19 @@
+# Fixing a Hole, verse (figure 110.2)
+# Top is the vocal tune; the two middle lines carry on from the intro (fig. 110.1). Pollack leaves
+# the chord row blank in mm. 3-4; m. 3 is the f chord held (his i7-), and m. 4 is his "some kind
+# of Major IV" with F in the bass (IV6/4 [?]), written here as Bb/F: an addition, not typed.
+# His upper middle line stops after "-" in m. 4 (no closing bar line); read as held.
+# Notes in a bar get equal shares.
+#? Octaves of the tune are a guess by nearest motion (F4 up to F5): check the leaps C5-F4 (m. 3) and Eb5-F4 (mm. 4-5) against the record.
+#? Top line mm. 7-8 is blank in the typed chart; read as the F of "go" held.
+key F
+
+system
+voice "Top"      | F4 C5 C5 C5 C5 D5 | F5 Eb5 C5 C5 Bb4 | C5 F4 F4 Ab4 | Bb4 C5 C5 C5 Eb5 |
+voice "Middle"   | A4 G#4 | Ab4 | - | - |
+voice "Middle"   | F4 E4 | Eb4 D4 | Eb4 | D4 |
+chords "Chords"  | F{I} C{V5+} | f{i} | -{i7-} | Bb/F{IV6/4 [?]} |
+
+system
+voice "Top"      | F4 Ab4 | F4 | - | - |
+chords "Chords"  | f{i} | Bb{IV} | f{i} | Bb{IV} |

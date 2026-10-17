@@ -1,0 +1,15 @@
+# Being for the Benefit of Mr. Kite!, verse, fourteen bars in phrases of 4, 3, 4, 3 (figure 112.2).
+# Where Pollack gives two analyses (c minor and d minor) both are kept in one label.
+key c
+
+system
+chords   | c{c: i} G-aug{V#5} | B-flat{vi-of-ii} d{ii} | G{V} | G-aug{#5} |
+
+system
+chords   | c{c: i} G-aug{V#5} | B-flat{c: vi-of-ii / d: vi} d{c: ii / d: i} | A{d: V} |
+
+system
+chords   | d{d: i} | g{iv} A{V} | d{i} | g{iv} A{V} |
+
+system
+chords   | d{d: i} | g{iv} A{V} | d{d: i / c: ii} G{c: V} |

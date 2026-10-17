@@ -1,4 +1,5 @@
 # Love Me Do, verse (figure 21.2)
+# lyrics as typed by Pollack are omitted here
 # Thirteen bars: the two-bar unit G-C sung three times with three lines of words (2+2+2), then
 # seven bars on "please ... love me do" and the harmonica hook. Pollack lines the words up with the
 # beat counts he types above each bar; he says he has removed the syncopation of the singing.
@@ -10,19 +11,14 @@ key G
 system
 caption 3X
 words           | 1 2 3 4 | 1 2 3 4 |
-words           | Love,*2 love me | do.*3 You |
-words           | know*2 I love | you.*3 I'll |
-words           | al-*2 ways be | true*3 So |
 chords          | G{I} | C{IV} |
 
 system
 words           | 1 2 3 4 | 1 2 3 4 |
-words           | ple-*2 e- e- | e -*3 |
 chords          | C{IV} | - |
 
 system
 words           | 1 2 3 4 | Resume_harmonica_hook_... |
-words           | -ease*2 Love me | do |
 chords          | - | G{I} |
 
 system

@@ -1,0 +1,19 @@
+# Help!, end of the first verse line: John's lead and the backers (figure 6.1)
+# Pollack's beat count is kept as a words row. His asterisks mark the five-note figure (C# E C# B A)
+# that both parts sing, the backers a few beats behind and above the lead; they are kept as an
+# accent row under each part. In the lead, his first asterisk sits under the "C#E" pair of beat 3;
+# it is placed on beat 3, covering the pair.
+# The lead's final "A-" is held over and the backers' last A falls on the next downbeat; both are
+# shown in a fifth bar, which Pollack's count doesn't cover.
+# Octaves: John's verse tune lies C#4-E4 down to A3; the backers are written in the same register,
+# rising above the lead's B3 A3 for their figure, as Pollack describes.
+#? Lead bar 3: the "syncopated second C#" is placed on beat 4 as typed; on the record it may fall on the "&" of 4, anticipating bar 4.
+#? Backers' octave (A3-E4, crossing the lead) is a guess; they may sing an octave higher.
+key A
+
+system
+words "Count"      | 1 2 3 4 | 1 2 3 4 | 1 2 3 4 | 1 2 3 4 | r |
+voice "Lead"       | - C#4 C#4 C#4 | C#4 C#4 C#4 C#4 | C#4 C#4 C#4*0.5 E4*0.5 C#4 | - - B3 A3 | - |
+words              | r | r | r r * * | r r * * | r |
+voice "Backers"    | A3 - - - | - - B3 A3 | G#3 - - - | - C#4 E4 C#4*0.5 B3*0.5 | A3 |
+words              | r | r | r | r r * - * - * * | * |

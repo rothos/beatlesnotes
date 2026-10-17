@@ -1,0 +1,12 @@
+# Dear Prudence, verse (figure 168.2)
+meter 3/4
+key A
+
+system
+chords   | A{I} | - | - | - | f#{vi} | - |
+
+system
+chords   | b{ii} | G{flat-VII} | - |
+
+system
+chords   | b{ii} | G{flat-VII} | E{V} | - |

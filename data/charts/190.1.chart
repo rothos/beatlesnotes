@@ -1,0 +1,10 @@
+# Carry That Weight, refrain (figure 190.1)
+# The eight-bar phrase that the sixteen-bar refrain repeats almost literally; the last C is also
+# III in a-minor.
+key C
+
+system
+chords   | C{I} | - | G7{V} | - |
+
+system
+chords   | G7{V} | - | C{I / a: III} | - |

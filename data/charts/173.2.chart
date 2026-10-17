@@ -1,0 +1,13 @@
+# I've Got a Feeling, verse (figure 173.2)
+# The "4X" over the first phrase is kept as a bar mark. Pollack's (IV6/4) bars are the D6/4
+# decoration of the vamp over the held A (see fig. 173.1).
+key A
+
+system
+chords   | [4X] A{I} | -{(IV6/4)} | -{I} | -{(IV6/4)} |
+
+system
+chords   | A7{I} | - | E{V} G{flat-VII} | D{IV} |
+
+system
+chords   | A{I} | D{IV} | A{I} | D{IV} |

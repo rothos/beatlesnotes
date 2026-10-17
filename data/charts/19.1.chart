@@ -1,0 +1,13 @@
+# I'll Be Back, intro: two bars with a two-beat pickup, the guitar hook f# b e c# (figure 19.1).
+# Pollack's beat count "3 & 4 &" over the pickup puts the four hook notes on eighths, kept as a
+# words row. The hook's last note (C#, on "4-and") is shown tied over the downbeat, since the essay
+# says the downbeat is not marked; "a ..." in bar 2 is the start of the first verse (a minor).
+# Added: the hook's notes are named in the essay, not typed in the chart.
+#? Hook octaves (F#4 B4 E5 C#5) are a guess; check against the guitar on the record.
+#? The tie of the C# into bar 1 is my reading of "the following downbeat is not clearly marked".
+key A
+
+system
+words           3*0.5 &*0.5 4*0.5 &*0.5 | r | r |
+voice "Hook"    F#4*0.5 B4*0.5 E5*0.5 C#5*0.5 | - | r |
+chords          r*2 | A{I} | - a{i} |

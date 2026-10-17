@@ -1,0 +1,18 @@
+# Any Time at All, bridge (figure 17.3)
+# The first two bars, played twice ("2X"), have the top line and the bassline moving in contrary
+# motion around the inverted A and b chords (A over E, b over F#, A over G). The remaining six bars
+# are chords only.
+#? Octaves of the top line (G4 F#4 E4) and bassline (E3 F#3 G3) are a guess; the parts may be on piano/guitar in another register.
+key D
+
+system
+caption 2X
+voice "Top line"    | G4 F#4 | E4 |
+chords "Chord"      | A{V4/3} b{vi4/3} | A{V4/2} |
+bass "Bassline"     | E3 F#3 | G3 |
+
+system
+chords   | G{IV} | A{V} | G{IV} |
+
+system
+chords   | A{V} | D{I} | - |

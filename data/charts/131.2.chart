@@ -1,0 +1,21 @@
+# Dear Prudence, verse (figure 131.2)
+# Fourteen bars, AA'B plus a two-bar "washer". The upper row is the tenor voice walking down the
+# semi-chromatic cliche D C B Bb A over the D pedal (the lower row). The first four bars are played
+# twice ("2X"); "the crux" marks the B phrase, whose last bar moves off I to C and G under a
+# "rapidly walking bass". Pollack types no tenor notes in the crux's third bar, where his
+# "** rapidly walking bass ..." note begins; it is left silent here.
+#? Tenor octave (D4 down to A3) chosen for range.
+key D
+
+system
+voice "Tenor"   | [2X] D4 C4 | B3 Bb3 | A3 C4 | B3 Bb3 |
+chords          | D{I} | - | - | - |
+
+system the crux
+voice "Tenor"   | A3 C4 | B3 Bb3 | r | r |
+chords          | D | - | - | C{flat-VII} G{IV} |
+caption ** rapidly walking bass ...
+
+system
+voice "Tenor"   | A3 C4 | B3 Bb3 |
+chords          | D{I} | - |

@@ -1,0 +1,13 @@
+# I'm Down, break (figure 69.2)
+# A twelve-bar frame (the first break holds D through m. 10).
+#? m. 7: Pollack types "V" under the G chord, which is I; kept as typed, probably a slip.
+key G
+
+system
+chords   | G{I} | - | - | - |
+
+system
+chords   | C{IV} | - | G{V} | - |
+
+system
+chords   | D{V} | C{IV} | G{I} | - |

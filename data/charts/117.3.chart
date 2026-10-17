@@ -1,0 +1,18 @@
+# A Day in the Life, verse, the common first sixteen bars (figure 117.3)
+# Pollack counts "1 & 2 &" over bar 8 (the note is in 2/4): the D comes in on the "&" of 2, so the
+# a minor chord of bar 7 holds through the first beat and a half of bar 8.
+# The empty last bar holds the e chord.
+meter 2/4
+key G
+
+system
+chords   | G{I} | b{v6/4} | e{vi} | - |
+
+system
+chords   | C{IV} | - | a{ii} | -*1.5 D{V}*0.5 |
+
+system
+chords   | G{I} | b{v6/4} | e{G: vi / e: i} | - |
+
+system
+chords   | C{e: vi} | F{flat-II} | e{i} | - |

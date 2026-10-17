@@ -1,0 +1,8 @@
+# Girl, bridge (figure 84.3); the last chord is III in f minor and IV in E-flat.
+key f
+
+system
+chords   | f{i} | C{V} | f{i} | C{V} |
+
+system
+chords   | f{i} | C{V} | f{i} | A-flat{III / E-flat: IV} |

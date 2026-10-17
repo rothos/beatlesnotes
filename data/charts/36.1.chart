@@ -1,0 +1,13 @@
+# All I've Got to Do, verse, the title phrase in two-part vocal counterpoint (figure 36.1)
+# John has the tune, Paul the line above it: parallel thirds until Paul holds his E over (the "*"
+# in the typed chart, drawn here as a hold) while John moves on to B, after which the two run down
+# the pentatonic scale in parallel fourths.
+# The words "All I've got to do ...." head the typed chart without being lined up with the notes;
+# they are kept as a caption.
+#? Octaves chosen so John's line falls from E4 to E3; it may sit an octave higher on the record.
+key E
+
+system
+caption "All I've got to do ...."
+voice "Paul"   | G#4 F#4 E4 F#4 | F#4 E4 - C#4 B3 | C#4 B3 G#3 |
+voice "John"   | E4 D#4 C#4 D#4 | D#4 C#4 B3 G#3 F#3 | G#3 F#3 E3 |

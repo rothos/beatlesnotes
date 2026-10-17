@@ -1,0 +1,9 @@
+# Blackbird, C phrase: instrumental link after the first verse (figure 139.2)
+# The guitar's two outer voices, as in fig. 139.1: top voice above, bass below, mostly a tenth
+# apart. Octaves follow 139.1 (bass on the low strings, top voice a tenth above). No chord symbols
+# are typed, so the roman numerals go under the bass.
+key G
+
+system C phrase
+voice   | E4 D4 | C#4 - | Cn4 | B3 |
+bass    | C3{IV} B2{I6/3} | A2{V-of-V} - | D3{V7} | G2{I} |

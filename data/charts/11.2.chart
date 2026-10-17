@@ -1,0 +1,10 @@
+# Good Day Sunshine, refrain, last two bars (figure 11.2)
+# Same 3 + 3 + 2 accents as fig. 11.1, now over E7; "I take a..." is the verse's pickup on beat 4.
+#? "Day" and "shine" are typed a little after beats 2 and 1; they are placed on the beat.
+key A
+
+system
+words "Beats"     | 1 2 3 4 | 1 2 3 4 |
+words "Accents"   | >*3 > | r*2 >*2 |
+words "Words"     | Good Day*2 Sun | shine*3 I_take_a... |
+chords "Chords"   | E7{V} | - |

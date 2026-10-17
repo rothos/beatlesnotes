@@ -1,0 +1,11 @@
+# Happiness Is a Warm Gun, third part, "Mother Superior Jumped the Gun" (figure 136.4)
+# Pollack's meter labels are kept as bar marks: the first bar of each phrase is a 6/8 hemiola (the
+# same length as a 3/4 bar), and the last bar of the second phrase is in 4/4, a beat longer.
+meter 3/4
+key a
+
+system
+chords   | [6/8] a{i} | [3/4] C{III} | - |
+
+system
+chords   | [6/8] a{i} | [3/4] G{flat-VII} | [4/4] <4> - |

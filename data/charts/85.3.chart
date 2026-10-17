@@ -1,0 +1,13 @@
+# I'm Looking Through You, the I-IV-ii bass lick (figure 85.3)
+# Bar 1 is lined up by the words: a beat of rest, then "I'm look- ing" one beat each. The bass and
+# chord A-flat sit under the rest and "I'm"; the bass D-flat and C fall under "look-" and "ing".
+# Bar 2 ("through you") splits equally.
+# The bass makes downward counterpoint (D-flat C B-flat) against the rising tune.
+#? Octaves: tune C4 up to A-flat4 and bass A-flat2 to D-flat3 are chosen for range; check the tune's register against the record.
+key Ab
+
+system
+words              | r I'm look- ing | through you |
+voice "Tune"       | r C4 Db4 F4 | Ab4 F4 |
+bass "Bassline"    | Ab2*2 Db3 C3 | Bb2 |
+chords "Chords"    | Ab{I}*2 Db{IV}*2 | bb{ii} |

@@ -1,0 +1,12 @@
+# I've Got a Feeling, intro (figure 173.1)
+# Pollack's "5 6 5 etc." and "3 4 3 etc." are the vamp's upper notes counted up from the A in the
+# bass: 5th and 3rd (E, C#) on the A chord, 6th and 4th (F#, D) on the D6/4 decoration. They are
+# written out as notes, continuing the "etc." through bar 4. The chord row holds A, as typed; the
+# (IV6/4) bars sound as D over A through these two voices.
+#? Octave of the two vamp voices (E4/C#4) is a guess at the guitar register.
+key A
+
+system
+voice    | E4 | F#4 | E4 | F#4 |
+voice    | C#4 | D4 | C#4 | D4 |
+chords   | A{I} | -{(IV6/4)} | -{I} | -{(IV6/4)} |

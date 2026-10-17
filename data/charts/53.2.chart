@@ -1,0 +1,10 @@
+# I Call Your Name, bridge (figure 53.2)
+# Pollack gives two rows of numerals, in G and in D (the pivot modulation); here they are joined in
+# one label per chord, "G: ... / D: ...".
+key G
+
+system
+chords   | b{G: iii / D: vi} | - | A{D: V} | - |
+
+system
+chords   | D{D: I} | - | e{D: ii} | A{D: V} D{G: V / D: I} |

@@ -1,0 +1,10 @@
+# Eleanor Rigby, refrain (figure 93.3)
+# The chromatic inner line over the implied harmony; Pollack puts the A in parentheses (implied,
+# a passing IV under the C#); kept so here.
+#? Octave of the inner line (D4 down to B3, string register) is a guess.
+key e
+
+system
+caption 2X
+voice "Inner voice"        | D4 | C#4 | Cn4 | B3 |
+chords "Implied harmony"   | e{i7} | (A){IV} | C{VI} | e{i} |

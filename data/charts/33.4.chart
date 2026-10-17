@@ -1,0 +1,12 @@
+# Ask Me Why, second variant verse "Ask me why ..." (figure 33.4)
+# Seven bars after the E7 f#7 lead-in; the last bar holds E for two beats and leads into the next
+# verse with E7 f#7 on beats 3 and 4, as at the start (Pollack's beat row in fig. 33.1).
+#? "E7" (I) probably E major 7th on the record, as in fig. 33.1.
+key E
+
+system m. 1
+chords   E7{I} f#7{ii} | g#7{iii} | A{IV} | g#7{iii} |
+
+system m. 4
+chords   | A7{IV} | E{I} | -*2 E7{I} f#7{ii} |
+caption E7 f#7 leads into the next verse

@@ -1,0 +1,6 @@
+# Dig It, refrain: the four-bar pattern the whole track is built on, repeating in pairs (figure 171.1).
+meter 3/4
+key F
+
+system
+chords   | [2X] F{I} | Bb{IV} | C{V} | Bb{IV} |

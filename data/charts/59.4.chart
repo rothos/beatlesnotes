@@ -1,0 +1,6 @@
+# Baby's in Black, bridge (figure 59.4)
+# The A after the double bar is the first bar of the next refrain, where the bridge elides into it.
+key A
+
+system
+chords   | f#{ii} | - | B{V-of-V} | - | D{IV} | - | E{V} | - | A{I} |

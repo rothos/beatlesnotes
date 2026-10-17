@@ -1,0 +1,12 @@
+# Dear Prudence, intro (figure 168.1)
+# The second phrase climbs G G# A in the bass; Pollack's "VII half dim." is the half-diminished
+# seventh chord on G#.
+meter 3/4
+key A
+
+system
+caption 2X
+chords   | G{flat-VII} | D{IV} | A{I} | - |
+
+system
+chords   | G{flat-VII} | g#-half-dim7{VII half dim.} | A{I} |

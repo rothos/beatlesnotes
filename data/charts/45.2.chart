@@ -1,0 +1,11 @@
+# Can't Buy Me Love, verse: a twelve-bar blues with I delayed to the last bar (figure 45.2).
+key C
+
+system
+chords   | [1] C{I} | - | - | - |
+
+system
+chords   | [5] F{IV} | - | C{I} | - |
+
+system
+chords   | [9] G{V} | F{IV} | - | C{I} |

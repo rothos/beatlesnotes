@@ -1,0 +1,13 @@
+# Carry That Weight, bridge (figure 190.2): the opening section of "You Never Give Me Your Money"
+# Sixteen bars (played twice on the record, first instrumental, then sung). Pollack's "d9 - 8" is
+# the d chord with a 9-8 suspension, and "C4-3" a 4-3 suspension: each written as the chord with
+# the figure, then the resolution on the second half of the bar.
+# His "G13/11" (G with the 13th and 11th above it, the C triad in 6/4 position he mentions) is
+# written C/G so it sounds as he describes; it resolves to G 5/3 in the last bar.
+key a
+
+system
+chords   | a{i} | - | d{iv 9 (V-of-III?)} -{8} | - | G7{VII} | - | Csus4{III 4} C{3} | - |
+
+system
+chords   | F{VI} | - | bdim{ii} | E{V} | a{i / C: vi} | - | C/G{V 13/11} | G{5/3} |

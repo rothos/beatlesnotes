@@ -1,0 +1,11 @@
+# It's All Too Much, refrain (figure 160.1)
+# Tune and middle voice over a G pedal. Each bar is typed in two halves; the tune's D B A G fill the
+# second half of bar 3 as eighths. The middle voice's B meets the tune's B in unison (bar 2, bar 4).
+#? Register: tune and middle at sung pitch (E4 down to G3); they may be meant an octave higher.
+key G
+
+system
+caption 2X
+voice "Tune"     | E4 D4 | D4 B3 | E4*2 D4*0.5 B3*0.5 A3*0.5 G3*0.5 | B3 |
+voice "Middle"   | C4 B3 | A3 B3 | C4 B3 | - |
+bass "Bass"      | G2{I} | - | - | - |

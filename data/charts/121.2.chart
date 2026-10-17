@@ -1,0 +1,11 @@
+# I Am the Walrus, first verse (figure 121.2)
+# Pollack puts the G in bars 1 and 3 in parentheses: the bassline moves to G-natural under the A,
+# and the record blurs toward a G chord (flat-VII), while the outtake keeps A sounding (A7 over G).
+# Kept in parentheses, as he types it, for the second half of the bar.
+key A
+
+system
+chords   | A{I} (G) | C{flat-III} D{IV} | A{I} (G) |
+
+system
+chords   | C{flat-III} | D{IV} | A{I} |

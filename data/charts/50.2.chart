@@ -1,0 +1,11 @@
+# If I Fell, verse (figure 50.2): mm. 1-4 (2X, as mm. 5-8), then mm. 9-10
+# The chord on beat 4 of the second bar is Pollack's "flat-iii diminished" (F, A-flat, B; see fig. 50.3);
+# the essay places it on the fourth beat (calling it m. 3), so the f# holds three beats.
+key D
+
+system mm. 1-4, 5-8
+caption 2X
+chords   | D{I} e{ii} | f#{iii}*3 Fdim{flat-iii diminished} | e7{ii} | A{V} |
+
+system mm. 9-10
+chords   | D{I} | g{iv} A{V} |

@@ -1,0 +1,18 @@
+# Here Comes the Sun, refrain (figure 183.2)
+# Pollack counts mm. 6-7 in eighth notes grouped 3+3+3+3+4 (his asterisks mark the groups); the
+# chords and his bassline D C# B A change at the start of the first four groups, which places them
+# here: b7/D and A/C# a dotted quarter each, b on beat 3, A on the second eighth of m. 7, E on beat 3.
+# He types the chords as "b6/5" and "A6/3" (first-inversion b7 and A, over his D and C#).
+# Added: the bass E under the E chord in m. 7 (the chord root; his bassline stops at A).
+key A
+
+system
+chords      | A{I} | - | D{IV} | B{V-of-V} |
+
+system
+words       | r | 1 2 3 1 2 3 1 2 | 3 1 2 3 1 2 3 4 | r |
+chords      | A{I} | b7/D{ii 6/5}*1.5 A/C#{I 6/3}*1.5 b{ii}*1 | -*0.5 A{I}*1.5 E{V}*2 | A{I} |
+bass "Bassline" | r | D3*1.5 C#3*1.5 B2*1 | -*0.5 A2*1.5 E2*2 | r |
+
+system
+chords      | E{V} |

@@ -1,0 +1,10 @@
+# Because, intro (figure 184.1)
+# Pollack's "d# half dim.7" is d#-half-dim7; "A 9/7" then "- 13" is the A chord with its ninth
+# and seventh, adding the thirteenth in the last bar.
+key c#
+
+system
+chords  | c#{i} | - | d#-half-dim7{ii7} | G#{V} |
+
+system
+chords  | A{VI} | c#{i} | A9{VI (a.k.a. V-of-flat-II)} | A13 |

@@ -1,0 +1,7 @@
+# Free As a Bird, end of the verse before the second bridge (figure 194.2).
+# The A-flat chord is the a-minor chord held while the bass slips chromatically down to G (C E over
+# A-flat, so A-flat augmented); Pollack gives it no roman numeral, only the word "augmented".
+key C
+
+system
+chords   | C{C: I} a{vi} | A-flat-aug{augmented} G{V} |

@@ -1,0 +1,7 @@
+# Don't Let Me Down, refrain (figure 162.2)
+# Four bars played twice (the "2X" bracket). The V arrives on beat 3 of bar 2. Pollack types only
+# "(IV?)" under the second half of bar 4, the phantom IV of fig. 162.1; the (A) is added to carry it.
+key E
+
+system
+chords  | [2X] f#{ii} | - B{V} | E{I} | - (A){(IV?)} |

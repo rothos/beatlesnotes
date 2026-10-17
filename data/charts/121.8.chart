@@ -1,0 +1,16 @@
+# I Am the Walrus, outro (figure 121.8)
+# Top voice climbs the scale A to A while the bassline descends A to A, in contrary motion; the
+# chords are the numerals Pollack gives, which go under the bass. His "A ..." means the eight-bar
+# progression begins again (and keeps repeating into the fade).
+# Pollack's "flat-III 11" is C with F# on top (a sharp eleventh).
+#? Octaves: top A4-A5 over bass A3-A2 chosen for range; check the record's register.
+key A
+
+system
+voice "Top"        | A4 | B4 | C5 | D5 |
+bass "Bassline"    | A3{I} | G3{flat-VII} | F3{flat-VI} | E3{V7} |
+
+system
+voice "Top"        | E5 | F#5 | G5 | A5 |
+bass "Bassline"    | D3{IV9} | C3{flat-III 11} | B2{v} | A2{I} |
+caption A ... (the progression repeats)

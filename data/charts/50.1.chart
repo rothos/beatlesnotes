@@ -1,0 +1,9 @@
+# If I Fell, intro (figure 50.1): from D-flat to D, the D-natural chord serving as the pivot
+# Pollack's "D (natural)" and "e7(natural)" are written D and e7.
+key D-flat
+
+system
+chords   | e-flat{ii} | D{flat-II} | D-flat{I} | b-flat{vi} |
+
+system
+chords   | e-flat{ii} | D{D-flat: flat-II / D: I} | e7{ii} | A{V} |

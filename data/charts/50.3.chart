@@ -1,0 +1,12 @@
+# If I Fell, verse, the move from f# to e7 on "heart to you" (figure 50.3)
+# Three voices: Paul over John (an open fifth on "you"), with the bass. "to" comes on the fourth
+# beat of the bar (the essay: "the chord on the fourth beat of measure 3"), giving the passing
+# chord B / G# / F-natural.
+#? Octaves: Paul C#5-D5 over John A4-G4 (the record's high two-part singing) and bass F#2-E2 are my reading; check them.
+key D
+
+system
+words           | heart*3 to | you_... |
+voice "Paul"    | C#5*3 B4 | D5 |
+voice "John"    | A4*3 G#4 | Gn4 |
+bass "Bass"     | F#2*3 Fn2 | E2 |

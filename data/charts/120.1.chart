@@ -1,0 +1,26 @@
+# Hello Goodbye, verse (figure 120.1)
+# Seventeen bars; the C at the end is the downbeat that overlaps with the start of the refrain.
+# Pollack's bass notes are kept: F under the d (ii6/5), C under C, G under each V, and in the a
+# bars the quarter-note descending scale A G F E D C B A (four to a bar).
+# The last phrase is one long G pedal: his figures 13/11 and 5/3 are written C/G and G (he says
+# the 13/11 may be called C in 6/4 but he hears G as the root), and 11/9/7 as G11.
+# Added: the bass A under the second pair of a bars, the G in the last phrase (his "G as the root
+# note throughout") and the C at the end.
+#? Bass octaves are a choice (F2, C3, G2; the scale from A3 down to A2): check the register of the scale against the record, which might be an octave lower.
+key C
+
+system
+chords             | d{ii6/5} | - | C{I} | - |
+bass "Bass"        | F2 | - | C3 | - |
+
+system
+chords             | G{V} | - | a{vi} | - |
+bass "Bass"        | G2 | - | A3 G3 F3 E3 | D3 C3 B2 A2 |
+
+system
+chords             | G{V} | - | a{vi} | - |
+bass "Bass"        | G2 | - | A2 | - |
+
+system
+chords             | G{V} | - | C/G{13/11} | G{5/3} | G11{11/9/7} | [Refrain] C{I} |
+bass "Bass"        | G2 | - | - | - | - | C3 |

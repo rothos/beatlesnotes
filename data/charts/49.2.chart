@@ -1,0 +1,9 @@
+# A Hard Day's Night, bridge (figure 49.2)
+# Pollack's tentative second analysis "(b: i iv i??)" is kept with the first.
+key G
+
+system
+chords   | b{G: iii / (b: i)} | e{vi / (iv)} | b{iii / (i??)} | - |
+
+system
+chords   | G{I} | e{vi} | C{IV} | D{V} |

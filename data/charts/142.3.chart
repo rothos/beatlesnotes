@@ -1,0 +1,8 @@
+# Don't Pass Me By, outro (figure 142.3)
+# Pollack types "I" in the chord row of bar 5, read as the C chord; his "I6 -> 5 / 4 -> 3" is the
+# double appoggiatura (6/4 resolving to 5/3) over it, which he hears instead of IV -> I. The last
+# chord is held "at least four measures"; only the one hold he types is kept.
+key C
+
+system
+chords   | F{IV} | - | G{V} | - | C{I 6/4 -> 5/3} | - |

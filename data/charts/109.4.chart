@@ -1,0 +1,8 @@
+# Getting Better, outro (figure 109.4)
+# After the C, Pollack leaves three bars empty: chimes only with tabla, into the fade. The G octave
+# carried on above them is what makes him hear an implied V; written as holds.
+key C
+
+system
+chords   | F{IV} G{V} F{IV} G{V} | F{IV} G{V} F{IV} G{V} | C{I} | -{(implied V?)} | - | - |
+caption from the C: chimes only with tabla ...

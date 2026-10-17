@@ -1,0 +1,13 @@
+# For No One, bridge (figure 99.2)
+# Ten bars in c#, which Pollack also reads as ii of B. In the last bar the F# chord's 6/4 resolves
+# to 5/3 (a double appoggiatura over V, not a I6/4 moving to V), shown here as two halves.
+key c#
+
+system
+chords  | c#{i (B: ii)} | G#{V} | c#{i} | - |
+
+system
+chords  | - | G#{V} | c#{i} | - |
+
+system
+chords  | c#{i (B: ii)} | F#{B: V 6/4} F#{5/3} |

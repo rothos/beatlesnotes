@@ -1,0 +1,11 @@
+# Golden Slumbers, verse melody: the hidden upward scale (figure 189.3)
+# "O/th/w/a/way" is Pollack's shorthand for "Once there was a way". His asterisks, numbered 1-6,
+# pick out G A (left hanging at the end of the first phrase's run) and B C D E in the second
+# phrase: one scale G A B C D E. They are kept as labels under the notes.
+# No rhythm is typed, so each phrase is one long bar with a beat per note (10 and 9 beats).
+#? Rhythm is not Pollack's: on the record the syllables are not evenly spaced and the phrases fall into ordinary 4/4 bars.
+key C
+
+system
+voice   | <10> G4 G4 G4 G4 G4 G4{1} A4{2} C5 E5 D5 | <9> B4{3} B4 B4 B4 B4 B4 C5{4} D5{5} E5{6} |
+words   | <10> Once there was a way to get back home- ward, | <9> Once there was a way to get back home |

@@ -1,0 +1,17 @@
+# Birthday, bridge "I would like you to dance" (figure 20.2)
+# The "3X" bracket over the first two bars: they are played three times, then bars 3-4 once with
+# the bass's chromatic climb G G# A A# that keeps going up to the B under the E chord (V6/4 in A),
+# before the bass jumps down to E to put the chord in root position.
+# Each typed bass note with its dash ("C-") is read as a quarter note, four to the bar.
+# Pollack's second key line: G is also flat-VII in A, the pivot back to the home key.
+#? Bass octave chosen for range (C3 up to B3, then down a fifth to E3); the record may sit an octave lower.
+key C
+
+system
+chords              | [3X] C{I} | G{V} | C{I} | G{V; A: flat-VII} |
+bass "Bassline"     | C3 E3 F3 F#3 | G3 F3 E3 D3 | C3 E3 F3 F#3 | G3 G#3 A3 A#3 |
+caption the first two bars are played three times
+
+system
+chords              | E{A: V6/4} | E{V} |
+bass "Bassline"     | B3 | E3 |

@@ -1,0 +1,13 @@
+# Dear Prudence, bridge (figure 131.3)
+# Five and a half bars on I, flat-III and IV; Pollack marks the G bar "half" (two beats only),
+# then the ostinato resumes over D (tenor line A C B Bb, as in fig. 131.2).
+#? The half bar is drawn as G for two beats in a full bar; the player will leave a two-beat gap there.
+key D
+
+system
+chords          | D{I} | - | - | - |
+
+system
+voice "Tenor"   | r | r | A3 C4 | B3 Bb3 |
+chords          | F{flat-III} | G{IV}*2 | D{I} | - |
+caption the G bar is a half measure; the ostinato resumes with the D

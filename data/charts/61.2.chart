@@ -1,0 +1,20 @@
+# Every Little Thing, refrain (figure 61.2)
+# Pollack types an eighth-note count over each bar ("1 - 2 - 3 - 4 -"), and the melody and words
+# are placed on it, so the rhythm here follows his columns. The four bars are played twice (2X).
+# Melody in m. 2: the E on the downbeat over G is the appoggiatura resolving down to D; in m. 4
+# the D over A resolves up to E.
+#? Melody octave (E4 up to A4) chosen for range; check against the record.
+key A
+
+system
+caption 2X
+words "Beats"       | 1 - 2 - 3 - 4 - | 1 - 2 - 3 - 4 - |
+voice "Melody"      | r*1 E4*0.5 F#4*0.5 A4*1 F#4*1 | E4*1.5 D4*0.5 D4*2 |
+chords "Chords"     | A{I} | G{flat-VII} |
+words               | r*1 Ev'-*0.5 ry*0.5 lit-*1 tle*1 | thing*1.5 she*0.5 does,*2 |
+
+system
+words "Beats"       | 1 - 2 - 3 - 4 - | 1 - 2 - 3 - 4 - |
+voice "Melody"      | r*1.5 D4*0.5 D4*1 D4*1 | D4*0.5 E4*1.5 D4*0.5 E4*1.5 |
+chords "Chords"     | - | A{I} |
+words               | r*1.5 she*0.5 does*1 for*1 | me,*0.5 -*1.5 yeah.*0.5 -*1.5 |

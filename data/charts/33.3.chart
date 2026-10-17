@@ -1,0 +1,14 @@
+# Ask Me Why, bridge "I can't believe ..." (figure 33.3)
+# Eight bars. Pollack types a rhythmic-emphasis row over mm. 7-8 (accents on 1, the "&" and 2 of
+# m. 7, then on every beat of m. 8) with the words "mi- ser- y" above it. In m. 8 the E holds
+# over beat 1 and B, E7, f#7 fall on beats 2, 3 and 4 (lined up with the beat numbers he types).
+#? mm. 7-8: placement of the syllables "mi- ser- y" against the accents is approximate (typed loosely between the bars); check against the record.
+key E
+
+system m. 1
+chords   | A{IV} | B{V} | E{I} | Eaug{V#5-of-IV} |
+
+system m. 5
+words "Rhythmic emphasis" | r | r | 1*0.5 &*0.5 2 r*2 | 1 2 3 4 |
+words                     | r | r | mi-*2 ser-*2 | y r*3 |
+chords                    | A{IV} | B{V} | E{I} | - B{V} E7 f#7 |

@@ -1,0 +1,24 @@
+# Happiness Is a Warm Gun, fourth part, "Happiness Is a Warm Gun" (figure 136.5)
+# The second phrase group is in 3/4, so its bars are three beats long.
+meter 4/4
+key C
+
+system
+caption 4/4, 2X
+chords   | C{I} | a{vi} | F{IV} | G{V} |
+
+system
+caption 3/4, 3X
+chords   | <3> C{I} | <3> a{vi} | <3> F{IV} | <3> G{V} |
+
+system
+caption 4/4, 2X
+chords   | C{I} | a{vi} | F{IV} | G{V} |
+
+system
+caption 4/4
+chords   | f{iv} | - | - | - |
+
+system
+caption 4/4, 2X
+chords   | C{I} | a{vi} | F{IV} | G{V} |

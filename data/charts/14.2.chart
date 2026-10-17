@@ -1,0 +1,18 @@
+# Hey Jude, bridge (figure 14.2)
+# Eleven and a half bars. Pollack's "-7" bars are the F chord turned into F7 (V-of-IV). The
+# bassline is typed only for the first phrase; the blank under bar 5 is read as the F held.
+# In the second phrase the F7 bar is shortened by half: it is drawn as two beats of a full bar.
+#? Bass octave chosen for range (Bb2 down to C2, up to F2).
+#? The half bar (F7 for two beats) will play with a two-beat gap after it.
+key F
+
+system
+chords              | Bb{IV} | g{ii} | C{V} | F{I} | F7{(V-of-IV)} |
+bass "Bassline"     | Bb2 A2 | G2 F2 | E2 C2 | F2 | - |
+
+system
+chords              | Bb{IV} | g{ii} | C{V} | F{I} | F7*2 |
+caption the F7 bar is half a measure
+
+system
+chords              | C7{V} | - |

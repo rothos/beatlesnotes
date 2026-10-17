@@ -1,0 +1,8 @@
+# Help!, verse: the eight-bar phrase, played twice (figure 6.5)
+key A
+
+system
+chords   | A{I} | - | c#{iii} | - |
+
+system
+chords   | f#{vi} | - | D{IV} G{flat-VII} | A{I} |

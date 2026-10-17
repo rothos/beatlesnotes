@@ -1,0 +1,8 @@
+# Good Night, special bridge: a feint toward C major (figure 156.5)
+key G
+
+system
+chords | G{I = C: V} | A{C: V-of-ii} | - | d{C: ii} |
+
+system
+chords | G{I = C: V} | C{IV = C: I} | D{V} | C{IV} D{V} |

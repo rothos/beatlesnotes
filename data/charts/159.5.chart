@@ -1,0 +1,7 @@
+# Hey Bulldog, outro (figure 159.5)
+# The two-bar ostinato over I and v, repeated twelve times before the final fade-out.
+key C
+
+system
+chords  | C{I} | g{v} |
+caption ... (twelve iterations in all)

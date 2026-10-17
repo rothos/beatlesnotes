@@ -1,0 +1,18 @@
+# Day Tripper, verse (figure 4.2); the fourth phrase is analysed in both E and c#
+#? Pollack types "VI" (E:) under the G# chord; G# is III (V-of-vi) in E, so VI may be a slip. Kept as typed.
+key E
+
+system
+chords   | E{I} | - | - | - |
+
+system
+chords   | A{IV} | - | E{I} | - |
+
+system
+chords   | F#{V-of-V} | - | - | - |
+
+system
+chords   | A{E: IV / c#: VI} | G#{E: VI / c#: V} | C#{c#: I#3} | B{E: V / c#: VII} |
+
+system
+chords   | E{I} | - | - | - |

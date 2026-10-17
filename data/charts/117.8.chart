@@ -1,0 +1,16 @@
+# A Day in the Life, middle section, the orchestral portion (figure 117.8)
+# Two parallel ten-bar phrases.
+meter 2/4
+key G
+
+system
+chords   | C{IV} | - | G{I} | - | D{V} |
+
+system
+chords   | - | A{V-of-V} | - | e{vi} | - |
+
+system
+chords   | C{IV} | - | G{I} | - | D{V} |
+
+system
+chords   | - | A{V-of-V} | - | e{vi} d | C{IV} D{V} |

@@ -1,0 +1,10 @@
+# If I Fell, extension of the alternate verse, from m. 9 (figure 50.4)
+# Pollack's "D7/9" (D7 with an added ninth) is written D9; his "I ..... V-of-IV" spans its two
+# bars, the I turning into V-of-IV.
+key D
+
+system m. 9
+chords   | D9{I ..... V-of-IV} | - | G{IV} |
+
+system
+chords   | g{iv} | - | D{I} | A7{V} |

@@ -1,0 +1,22 @@
+# Back in the U.S.S.R., refrain (figure 130.3)
+# Six bars: two two-bar phrases, then a last phrase in two variants, by what follows. Pollack's
+# #ifdef labels name the variants.
+# Verse to follow: rhythm from his count row: the IV comes in on the "and" of 1, the bass slides
+# D, D# (on 2), E (on the "and" of 2), and E holds as V. He types D# in the chord row; the essay
+# makes it the bassline ("sliding from D up to E via D#"), so it is shown as a bass row here.
+# Added: the bass A under the first bar of each variant is not typed (the chord root).
+key A
+
+system
+chords | A{I} | C{flat-III} |
+
+system
+chords | D{IV} | - |
+
+system Verse to follow
+chords "Chords"   | A{I} | -*0.5 D{IV}*1 E{V}*2.5 |
+bass "Bass"       | A2 | -*0.5 D3*0.5 D#3*0.5 E3*2.5 |
+
+system Refrain to follow
+chords "Chords"   | A{I} | -{(V-of-IV)} |
+bass "Bass"       | A2 | A2 B2 Cn3 C#3 |

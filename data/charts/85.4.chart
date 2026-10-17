@@ -1,0 +1,9 @@
+# I'm Looking Through You, bridge (figure 85.4)
+# Pollack's "V4 -----> 3" runs across the last two bars: the 4-3 suspension resolves in the last bar.
+key Ab
+
+system
+chords   | Db{IV} | - | Ab{I} | - |
+
+system
+chords   | Db{IV} | - | Eb{V4 --> 3} | - |

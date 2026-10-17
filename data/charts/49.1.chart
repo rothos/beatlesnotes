@@ -1,0 +1,10 @@
+# A Hard Day's Night, verse (figure 49.1)
+# The first four-bar phrase is played twice (mm. 1-4 and 5-8, Pollack's "2X").
+key G
+
+system mm. 1-4, 5-8
+caption 2X
+chords   | G{I} C{IV} | G{I} | F{flat-VII} | G{I} |
+
+system mm. 9-12
+chords   | C{IV} | D{V} | G{I} C{IV} | G{V} |

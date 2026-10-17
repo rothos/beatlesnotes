@@ -1,0 +1,11 @@
+# Day Tripper, the ostinato riff (figure 4.1)
+# Pollack types it on an eighth-note grid under the counts, so the rhythm is marked: E held three
+# eighths, the D tied across the barline, the F# held two eighths. Fx is F double-sharp (the
+# hammer-on to G#). Octaves follow the guitar/bass riff: up from low E to the E an octave above,
+# dropping the octave when it repeats, as the essay notes.
+#? Register: written at sounding pitch (E2-E3); check against the record.
+key E
+
+system
+words "Beats"  | 1*0.5 &*0.5 2*0.5 &*0.5 3*0.5 &*0.5 4*0.5 &*0.5 | 1*0.5 &*0.5 2*0.5 &*0.5 3*0.5 &*0.5 4*0.5 &*0.5 |
+voice "Riff"   | E2*1.5 F##2*0.5 G#2*0.5 B2*0.5 E3*0.5 D3*0.5 | -*1 B2*0.5 F#2*1 B2*0.5 D3*0.5 E3*0.5 |

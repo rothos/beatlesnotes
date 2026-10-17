@@ -1,0 +1,7 @@
+# I'm Looking Through You, intro (figure 85.1)
+# The I6/4 is written Ab/Eb (second inversion, per the essay). The "3X" over the last bar is kept
+# as a bar mark.
+key Ab
+
+system
+chords   | Ab/Eb{I6/4} | Eb{V} | [3X] Ab{I} Db{IV} |

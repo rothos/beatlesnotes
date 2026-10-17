@@ -1,0 +1,22 @@
+# Every Little Thing, verse (figure 61.1)
+# Pollack's "Rhythm" counts mark the syncopated harmonic rhythm of mm. 2 and 4: the second chord
+# comes in on beat 2 and holds for the rest of the bar. In m. 4 the bassline moves D (beat 2) to
+# C# (beat 4); he types no bass on beat 1, left silent here. The bass row is left out of the
+# first system, where he types nothing in it.
+# Mm. 5-6, the "turn" around A: B A G# A in half notes, the A of m. 5 a passing note under the
+# sustained b chord, the G# putting the E chord in first inversion.
+#? Bass octave (B2 A2 G#2, D3 C#3) chosen for range; check against the record.
+key A
+
+system
+words "Rhythm"      | r | 1 2 3 4 |
+chords "Chords"     | A{I} | D{IV}*1 E{V}*3 |
+
+system
+bass "Bassline"     | r | r D3*2 C#3 |
+words "Rhythm"      | r | 1 2 3 4 |
+chords "Chords"     | A{I} | G{flat-VII}*1 D{IV}*3 |
+
+system
+bass "Bassline"     | B2*2 A2*2 | G#2*2 A2*2 |
+chords "Chords"     | b{vi} | E{V}*2 A{I}*2 |

@@ -1,0 +1,16 @@
+# Carry That Weight, outro (figure 190.3), overlapping the last two bars of the second refrain
+# Pollack types the beats (1 2 3 4) over each bar: C for three beats, then G with B in the bass
+# (his "G6/3", written G/B) on beat 4, over the bass line C B. The second system's A (marked "?")
+# carries its own bass A. Bass octaves are a choice for range.
+key C
+
+system
+caption last two measures of second refrain
+words              | 1 2 3 4 | 1 2 3 4 |
+chords             | C{I}*3 G/B{V} | - |
+bass "Bass line"   | C3*3 B2 | - |
+
+system
+words              | 1 2 3 4 | 1 2 3 4 |
+chords             | A{?} | - |
+bass "Bass line"   | A2 | - |

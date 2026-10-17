@@ -1,0 +1,18 @@
+# I Wanna Be Your Man, refrain (figure 40.1)
+# The chromatic guitar riff, lined up as typed: f#-f-e leads into a d# on the downbeat of bar 1,
+# held into bar 2, where e-d#-d at the end of the bar leads to c# on bar 3, and so on, two bars to
+# each cell. The descents are given a beat each after the hold. The d# typed over bar 5 ends the
+# typed riff; bars 6-8 have none and are left silent.
+# Pollack's ** footnote (just after the chart) is kept as a caption.
+#? Riff octave (F#3 down to C#3) is a guess at the guitar register.
+#? Bars 6-8: the riff isn't typed after the d#; left as rests rather than guessing.
+key E
+
+system
+voice "Riff"   F#3 F3 E3 | D#3 | - E3 D#3 D3 | C#3 | - F#3 F3 E3 |
+chords         r r r | F#{V-of-V} | B{V} | E{I} | C#{V-of-ii} |
+
+system
+caption ** That f#-minor chord just might be F#-Major but I find the recording too muddy to tell for sure.
+voice "Riff"   | D#3 | r | r | r |
+chords         | f#{ii **} | B{V} | E{I} | - |

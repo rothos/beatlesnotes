@@ -1,0 +1,15 @@
+# I'll Be Back, verse, the six-bar phrase: two vocal parts in thirds over a descending bass
+# (figure 19.2). Pollack's suspension figures (6-5 over 4-3, and 6-5-4-5 over 4-3-2-3) go under the
+# chord row; he notates one chord per bar on purpose, since the bass holds through the suspension.
+# Bar 4: the four figures mark the four beats, so the last beat holds two eighths (B C# / G# A).
+# Elsewhere notes share the bar equally. The parenthesized C# and A over the final A chord are
+# kept as notes (Pollack brackets them as implied).
+#? Octaves: the vocal parts are placed around middle C (soprano C4-E4, alto A3-C4), bass A2 down
+#? to E2; the voices may sit an octave higher.
+key a
+
+system
+voice "Soprano"  | C4 C4 D4 | E4 E4 D4 B3 | C4 C4 | C4 B3 A3 B3*0.5 C#4*0.5 | C#4 | - |
+voice "Alto"     | A3 A3 B3 | C4 C4 B3 G3 | A3 A3 | A3 G#3 F#3 G#3*0.5 A3*0.5 | A3 | - |
+bass "Bass"      | A2 | G2 | F2 | E2 | A2 | - |
+chords "Chords"  | a{i} | G{flat-VII 6/4} - -{5/3} - | F{flat-VI} | E{V 6/4} -{5/3} -{4/2} -{5/3} | A{I} | - |

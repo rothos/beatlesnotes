@@ -1,0 +1,11 @@
+# Ask Me Why, outro (figure 33.5)
+# The second variant verse extended for the triple "you-ou-ou", ending on the I 9/7 chord that
+# Pollack marks "??": B the lowest note, the other notes of E9 present, possibly without the root.
+# The final chord is written E9/B for that B in the bass (his "E9" over "7").
+key E
+
+system m. 1
+chords   E7{I} f#7{ii} | g#7{iii} | A{IV} | g#7{iii} | A7{IV} | E{I} |
+
+system m. 6
+chords   | A7{IV} | E{I} | A7{IV} | E9/B{I 9/7 ??} |

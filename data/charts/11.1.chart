@@ -1,0 +1,11 @@
+# Good Day Sunshine, refrain, first two bars (figure 11.1)
+# Pollack's beat row places everything: accents on beats 1 and 4 of the first bar and beat 3 of
+# the second (3 + 3 + 2), the F# chord arriving on beat 4 of the first bar.
+#? "Day" and "shine" are typed a little after beats 2 and 1; they are placed on the beat.
+key A
+
+system
+words "Beats"     | 1 2 3 4 | 1 2 3 4 |
+words "Accents"   | >*3 > | r*2 >*2 |
+words "Words"     | Good Day*2 Sun | shine*2 (daa-de-da-de)*2 |
+chords "Chords"   | B{V-of-V}*3 F#{V-of-(V-of-V)} | - |

@@ -1,0 +1,8 @@
+# I Am the Walrus, second verse (figure 121.4); the G in bars 1 and 3 is parenthesised by Pollack, as in fig. 121.2
+key A
+
+system
+chords   | A{I} (G) | f#{vi}*2 F{flat-VI} G{flat-VII} | A{I} (G) |
+
+system
+chords   | F{flat-VI} | B{V-of-V} | - |

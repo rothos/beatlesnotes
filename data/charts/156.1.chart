@@ -1,0 +1,7 @@
+# Good Night, intro: the half-verse fragment (figure 156.1)
+# Pollack's "4 -> 3" under the D is a suspension: the fourth (G) resolving to the third (F#),
+# shown as Dsus4 moving to D across the bar.
+key G
+
+system
+chords | G{I} | b7{iii} | a7{ii} | Dsus4{V 4} D{3} |

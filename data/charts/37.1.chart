@@ -1,0 +1,9 @@
+# Don't Bother Me, intro (figure 37.1)
+# The bassline figure Pollack types under the chords: D F# in bar 1, E D in bar 2, landing on E with
+# the e chord in bar 3. Bar 4 holds.
+#? Bass octave (D3 F#3 E3) chosen for range; it may sound an octave lower on the record.
+key e
+
+system
+chords "Chords"     | D{VII} | - | e{i} | - |
+bass "Bassline"     | D3 F#3 | E3 D3 | E3 | - |

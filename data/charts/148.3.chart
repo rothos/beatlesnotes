@@ -1,0 +1,22 @@
+# Everybody's Got Something to Hide Except Me and My Monkey, refrain (figure 148.3)
+# The "2X" and the "3/4 3/4 4/4 ..." meter marks over the last two phrases are kept as bar marks.
+#? The two 3/4 bars in each of the last two phrases are played as full 4/4 bars: the format has no way to shorten a single bar.
+key E
+
+system
+chords   | [2X] E{I} | - | - | - |
+
+system
+chords   | A{IV} | - | - | - |
+
+system
+chords   | D{flat-VII} | - | - | - |
+
+system
+chords   | B{V} | - | - | - |
+
+system
+chords   | [3/4] E{I} | [3/4] D{flat-VII} | [4/4] G{flat-III} | - |
+
+system
+chords   | [3/4] E{I} | [3/4] G{flat-III} | [4/4] D{flat-VII} | - |

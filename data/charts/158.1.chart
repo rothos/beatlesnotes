@@ -1,0 +1,8 @@
+# All Together Now, intro (figure 158.1)
+# A two-beat pickup on beats 3 and 4 (the F# is an appoggiatura chord, no numeral of its own), then
+# the first of eight bars of G; the "..." of the typed chart is left out.
+key G
+
+system
+words      3 4 | 1 2 3 4 |
+chords     F# G | G{I} |

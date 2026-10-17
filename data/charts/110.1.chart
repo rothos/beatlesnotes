@@ -1,0 +1,14 @@
+# Fixing a Hole, intro (figure 110.1)
+# Harpsichord: a held top C over two inner lines, A G# Ab and F E Eb D, with Pollack's chord names
+# (C-aug written Caug, B-flat 9 written Bb9). The intro is two and a half bars; his "2 beats"
+# over the last bar is kept as a bar mark.
+# Octaves: close position under the top C (C5 over A4 and F4).
+#? The last bar is only two beats long but is played as a full bar: the format can't shorten one bar.
+#? Pollack's "F9" over i7- reads as an f-minor seventh (F Ab C Eb in the voices); kept as he spells it.
+key F
+
+system
+voice "Top"      | C5 | - | [2 beats] - |
+voice "Middle"   | A4 G#4 | Ab4 | - |
+voice "Middle"   | F4 E4 | Eb4 D4 | - |
+chords           | F{I} Caug{V5+} | F9{i7-} Bb9{IV} | - |

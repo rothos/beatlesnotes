@@ -1,0 +1,11 @@
+# All Together Now, verse (figure 158.2)
+# The beat counts over the second line place the syncopated D on beat 4 of m. 6 and the G on beat
+# 4 of m. 7.
+key G
+
+system
+chords   | G{I} | - | D{V} | - |
+
+system
+words    | r | r*3 4 | 1 2 3 4 | 1 r*3 |
+chords   | G{I} | -*3 D{V} | -*3 G{I} | - |

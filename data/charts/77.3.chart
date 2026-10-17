@@ -1,0 +1,10 @@
+# Drive My Car, refrain (figure 77.3)
+# The first two bars are played twice (Pollack's "2X"); the e chord is the pivot, vi in G and ii in D.
+key G
+
+system
+caption 2X
+chords | b{iii} | G{I} |
+
+system
+chords | b{iii} | e{vi = D: ii} A{V} | D{I} G{IV} | A{V} |

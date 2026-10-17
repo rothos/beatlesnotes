@@ -1,0 +1,12 @@
+# Hello Goodbye, second outro (figure 120.5)
+# The four-bar vamp over a C pedal (repeated six times and more into the fade): vocals and piano
+# move in parallel, fifths on A/D and G/C. The vocal is placed above the piano.
+# Pollack leaves the fourth bar blank in both upper parts; read as the G held over.
+#? Octaves (vocals C5 A4 G4 over piano E4 D4 C4) are chosen to make the fifths he describes; check against the record.
+#? Bar 4: blank in the chart; held G is a guess (it may be a rest).
+key C
+
+system
+voice "Vocals"     | C5 | - A4 | G4 G4 | - |
+voice "Piano"      | E4 | - D4 | C4 C4 | - |
+bass "Bassline"    | C3 | - | - | - |

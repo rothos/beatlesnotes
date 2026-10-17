@@ -1,0 +1,6 @@
+# I'll Get You, bridge (figure 34.2)
+# A "7" is typed under the E9; it is taken as a reminder that the ninth chord includes its seventh.
+key D
+
+system
+chords   | G7{IV} | - | D{I} | - | E9{V-of-V} | - | A{V} | - |

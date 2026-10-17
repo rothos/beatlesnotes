@@ -1,0 +1,15 @@
+# Ask Me Why, initial verse "I love you ..." (figure 33.1)
+# Thirteen bars in three phrases, led in by E7 f#7 on beats 3 and 4. Pollack types a beat row
+# ("beats: 1, 2, 3, 4") over the bars: the split bars have two chords of two beats each, and the
+# "- E7 f#7" bar holds E for two beats with E7 and f#7 on beats 3 and 4, as in the lead-in.
+#? Pollack's "E7" (I) and "g#7" sound on the record like E major 7th and g#-minor 7th; E7 is kept as typed but would play as a dominant seventh.
+key E
+
+system m. 1
+chords   E7{I} f#7{ii} | g#7{iii} | f#7{ii} B7{V} | E{I} | -*2 E7{I} f#7{ii} |
+
+system m. 5
+chords   | g#7{iii} | f#7{ii} B7{V} | E{I} | G#{V-of-vi} |
+
+system m. 9
+chords   | c#{vi} | - | A{IV} | F#9{V-of-V} | B{V} |

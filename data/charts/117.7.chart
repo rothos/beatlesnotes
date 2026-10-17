@@ -1,0 +1,16 @@
+# A Day in the Life, middle section, the "song" portion (figure 117.7)
+# ABAB quatrain of 5 + 5 + 5 + 4 bars.
+meter 2/4
+key E
+
+system
+chords   | E{I} | - | - | D{flat-VII} | - |
+
+system
+chords   | E{I} | B{V} | E{I} | B{V} | - |
+
+system
+chords   | E{I} | - | - | D{flat-VII} | - |
+
+system
+chords   | E{I} | B{V} | E{I} | B{V} |

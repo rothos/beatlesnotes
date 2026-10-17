@@ -1,0 +1,8 @@
+# Drive My Car, verse (figure 77.2)
+# Eight bars: the first two bars are played three times (Pollack's "3X"), then the last two.
+# The final D is I in D and, heard ahead, V of G.
+key D
+
+system
+caption bars 1-2: 3X
+chords | D{I} | G{IV} | a{ii} | - D{I = G: V} |

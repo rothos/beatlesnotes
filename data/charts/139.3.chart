@@ -1,0 +1,14 @@
+# Blackbird, refrain (figure 139.3)
+# The guitar's parallel tenths, top voice above the bass, as in fig. 139.1. The phrases are 4 + 5
+# bars. Pollack's IVs fall on the second half of bars 2 and 4 (the C under E): he hears each
+# downbeat as an appoggiatura to the C-major chord that follows, so the numerals go there.
+# Octaves as in 139.1: the bass F3 down to Bb2, the top voice a tenth above.
+key G
+
+system
+voice   | A4 G4 | F4 E4 | D4 - | E4 - |
+bass    | F3 E3 | D3 C3{IV} | Bb2 - | C3{IV} - |
+
+system
+voice   | A4 G4 | F4 E4 | D4 - | C#4 - | Cn4 |
+bass    | F3 E3 | D3 C3{IV} | Bb2 - | A2{V-of-V} - | D3{V} |

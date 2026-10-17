@@ -1,0 +1,13 @@
+# Any Time at All, verse (figure 17.2)
+# The chromatic walking bassline Pollack types under the chords, one note to a bar.
+# Added: the last bar's bass D is held from the bar before (he types none there).
+#? Bass octaves (D3 down to A2, C#3) chosen for range; check against the record.
+key D
+
+system
+chords "Chords"     | D{I} | f#{iii} | b{vi} | g{iv} | D{I} | A{V} |
+bass "Bassline"     | D3 | C#3 | B2 | Bb2 | A2 | C#3 |
+
+system
+chords "Chords"     | D{I} | f#{iii} | b{vi} | g{iv} | D{I} | A{V} | D{I} | - |
+bass "Bassline"     | D3 | C#3 | B2 | Bb2 | A2 | C#3 | D3 | - |

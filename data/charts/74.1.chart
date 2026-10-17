@@ -1,0 +1,27 @@
+# I've Just Seen a Face, intro (figure 74.1)
+# Three rows as Pollack labels them: the top-most line, the chords, and the long scalar bassline
+# (A down the scale a full octave to A, ending in the "La-da-da da'n'da" hook D C# B A G# A). The
+# bassline's A G# before bar 1 is a two-beat pickup (unaccompanied, as the essay says).
+# Holds are as typed: "- E" and "- C#" put the moving bass note on the second half of bars 4 and 8.
+# Pollack's figures on the D chord ("- 9/6/4", "- 7": passing tones over the held D) and on the E
+# chord ("E 6/4", "- susp") are kept as labels; the E 6/4 is written E/B to match his B in the bass.
+# His "verse --->" over the last bar is kept as a bar mark.
+#? Bass octave (A3 down to A2) chosen for range; the record may sit an octave lower.
+#? Top line octave (F#4 up to F#5) is a guess at the guitar register.
+meter 4/4
+key A
+
+system
+voice "Top-most line"  r r | F#4 | A4 | C#5 | F#5 |
+chords "Chords"        r r | f#{vi} | - | - | - |
+bass "Bassline"        A3 G#3 | F#3 | - | - | - E3 |
+
+system
+voice "Top-most line"  | D5 | E5 | F#5 | - |
+chords "Chords"        | D{IV} | -{9/6/4} | -{7} | - |
+bass "Bassline"        | D3 | - | - | - C#3 |
+
+system
+voice "Top-most line"  | E5 | D5 | [verse --->] C#5 |
+chords "Chords"        | E/B{V 6/4} | -{susp} | A{I} |
+bass "Bassline"        | B2 | A2 G#2 | A2 |

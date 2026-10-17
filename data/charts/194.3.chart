@@ -1,0 +1,11 @@
+# Free As a Bird, first bridge (figure 194.3), over a rising chromatic bass.
+# Last bar: Pollack's figures "8 --> 9 -> 8" over "4 --> 3" are the suspension over E, written as
+# three equal events: Esus4 (8 over 4), E9 (9 over 3, the vocal flip the essay calls "E9-making"),
+# then E (8 over 3).
+key A
+
+system
+chords   | F{flat-VI} | f#-dim{vii-of-flat-VII} | G{flat-VII} | A{I [?]} |
+
+system
+chords   | F{flat-VI} | f#-dim{vii-of-flat-VII} | G{flat-VII} | Esus4{V 8/4} E9{9/3} E{8/3} |

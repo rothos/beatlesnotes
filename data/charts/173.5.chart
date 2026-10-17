@@ -1,0 +1,9 @@
+# I've Got a Feeling, outro (figure 173.5)
+# Pollack's dashes under the diminished chords (an envelope over the A pedal) are kept as labels.
+key A
+
+system
+chords   | A{I} | Bdim{-} Cdim{-} | C#dim{-} | Cdim{-} Bdim{-} |
+
+system
+chords   | A{I} | -{(IV6/4)} | -{I} | -{(IV6/4)} |

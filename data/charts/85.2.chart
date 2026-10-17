@@ -1,0 +1,18 @@
+# I'm Looking Through You, verse (figure 85.2)
+# Pollack's lyric cue "(rest) I'm looking | through etc. ..." (showing where he puts the downbeat)
+# is kept as a caption. The "2X" marks are bar marks. His "(with flat-7 !)" under the D-flat is
+# written Db7, keeping his remark in the label.
+key Ab
+
+system
+caption (rest) I'm looking | through etc. ...
+chords   | [2X] Ab{I} Db{IV} | bb{ii7} | f{vi} | Eb{V4 --> 3} |
+
+system
+chords   | f{vi} | bb{ii6 --> 5} | Ab{I} Db{IV} | Eb{V} |
+
+system
+chords   | Ab{I} Db{IV} | bb{ii7} | Db7{IV (with flat-7 !)} | Ab{I} Db{IV} |
+
+system
+chords   | [2X] Ab{I} Db{IV} |

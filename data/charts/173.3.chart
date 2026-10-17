@@ -1,0 +1,12 @@
+# I've Got a Feeling, bridge (figure 173.3)
+# Pollack's D6/3 (first inversion) is written D/F#, and his "G#dim." G#dim7 (his vii-o7).
+key A
+
+system
+chords   | E{V} | - | G{flat-VII} | - |
+
+system
+chords   | D{IV} D/F# | G{flat-VII} G#dim7{vii-o7} |
+
+system
+chords   | A{I} | - | - | - |

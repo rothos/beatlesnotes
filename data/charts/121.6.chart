@@ -1,0 +1,11 @@
+# I Am the Walrus, intro-redux (figure 121.6): a varied repeat of the intro's descending chords
+key A
+
+system
+chords   | B{V-of-V} A | G F | E{V7 glissando} |
+
+system
+chords   | B{V-of-V} A | G F | E{V} F{flat-VI} |
+
+system
+chords   | B{V-of-V} | - |

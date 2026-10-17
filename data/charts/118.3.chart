@@ -1,0 +1,10 @@
+# All You Need Is Love, refrain (figure 118.3)
+# Beat counts (4 4 4 4 / 4 4 4 3) kept as marks; the last bar is 3 beats.
+# Pollack types "I" in the chord row of the last bar; it is the G chord.
+key G
+
+system
+chords | [4] G{I} a{ii7/11} | [4] D{V} | [4] G{I} a{ii7/11} | [4] D{V} |
+
+system
+chords | [4] G{I} B{V-of-vi} | [4] e{vi} | [4] C{IV} D{V} | [3] <3> G{I} |

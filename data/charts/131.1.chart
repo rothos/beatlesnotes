@@ -1,0 +1,21 @@
+# Dear Prudence, intro (figure 131.1)
+# Four bars of drone on D while the lead guitar works slowly down a scale, then the ostinato
+# begins: the "cuckoo clock" F#-D figure on top and the tenor line A C B Bb A over the D pedal.
+# Pollack's "(F#)" in parentheses stands over the first two beats, which are obscured by the
+# cross-fade from the previous track but "must be there, by implication"; it is shown as the
+# first note of the scale. The typed "..." after the third ostinato bar means the pattern goes
+# on; the bar is filled out with the same figure.
+# Ostinato notes are given equal shares (the typed spacing, F# D F# ... D, is not a reliable rhythm).
+#? Octaves are chosen for range: the scale F#5 down to G4, the ostinato F#4/D4 over a tenor line A3-C4; the record's registers may differ.
+#? The ostinato rhythm in equal quarters is a simplification of the picking pattern; check against the record.
+key D
+
+system
+voice           | F#5*2 E5*2 | D5 C5 | B4 A4 | G4 G4 |
+chords          | D{I} | - | - | - |
+caption fade-in ... (F#) implied under the cross-fade
+
+system ostinato begins
+voice           | F#4 D4 F#4 D4 | F#4 D4 F#4 D4 | F#4 D4 F#4 D4 |
+voice "Tenor"   | A3 C4 | B3 Bb3 | A3 |
+chords          | D{I} | - | - |

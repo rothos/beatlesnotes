@@ -1,0 +1,9 @@
+# Hello Goodbye, the backing vocals' "Hello Goodbye" lick (figure 120.3)
+# Pollack types only the four pitches and syllables, no bar or rhythm: written as one bar of four
+# equal notes, A-flat dropping to E (the interval he discusses), then D and C.
+#? Rhythm and octave are guesses: one note per syllable in even quarters, A-flat4 down to C4.
+key C
+
+system
+voice "Backing vocals"  | Ab4 E4 D4 C4 |
+words                   | Hel- lo Good- bye |

@@ -1,0 +1,9 @@
+# I'm a Loser, refrain (figure 57.3)
+# The first two bars are played twice ("2X" bracket over them).
+key G
+
+system
+chords  | [2X] a7{ii} | D{V} | G{I} | e{vi} |
+
+system
+chords  | a{ii} | F{flat-VII} D{V} |

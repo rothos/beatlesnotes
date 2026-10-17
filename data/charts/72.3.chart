@@ -1,0 +1,6 @@
+# Another Girl, bridge (figure 72.3)
+# Eight bars in C, pivoting back to A: the fifth bar's C is I in C and III in a-minor; the A in
+# bar 7 is the surprise (a Major where a-minor is expected).
+
+system
+chords   | C{C: I} | G{V} | C{I} | G{V} | C{C: I / a: III} | E{V} | A{I (surprise!)} | E{V} |

@@ -1,0 +1,13 @@
+# Good Night, bridge: an elaborate pedal point on G (figure 156.4)
+# Four typed rows, top to bottom: an upper line F# G / F# (held) / G (held); an inner line
+# alternating B and C; a lower line alternating D and E; and the bass G held all eight bars.
+# Pollack's figures under each bar (I 7/5/3, 6/4, 5/3, ..., 8/5/3 in bar 5) are kept as labels
+# under the bass.
+#? Octaves: voiced D4 / B4 / F#5 over a low G2 to keep the typed order of the rows; the strings may voice it closer or higher.
+key G
+
+system
+voice   | F#5 G5 | F#5 G5 | F#5 | - | G5 | - | - | - |
+voice   | B4 | C5 | B4 | C5 | B4 | C5 | B4 | C5 |
+voice   | D4 | E4 | D4 | E4 | D4 | E4 | D4 | E4 |
+bass    | G2{I 7/5/3} | -{6/4} | -{5/3} | -{6/4} | -{8/5/3} | -{6/4} | -{5/3} | -{6/4} |

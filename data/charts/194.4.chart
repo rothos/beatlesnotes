@@ -1,0 +1,8 @@
+# Free As a Bird, guitar solo: arrival in C, shortened by two bars, G pivoting back to A (figure 194.4).
+key C
+
+system
+chords   | C{C: I} a{vi} | A-flat{flat-VI} G{V} | C{I} a{vi} | f{iv} G{V} |
+
+system
+chords   | C{I} a{vi} | f{iv} G{C: V / A: flat-VII} | A{A: I} |

@@ -1,0 +1,11 @@
+# Dear Prudence, refrain (figure 168.3)
+# The last two bars of A stand for the "dramatic pause" of indeterminate length.
+meter 3/4
+key A
+
+system
+caption 2X
+chords   | G{flat-VII} | D{IV} | A{I} | - |
+
+system
+chords   | - | - |

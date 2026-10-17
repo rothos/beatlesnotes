@@ -1,0 +1,14 @@
+# Because, mini bridge (figure 184.2)
+# Two bars of four-voice (SATB) voice leading, landing on the c# that starts the verse. The D
+# chord "melts" down to c# through a diminished seventh rooted on G# with D in the bass, which
+# Pollack calls "g# dim.4/3" (spelled here g#dim7/D); his "??" means no Roman numeral fits.
+# The tenor has no note typed over the c# chord, so it is left silent there.
+#? Octaves (S A4, A F#4, T D4, B D3) are chosen as a close-position vocal/keyboard voicing; the record's register may differ.
+key c#
+
+system
+voice "S"   | A4 | G#4 | - |
+voice "A"   | F#4 | Fn4 | E4 |
+voice "T"   | D4 | B3 | r |
+voice "B"   | D3 | D3 | C#3 |
+chords      | D{flat-II} | g#dim7/D{??} | c#{i} |

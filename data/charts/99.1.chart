@@ -1,0 +1,15 @@
+# For No One, verse (figure 99.1)
+# A descending bassline under a nominally sustained B chord, then I-IV-flat-VII-I with the
+# chromatic inner voice G# G F# "buried within the texture". Blank cells in the typed chart are
+# read as holds.
+#? Octaves chosen for range: bass B2 down to F#2, inner voice G#4-F#4.
+key B
+
+system
+chords                | B{I} | - | - | - |
+bass "Bass"           | B2 | A#2 | G#2 | F#2 |
+
+system
+chords                | E{IV} | A{flat-VII} | B{I} | - |
+voice "Inner voice"   | G#4 | Gn4 | F#4 | - |
+bass "Bass"           | E2 | A2 | B2 | - |

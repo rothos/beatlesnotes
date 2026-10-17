@@ -1,0 +1,8 @@
+# Good Morning Good Morning, intro (figure 116.2)
+# Pollack's beat counts place the second chord of mm. 1 and 3 on the off-beat: D on the "&" of 2,
+# and the (E) on the "&" of 1. The middle bar is played twice ("2X"), making four bars.
+key A
+
+system
+words "Beats"       | 1 2*0.5 &*0.5 3 4 | [2X] 1 2 3 4 | 1*0.5 &*0.5 2 3 4 |
+chords              | A{I}*1.5 D{IV}*2.5 | A{I}*2 D{IV}*2 | A{I}*0.5 (E){(V)}*3.5 |

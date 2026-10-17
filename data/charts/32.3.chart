@@ -1,0 +1,8 @@
+# Do You Want to Know a Secret, bridge: six bars, pivoting to f# minor and back (figure 32.3).
+key f#
+
+system
+chords   | [m.1/3, 2x] A{f#: III / E: IV} f#{f#: i} | c#{v} b{iv} |
+
+system
+chords   | [m.5] f#{f#: i / E: ii} | B{E: V} |

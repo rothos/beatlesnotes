@@ -1,4 +1,5 @@
 # I Saw Her Standing There, verse mm. 9-16, Paul and John's two-part vocal (figure 26.2)
+# lyrics as typed by Pollack are omitted here
 # Pollack types the bars in quarter-note columns: B is a half note, C# and D# quarters, and so on.
 # A blank at the start of a bar holds the last note over (the G of "anoth-" into m. 11) or, in
 # mm. 12 and 15, leaves beat 1 empty: the next note comes in on beat 2.
@@ -14,9 +15,7 @@ key E
 system m. 9
 voice "Paul"   | B3*2 C#4 D#4 | E4*2 F#4 G4 | -*1 F#4 E4*2 |
 voice "John"   | G#3*2 G#3 A3 | B3*2 B3 C#4 | -*1 B3 A3*2 |
-words          | So_how*2 could I | dance*2 with anoth- | r er,*3 |
 
 system m. 12
 voice "Paul"   | r E5 E5 E5 | E5*2 D5*2 | B4*3 G4 | r E4*3 |
 voice "John"   | r C5 C5 C5 | B4*2 G4*2 | F#4*3 G4 | r E4*3 |
-words          | r whoo, when I | saw*2 her*2 | stand-*3 ing | r there*3 |

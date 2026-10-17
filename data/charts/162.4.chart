@@ -1,0 +1,9 @@
+# Don't Let Me Down, alternate verse (figure 162.4)
+# The "(IV?)" in the second half of the last bar is the phantom IV of fig. 162.1; the (A) is added to carry it.
+key E
+
+system
+chords  | E{I} | - | B{V} | - |
+
+system
+chords  | B{V} | - | E{I} | - (A){(IV?)} |

@@ -1,0 +1,10 @@
+# Cry Baby Cry, verse (figure 154.2): the six-bar phrase, played twice
+# Pollack's "Cb7" is C with a flat seventh, written here as C7. The bass descends chromatically
+# under the held e-minor chord (giving e, E-flat aug, G 6/4, D-flat half-dim7, as the essay says).
+#? Bass octave (E3 down to C3, then G2) chosen for range.
+key G
+
+system
+caption 2X
+chords "Chords"     | e{vi} | - | - | - | C7{IV} | G{I} |
+bass "Bassline"     | E3 | Eb3 | D3 | Db3 | C3 | G2 |

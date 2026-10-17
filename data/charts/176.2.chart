@@ -1,0 +1,12 @@
+# For You Blue, verse: twelve-bar blues with IV in bar 2 and V in the last bar (figure 176.2).
+# The essay's rising bass cliche in the penultimate bar (D F# G G# A) is not in the chart.
+key D
+
+system
+chords   | D{I} | G{IV} | D{I} | - |
+
+system
+chords   | G{IV} | - | D{I} | - |
+
+system
+chords   | A{V} | G{IV} | D{I} | A{V} |

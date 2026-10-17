@@ -1,0 +1,12 @@
+# Doctor Robert, verse (figure 100.1)
+# The "2X" over the first phrase is kept as a bar mark.
+key B
+
+system
+chords   | [2X] A{flat-VII} | - | - | - |
+
+system
+chords   | F#{V} | - | - | - | - | - |
+
+system
+chords   | E{IV} | F#{V} | B{I} | - |

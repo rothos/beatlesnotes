@@ -1,0 +1,13 @@
+# Hey Bulldog, refrain (figure 159.4)
+# The upper row is the chromatic rise G Ab A Bb C Db D Eb, two notes to a bar over the slow
+# c-f harmony; it "does not effect the harmony at a grammatical level". Pollack's "..." in bar 5
+# is left as a silence in that row.
+#? Which part carries the rise (vocal, guitar or piano) isn't named in the essay, and the octave (G4 up to Eb5) is a guess.
+key c
+
+system
+voice   | G4 Ab4 | An4 Bb4 | C5 Db5 | Dn5 Eb5 | r |
+chords  | c{i} | - | f{iv} | - | c{i} f{iv} |
+
+system
+chords  | c{i} | - | - | - |

@@ -1,0 +1,10 @@
+# From Me to You, bridge (figure 28.2)
+# Pivot to F: the F chord is I in F and IV in C. The last chord, typed "#5(aug)", is G augmented
+# (the melody's D stretched to D#).
+key C
+
+system
+chords | g{F: ii} | C7{F: V} | F{F: I = C: IV} | - |
+
+system
+chords | D7{V-of-V} | - | G{V} | Gaug |

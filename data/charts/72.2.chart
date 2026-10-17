@@ -1,0 +1,14 @@
+# Another Girl, verse (figure 72.2)
+# Sixteen bars, AABC: the first four-bar phrase is played twice (Pollack's "2X"), then the
+# four bars of sustained IV and the two-bar I-IV refrain, twice.
+key A
+
+system
+caption 2X
+chords   | A{I} | G{flat-VII} | A{I} | D{IV} |
+
+system
+chords   | D{IV} | - | - | E{V} |
+
+system
+chords   | A{I} | D{IV} | A{I} | D{IV} |

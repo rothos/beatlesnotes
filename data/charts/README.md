@@ -43,8 +43,10 @@ chords "Bassline"  | B A           | G F{V-of-V} |
   `b-flat`, `G#dim7`, `D/F#`, `Esus4`, `Aaug`, `Cmaj7`, `e-half-dim7`.
 - `bass` a bass line: notes with octaves (below).
 - `voice` a melody or inner line: notes with octaves.
-- `words` lyrics, beat counts or other text lined up with the bars: drawn, never played. Join words
-  that belong to one event with `_` (`so_how`).
+- `words` beat counts, accents or cues lined up with the bars: drawn, never played. Join words that
+  belong to one event with `_` (`resume_hook`). Don't copy song lyrics into a file: leave a lyric line
+  out (the typed version on the page still shows it) and note `# lyrics as typed by Pollack are
+  omitted here`.
 
 The label in quotes is what the row is called on the page ("Topline", "Bassline", "Paul"). Leave it
 out when Pollack doesn't name the row. `contour` draws a line of notes at heights that follow the

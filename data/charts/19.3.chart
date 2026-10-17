@@ -1,0 +1,9 @@
+# I'll Be Back, bridge 1, "I love you so ...": 6.5 bars, bar 5 a half-measure (figure 19.3).
+# The half-measure is written as a two-beat bar. The chord changes in the last two bars are
+# syncopated (essay), but the rhythm isn't marked, so they share the bars equally.
+#? Pollack's "A: vi" is typed under the b chord, but b is ii of A and f# is vi; attached here to f#,
+#? the pivot chord. Check the intended reading.
+key f#
+
+system
+chords   | f#{f#: i / A: vi} | - | b{f#: iv} | - | [* half-measure] <2> E{A: V} | D{IV} E{V} | D{IV} E{V} |

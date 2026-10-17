@@ -1,0 +1,18 @@
+# Hold Me Tight, verse (figure 39.1)
+# The line cliché is an inner voice: up by half steps A B-flat B C in the first phrase, down
+# F E-flat D D-flat in the second. Pollack types "IV" under the b-flat minor in the last phrase
+# (iv in the second); kept as typed.
+#? Octave of the line cliché (A4-C5, F4-Db4) is a guess for an inner voice in the guitars.
+key F
+
+system
+caption 2X
+voice "Line cliché"   | A4 | Bb4 | Bn4 | C5 |
+chords "Chords"       | F{I} | B-flat{IV} | G{V-of-V} | C{V} |
+
+system
+voice "Line cliché"   | F4 | Eb4 | D4 | Db4 |
+chords "Chords"       | F{I} | F7{V-of-IV} | B-flat{IV} | b-flat{iv} |
+
+system
+chords "Chords"       | F{I} | b-flat{IV} | F{I} | C{V} |

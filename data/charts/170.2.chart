@@ -1,0 +1,16 @@
+# I Me Mine, verse (figure 170.2)
+# The last phrase: Paul's bassline descends chromatically A G# G F# F under a held a chord, the
+# F held on under F7 (his "....."); the bass octave is chosen for range.
+meter 3/4
+key a
+
+system
+caption 2X
+chords   | a{i} | - | D{IV} | - | G{flat-VII} | E7{V} | a{i} | - |
+
+system
+chords   | d{iv} | - | - | - | E9{V} | - | - | - |
+
+system
+chords              | a{i} | - | - | - | F7{VI} | - | - | - |
+bass "Bassline"     | A2 | G#2 | Gn2 | F#2 | Fn2 | - | - | - |

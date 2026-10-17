@@ -1,0 +1,9 @@
+# Here Comes the Sun, bridge phrase, played six times (figure 183.3)
+# The three bars are in 11/8, 4/4 and 7/8 (the essay). The 11/8 parses 3+3+3+2 eighths, which
+# gives the four chords of the first bar a dotted quarter each and a quarter for the last; he
+# types "D6/3" (D over F#). The 7/8 bar of E parses 2+2+3 and is held throughout.
+key A
+
+system
+caption 6X; meters 11/8, 4/4, 7/8
+chords   | <5.5> C{flat-III}*1.5 G{flat-VII}*1.5 D{IV}*1.5 D/F#*1 | A{I} | <3.5> E{V} |

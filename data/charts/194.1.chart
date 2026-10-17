@@ -1,0 +1,10 @@
+# Free As a Bird, intro: the whole verse progression, two chords a bar (figure 194.1).
+# Bar 6's G is labelled "G" in Pollack's C-major row, read as V of C. The last bar's "4 ---> 3" is
+# the 4-3 suspension over the single E chord, written out as Esus4 then E.
+key A
+
+system
+chords   | A{A: I} f#{vi} | F{flat-VI} E{V} | A{I} f#{vi} | d{iv} E{V} |
+
+system
+chords   | A{I} f#{vi} | d{A: iv / C: ii} G{C: V} | C{I} a{A: i / C: vi} | Esus4{A: V 4} E{3} |

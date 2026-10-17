@@ -1,0 +1,13 @@
+# A Day in the Life, end of the third and fourth verses, into the orchestral bridge (figure 117.6)
+# Both verses' words are typed over the chart, one row each. Pollack's "e ..... E" spans the
+# orchestral bridge, which begins on e and arrives at E (i -> I); here it is drawn as two bars
+# with that span explained in the caption.
+#? The "e ..... E" is a long orchestral build, not a bar; drawing it as two bars (e, then E) compresses it.
+meter 2/4
+key e
+
+system
+words    | ..._book. | I'd_love | to | turn_... | r |
+words    | ..._Hall. | I'd_love | to | turn_... | r |
+chords   | C{vi} | - | - | e{i} | E{I} |
+caption e ..... -> E: the orchestral bridge starts on e and ends on E

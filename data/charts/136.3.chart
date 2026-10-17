@@ -1,0 +1,26 @@
+# Happiness Is a Warm Gun, second part, "I Need a Fix" (figure 136.3)
+# An eleven-bar waltz phrase (3 + 4 + 4 bars), guitar and vocal shown separately as Pollack has
+# them. He types each bar in beat columns, so the bunched groups are read by column: "E DCA" is E,
+# D on beat 2, C on its off-beat, A on beat 3; "EDE" is E, D on the off-beat, E on beat 2 (held);
+# "E G" is E and a held G; a lone "G" fills the bar.
+# He types the chord in the last line as "c" but labels it III; it is drawn as C major, which the
+# E-naturals in the tune over it confirm.
+#? The chord typed "c" is drawn as C major (labelled III); check on the record.
+#? Octaves: both lines are put around E4 (the vocal's register); the guitar may sound an octave lower.
+meter 3/4
+key a
+
+system
+voice "Guitar"    | E4 G4 E4 | C4 A3 C4 | E4 D4*0.5 C4*0.5 A3 |
+voice "Vocal"     | E4 G4 E4 | C4 A3 C4 | E4 D4*0.5 C4*0.5 A3 |
+chords "Chords"   | a{i} | - | - |
+
+system
+voice "Guitar"    | E4 G4 E4 | C4 A3 C4 | E4 G4*2 | E4*0.5 D4*0.5 E4*2 |
+voice "Vocal"     | E4 G4 E4 | C4 A3 C4 | E4 G4*2 | E4 G4*2 |
+chords "Chords"   | - | - | - | - |
+
+system
+voice "Guitar"    | G4 | C4 A3 C4 | E4 D4*0.5 C4*0.5 A3 | - |
+voice "Vocal"     | E4 G4 E4 | C4 A3 C4 | E4 D4*0.5 C4*0.5 A3 | - |
+chords "Chords"   | C{III} | - | a{i} | - |

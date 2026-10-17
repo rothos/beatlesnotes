@@ -1,0 +1,9 @@
+# All I've Got to Do, bridge (figure 36.3)
+# Pollack types "VI" under the A in bar 7; the A is IV, as in bars 1 and 5, so it is shown as IV.
+key E
+
+system
+chords   | A{IV} | - | c#{vi} | - |
+
+system
+chords   | A{IV} | E{I} c#{vi} | A{IV} | E{I} B{V} |

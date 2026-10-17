@@ -1,0 +1,7 @@
+# Ask Me Why, first variant verse "Now you're mine ..." (figure 33.2)
+# Only the last five bars (mm. 9-13) are typed; the rest is as in the initial verse. Pollack's
+# "E-aug" is E augmented.
+key E
+
+system m. 9
+chords   | c#{vi} | - | a{iv} | E{I} | Eaug{V#5-of-IV} |

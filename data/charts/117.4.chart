@@ -1,0 +1,9 @@
+# A Day in the Life, end of the first verse (figure 117.4)
+# Pollack's "2 &" puts the D on the "&" of 2 in the last bar (the note is in 2/4); C takes the
+# first beat and a half. The e chord is the pivot: i in e, vi in G.
+meter 2/4
+key e
+
+system
+caption "I saw the photograph ..."
+chords   | C{e: vi} | F{flat-II} | e{e: i / G: vi} | C{G: IV}*1.5 D{V}*0.5 |

@@ -1,0 +1,11 @@
+# The Fool on the Hill, refrain (figure 123.2)
+# The refrain is in d minor; the extra fifth bar switches back to D major (Pollack's "D: I") for
+# the next verse. Bar 1 is over the D pedal (the g is iv 6/4).
+#? Bar 1: d, g, d given equal thirds of the bar by rule; the typing (d and g close together, the second d mid-bar) suggests d g on beats 1-2 and d on 3-4.
+key d
+
+system
+chords   | d{i} g/D{iv6/4} d{i} | B-flat/D{VI6/3} | C{flat-VII} | d{i} |
+
+system
+chords   | D{I} |

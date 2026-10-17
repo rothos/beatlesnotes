@@ -1,0 +1,25 @@
+# Back in the U.S.S.R., break (figure 130.4)
+# Added (not typed): the bass A under the first bar of the second phrase and the B chord that
+# Pollack's (V-of-V) marks under the bass B at the end of the third phrase (his chord row is blank there).
+# Last phrase: same syncopated ending as the verse-to-follow refrain (fig. 130.3): IV on the
+# "and" of 1, bass D, D#, E, then V held. The D# is typed in the chord row; shown here as bass
+# after the essay; the bass row in that bar is added.
+key A
+
+system
+chords "Chords"   | D{IV} | - |
+
+system
+chords "Chords"   | A{I} | - |
+bass "Bass"       | A2 | A2 B2 Cn3 C#3 |
+
+system
+chords "Chords"   | D{IV} | -*2 B{(V-of-V)}*2 |
+bass "Bass"       | D3 C#3 | Cn3 B2 |
+
+system
+chords "Chords"   | E{V} | D{IV} |
+
+system
+chords "Chords"   | A{I} | -*0.5 D{IV}*1 E{V}*2.5 |
+bass "Bass"       | A2 | -*0.5 D3*0.5 D#3*0.5 E3*2.5 |

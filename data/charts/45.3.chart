@@ -1,0 +1,15 @@
+# Can't Buy Me Love, refrain, eight bars in four two-bar phrases (figure 45.3).
+# "CEG" before the first bar is a pickup (one beat each, rhythm not marked). Bar 4's "C  CGE" is
+# four equal events; "D F" in bar 7 two. The last bar is the next verse's downbeat C, no melody typed.
+# The bluesy E-flat D C of bar 3 sits under the chord C (I).
+#? Melody octaves are guesses (C4-G4 register); bar 4's C G E read as C5 G4 E4 falling back to the
+#? G4 of bar 5, which differs from the rising C E G pickup of bar 1: check against the record.
+key C
+
+system
+voice "Melody"   C4 E4 G4 | G4 | E4 | Eb4 D4 | C4 C5 G4 E4 |
+chords "Chords"  r*3 | e{iii} | a{vi} | C{I} | - |
+
+system
+voice "Melody"   | G4 | E4 | D4 F4 | G4 | r |
+chords "Chords"  | e{iii} | a{vi} | d{ii} | G{V} | [next verse] C{I} |

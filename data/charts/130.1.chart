@@ -1,0 +1,9 @@
+# Back in the U.S.S.R., the saw-tooth guitar riff (figure 130.1)
+# Rhythm from Pollack's count row above the riff: A on 1, A' (the octave above) on the "and" of 1,
+# G on the "and" of 2, F# on the "and" of 3, B# on 4, C# on the "and" of 4, and back to A on the
+# next downbeat. B# is his spelling (the flattened third, C, rising to C#).
+#? Octave: the riff is placed A3 up to A4; it may sound an octave higher on the record.
+key A
+
+system
+voice "Riff"   | A3*0.5 A4*1 G4*1 F#4*0.5 B#3*0.5 C#4*0.5 | A3 |

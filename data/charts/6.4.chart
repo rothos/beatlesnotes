@@ -1,0 +1,10 @@
+# Help!, intro: the outer voices under b -> G -> E (figure 6.4)
+# The top line rises chromatically F# G G# while the bass walks down B A G F# E. Laid out on the
+# intro's bars (fig. 6.2): b for two bars, G for two, then E; the bass takes one note a bar and the
+# top line changes with the chords. Pollack's "??" is his doubt about a numeral for the G chord.
+# Octaves: bass B2 down to E2; top line F#4-G#4.
+key A
+
+system
+voice "Top"      | F#4 | - | G4 | - | G#4 |
+bass "Bottom"    | B2{ii} | A2 | G2{??} | F#2 | E2{V} |

@@ -1,0 +1,9 @@
+# And Your Bird Can Sing, bridge (figure 98.2)
+# The g# chord holds over the chromatic bass G# G F# F that leads back to E (Pollack's chord row
+# is blank in bar 2; it is the same g# chord, shown as held).
+# Added: the bass under bars 6-8 is not typed; it is the chord roots (F#, held, then B).
+key E
+
+system
+chords "Chords"     | g#{iii} | - | - | - | E{I} | f#{ii} | - | B{V} |
+bass "Bass"         | G#2 | Gn2 | F#2 | Fn2 | E2 | F#2 | - | B2 |

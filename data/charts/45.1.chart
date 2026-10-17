@@ -1,0 +1,12 @@
+# Can't Buy Me Love, intro (figure 45.1): six bars, elided with the start of the verse.
+# The melody outlines the C-major triad over minor chords; Pollack notes the d and G are really
+# eleventh and thirteenth chords (typed as plain d and G, kept so).
+# The "CEG" before the first bar is a three-note pickup (one beat each, as the rhythm isn't marked);
+# in bar 4 the same CEG follows the E, four equal events. The last bar is the verse's downbeat C;
+# Pollack types no melody there.
+#? Melody octave (C4 up to G4) is a guess; Paul may sing it an octave higher.
+key C
+
+system
+voice "Melody"   C4 E4 G4 | G4 | E4 | G4 | E4 C4 E4 G4 | G4 | E4 | r |
+chords "Chords"  r*3 | e{iii} | a{vi} | e{iii} | a{vi} | d{ii} | G{V} | [verse] C{I} |

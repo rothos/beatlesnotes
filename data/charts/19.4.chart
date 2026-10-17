@@ -1,0 +1,12 @@
+# I'll Be Back, bridge 2, "I thought that you would realize ..." (figure 19.4).
+# Pollack's "b6/5" with "D in the bass" is b minor seventh in first inversion. The essay's chromatic
+# inner line (b, b-flat, a, g# over mm. 1-3) is not in the chart and is left out. "E ... etc." leads
+# into the 2.5-bar ending shared with the first bridge.
+key A
+
+system
+chords   | b{ii} | - | c#{iii} | - |
+
+system
+chords   | f#{vi} | B{V-of-V} | b6/5{ii 6/5} | E{V} |
+caption * D in the bass

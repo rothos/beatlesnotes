@@ -1,0 +1,9 @@
+# I'll Be Back, intro (figure 51.1): the first two bars three times, then the pivot to E Major
+key c#
+
+system
+caption 3X
+chords   | c#{i} | f#{iv} G#{V} |
+
+system
+chords   | A{c#: VI / E: IV} B{V} | E{I} B{V} |

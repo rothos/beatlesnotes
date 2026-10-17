@@ -1,0 +1,10 @@
+# Good Day Sunshine, verse with piano solo, pivoting to D and back (figure 11.4)
+# Pollack gives two rows of numerals where the keys overlap; both are kept in one label: the A in
+# bar 4 is I in A and V in D, the D in bar 8 is IV in A and I in D, the B is V-of-V in A.
+key A
+
+system
+chords   | A{I} F#7{V-of-(V-of-V)} | B7{V-of-V} | E7{V} | A{A: I = D: V} |
+
+system
+chords   | D{D: I} B7{V-of-(V-of-V)} | E7{V-of-V} | A7{V} | D{D: I = A: IV} B{A: V-of-V} |

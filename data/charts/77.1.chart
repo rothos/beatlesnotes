@@ -1,0 +1,15 @@
+# Drive My Car, intro (figure 77.1)
+# Rhythm from Pollack's count row: eighth-note slots, an eighth pickup (A on the "and"). The
+# bass enters on beat 3 of bar 1 and its last D ties over into bar 2; the guitar's D on the "and"
+# of 4 ties over the downbeat too. His accent marks (>) fall on those two D's (the "and" of 4 in
+# bar 1, the "and" of 1 in bar 2). The drum fill starts on beat 3 of bar 2.
+# The third bar is the downbeat of the verse he shows after the double bar ("Verse ...", bass D,
+# "Cymbals!"). Harmonic envelope: D major throughout (C- and F-naturals are bluesy).
+#? Guitar octaves: the F on beat 3 of bar 1 is taken as the "bent high note" (F5); it may be another note, or the F may sit below the A.
+#? Bass octave guessed (A2 up to D3, D3 into the verse).
+key D
+
+system
+voice "Guitar"   A4*0.5 | C5 D5 C5 A4 F5 - C5 D5 | - D5 C5 - C5 - D5 - | [Verse] r |
+bass "Bass"             | r*2 A2 C3 D3 D3 | - | D3 |
+words "Drums"           | r | r*2 Fill*2 | Cymbals! |

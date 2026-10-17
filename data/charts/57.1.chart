@@ -1,0 +1,7 @@
+# I'm a Loser, intro (figure 57.1)
+# A truncated refrain: the first two bars, played ad lib and out of tempo, are repeated ("2X");
+# the band comes in "A Tempo" at bar 3.
+key G
+
+system
+chords  | [2X] a{ii} | D{V} | [a tempo] F{flat-VII} | - D{V} |

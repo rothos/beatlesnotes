@@ -1,0 +1,6 @@
+# Sgt. Pepper Reprise, refrain: the pivot from F to G (figure 117.1)
+# The G chord is V-of-V in F and becomes I in G, followed by its V.
+key F
+
+system
+chords   | B-flat{F: IV} | F{I} | G{F: V-of-V / G: I} | D{G: V} |

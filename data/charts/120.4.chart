@@ -1,0 +1,17 @@
+# Hello Goodbye, first outro (figure 120.4)
+# The refrain's first six bars, then the bass slides down chromatically A-flat G G-flat F under the
+# held A-flat chord (Pollack: the passing harmonies get no numerals) to IV7 and I.
+# Added: the bass C under the final C (not typed). Bass octaves chosen for range.
+key C
+
+system
+chords             | C{I} | - | a{vi} | - |
+bass "Bass"        | C3 | B2 | A2 | G2 |
+
+system
+chords             | F{IV} | A-flat{flat-VI} | - | - |
+bass "Bass"        | F2 | Ab2 | - | G2 |
+
+system
+chords             | - | F{IV7} | C{I} | - |
+bass "Bass"        | Gb2 | F2 | C3 | - |

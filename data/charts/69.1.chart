@@ -1,0 +1,12 @@
+# I'm Down, verse (figure 69.1)
+# Fourteen bars: a twelve-bar frame stretched by a third statement of the title phrase (mm. 9-10).
+key G
+
+system
+chords   | G{I} | - | - | - |
+
+system
+chords   | C{IV} | - | G{I} | - | C{IV} | - |
+
+system
+chords   | D{V} G{I} | - | D{V} G{I} | - |

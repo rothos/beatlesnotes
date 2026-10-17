@@ -1,0 +1,20 @@
+# Hello Goodbye, refrain (figure 120.2)
+# Sixteen bars, ABAB'. Pollack types the slow bass descent C B A G, then F, under the first A
+# phrase and the start of B. The A-flat and C bass notes in bars 6-7 are the chord roots, added;
+# the second half has chords only, as typed.
+#? Bars 6-8: bass roots added (A-flat, C); Paul's actual line there is not given.
+key C
+
+system
+chords             | C{I} | - | a{vi} | - |
+bass "Bass"        | C3 | B2 | A2 | G2 |
+
+system
+chords             | F{IV} | A-flat{flat-VI} | C{I} | - |
+bass "Bass"        | F2 | Ab2 | C3 | - |
+
+system
+chords             | C{I} | - | a{vi} | - |
+
+system
+chords             | F{IV} | B-flat{flat-VII} | C{I} | - |

@@ -1,0 +1,16 @@
+# Because, full bridge (figure 184.3)
+# The four voices (SATB) are typed over the first three chords only. The diminished seventh in
+# bar 2 sounds like the mini bridge's, but Pollack roots it on E# with D in the bass ("e# dim.6/5",
+# first inversion), spelled here e#dim7/D. The voices hold through bar 4.
+#? Octaves as in fig. 184.2 (S A4, A F#4, T D4, B D3); the bass's F# is placed at F#2, a sixth below D3, but it could move up to F#3.
+key c#
+
+system
+voice "S"   | A4 | G#4 | F#4 | - |
+voice "A"   | F#4 | E#4 | C#4 | - |
+voice "T"   | D4 | B3 | A#3 | - |
+voice "B"   | D3 | D3 | F#2 | - |
+chords      | D{flat-II} | e#dim7/D{vii-of-IV} | F#{IV} | - |
+
+system
+chords      | G#7{V} | - |

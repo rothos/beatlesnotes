@@ -1,0 +1,11 @@
+# Girl, refrain (figure 84.2)
+# Four bars played twice (his "2X"), with Paul's descending bassline typed under the chords.
+# Pollack reads the second chord as g-minor in 6/4 (over the bass D), with a 4-3 appoggiatura in
+# the tune (not typed); the A-flat is in 6/3 position over C. The B-flat is also IV in f minor.
+# Bass octave chosen for range.
+key E-flat
+
+system
+caption 2X
+chords "Chords"  | E-flat{I} g{iii6/4} | A-flat{IV6/3} B-flat{V / f minor: IV} |
+bass "Bass"      | Eb3 D3 | C3 Bb2 |
