@@ -514,7 +514,7 @@
     let s = t.replace(/-flat/g, "♭").replace(/-sharp/g, "♯").replace(/-nat(?:ural)?\.?/g, "♮").replace(/^([A-Ga-g])b/, "$1♭").replace(/#/g, "♯");
     const m = /^(\(?[A-Ga-g][♭♯]?)(.*?)(\)?)$/.exec(s);
     if (!m) return escapeHtml(s);
-    let q = m[2].replace(/^-/, "").replace(/dim\.?7/, "°7").replace(/dim\.?|^o$/, "°").replace(/half-dim/, "ø").replace(/aug\.?/, "+");
+    let q = m[2].replace(/^-/, "").replace(/-?diminished/i, "dim").replace(/-?augmented/i, "aug").replace(/half-dim\.?(7?)/, "ø$1").replace(/dim\.?7/, "°7").replace(/dim\.?|^o$/, "°").replace(/half-dim/, "ø").replace(/aug\.?/, "+");
     return escapeHtml(m[1]) + (q ? "<sup>" + escapeHtml(q) + "</sup>" : "") + escapeHtml(m[3]);
   }
   function prettyNumeral(t) {
