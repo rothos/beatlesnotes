@@ -884,7 +884,8 @@
     if (score) fig.classList.add("transcribed");
     const beatsPerBar = model.meter ? model.bpb : opts.beatsPerBar || 4;
     const wrap = document.createElement("div");
-    wrap.className = "bars";
+    wrap.className = "bars" + (model.explicit ? " timed" : "");
+    wrap.style.setProperty("--bpb", beatsPerBar);
     const key = model.key ? prettyKey(model.key) : null;
     const tempoId = "tempo-" + Math.random().toString(36).slice(2, 8);
     wrap.innerHTML =
@@ -931,7 +932,9 @@
             const ch = bt.chord ? prettyChord(bt.text) : bt.hold ? (real ? "–" : "") : bt.texts ? bt.texts.slice().reverse().map(prettyNote).join("<br>")
               : bt.pitch !== undefined ? prettyNote(bt.text) : escapeHtml(bt.text || "");
             const cls = bt.hold || bt.empty ? "ch hold" : bt.word ? "ch word" : bt.pitch !== undefined || bt.rest ? "ch note" : "ch";
-            return `<span class="beat"${drop(bt)}><span class="${cls}">${ch || "&nbsp;"}${bt.fig ? `<sup class="fig">${escapeHtml(bt.fig)}</sup>` : ""}</span><span class="rn">${bt.rn ? prettyNumeral(bt.rn) : ""}</span>` +
+            const grow = model.explicit && bt.dur ? `--d:${+bt.dur.toFixed(3)};` : "";
+            const st = drop(bt).replace(/^ style="|"$/g, "");
+            return `<span class="beat"${grow || st ? ` style="${grow}${st}"` : ""}><span class="${cls}">${ch || "&nbsp;"}${bt.fig ? `<sup class="fig">${escapeHtml(bt.fig)}</sup>` : ""}</span><span class="rn">${bt.rn ? prettyNumeral(bt.rn) : ""}</span>` +
               (bt.rn2 ? `<span class="rn rn2">${prettyNumeral(bt.rn2)}</span>` : "") +
               (bt.note ? `<span class="bnote">${escapeHtml(bt.note)}</span>` : "") + `</span>`;
           }).join("");
