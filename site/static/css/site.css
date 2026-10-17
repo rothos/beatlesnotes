@@ -435,6 +435,7 @@ figure.chart.drawn.show-src .chart-src { display: block; margin-top: 0.6rem; }
 .bar-system.stacked:has(.row-label) { grid-template-columns: auto repeat(var(--n), auto); }
 .bar-system.stacked .bar-row { display: grid; grid-column: 1 / -1; grid-template-columns: subgrid; width: auto; max-width: none; }
 .bar-system.stacked .bar-row + .bar-row { border-top: 0; }
+.bar-system.part + .bar-system.part { margin-top: 0.8rem; }
 .row-label { font: 400 0.74rem/1.2 var(--sans); color: var(--pencil); align-self: center; text-align: right; padding: 0 0.6rem 0 0; background: var(--paper); white-space: nowrap; }
 .bar.pad { min-width: 0; }
 .beat .ch.note { font-weight: 500; font-size: 1.05em; color: var(--ink-2); }

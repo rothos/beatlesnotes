@@ -683,8 +683,12 @@
   function release(voices, t) {
     voices.forEach(({ g, os, a, t: t0 }) => {
       const at = Math.max(t, t0 + 0.02);
+      // fade from wherever the note's decay has got to: cancelling the decay alone would put the note
+      // back at full volume, which sounds like a second hit. Redo the decay, stopping where the fade begins.
       g.gain.cancelScheduledValues(at);
-      g.gain.setValueAtTime(at < t0 + 0.35 ? a : a * 0.45, at);
+      const k = Math.min(1, Math.max(0, (at - t0 - 0.012) / 0.338));
+      if (at > t0 + 0.012) g.gain.exponentialRampToValueAtTime(a * Math.pow(0.45, k), at);
+      else g.gain.setValueAtTime(a, at);
       g.gain.exponentialRampToValueAtTime(0.0001, at + 0.25);
       os.forEach((o) => { try { o.stop(at + 0.3); } catch (e) { /* already stopped */ } });
     });
@@ -875,6 +879,65 @@
   // ------------------------------------------------------------------ rendering
 
 
+  // A stacked system too wide for the page breaks into pieces of whole bars, each repeating the row
+  // labels; it rejoins and breaks again when the page is resized.
+  function fitSystems(wrap) {
+    const items = [...wrap.querySelectorAll(".bar-system.stacked")].map((box) => ({ box, n: box.style.getPropertyValue("--n"), parts: [] }));
+    if (!items.length) return;
+    const cellsOf = (row) => [...row.children].filter((c) => !c.classList.contains("row-label"));
+    const fit = () => {
+      items.forEach((it) => {
+        if (it.parts.length) {   // put the bars back in the whole system first
+          const rows = [...it.box.children];
+          it.parts.forEach((part) => [...part.children].forEach((r, ri) => cellsOf(r).forEach((c) => rows[ri].appendChild(c))));
+          it.parts[0].before(it.box);
+          it.parts.forEach((part) => part.remove());
+          it.parts = [];
+          it.box.style.setProperty("--n", it.n);
+        }
+        const avail = wrap.clientWidth;
+        if (!avail || it.box.scrollWidth <= avail + 1) return;   // (not laid out yet: wait for a resize)
+        const rows = [...it.box.children];
+        const label = rows[0].querySelector(".row-label");
+        const room = avail - (label ? label.getBoundingClientRect().width : 0) - 4;
+        const widths = cellsOf(rows[0]).map((c) => c.getBoundingClientRect().width);
+        const groups = [];
+        let cur = [], used = 0;
+        widths.forEach((w, i) => {
+          if (cur.length && used + w > room) { groups.push(cur); cur = []; used = 0; }
+          cur.push(i); used += w;
+        });
+        if (cur.length) groups.push(cur);
+        if (groups.length < 2) return;
+        const cells = rows.map(cellsOf);
+        it.parts = groups.map((g, gi) => {
+          const part = it.box.cloneNode(false);
+          part.classList.add("part");
+          part.style.setProperty("--n", g.length);
+          rows.forEach((row, ri) => {
+            const r = row.cloneNode(false);
+            const l = row.querySelector(".row-label");
+            if (l) r.appendChild(l.cloneNode(true));
+            g.forEach((i) => cells[ri][i] && r.appendChild(cells[ri][i]));
+            part.appendChild(r);
+          });
+          return part;
+        });
+        it.parts.forEach((part) => it.box.before(part));
+        it.box.remove();
+      });
+    };
+    fit();
+    if (typeof ResizeObserver !== "undefined") {
+      let w = wrap.clientWidth, pending = false;
+      new ResizeObserver(() => {
+        if (wrap.clientWidth === w || pending) return;
+        pending = true;
+        requestAnimationFrame(() => { pending = false; w = wrap.clientWidth; fit(); });
+      }).observe(wrap);
+    }
+  }
+
   function render(fig, opts = {}) {
     const pre = fig.querySelector(".chart-src");
     if (!pre || fig.classList.contains("drawn")) return;
@@ -948,6 +1011,7 @@
       if (sys.after) { const p = document.createElement("p"); p.className = "bar-row-label after"; p.textContent = sys.after; wrap.appendChild(p); }
     });
     fig.insertBefore(wrap, pre);
+    fitSystems(wrap);
     fig.classList.add("drawn");
     const cap = fig.querySelector("figcaption") || fig.appendChild(document.createElement("figcaption"));
     const tg = document.createElement("button");

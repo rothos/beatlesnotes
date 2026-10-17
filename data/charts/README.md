@@ -60,9 +60,11 @@ tune (use it where Pollack drew the tune as a graph, notes placed higher and low
 - `r` silence.
 - a word (in `words` rows).
 
-**Timing.** By default the events in a bar share it equally. Add `*n` to give an event n beats:
-`C5*2 Bb4 Ab4` in 4/4 is a half note then two quarters. Events without `*n` share whatever is left
-equally. Events before the first `|` are a pickup, one beat each unless marked. Every row of a system
+**Timing.** By default the events in a bar share it equally, and that is the rule to follow: do not
+read rhythm from where Pollack typed things across the bar, which is too loose to trust. Use `*n`
+(n beats) only where the rhythm is actually marked: holds (`C - - -`, `F E -`), a beat-count or
+accent row above the music, or the essay text saying so. `C5*2 Bb4 Ab4` in 4/4 is a half note then
+two quarters; events without `*n` share whatever is left equally. Events before the first `|` are a pickup, one beat each unless marked. Every row of a system
 must have the same number of bars; use `-` for a bar where a part holds, or `r` for one where it is
 silent. Line rows up by meaning, not by spacing.
 
@@ -75,4 +77,9 @@ Read the typed chart with the paragraphs before and after it: Pollack usually sa
 are ("the bassline", "parallel tenths", "the topline"). Keep everything he wrote that can be shown,
 and add only what the chart plainly implies (say so in a `#` comment when you add a note he didn't
 type). Choose octaves that make musical sense for the part: melodies usually C4-G5, bass lines
-E2-D3, inner voices between. When the rhythm is unclear, use equal shares and say so with `#?`.
+E2-D3, inner voices between. Rhythm: equal shares unless marked (see Timing).
+
+Spell chords so the reader understands them; if Pollack's wording isn't understood by the checker
+("E added 6th"), use the nearest standard symbol (`E6`) and keep his wording in a comment. Charts
+that are tables, form diagrams, lists of sections or prose get `skip`. A chart of only chord
+symbols needs no comments beyond its first line.
