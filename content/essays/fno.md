@@ -131,38 +131,22 @@ And yet, if you think these final lyrics are intense, you've got to take a look 
 
 Paul's original title for the song was "**Why Did It Die?**" The first two verses match the final song exactly but from that point on, you cannot miss the rather Woody Allen-esque manner in which the hero beats his head in denial against the brick wall of truth:
 
-*Why did it die? -----------------\
-
-You'd like to know.\
-
-Cry and blame her.\
-
-\
-
-You wait\
-
-You're too late\
-
-As you're deciding why the wrong one wins, the end begins\
-
-And you will lose her.\
-
-\
-
-Why did it die? -----------------\
-
-I'd like to know.\
-
-Try to save it.\
-
-\
-
-You want her\
-
-You need (love) her\
-
-So make her see that you believe it may work and some day\
-
-You need each other.*
+> *Why did it die? —*\
+> *You'd like to know.*\
+> *Cry and blame her.*
+>
+> *You wait*\
+> *You're too late*\
+> *As you're deciding why the wrong one wins, the end begins*\
+> *And you will lose her.*
+>
+> *Why did it die? —*\
+> *I'd like to know.*\
+> *Try to save it.*
+>
+> *You want her*\
+> *You need (love) her*\
+> *So make her see that you believe it may work and some day*\
+> *You need each other.*
 
 Working out this kind of thing in public surely was never Macca's preference, no less strong suit. Yet, we see here how much the poor fellow must have hurt for Ms. Jane Asher. My own rhetorical final question is what, why, and wherefore, in the final lyrics, are these tears that **she** cries for 'no one'? Wishful thinking, or mature, ironic insight?
