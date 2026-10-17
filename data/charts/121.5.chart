@@ -4,5 +4,5 @@
 # "3rd refrain, only" as a bar mark.
 key A
 
-system Refrain
+system
 chords   | C{flat-VI of V} | D{flat-VII of V} | E{V} | [3rd refrain only] D{IV} |

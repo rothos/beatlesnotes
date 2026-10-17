@@ -9,18 +9,18 @@
 meter 4/4
 key F
 
-system mm. 1-4
+system
 words "Count"  | 1 2 3 4 | 1 2 3 4 | 1 2 3 4 | 1 2 3 4 |
 # lyrics as typed by Pollack are omitted here; x marks each sung syllable
 words "Sung rhythm" | x*4 | x*4 | x*3 x | r |
 chords         | F7{I} | - | - | - |
 
-system mm. 5-8
+system
 words "Count"  | 1 2 3 4 | 1 2 3 4 | 1 2 3 4*0.5 &*0.5 | 1 2 3 4 |
 words "Sung rhythm" | x*4 | x*4 | x*2 x x*0.5 x*0.5 | - |
 chords         | F7{I} | - | - | - |
 
-system mm. 9-12
+system
 words "Count"  | 1 2 3 4 | 1 2 ..3 4*0.5 &*0.5 | 1 2 3 4 | 1 2 3 4 |
 words "Sung rhythm" | - | -*1 x x x*0.5 x*0.5 | - | - |
 chords         | F7{I} | - | - | - |

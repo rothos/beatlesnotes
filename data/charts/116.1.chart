@@ -1,28 +1,27 @@
 # Good Morning Good Morning, tune phrases spanning a fourth split into a third and a second
 # (figure 116.1)
-# Pollack's list of examples, each phrase one system Example 1
-# shares (he gives pitches only). Octaves chosen so each phrase spans the fourth he describes.
+# Pollack's list of examples, one system per phrase, with the pitches he gives (no rhythm). Octaves chosen so each phrase spans the fourth he describes.
 #? Octaves are a guess from the record (E4 up to D5); example 2 (E G A E) in particular may sit an octave higher.
 # lyrics as typed by Pollack are omitted here
 key A
 
-system Example 2
+system
 voice   | A4 F#4 B4 |
 
-system Example 3
+system
 voice   | E4 G4 A4 E4 |
 
-system Example 4
+system
 voice   | G4 A4 F#4 A4 |
 
-system Example 5
+system
 voice   | D5 C#5 A4 A4 |
 
-system Example 6
+system
 voice   | A4 A4 F#4 B4 |
 
-system Example 7
+system
 voice   | C#5 C#5 C#5 A4 D5 |
 
-system Example 8
+system
 voice   | A4 F#4 E4 |
