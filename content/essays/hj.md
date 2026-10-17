@@ -88,23 +88,19 @@ When we turn to the arrangement, we find not so much a source of contrast, as we
 In the song-like half, in particular, we have an excellent, fairly late example of the progressive layering technique that appears as a Beatles trademark almost from the beginning. A simple, section-by-section narrative reveals both how the texture is increasingly thickened over the first three sections, and how the final two verses continue to present deft touches of variation on what has come before:
 
 - Verse 1 — Piano solo with Macca vocal, single tracked.
-- Verse 2 — Add acoustic rhythm guitar, and tambourine on the offbeat.\
+- Verse 2 — Add acoustic rhythm guitar, and tambourine on the offbeat.
 
-Also add backing vocals singing "Ahhhh" in the second half of the verse.
+  Also add backing vocals singing "Ahhhh" in the second half of the verse.
 - Bridge 1 — Add drums and tapping cymbals. Also add bass, in conspicuous walking style, no less.
-- Verse 3 — Second half has backing vocals in parallel thirds with lead.\
+- Verse 3 — Second half has backing vocals in parallel thirds with lead.
 
-Note the stray backing vocal with the terrific anticipation of the phrase "so let it out and let it in" from the next bridge.
+  Note the stray backing vocal with the terrific anticipation of the phrase "so let it out and let it in" from the next bridge.
 - Bridge 2 — As in Bridge 1. Neither adding to or varying the arrangement of the second bridge sets a good example of "avoidance of foolish consistency". I think it also underscores the relationship of the two bridges to each other, as well as their contrasting role with respect to the verses.
-- Verse 4 — Note Macca's melodic ornamentation of the initial "Hey Jude" phrase, and how the parallel thirds of the backing vocal follows all the way through this verse. There's also the final vocal flourish ("better, better, ...") which leads to the jam section; it actually sounds triple tracked — two Maccas singing the flourish itself, and a third singing "make it, Jude."\
+- Verse 4 — Note Macca's melodic ornamentation of the initial "Hey Jude" phrase, and how the parallel thirds of the backing vocal follows all the way through this verse. There's also the final vocal flourish ("better, better, ...") which leads to the jam section; it actually sounds triple tracked — two Maccas singing the flourish itself, and a third singing "make it, Jude."
 
-\
+  Macca's performance of that flourish, by the way, is quite a tour de force. It's an appoggiatura'd arpeggio covering just over two octaves from E below middle C all the way up to high F, eleven notes above middle C — real soprano territory — and he does it without having to fully overblow his voice into falsetto. Though he was sufficiently insecure about his performance to have double tracked it here, you can get a more pristine, single tracked audition of this feat on the Take 9 rehearsal version, found on a variety of popular under the counter rarities.
 
-Macca's performance of that flourish, by the way, is quite a tour de force. It's an appoggiatura'd arpeggio covering just over two octaves from E below middle C all the way up to high F, eleven notes above middle C — real soprano territory — and he does it without having to fully overblow his voice into falsetto. Though he was sufficiently insecure about his performance to have double tracked it here, you can get a more pristine, single tracked audition of this feat on the Take 9 rehearsal version, found on a variety of popular under the counter rarities.\
-
-\
-
-The urban legend about an "undeleted expletive" on the finished recording at time stamp 2:59 has been documented by no less than Lewisohn, though I've seen the veracity of it debated. Whatever is really been said there, it's a strange bit of accidentally-on-purpose sloppiness left in the transcript of a recording in which everything else seems so carefully controlled.
+  The urban legend about an "undeleted expletive" on the finished recording at time stamp 2:59 has been documented by no less than Lewisohn, though I've seen the veracity of it debated. Whatever is really been said there, it's a strange bit of accidentally-on-purpose sloppiness left in the transcript of a recording in which everything else seems so carefully controlled.
 
 The arrangement and the recording of the jam section also contain some interesting strategic details. Most notably, in addition to all the instruments used in the first half (with the exception of the bass guitar, according to Lewisohn), the repeated ground bassline of the jam is underscored by sustained doubling of a small orchestra of 36 players; the session documentation lists a full variety of strings, woodwinds, and brass, but what you hear mostly on the finished recording are bowed strings and trumpets. In general, this technique lends an overall feel of weightiness and measured motion to the music, curiously in contrast to the otherwise bustling, rocking foreground texture of the piano, drums, and screaming Macca.
 

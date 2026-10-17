@@ -139,12 +139,9 @@ Note the opening sensitivity to, and fear of, rejection; the willingness to allo
 
 With respect to **needing** anybody, the answer is "I need somebody to love." But with respect to can it **be** anybody, the answer is "I **want** somebody to love." This won't be the first time I've quoted Zimmy, but you've gotta dig the parallelism:
 
-*"Ruthie said come see here in her Honky Tonk Lagoon\
-
-Where I can watch her waltz for free beneath the Panamanian moon.\
-
-But I said, oh come on now, you know you know about my debutante.\
-
-And she said, your debutante knows what you need, but I know what you want."*
+> *"Ruthie said come see here in her Honky Tonk Lagoon\
+> Where I can watch her waltz for free beneath the Panamanian moon.\
+> But I said, oh come on now, you know you know about my debutante.\
+> And she said, your debutante knows what you need, but I know what you want."*
 
 And, if you want a Zimmy quote that comes even closer to our Boys take: "Like it was written on my soul, "[From Me To You](fmty.md)".

@@ -133,12 +133,9 @@ The message that we're getting very near the end is subliminally telegraphed by 
 
 When **I** was a boy, grandma taught me a song that whose lyrics uncannily resonate with the subject of our current study. It started off something like this:
 
-*"One, two, buckle my shoe.*\
-
-*Three, four, open the door.*\
-
-*Five, six, pick-up sticks.*\
-
-*... and blah, blah, blah."*
+> *"One, two, buckle my shoe.*\
+> *Three, four, open the door.*\
+> *Five, six, pick-up sticks.*\
+> *... and blah, blah, blah."*
 
 At risk of appearing sex-obsessed, I can report that **my** song didn't contain any lines that were as ambiguously suggestive as the musical question: "Can I take my friend to bed?" Then again, maybe I'm just one of the older generation leading this country to galloping ruin; or perhaps, more accurately, I'm preferring that my grandma had been.

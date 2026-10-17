@@ -160,25 +160,25 @@ Faithful readers of this series will be familiar with my ironic postulate that J
 
 The two songs present protagonists who either predict they will shortly lose their mind or have already nearly died because the object of their respective affections repeatedly avoids seeing them. As if that weren't enough of a correspondence, we find a prominent place given in each tableau to the telephone as a circumstantial prop. But look at how they diverge:
 
-- What is the girl doing to upset him?\
+- What is the girl doing to upset him?
 
-**Paul**: Evading contact (line's engaged, want to hide).\
+  **Paul**: Evading contact (line's engaged, want to hide).
 
-**John**: Lies and betrayal, with bonus points because unnamed others are complicit in the crime (they said you were not home, with another man in my place). Additional bonus points because **he** knows that **she** knows he's caught her (I know that you saw me).
-- How long has this been going for?\
+  **John**: Lies and betrayal, with bonus points because unnamed others are complicit in the crime (they said you were not home, with another man in my place). Additional bonus points because **he** knows that **she** knows he's caught her (I know that you saw me).
+- How long has this been going for?
 
-**Paul**: Repeatedly, though unspecified (time after time).\
+  **Paul**: Repeatedly, though unspecified (time after time).
 
-**John**: He can fluently enumerate the specific occasions (this happened once before, saw you walk in your door).
-- What type of relationship has this been even on the best of days?\
+  **John**: He can fluently enumerate the specific occasions (this happened once before, saw you walk in your door).
+- What type of relationship has this been even on the best of days?
 
-**Paul**: Not necessarily requited (if I knew what I was missing)\
+  **Paul**: Not necessarily requited (if I knew what I was missing)
 
-**John**: He's been thrown over (again, another man in my place).
-- Any hope for a better future?\
+  **John**: He's been thrown over (again, another man in my place).
+- Any hope for a better future?
 
-**Paul**: Mixed emotions: acknowledging both total loss (since I lost you) yet trying to coax another chance by making her feel guiltily responsible for his suffering (I will lose my mind if you won't see me).\
+  **Paul**: Mixed emotions: acknowledging both total loss (since I lost you) yet trying to coax another chance by making her feel guiltily responsible for his suffering (I will lose my mind if you won't see me).
 
-**John**: As grim as the situation seems, and in spite of his acute distress, the hope of reconciliation is expressed in the wishful subjunctive voice (if I were you I'd realize).
+  **John**: As grim as the situation seems, and in spite of his acute distress, the hope of reconciliation is expressed in the wishful subjunctive voice (if I were you I'd realize).
 
 It's difficult to draw out such comparisons without appearing to making a value judgment. So I urge you, keep an open mind. Both approaches here are equally valid regardless of what you personally prefer. But they sure are different.

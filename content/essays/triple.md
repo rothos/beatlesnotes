@@ -129,18 +129,11 @@ In the meanwhile, in spite of whatever supposed wisdom and maturity I may have e
 
 Perhaps what I'm trying to say in tribute to John about the scope and power of not just these three songs but about his artistic legacy as a whole is most succinctly put by the following quote from a most unlikely source (Waugh's "Brideshead Revisited", p. 79):
 
-*The zest, the generous affections, the illusions, the despair,\
-
-all the traditional attributes of Youth ... come and go with us through life;\
-
-again and again in riper years we experience, under a new stimulus,\
-
-what we thought had been finally left behind, the authentic impulse to action,\
-
-the renewal of power and its concentration on a new object;\
-
-again and again a new truth is revealed to us\
-
-in whose light all our previous knowledge must be rearranged.\
-
-These things are a part of life itself.*
+> *The zest, the generous affections, the illusions, the despair,\
+> all the traditional attributes of Youth ... come and go with us through life;\
+> again and again in riper years we experience, under a new stimulus,\
+> what we thought had been finally left behind, the authentic impulse to action,\
+> the renewal of power and its concentration on a new object;\
+> again and again a new truth is revealed to us\
+> in whose light all our previous knowledge must be rearranged.\
+> These things are a part of life itself.*

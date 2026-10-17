@@ -194,9 +194,7 @@ Some interesting contrasts:
 
 Point-for-point, "How Do You Do It" clearly wins out as a less risky, more "conservative" choice in terms that may explain both the lackluster albeit well mannered performance given it by the Boys as well as their ultimate rejection of it by them. Besides, they hadn't written this one anyway; "aaaaah, let Gerry have it."
 
-### "Love Me Do" versus the other Lennon / McCartney originals\
-
-on the "Please Please Me Album"
+### "Love Me Do" versus the other Lennon / McCartney originals on the "Please Please Me Album"
 
 Again, there are some interesting point-for-point contrasts. No surprise, but some of the same signature devices of the nascent Beatles sound that we found in "Love Me Do" are also found in these other songs:
 

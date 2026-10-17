@@ -211,17 +211,12 @@ Subtext surges externally. After a dozen or more concentrated listenings to this
 
 I offer you some excerpts from the lyrics of this song (translated from the German) and wonder if you'll gasp the way I did to discover what bittersweet topic was on Schubert's mind:
 
-*Why should I remain longer, until I am driven out ?\
-
-...\
-
-I will not disturb you in your dreams, 'twere pity to spoil your rest.\
-
-You shall not hear my footsteps, softly, softly I close the door.\
-
-As I go out I will write "Goodnight" to you on the gate so\
-
-that you may see my thoughts were of you.*
+> *Why should I remain longer, until I am driven out ?\
+> ...\
+> I will not disturb you in your dreams, 'twere pity to spoil your rest.\
+> You shall not hear my footsteps, softly, softly I close the door.\
+> As I go out I will write "Goodnight" to you on the gate so\
+> that you may see my thoughts were of you.*
 
 If you like this one, I can't hold back from sharing with you an even more unlikely lyrical correspondence between another Len/Mac song and some older music. This time, we're dealing with an oft-quoted line from "[I'm A Loser](ial.md)" — "Although I laugh and I act like a clown ..." — and the title of a "virelai" — a distant forerunner of the two-minute pop song — written by Johannes Ockeghem — you won't see **his** name in Billboard — of the 15th century: "Ma bouche rit et ma pensée pleure."
 

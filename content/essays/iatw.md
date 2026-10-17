@@ -59,19 +59,13 @@ The feel of the back-beat is subtly modulated over the course of the song. We st
 
 The radio broadcast seems to fit in uncannily, almost surprisingly so, given its random selection. John Cage, for whom the inclusion of such "noise" elements in his compositions was the fulfillment of a strongly felt and persistently argued Zen-like philosophy of art would not have been surprised, of course :-) Regardless of how unlikely it may be that John Lennon had read Mr. Cages books, I still find this small quote from "*Silence*" (p. 3) quite apt to our present context:
 
-*"Wherever we are, what we hear is mostly noise.\
-
-When we ignore it, it disturbs us.\
-
-When we listen to it, we find it fascinating.\
-
-The sound of a truck at fifty miles per hour.\
-
-Static between the stations. Rain.\
-
-We want to capture these sounds, to use them\
-
-not as sound effects but as musical instruments."*
+> *"Wherever we are, what we hear is mostly noise.\
+> When we ignore it, it disturbs us.\
+> When we listen to it, we find it fascinating.\
+> The sound of a truck at fifty miles per hour.\
+> Static between the stations. Rain.\
+> We want to capture these sounds, to use them\
+> not as sound effects but as musical instruments."*
 
 The sparing use of the radio effect, its being saved until a full half of the song has transpired, its continued appearance in the refrain section that follows, and its then being held way back in the mix until the outro demonstrates a sophisticated command of the "less is more" aesthetic.
 

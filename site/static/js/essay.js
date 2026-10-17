@@ -186,17 +186,15 @@
       const walker = document.createTreeWalker(prose, NodeFilter.SHOW_TEXT);
       const hits = [];
       while (walker.nextNode()) if (re.test(walker.currentNode.nodeValue)) hits.push(walker.currentNode);
-      let first = null;
       hits.forEach((n) => {
         if (n.parentElement.closest("pre")) return;
         const frag = document.createDocumentFragment();
         n.nodeValue.split(re).forEach((part, i) => {
-          if (i % 2) { const m = document.createElement("mark"); m.textContent = part; frag.appendChild(m); first = first || m; }
+          if (i % 2) { const m = document.createElement("mark"); m.textContent = part; frag.appendChild(m); }
           else frag.appendChild(document.createTextNode(part));
         });
         n.replaceWith(frag);
       });
-      if (first && !location.hash) setTimeout(() => first.scrollIntoView({ block: "center" }), 50);
     }
   }
 })();
