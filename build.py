@@ -50,12 +50,10 @@ SHARP_NAMES = {1: "C♯", 6: "F♯", 8: "G♯", 3: "D♯", 10: "A♯"}
 
 
 # one colour per key, in circle-of-fifths order: C G D A E B F♯ D♭ A♭ E♭ B♭ F.
-# Hue walks the circle of fifths (OKLCH), with wide steps between the common keys F…B and
-# narrow ones through the rare flat keys; lightness alternates (L 0.49 / 0.66) so neighbours
-# stay apart, colour-blind vision included. Checked with the dataviz palette validator against
-# the light, sepia and dark papers.
-KEY_COLORS = ["#027254", "#04A4BA", "#125FB3", "#A07BE0", "#973576", "#DF695E",
-              "#A03D02", "#D47816", "#825604", "#B18E05", "#686403", "#81A022"]
+# A smooth spectrum: hue walks the circle of fifths in OKLCH (L 0.60, C 0.16, yellows lifted),
+# with wide 45° steps between the common keys F…B and narrower ones through the rare flat keys.
+KEY_COLORS = ["#BF7004", "#C2BE22", "#029951", "#009296", "#0587CE", "#7E6CD9",
+              "#9464CD", "#A75CBD", "#B656A9", "#C25191", "#CA4F77", "#CE505B"]
 # Tillekens' seven doubles: listed on their records, but not counted in the canon of 212
 DOUBLES = {"007", "024", "025", "120", "186", "189", "194"}
 
