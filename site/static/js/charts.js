@@ -947,6 +947,67 @@
     }
   }
 
+  // numerals read in more than one key ({A: flat-VI = Bb: V}, {E: IV / c#: VI}, {i (B: ii)}) get a row
+  // per key, as Pollack types them, with the key named at its first numeral in the system
+  const KEYED = /^(\()?([A-Ga-g](?:#|b|-flat|-sharp)?):\s*(.*)$/;
+  const sameKey = (k) => k && k.replace(/-flat/, "b").replace(/-sharp/, "#");
+  function keyParts(rn, cur) {
+    const m = /^(.*?\S)\s*\(([A-Ga-g](?:#|b|-flat|-sharp)?:[^)]*)\)$/.exec(rn);
+    const bits = m ? [m[1], " ", m[2]] : rn.split(/(\s+[=\/]\s+|;\s+(?=\(?[A-Ga-g](?:#|b|-flat|-sharp)?:))/);
+    const out = [];
+    for (let i = 0; i < bits.length; i += 2) {
+      const k = KEYED.exec(bits[i].trim());
+      const key = k ? sameKey(k[2]) : i ? out[out.length - 1].key : cur;
+      out.push({ key, text: k ? (k[1] ? k[3].replace(/\)$/, "") : k[3]) : bits[i].trim(), sep: i ? bits[i - 1] : "" });
+    }
+    return out;
+  }
+  function layoutKeys(model) {
+    let cur = sameKey(model.key);
+    for (const sys of model.systems) {
+      const start = cur, keys = [];
+      const rows = sys.rows.map((row) => {
+        let c = start;
+        const beats = [row.pickup, ...row.bars].filter(Boolean).flatMap((b) => b.beats);
+        const parts = beats.map((bt) => {
+          if (!bt.rn) return null;
+          const ps = keyParts(bt.rn, c);
+          // "=" (or "; G: IV") is a pivot into the next key; "/" and "( )" are second readings, the music stays put
+          // (a second reading that includes the current key leaves it there)
+          const piv = ps.findIndex((p, i) => i && /[=;]/.test(p.sep));
+          c = piv > 0 ? ps.slice(piv).reduce((k, p, i) => (!i || /[=;]/.test(p.sep) ? p.key : k), null)
+            : ps.some((p) => p.key === c) ? c : ps[0].key;
+          ps.forEach((p) => { if (!keys.includes(p.key)) keys.push(p.key); });
+          return ps;
+        });
+        if (parts.some(Boolean)) cur = c;
+        return { beats, parts };
+      });
+      // one row in the chart's own key needs no labels: draw it as written, less any "A:" prefix
+      const plain = keys.length === 1 && keys[0] === sameKey(model.key);
+      if (!keys.length || (plain && !rows.some((r) => r.parts.some((ps) => ps && ps.length > 1)))) {
+        if (plain) rows.forEach((r) => r.beats.forEach((bt, i) => { if (r.parts[i]) bt.rn = r.parts[i][0].text; }));
+        continue;
+      }
+      const home = keys.indexOf(sameKey(model.key));
+      if (home > 0) keys.unshift(keys.splice(home, 1)[0]);
+      const named = new Set();
+      rows.forEach((r) => {
+        if (!r.parts.some(Boolean)) return;
+        r.beats.forEach((bt, i) => {
+          const lines = keys.map(() => "");
+          (r.parts[i] || []).forEach((p) => {
+            const label = plain || named.has(p.key) || !p.key ? "" : prettyKey(p.key) + ": ";
+            if (p.key) named.add(p.key);
+            const j = Math.max(0, keys.indexOf(p.key));
+            lines[j] += (lines[j] ? p.sep : "") + label + p.text;
+          });
+          bt.rns = lines;
+        });
+      });
+    }
+  }
+
   function render(fig, opts = {}) {
     const pre = fig.querySelector(".chart-src");
     if (!pre || fig.classList.contains("drawn")) return;
@@ -954,6 +1015,7 @@
     const model = score ? parseScore(score.textContent, opts.beatsPerBar || 4) : parse(pre.textContent);
     if (!model.ok) { fig.classList.add("undrawn"); return; }
     if (score) fig.classList.add("transcribed");
+    if (score) layoutKeys(model);
     const beatsPerBar = model.meter ? model.bpb : opts.beatsPerBar || 4;
     const wrap = document.createElement("div");
     wrap.className = "bars" + (model.explicit ? " timed" : "");
@@ -1007,7 +1069,7 @@
             const cls = bt.hold || bt.empty ? "ch hold" : bt.word ? "ch word" : bt.pitch !== undefined || bt.rest ? "ch note" : "ch";
             const grow = model.explicit && bt.dur ? `--d:${+bt.dur.toFixed(3)};` : "";
             const st = drop(bt).replace(/^ style="|"$/g, "");
-            return `<span class="beat"${grow || st ? ` style="${grow}${st}"` : ""}><span class="${cls}">${ch || "&nbsp;"}${bt.fig ? `<sup class="fig">${escapeHtml(bt.fig)}</sup>` : ""}</span><span class="rn">${bt.rn ? prettyNumeral(bt.rn) : ""}</span>` +
+            return `<span class="beat"${grow || st ? ` style="${grow}${st}"` : ""}><span class="${cls}">${ch || "&nbsp;"}${bt.fig ? `<sup class="fig">${escapeHtml(bt.fig)}</sup>` : ""}</span>` + (bt.rns ? bt.rns.map((t, k) => `<span class="rn${k ? " rn2" : ""}">${prettyNumeral(t)}</span>`).join("") : `<span class="rn">${bt.rn ? prettyNumeral(bt.rn) : ""}</span>`) +
               (bt.rn2 ? `<span class="rn rn2">${prettyNumeral(bt.rn2)}</span>` : "") +
               (bt.note ? `<span class="bnote">${escapeHtml(bt.note)}</span>` : "") + `</span>`;
           }).join("");
