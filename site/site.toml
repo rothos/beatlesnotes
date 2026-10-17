@@ -3,4 +3,6 @@ title = "Notes on … the Beatles"
 subtitle = "Alan W. Pollack’s musicological analyses of every Beatles song, 1989–2001"
 author = "Alan W. Pollack"
 # Used for <link rel=canonical> / Open Graph once the site is online. Leave blank for local use.
-base_url = ""
+base_url = "https://beatlesnotes.fyi"
+# Where "Spot an error?" links send mail. Set up as a forwarding alias at the registrar.
+feedback_email = "feedback@beatlesnotes.fyi"
