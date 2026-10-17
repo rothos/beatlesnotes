@@ -1,0 +1,25 @@
+# Lady Madonna, bridge (figure 127.3)
+# Sixteen bars, two to a chord, with the bassline Pollack types underneath walking in half notes:
+# two bass notes to each bar (D C | B A over d, G F | E D over G, and so on).
+# Bass octaves follow the stepwise descent (D3 down to D2); in the a-minor bars it turns and climbs
+# A B C E. Pollack types no bass for the last phrase, so that system has the chords only.
+# He puts the V of the third phrase under the F; it belongs to the G chord, as in the first phrase.
+# Last phrase carries two keys of analysis (C: I; a: III ii V), and the "4 --> 3" is the
+# suspension over the E chord, resolving at the start of its second bar.
+#? Bass octaves: E2-D3 range chosen per the guidelines; on the record the line may sit an octave apart in places (e.g. the climb A B C E).
+key C
+
+system
+chords "Chords"     | d{ii} | - | G{V} | - |
+bass "Bassline"     | D3 C3 | B2 A2 | G2 F2 | E2 D2 |
+
+system
+chords "Chords"     | C{I} | - | a{vi} | - |
+bass "Bassline"     | C3 B2 | A2 G2 | A2 B2 | C3 E3 |
+
+system
+chords "Chords"     | d{ii} | - | G{V} | - |
+bass "Bassline"     | D3 C3 | B2 A2 | G2 F2 | E2 D2 |
+
+system
+chords "Chords"     | C{C: I / a: III} | b-half-dim{ii} | E{V4} | -{3} |

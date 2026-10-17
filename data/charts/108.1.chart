@@ -1,0 +1,15 @@
+# Lucy in the Sky with Diamonds, intro ostinato (figure 108.1)
+# One keyboard line drawn as a pitch graph on four rows, suggesting four parts ("a single melodic
+# line to suggest a complete four-part linear texture"): a low E; the descending A G F# F that
+# becomes the verse bassline (fig. 108.2); a repeated upper A; and a top E (D C# in bar 4).
+# Each bar's three beats come from the column positions. In bar 1 the A appears on two rows at the
+# same moment, so it is doubled at the octave; the second row's A lies above the descending line,
+# which puts that line (A G F# F) an octave below the repeated A, with the low E beneath it.
+# D and C# share the middle beat of bar 4 (typed together as "DC#").
+#? Octaves: the relative heights follow the graph; the absolute register (E3 up to E5) is my guess
+#? from the record and may sit an octave off. Also check whether the record really doubles bar 1's A.
+meter 3/4
+key A
+
+system
+voice contour  | E3 A3+A4 E5 | G3 E5 A4 | F#3 A4 E5 | F3 D5*0.5 C#5*0.5 A4 |

@@ -1,0 +1,11 @@
+# I Am the Walrus, refrain (figure 121.5)
+# Three bars C D E arriving on V; Pollack labels the numerals with respect to V (flat VI of V,
+# flat-VII of V). The fourth bar (D, IV) is played in the third refrain only, so it gets its own
+# system with his "3rd refrain, only" label.
+key A
+
+system Refrain
+chords   | C{flat-VI of V} | D{flat-VII of V} | E{V} |
+
+system 3rd refrain, only
+chords   | D{IV} |

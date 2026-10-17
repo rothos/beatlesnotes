@@ -1,0 +1,22 @@
+# I Saw Her Standing There, verse mm. 9-16, Paul and John's two-part vocal (figure 26.2)
+# Pollack types the bars in quarter-note columns: B is a half note, C# and D# quarters, and so on.
+# A blank at the start of a bar holds the last note over (the G of "anoth-" into m. 11) or, in
+# mm. 12 and 15, leaves beat 1 empty: the next note comes in on beat 2.
+# Octaves: Paul climbs B3 to G4 and comes back to E4 on "er", then makes the octave leap the essay
+# describes up to E5 on "whoo", and descends an octave to E4 on "there". John sits below him
+# throughout, joining him in unison on the G of "stand-ing" and on the final E.
+# The G in m. 13 (John) is the one Pollack marks ** : he isn't sure whether John sings G or G#.
+#? m. 12: "whoo" placed on beat 2 with the first E (beat 1 a rest, as typed); on the record it may start on the downbeat.
+#? m. 12: John's C chosen as C5 (a third under Paul's falsetto E5); it could be C4, a tenth under.
+#? m. 9: "So how" both sung on the half-note B, as typed; the record may split the syllables differently.
+key E
+
+system m. 9
+voice "Paul"   | B3*2 C#4 D#4 | E4*2 F#4 G4 | -*1 F#4 E4*2 |
+voice "John"   | G#3*2 G#3 A3 | B3*2 B3 C#4 | -*1 B3 A3*2 |
+words          | So_how*2 could I | dance*2 with anoth- | r er,*3 |
+
+system m. 12
+voice "Paul"   | r E5 E5 E5 | E5*2 D5*2 | B4*3 G4 | r E4*3 |
+voice "John"   | r C5 C5 C5 | B4*2 G4*2 | F#4*3 G4 | r E4*3 |
+words          | r whoo, when I | saw*2 her*2 | stand-*3 ing | r there*3 |

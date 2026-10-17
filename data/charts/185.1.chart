@@ -1,0 +1,7 @@
+# Sun King, intro (figure 185.1)
+# Four measures of vamping on the I chord with an added sixth (E6): the two typed bars, played twice.
+key E
+
+system
+caption 2x
+chords   | E6{I} | - |

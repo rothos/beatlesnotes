@@ -1,0 +1,21 @@
+# Michelle, intro (figure 82.1)
+# A held C on top over a chromatic inner line F E Eb D Db C, all on an f-minor "envelope" until
+# the V (a bare open fifth on C) in bar 4. Timing in bars 1-3 follows the column positions of the
+# typed chart (E on beat 4 of bar 1; D on beat 3 of bar 2; in bar 3, C on beat 2, Bb on its "and",
+# Ab from the "and" of beat 3).
+# Pollack's footnote: iv 6/5 here can alternately be parsed as vi 4/3 (D-flat) by virtue of the F
+# in the bass (the low F he says enters at the start of bar 3; he doesn't type it in the chart).
+#? Bar 3 melody rhythm (C beat 2, Bb on the "and" of 2, Ab on the "and" of 3) is read from spacing only.
+meter 4/4
+key f
+
+system
+voice "Melody"       | C5 | - |
+voice "Inner line"   | F4*3 E4 | Eb4*2 D4*2 |
+chords "Chords"      | f{i} | - |
+
+system
+voice "Melody"       | -*1 C5*0.5 Bb4*1 Ab4*1.5 | C5 |
+voice "Inner line"   | Db4 | C4 |
+chords "Chords"      | b-flat{iv 6/5 **} | C{V} |
+caption ** iv 6/5 here can be alternately parsed as vi 4/3 (D-flat) by virtue of the F in the bass

@@ -1,0 +1,31 @@
+# Mother Nature's Son, verse (figure 147.1)
+# Two inner voices, mostly in parallel thirds (sixths in the third phrase), over a D pedal (an A
+# pedal in the third phrase), which Pollack types as the chord row. He points to the brass
+# overdubs for these lines. One system per four-bar phrase; each bar is one chord or note unless
+# split, and the third phrase's neighbour notes move in half notes ("the neighboring motion
+# doubles in speed").
+# Octaves: upper voice A4-D5, lower voice E4-B4, i.e. a third (or sixth) below; the parenthesised
+# numerals are the 6/4 labels Pollack says he would rather leave alone.
+#? Octaves of the two inner voices are a guess (brass register on the record); they may sit an octave lower.
+#? In the third phrase the lower voice is read as E4 F#4, a sixth under C#5 D5 (not E5 F#5 above them).
+key D
+
+system
+voice "Inner voice"  | A4 | B4 | - | A4 |
+voice "Inner voice"  | F#4 | G4 | - | F#4 |
+chords "Chords"      | D{I} | - | - | - |
+
+system
+voice "Inner voice"  | D5 | C#5 | B4 | - |
+voice "Inner voice"  | B4 | A4 | G#4 | - |
+chords "Chords"      | D{(vi6/4)} | - | E{V-of-V} | - |
+
+system
+voice "Inner voice"  | C#5 D5{(I6/4)} | C#5 D5 | C#5 D5 | C#5 |
+voice "Inner voice"  | E4 F#4 | E4 F#4 | E4 F#4 | E4 |
+chords "Chords"      | A{V} | - | - | - |
+
+system
+voice "Inner voice"  | A4 | - | - | - |
+voice "Inner voice"  | F#4 | Fn4 | Gn4 | F#4 |
+chords "Chords"      | D{I} | - | - | - |

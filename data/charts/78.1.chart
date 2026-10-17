@@ -1,0 +1,13 @@
+# Norwegian Wood, the hook phrase (figure 78.1)
+# Pollack's pitch graph, one row per scale step from C# down to B: an octave descent from B to B.
+# Read from the column positions, each bar has three beat slots: a lone note at the start of a bar
+# holds for the whole bar; three notes fill the three beats. All the A's sit on the same row of the
+# graph, so the A in bars 4 and 6 is the upper A (a leap up), as his "jumps increasingly wider"
+# describes: F# up to A, then D up to A.
+#? Octave: written at the sounding pitch of the guitar/sitar as I recall it (B4 down to B3); check it.
+#? Rhythm: the record has a lilting dotted feel (Pollack: "3/4 (6/8)"); this keeps his even beat slots.
+meter 3/4
+key E
+
+system
+voice contour  | B4*3 | C#5 B4 A4 | G#4*3 | F#4 A4 G#4 | E4*3 | D4 A4 C#4 | B3*3 | - |

@@ -1,0 +1,19 @@
+# I Want to Hold Your Hand, intro (figure 43.1)
+# Pollack's "CCD" is the riff, typed among the counts: C on the "&" of 3, C on 4, D on the "&" of 4,
+# so one and a half beats of music before the first downbeat (the pickup counts "3 & 4 &" with
+# beat 3 itself silent). His IV and V sit under the Cs and the D: the riff and the chords move
+# together, C (IV) to D (V). The dashes hold the D until the riff comes round again; in mm. 3-4
+# they fall on each beat, the D chord beaten out four in the bar.
+# The riff is given as single notes in the low register (C3 C3 D3); the restruck D3 on each beat of
+# mm. 3-4 is my reading of his beat-by-beat dashes. The last bar is the downbeat of the verse.
+#? Riff octave: C3/D3 is a guess at the register (Paul's bass and the guitars' roots); the record has full chords, with Paul's bass reportedly in parallel fifths.
+#? mm. 3-4: whether the D is restruck on every beat (as I have it) or simply held, check against the record.
+#? "Oh yeah, I ..." placed on beat 4 of m. 4; Pollack types it a little before the 4 (between 3 and 4).
+key G
+
+system
+words "Accents"  r*0.5 ^*0.5 r*0.5 ^*0.5 | r*2.5 ^*0.5 r*0.5 ^*0.5 | r*2.5 ^*0.5 r*0.5 ^*0.5 | r | r*3 Oh_yeah,_I_... | r |
+words "Beats"    3*0.5 &*0.5 4*0.5 &*0.5 | 1 & 2 & 3 & 4 & | 1 & 2 & 3 & 4 & | 1 2 3 4 | 1 2 3 4 | 1*1 r*3 |
+voice            r*0.5 C3*0.5 C3*0.5 D3*0.5 | -*2.5 C3*0.5 C3*0.5 D3*0.5 | -*2.5 C3*0.5 C3*0.5 D3*0.5 | D3 D3 D3 D3 | D3 D3 D3 D3 | r |
+chords           r*0.5 C{IV}*1 D{V}*0.5 | -*2.5 C{IV}*1 D{V}*0.5 | -*2.5 C{IV}*1 D{V}*0.5 | - - - - | - - - - | G{I} |
+caption the G on the last downbeat begins the verse

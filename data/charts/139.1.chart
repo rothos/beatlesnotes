@@ -1,0 +1,30 @@
+# Blackbird, verse (figure 139.1)
+# The guitar's two outer voices in parallel tenths, one system per phrase; the open G string that
+# drones between them on the record is not in the chart and is left out.
+# Octaves follow the guitar: bass on the low strings (G2 A2 B2 ...), top voice a tenth above.
+# Phrase A: Pollack marks the first bar "half" (the phrase is "two beats longer than three
+# measures"), so its two chords are written as a two-beat pickup. His lower-case "b" over "g" in
+# bar 3 is read as the B-over-G tenth an octave lower: the line climbs G/B, A/C, B/D and drops back
+# to G/B.
+# "X -" is a note held for the whole bar. In the last phrase Pollack leaves the bass blank under
+# the C-natural (V7) and types only a hold; read as the A carrying over from the bar before.
+# No chord symbols are typed, so the roman numerals go under the bass.
+#? Bar 3 of phrase A: lower-case b/g read as an octave drop (B3 over G2); check against the record.
+#? Last phrase, V7 bar: the bass is blank in the typed chart; held A2 is a guess (a D might be meant by "V7").
+key G
+
+system A phrase
+voice   B3 C4 | D4 | B3 - | - |
+bass    G2{I} A2 | B2 | G2 - | - |
+
+system B phrases
+voice   | E4 G4 | F#4 A4 | G4 - | - |
+bass    | C3{IV} C#3 | D3 D#3 | E3{vi} - | Eb3 - |
+
+system
+voice   | F#4 G4 | E4 - | Eb4 |
+bass    | D3 Db3 | C3{IV} - | - |
+
+system
+voice   | D4 - | C#4 - | Cn4 - | B3 - |
+bass    | B2{I6/3} - | A2{V-of-V} - | -{V7} | G2{I} - |

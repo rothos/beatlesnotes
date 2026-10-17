@@ -1,0 +1,25 @@
+# Penny Lane, verse (figure 104.1)
+# Eight bars, two to a system. The "walking bass cliche" B A# G# F# runs in quarter notes under the
+# B chord in bars 1 and 3; in bar 2 the bass takes the roots E C# F#, with the F# repeated an
+# octave apart on beat 4 (Pollack's "F#8").
+# The F# chord in bar 2 lasts beats 3-4 (bass F# F#). Bar 4's bass is a whole-note B under b7.
+# Pollack types no bass for bars 5-8, so those systems have chords only.
+# The asterisks mark the bars whose harmony he calls "extremely chromatic" (bars 4 and 5); kept as
+# the annotation under b7 and g#.
+# Bars 7-8: the 4-3 suspension over F#, resolving on beat 3 of bar 8.
+#? "F#8": read as the F# jumping up an octave (F#2 to F#3) on beat 4 of bar 2; it may be meant as an octave down instead.
+key B
+
+system m. 1
+chords "Chords"     | B{I} | E{IV} c#{ii} F#{V}*2 |
+bass "Bassline"     | B2 A#2 G#2 F#2 | E2 C#2 F#2 F#3 |
+
+system m. 3
+chords "Chords"     | B{I} | b7{* * * * * *} |
+bass "Bassline"     | B2 A#2 G#2 F#2 | B2 |
+
+system m. 5
+chords "Chords"     | g#{* * * * * *} | G{flat-VI} |
+
+system m. 7
+chords "Chords"     | F#{V4} | -*2 -{3}*2 |
