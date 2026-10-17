@@ -51,8 +51,8 @@
     let minor = root === root.toLowerCase() || /^(m|min)(?!aj)/.test(qual);
     let iv;
     const q = qual.replace(/^(min|m)(?!aj)/, "");
-    if (/dim7|o7/.test(q)) iv = [0, 3, 6, 9];
-    else if (/half-dim|ø/.test(q)) iv = [0, 3, 6, 10];
+    if (/half-dim|ø/.test(q)) iv = [0, 3, 6, 10];
+    else if (/dim7|o7/.test(q)) iv = [0, 3, 6, 9];
     else if (/dim|^o$/.test(q)) iv = [0, 3, 6];
     else if (/aug|\+/.test(q)) iv = [0, 4, 8];
     else {
