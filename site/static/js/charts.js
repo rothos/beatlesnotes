@@ -137,7 +137,8 @@
   }
 
   function isNumeralLine(line, firstBar) {
-    const toks = tokens(line).filter((x) => !(x.c < firstBar && KEY_RE.test(x.t)) && !/^[A-Ga-g](#|b|-flat|-sharp)?:$/.test(x.t));
+    // (inversion figures like "6/5" and footnote stars don't count either way)
+    const toks = tokens(line).filter((x) => !(x.c < firstBar && KEY_RE.test(x.t)) && !/^[A-Ga-g](#|b|-flat|-sharp)?:$/.test(x.t) && !/^(\d+(\/\d+)*|\*+)$/.test(x.t));
     if (!toks.length) return false;
     const good = toks.filter((x) => NUMERAL_RE.test(x.t) || /^\(?(V|v|IV|ii|I|vi|iii|vii)[\w-]*-of-/.test(x.t) || /^[-–(]+$/.test(x.t) || /^\(?(V|IV|I)\)?$/.test(x.t));
     return good.length / toks.length >= 0.6;
@@ -600,14 +601,9 @@
 
     // the events of one row's bar, laid over `len` beats from `start`
     function barEvents(sys, row, ri, bar, start, len, hasBass, voices) {
-      const width = Math.max(1, bar.e - bar.s);
-      const evs = bar.beats.filter((b) => b.chord || b.pitch !== undefined || b.rest || b.hold || b.empty).map((b) => ({
-        b, at: Math.min(len - 1, Math.max(0, Math.round(((b.c - bar.s - 1) / width) * len))),
-      }));
-      // two events on the same beat: spread them evenly instead
-      for (let k = 1; k < evs.length; k++) if (evs[k].at <= evs[k - 1].at) {
-        evs.forEach((e, n) => (e.at = (n * len) / evs.length)); break;
-      }
+      // the notes and chords in a bar share it equally (Pollack's spacing is too loose to read rhythm from)
+      const evs = bar.beats.filter((b) => b.chord || b.pitch !== undefined || b.rest || b.hold || b.empty);
+      evs.forEach((b, n) => (evs[n] = { b, at: (n * len) / evs.length }));
       if (row.role === "chords" && (!evs.length || evs[0].at > 0)) evs.unshift({ b: { hold: true }, at: 0 });
       // a note line falls silent at the bar line unless the bar begins with a hold ("-")
       if (row.role !== "chords" && !(evs.length && evs[0].at === 0)) evs.unshift({ b: { rest: true }, at: 0 });
