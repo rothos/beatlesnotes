@@ -6,3 +6,5 @@ author = "Alan W. Pollack"
 base_url = "https://beatlesnotes.fyi"
 # Where "Spot an error?" links send mail. Set up as a forwarding alias at the registrar.
 feedback_email = "feedback@beatlesnotes.fyi"
+# Source repository, linked from the footer.
+repo_url = "https://github.com/rothos/beatlesnotes"
