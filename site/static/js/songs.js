@@ -109,6 +109,15 @@
 
   // ---------------------------------------------------------------- circle of fifths
   const wheel = document.getElementById("keywheel");
+  // key colours come from build.py (KEY_COLORS), in circle-of-fifths order
+  const COLORS = (document.body.dataset.keyColors || "").split(" ");
+  // dark or white label, whichever reads better on a key colour (they alternate light and dark)
+  const inkOn = (hex) => {
+    const [r, g, b] = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16) / 255).map((c) => (c <= 0.04045 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4));
+    const y = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+    return (y + 0.05) / 0.05 > 1.05 / (y + 0.05) ? "#10131c" : "#ffffff";
+  };
+
   function drawWheel(list) {
     if (!wheel) return;
     const maj = new Array(12).fill(0), min = new Array(12).fill(0);
@@ -121,7 +130,6 @@
     svg += `<circle cx="${c}" cy="${c}" r="${R1}" fill="none" stroke="var(--rule)"/><circle cx="${c}" cy="${c}" r="${R2}" fill="none" stroke="var(--rule)"/>`;
     FIFTHS.forEach((pc, i) => {
       const a = (i / 12) * Math.PI * 2 - Math.PI / 2;
-      const COLORS = ["#4E79A7", "#59A14F", "#E3B93B", "#F28E2B", "#E15759", "#B07AA1", "#FF9DA7", "#9C755F", "#A9A29E", "#5FADA6", "#8CD17D", "#93C3E6"];
       [[R1, maj[pc], "major", NAMES[pc], "var(--tile-l-major)"], [R2, min[(pc + 9) % 12], "minor", NAMES[(pc + 9) % 12].toLowerCase(), "var(--tile-l-minor)"]].forEach(([r, n, mode, label, l]) => {
         const x = c + r * Math.cos(a), y = c + r * Math.sin(a);
         const rr = dot(n);
@@ -130,7 +138,7 @@
         svg += `<g><title>${label} ${mode}: ${n} song${n === 1 ? "" : "s"}</title>`;
         if (rr) svg += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${rr.toFixed(1)}" fill="${fill}"/>`;
         else svg += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="3" fill="var(--rule)"/>`;
-        svg += `<text x="${x.toFixed(1)}" y="${(y + 4).toFixed(1)}" text-anchor="middle" font-size="${mode === "major" ? 12.5 : 11}" font-weight="${n ? 600 : 400}" ${rr > 14 ? 'fill="#10131c"' : ""}>${n ? label : ""}</text></g>`;
+        svg += `<text x="${x.toFixed(1)}" y="${(y + 4).toFixed(1)}" text-anchor="middle" font-size="${mode === "major" ? 12.5 : 11}" font-weight="${n ? 600 : 400}" ${rr ? `style="fill: ${inkOn(base)}"` : ""}>${n ? label : ""}</text></g>`;
       });
     });
     svg += `<text x="${c}" y="${c - 4}" text-anchor="middle" font-size="12" fill="var(--pencil)">major outside</text><text x="${c}" y="${c + 12}" text-anchor="middle" font-size="12" fill="var(--pencil)">minor inside</text></svg>`;

@@ -49,9 +49,13 @@ NAMES = ["C", "D♭", "D", "E♭", "E", "F", "F♯", "G", "A♭", "A", "B♭", "
 SHARP_NAMES = {1: "C♯", 6: "F♯", 8: "G♯", 3: "D♯", 10: "A♯"}
 
 
-# one colour per key, in circle-of-fifths order: C G D A E B F♯ D♭ A♭ E♭ B♭ F
-KEY_COLORS = ["#4E79A7", "#59A14F", "#E3B93B", "#F28E2B", "#E15759", "#B07AA1",
-              "#FF9DA7", "#9C755F", "#A9A29E", "#5FADA6", "#8CD17D", "#93C3E6"]
+# one colour per key, in circle-of-fifths order: C G D A E B F♯ D♭ A♭ E♭ B♭ F.
+# Hue walks the circle of fifths (OKLCH), with wide steps between the common keys F…B and
+# narrow ones through the rare flat keys; lightness alternates (L 0.49 / 0.66) so neighbours
+# stay apart, colour-blind vision included. Checked with the dataviz palette validator against
+# the light, sepia and dark papers.
+KEY_COLORS = ["#027254", "#04A4BA", "#125FB3", "#A07BE0", "#973576", "#DF695E",
+              "#A03D02", "#D47816", "#825604", "#B18E05", "#686403", "#81A022"]
 # Tillekens' seven doubles: listed on their records, but not counted in the canon of 212
 DOUBLES = {"007", "024", "025", "120", "186", "189", "194"}
 
@@ -516,6 +520,7 @@ def main():
 
     # a version stamp for asset URLs, so browsers fetch new scripts and styles after each rebuild
     config["v"] = str(int(time.time()))
+    config["key_colors"] = KEY_COLORS
     config["note_urls"] = [essays[s]["url"] for s in series_order if essays[s]["folder"] == "essays"]
 
     # ---------------------------------------------------------------- write pages
@@ -559,7 +564,6 @@ def main():
         write(f"page-{fm['slug']}.html", "page.html", p=fm, title=fm["title"])
 
     by_canon_grid = [s for s in songs if s["canon"]]
-    config["key_colors"] = KEY_COLORS
     write("index.html", "home.html", songs=by_canon_grid, releases=canon["releases"], series=series,
           n_essays=sum(1 for e in essays.values() if e["folder"] == "essays"), title=None)
     write("songs.html", "songs.html", songs=songs, title="All songs")

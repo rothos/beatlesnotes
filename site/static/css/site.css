@@ -173,7 +173,7 @@ main { min-height: 60vh; }
 .hero .lede { font-size: clamp(1.1rem, 2vw, 1.3rem); }
 
 .canon { margin: 2.5rem 0 0; --t: clamp(14px, 1.7vw, 22px); --g: 3px; }
-.canon-controls { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; font-size: 0.85rem; color: var(--pencil); margin-bottom: 1rem; }
+.canon-controls { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; font-size: 0.85rem; color: var(--pencil); margin-bottom: 0.9rem; }
 .canon-controls button {
   background: none; border: 1px solid var(--rule); border-radius: 999px; padding: 0.25rem 0.7rem;
   cursor: pointer; color: var(--ink-2);
@@ -222,11 +222,24 @@ main { min-height: 60vh; }
 .lg-hollow { background: transparent !important; box-shadow: inset 0 0 0 1.5px var(--pencil); }
 .canon[data-color="read"] .tile { background: var(--paper-3); }
 .canon[data-color="read"] .tile.is-read { background: var(--staff); }
-.canon figcaption { margin-top: 1.2rem; display: flex; flex-direction: column; align-items: flex-start; gap: 0.6rem; font-size: 0.88rem; color: var(--ink-2); }
+.canon figcaption { margin-top: 1.4rem; display: flex; flex-direction: column; align-items: flex-start; gap: 0.6rem; font-size: 0.88rem; color: var(--ink-2); }
 /* reserve two lines so the page doesn't jump as the label changes */
 .canon-tip { display: block; min-height: 2.9em; max-width: 70ch; }
 .canon-tip strong { color: var(--ink); font-weight: 600; }
-.canon-legend { display: flex; flex-wrap: wrap; gap: 0.2rem 0.75rem; align-items: center; }
+/* the legend sits between the controls and the grid; home.js sizes it to the tallest mode so switching doesn't shift the grid */
+.canon-legend { display: flex; flex-wrap: wrap; gap: 0.35rem 0.3rem; align-items: center; font-size: 0.85rem; color: var(--ink-2);
+  align-content: flex-start; margin: 0 0 1.75rem; }
+.canon-legend button.lg { font: inherit; color: inherit; background: none; border: 1px solid transparent; border-radius: 999px;
+  padding: 0.2rem 0.55rem 0.2rem 0.45rem; cursor: pointer; }
+.canon-legend button.lg:hover, .canon-legend button.lg.on { border-color: var(--rule); background: var(--paper-2); }
+.canon-legend button.lg[aria-pressed="true"] { border-color: var(--ink-2); }
+.canon-legend button.lg:focus-visible { outline: 2px solid var(--staff); outline-offset: 1px; }
+.canon-legend .n { color: var(--pencil); font-variant-numeric: tabular-nums; }
+.canon-legend .muted { color: var(--pencil); }
+/* highlighting from the legend: matching songs stay, everything else steps back */
+.canon .tile { transition: transform 0.12s ease, box-shadow 0.12s ease, opacity 0.15s ease; }
+.canon.is-hl .tile:not(.hl) { opacity: 0.14; }
+.canon.is-hl .tile.hl { box-shadow: 0 0 0 1.5px var(--paper), 0 0 0 2.5px var(--ink-2); }
 .lg-clear { color: var(--ink-2); }
 .linkbtn:focus-visible { outline: 2px solid var(--staff); outline-offset: 2px; }
 .linkbtn.danger { color: var(--record); font-weight: 600; }

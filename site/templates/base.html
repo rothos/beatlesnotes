@@ -15,7 +15,7 @@
 <script>/* apply saved reading settings before first paint */
 try{var s=JSON.parse(localStorage.getItem('pn-settings')||'{}'),d=document.documentElement;for(var k in s)d.dataset[k]=s[k]}catch(e){}</script>
 </head>
-<body class="{% block bodyclass %}{% endblock %}" data-root="{{ root }}">
+<body class="{% block bodyclass %}{% endblock %}" data-root="{{ root }}" data-key-colors="{{ config.key_colors | join(' ') }}">
 <a class="skip" href="#main">Skip to content</a>
 <header class="masthead">
   <a class="wordmark" href="{{ root }}index.html" aria-label="Notes on … home">

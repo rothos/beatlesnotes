@@ -17,6 +17,7 @@
       <button type="button" data-color="written" aria-pressed="false">When Pollack wrote it</button>
       <button type="button" data-color="read" aria-pressed="false">What you’ve read</button>
     </div>
+    <div class="canon-legend" id="canon-legend"></div>
     <ol class="canon-grid" id="canon-grid">
       {% for rel in releases %}
         {% set fresh = rel.tracks | selectattr('first') | rejectattr('double') | list %}
@@ -27,7 +28,7 @@
           {% for t in fresh %}
             {% set s = songs | selectattr('canon', 'equalto', t.canon) | first %}
             <li><a class="tile{% if s.key_info %} {{ s.key_info.mode }}{% else %} nokey{% endif %}"
-                   href="{{ s.href or '#' }}" {% if s.key_info %}style="--kc: {{ s.key_info.color }}"{% endif %}
+                   href="{{ s.href or '#' }}" {% if s.key_info %}style="--kc: {{ s.key_info.color }}" data-pc="{{ s.key_info.pc }}"{% endif %}
                    data-written="{{ s.written }}" data-href="{{ s.href }}"
                    data-writer="{{ 'other' if s.kind in ('cover', 'traditional') else s.writer_group }}" data-vocal="{{ s.vocal_group }}"
                    aria-label="{{ s.title }}{% if s.key %}, {{ s.key }}{% endif %}"
@@ -39,7 +40,6 @@
       {% endfor %}
     </ol>
     <figcaption id="canon-cap">
-      <span class="canon-legend" id="canon-legend"></span>
       <span class="canon-tip" id="canon-tip" aria-live="polite">The official canon, in order of first release: one square per song. Point at a square to see what it is.</span>
     </figcaption>
   </figure>
