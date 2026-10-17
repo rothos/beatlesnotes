@@ -146,7 +146,7 @@ class Renderer:
     """Markdown -> HTML with link rewriting, chord-chart figures, heading ids, and link tracking."""
 
     def __init__(self):
-        self.md = MarkdownIt("commonmark", {"html": True, "typographer": False}).enable("table")
+        self.md = MarkdownIt("commonmark", {"html": True, "typographer": True}).enable(["table", "smartquotes"])
         self.md.add_render_rule("fence", self._fence)
         self.md.add_render_rule("link_open", self._link_open)
         self.md.add_render_rule("image", self._image)
@@ -226,6 +226,62 @@ class Renderer:
 
     def render(self, text: str) -> str:
         return self.md.render(text)
+
+
+# =========================================================================== smart quotes
+# markdown-it's typographer pairs the quotes it can; this pass curls the rest, plus every quote in
+# text that never went through Markdown (song titles from data/, front matter), on the final HTML.
+
+_ELIDED = re.compile(r"['‘](?=(?:[Ee]m|[Rr]ound|[Tt]il|[Tt]ween|[Cc]ause|\d\ds?)\b|e\s)")  # 'em 'round '67 'e
+_RNR = re.compile(r"(?<=\s)['‘]n['’](?=\s)")                                          # rock 'n' roll
+_PRIMED = re.compile(r"(?<![A-Za-z'‘’])(?=[A-Z]+['’])[A-Z]+(?:['’]+[A-Z]+)*['’]*(?![A-Za-z'’])")  # AA'BA'' -> AA′BA″
+_OPENS = " \t\n([{—–/-“‘"
+_SKIP = re.compile(r"<(script|style|pre|code|textarea)\b.*?</\1\s*>", re.S | re.I)
+_TEXT = re.compile(r"(<[^>]*>)|([^<]+)")
+
+
+def _prime(m: re.Match, s: str, ctx: str) -> str:
+    tok = m.group()
+    if re.search(r"['’](?:S|T|M|LL|RE|VE|D)$|['’](?:S|T|M|LL|RE|VE|D)['’]", tok):  # DON'T, IT'S: a word
+        return tok
+    q = re.findall(r"(?:^|(?<=(.)))(['‘’])", ctx + s[:m.start()])
+    opener = q and (q[-1][1] == "‘" or (q[-1][1] == "'" and (q[-1][0] or " ") in _OPENS))
+    if re.fullmatch(r"[A-Z]+['’]", tok) and opener:
+        return tok                                                         # ‘Beatles VI’: closes a quote
+    return re.sub(r"['’]{2}", "″", tok).replace("'", "′").replace("’", "′")
+
+
+def smarten(s: str, ctx: str = " ") -> str:
+    """Curl straight quotes in plain text; `ctx` is the text just before `s` in the same block."""
+    s, prev = _PRIMED.sub(lambda m: _prime(m, s, ctx), s), (ctx or " ")[-1]
+    s = _RNR.sub("’n’", _ELIDED.sub("’", s))
+    out = []
+    for c in s:
+        if c == '"':
+            c = "“" if prev in _OPENS else "”"
+        elif c == "'":
+            c = "‘" if prev in _OPENS else "’"
+        out.append(c)
+        prev = c
+    return "".join(out)
+
+
+def smarten_html(doc: str) -> str:
+    """smarten() every text node, carrying context across tags; leaves code, scripts and attributes alone."""
+    out, ctx, last = [], " ", 0
+    for m in _SKIP.finditer(doc + "<script></script>"):
+        for t in _TEXT.finditer(doc[last:m.start()]):
+            if t.group(1):
+                if re.match(r"</?(p|li|h\d|td|th|div|br|section|title|dt|dd|figcaption)\b", t.group(1), re.I):
+                    ctx = " "
+                out.append(t.group(1))
+            else:
+                text = smarten(html.unescape(t.group(2)), ctx)
+                ctx = (ctx + text)[-300:]
+                out.append(html.escape(text, quote=False))
+        out.append(m.group(0))
+        last = m.end()
+    return "".join(out)[: -len("<script></script>")]
 
 
 def plain_text(md_text: str) -> str:
@@ -444,9 +500,9 @@ def main():
                 if target != slug:
                     backlinks[target].add(slug)
             search_docs.append({
-                "u": e["url"], "t": e["title"], "n": e.get("series", ""),
+                "u": e["url"], "t": smarten(e["title"]), "n": e.get("series", ""),
                 "k": "; ".join(p.get("meta", {}).get("key", "") for p in e["parts"] if p.get("meta")),
-                "x": plain_text(e["body_md"].replace("::: part", "")),
+                "x": smarten(plain_text(e["body_md"].replace("::: part", ""))),
             })
 
     # ---------------------------------------------------------------- glossary: where each term is used
@@ -469,7 +525,7 @@ def main():
         out = DIST / rel
         out.parent.mkdir(parents=True, exist_ok=True)
         t = env.get_template(template)
-        out.write_text(t.render(root=root, config=config, page_path=rel, **ctx), encoding="utf-8")
+        out.write_text(smarten_html(t.render(root=root, config=config, page_path=rel, **ctx)), encoding="utf-8")
 
     for slug, e in essays.items():
         if e["folder"] == "essays":

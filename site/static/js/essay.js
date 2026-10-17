@@ -180,12 +180,14 @@
   // ---------------------------------------------------------------- highlight search terms (?hl=…)
   const hl = new URLSearchParams(location.search).get("hl");
   if (hl && prose) {
-    const terms = (/^".*"$/.test(hl) ? [hl.slice(1, -1)] : hl.split(/\s+/)).filter((t) => t.length > 1);
+    const q = PN.norm(hl.trim());
+    const terms = (/^".*"$/.test(q) ? [q.slice(1, -1)] : q.split(/\s+/)).filter((t) => t.length > 1);
     if (terms.length) {
-      const re = new RegExp("(" + terms.map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|") + ")", "gi");
+      const src = "(" + terms.map((t) => PN.termPattern(t, false)).join("|") + ")";
+      const re = new RegExp(src, "gi"), has = new RegExp(src, "i");  // `has` has no lastIndex to carry over
       const walker = document.createTreeWalker(prose, NodeFilter.SHOW_TEXT);
       const hits = [];
-      while (walker.nextNode()) if (re.test(walker.currentNode.nodeValue)) hits.push(walker.currentNode);
+      while (walker.nextNode()) if (has.test(walker.currentNode.nodeValue)) hits.push(walker.currentNode);
       hits.forEach((n) => {
         if (n.parentElement.closest("pre")) return;
         const frag = document.createDocumentFragment();

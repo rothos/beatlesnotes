@@ -94,7 +94,7 @@
       const s = document.createElement("script");
       s.src = root + "assets/js/search-index.js";
       s.onload = () => {
-        index = (window.PN_SEARCH || []).map((d) => ({ ...d, tl: d.t.toLowerCase(), xl: d.x.toLowerCase() }));
+        index = (window.PN_SEARCH || []).map((d) => ({ ...d, tl: norm(d.t), xl: norm(d.x) }));
         resolve(index);
       };
       s.onerror = reject;
@@ -106,6 +106,11 @@
   const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
   const reEsc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const norm = (s) => s.toLowerCase().replace(/[’‘]/g, "'").replace(/[“”]/g, '"');
+  // A normalised term as a regex source that matches either quote style; `html` when matching escaped text.
+  const termPattern = (t, html) => [...t].map((c) => c === "'" ? "['‘’]"
+    : c === '"' ? (html ? '(?:&quot;|["“”])' : '["“”]') : reEsc(html ? esc(c) : c)).join("");
+  PN.norm = norm;
+  PN.termPattern = termPattern;
 
   function search(raw) {
     const query = norm(raw.trim());
@@ -139,7 +144,7 @@
     const start = Math.max(0, d.x.lastIndexOf(" ", Math.max(0, at - 70)));
     const end = Math.min(d.x.length, at + 170);
     let s = esc(d.x.slice(start, end));
-    const re = new RegExp("(" + terms.map((t) => reEsc(esc(t))).join("|") + ")", "gi");
+    const re = new RegExp("(" + terms.map((t) => termPattern(t, true)).join("|") + ")", "gi");
     s = s.replace(re, "<mark>$1</mark>");
     return (start > 0 ? "…" : "") + s + (end < d.x.length ? "…" : "");
   }
@@ -155,7 +160,7 @@
     list.innerHTML = results.map((r, i) => {
       const d = r.d;
       const meta = [d.n ? "No. " + d.n.split(".")[0] : "", d.k].filter(Boolean).join(", ");
-      const title = esc(d.t).replace(new RegExp("(" + r.terms.map((t) => reEsc(esc(t))).join("|") + ")", "gi"), "<mark>$1</mark>");
+      const title = esc(d.t).replace(new RegExp("(" + r.terms.map((t) => termPattern(t, true)).join("|") + ")", "gi"), "<mark>$1</mark>");
       const sn = d.tl.includes(r.terms[0]) && r.terms.length === 1 ? "" : `<span class="r-s">${snippet(d, r.terms)}</span>`;
       const q = encodeURIComponent(raw.trim());
       return `<li><a href="${root}${d.u}?hl=${q}" id="sr-${i}"><span class="r-t">${title}</span><span class="r-m">${esc(meta)}</span>${sn}</a></li>`;
@@ -203,6 +208,15 @@
     const unread = urls.filter((u) => !PN.isRead(PN.slugFromHref(u)));
     const pool = unread.length ? unread : urls;
     location.href = root + pool[Math.floor(Math.random() * pool.length)];
+  }));
+
+  // Fill the feedback mail with the page it came from, so reports say where they mean.
+  document.querySelectorAll("[data-feedback]").forEach((a) => a.addEventListener("click", () => {
+    const addr = a.href.replace(/^mailto:/, "").split("?")[0];
+    const page = document.title.split(" — ")[0];
+    const url = a.dataset.url || location.href;
+    a.href = "mailto:" + addr + "?subject=" + encodeURIComponent("Correction: " + page) +
+      "&body=" + encodeURIComponent("Page: " + url + "\n\n");
   }));
 
   // ---------------------------------------------------------------- keyboard
