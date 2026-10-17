@@ -239,7 +239,6 @@ main { min-height: 60vh; }
 /* highlighting from the legend: matching songs stay, everything else steps back */
 .canon .tile { transition: transform 0.12s ease, box-shadow 0.12s ease, opacity 0.15s ease; }
 .canon.is-hl .tile:not(.hl) { opacity: 0.14; }
-.canon.is-hl .tile.hl { box-shadow: 0 0 0 1.5px var(--paper), 0 0 0 2.5px var(--ink-2); }
 .lg-clear { color: var(--ink-2); }
 .linkbtn:focus-visible { outline: 2px solid var(--staff); outline-offset: 2px; }
 .linkbtn.danger { color: var(--record); font-weight: 600; }
