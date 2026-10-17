@@ -7,7 +7,7 @@ code = "AMW.1"
 author = "Alan W. Pollack"
 signoff = "032701#33.1"
 copyright = "Copyright © 2001 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/amw.shtml"
+source = "https://awpnoteson.info/notes/amw.html"
 
 [[parts]]
 id = "main"

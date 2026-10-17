@@ -7,7 +7,7 @@ code = "ATAA.0"
 author = "Alan W. Pollack"
 signoff = "050790#17"
 copyright = "Copyright © 1990 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/ataa.0.shtml"
+source = "https://awpnoteson.info/notes/ataa.0.html"
 current = "../essays/ataa.md"
 
 [[parts]]

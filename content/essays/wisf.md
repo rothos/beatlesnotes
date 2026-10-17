@@ -7,7 +7,7 @@ code = "WISF"
 author = "Alan W. Pollack"
 signoff = "040296#114"
 copyright = "Copyright © 1996 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/wisf.shtml"
+source = "https://awpnoteson.info/notes/wisf.html"
 
 [[parts]]
 id = "main"

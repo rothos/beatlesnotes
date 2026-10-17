@@ -7,7 +7,7 @@ code = "SSSS.0"
 author = "Alan W. Pollack"
 signoff = "101889#12.0"
 copyright = "Copyright © 1989 by Alan W. Pollack. All Rights Reserved . This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/ssss.0.shtml"
+source = "https://awpnoteson.info/notes/ssss.0.html"
 current = "../essays/ssss.md"
 
 [[parts]]

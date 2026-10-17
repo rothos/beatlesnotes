@@ -7,7 +7,7 @@ code = "GDS.1"
 author = "Alan W. Pollack"
 signoff = "073000#11.1"
 copyright = "Copyright © 2000 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/gds.shtml"
+source = "https://awpnoteson.info/notes/gds.html"
 
 [[parts]]
 id = "main"

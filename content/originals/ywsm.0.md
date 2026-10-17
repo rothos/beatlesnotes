@@ -5,7 +5,7 @@ kind = "original"
 series = "9.0"
 code = "YWSM.0"
 author = "Alan W. Pollack"
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/ywsm.0.shtml"
+source = "https://awpnoteson.info/notes/ywsm.0.html"
 current = "../essays/ywsm.md"
 
 [[parts]]

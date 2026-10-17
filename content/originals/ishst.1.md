@@ -7,7 +7,7 @@ code = "ISHST.1"
 author = "Alan W. Pollack"
 signoff = "012001#26.1"
 copyright = "Copyright © 2001 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/ishst.1.shtml"
+source = "https://awpnoteson.info/notes/ishst.1.html"
 current = "../essays/ishst.md"
 
 [[parts]]

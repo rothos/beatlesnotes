@@ -7,7 +7,7 @@ code = "DMC.0"
 author = "Alan W. Pollack"
 signoff = "022493#77.0"
 copyright = "Copyright © 1993 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/dmc.0.shtml"
+source = "https://awpnoteson.info/notes/dmc.0.html"
 current = "../essays/dmc.md"
 
 [[parts]]

@@ -7,7 +7,7 @@ code = "YB"
 author = "Alan W. Pollack"
 signoff = "032298#146"
 copyright = "Copyright © 1998 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/yb.shtml"
+source = "https://awpnoteson.info/notes/yb.html"
 
 [[parts]]
 id = "main"

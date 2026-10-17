@@ -7,7 +7,7 @@ code = "NR.1"
 author = "Alan W. Pollack"
 signoff = "052900#8.1"
 copyright = "Copyright © 2000 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/nr.shtml"
+source = "https://awpnoteson.info/notes/nr.html"
 
 [[parts]]
 id = "main"

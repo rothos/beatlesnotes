@@ -7,7 +7,7 @@ code = "H.1"
 author = "Alan W. Pollack"
 signoff = "033000#6.1"
 copyright = "Copyright © 2000 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/h.shtml"
+source = "https://awpnoteson.info/notes/h.html"
 
 [[parts]]
 id = "main"
@@ -146,7 +146,7 @@ It's a very pleasing effect; given that the harmonic rhythm is rather slow throu
 
 On a visceral level you might say that what otherwise is a cock-sured sense of kinetic motion in this progression is subtly belied by an uncertainty over its exact direction; kind of like the late-adolescent tale told by the lyrics.
 
-The four-fold repeat of the title in this outro appears to violate some rhetorical rule of three, but more than makes up for it in the way the final one is literally screamed out; "[Ouch!](https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/MIRROR/Covach_The_Rutles.pdf)" indeed.
+The four-fold repeat of the title in this outro appears to violate some rhetorical rule of three, but more than makes up for it in the way the final one is literally screamed out; "[Ouch!](https://web.archive.org/web/20190828222816/http://www.icce.rug.nl/~soundscapes/DATABASES/AWP/MIRROR/Covach_The_Rutles.pdf)" indeed.
 
 ### Verse
 

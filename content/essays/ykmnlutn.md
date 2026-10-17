@@ -6,7 +6,7 @@ series = "#166 (YKMN(LUTN))"
 author = "Alan W. Pollack"
 signoff = "052399#166"
 copyright = "Copyright © 1999 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/ykmnlutn.shtml"
+source = "https://awpnoteson.info/notes/ykmnlutn.html"
 
 [[parts]]
 id = "main"

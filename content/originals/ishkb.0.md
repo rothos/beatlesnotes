@@ -7,7 +7,7 @@ code = "ISHKB.0"
 author = "Alan W. Pollack"
 signoff = "020190#15.0"
 copyright = "Copyright © 1990 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/ishkb.0.shtml"
+source = "https://awpnoteson.info/notes/ishkb.0.html"
 current = "../essays/ishkb.md"
 
 [[parts]]

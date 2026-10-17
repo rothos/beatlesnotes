@@ -7,7 +7,7 @@ code = "TTR"
 author = "Alan W. Pollack"
 signoff = "082592#65"
 copyright = "Copyright © 1992 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/ttr.shtml"
+source = "https://awpnoteson.info/notes/ttr.html"
 
 [[parts]]
 id = "main"

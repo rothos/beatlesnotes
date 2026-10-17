@@ -7,7 +7,7 @@ code = "SPLHCB"
 author = "Alan W. Pollack"
 signoff = "112195#106"
 copyright = "Copyright © 1995 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/splhcb.shtml"
+source = "https://awpnoteson.info/notes/splhcb.html"
 
 [[parts]]
 id = "main"

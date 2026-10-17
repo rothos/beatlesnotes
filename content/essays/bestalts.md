@@ -7,7 +7,7 @@ code = "BESTALTS"
 author = "Alan W. Pollack"
 signoff = "080691"
 copyright = "Copyright © 1991 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/bestalts.shtml"
+source = "https://awpnoteson.info/notes/bestalts.html"
 
 [[parts]]
 id = "main"

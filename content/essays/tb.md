@@ -7,7 +7,7 @@ code = "TB"
 author = "Alan W. Pollack"
 signoff = "123091#44"
 copyright = "Copyright © 1991 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/tb.shtml"
+source = "https://awpnoteson.info/notes/tb.html"
 
 [[parts]]
 id = "main"

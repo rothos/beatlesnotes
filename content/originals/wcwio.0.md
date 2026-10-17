@@ -7,7 +7,7 @@ code = "WCWIO.0"
 author = "Alan W. Pollack"
 signoff = "053189#1.0"
 copyright = "Copyright © 1989 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/wcwio.0.shtml"
+source = "https://awpnoteson.info/notes/wcwio.0.html"
 current = "../essays/wcwio.md"
 
 [[parts]]

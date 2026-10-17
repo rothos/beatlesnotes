@@ -4,7 +4,7 @@ slug = "copyright"
 kind = "extra"
 series = "Legal Stuff"
 author = "Alan W. Pollack"
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/copyright.shtml"
+source = "https://awpnoteson.info/notes/copyright.html"
 
 [[parts]]
 id = "main"

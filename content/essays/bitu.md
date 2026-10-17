@@ -7,7 +7,7 @@ code = "BITU"
 author = "Alan W. Pollack"
 signoff = "052797#130"
 copyright = "Copyright © 1997 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/bitu.shtml"
+source = "https://awpnoteson.info/notes/bitu.html"
 
 [[parts]]
 id = "main"

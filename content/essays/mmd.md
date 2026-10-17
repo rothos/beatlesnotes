@@ -7,7 +7,7 @@ code = "MMD"
 author = "Alan W. Pollack"
 signoff = "120797#137"
 copyright = "Copyright © 1997 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/mmd.shtml"
+source = "https://awpnoteson.info/notes/mmd.html"
 
 [[parts]]
 id = "main"

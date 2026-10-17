@@ -7,7 +7,7 @@ code = "COVERS3"
 author = "Alan W. Pollack"
 signoff = "080592#64"
 copyright = "Copyright © 1992 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/covers3.shtml"
+source = "https://awpnoteson.info/notes/covers3.html"
 
 [[parts]]
 id = "main"

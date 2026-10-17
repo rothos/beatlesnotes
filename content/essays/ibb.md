@@ -7,7 +7,7 @@ code = "IBB.1"
 author = "Alan W. Pollack"
 signoff = "121000#19.1"
 copyright = "Copyright © 2000 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/ibb.shtml"
+source = "https://awpnoteson.info/notes/ibb.html"
 
 [[parts]]
 id = "main"

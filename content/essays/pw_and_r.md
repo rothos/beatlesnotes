@@ -7,7 +7,7 @@ code = "PW_AND_R"
 author = "Alan W. Pollack"
 signoff = "122293#91"
 copyright = "Copyright © 1993 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/pw_and_r.shtml"
+source = "https://awpnoteson.info/notes/pw_and_r.html"
 
 [[parts]]
 id = "main"

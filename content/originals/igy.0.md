@@ -7,7 +7,7 @@ code = "IGY.0"
 author = "Alan W. Pollack"
 signoff = "090391#34.0"
 copyright = "Copyright © 1991 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/igy.0.shtml"
+source = "https://awpnoteson.info/notes/igy.0.html"
 current = "../essays/igy.md"
 
 [[parts]]

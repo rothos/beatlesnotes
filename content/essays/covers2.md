@@ -7,7 +7,7 @@ code = "COVERS2"
 author = "Alan W. Pollack"
 signoff = "121791#42"
 copyright = "Copyright © 1991 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/covers2.shtml"
+source = "https://awpnoteson.info/notes/covers2.html"
 
 [[parts]]
 id = "main"

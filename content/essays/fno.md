@@ -7,7 +7,7 @@ code = "FNO"
 author = "Alan W. Pollack"
 signoff = "020595#99"
 copyright = "Copyright © 1995 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/fno.shtml"
+source = "https://awpnoteson.info/notes/fno.html"
 
 [[parts]]
 id = "main"

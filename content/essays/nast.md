@@ -7,7 +7,7 @@ code = "NAST"
 author = "Alan W. Pollack"
 signoff = "120891#41"
 copyright = "Copyright © 1991 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/nast.shtml"
+source = "https://awpnoteson.info/notes/nast.html"
 
 [[parts]]
 id = "main"

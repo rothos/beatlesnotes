@@ -21,7 +21,8 @@ from bs4 import BeautifulSoup, NavigableString, Tag
 
 ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_MIRROR = Path.home() / "Desktop/Library/Mirrors/www.icce.rug.nl/~soundscapes"
-ICCE = "https://www.icce.rug.nl/~soundscapes/"
+ICCE = "https://www.icce.rug.nl/~soundscapes/"   # the original host, now offline
+NEW = "https://awpnoteson.info/notes/"              # where the same pages live now (same names, .html)
 
 MIRROR = Path(sys.argv[1]) if len(sys.argv) > 1 else DEFAULT_MIRROR
 AWP = MIRROR / "DATABASES/AWP"
@@ -73,8 +74,8 @@ def map_href(href: str, here: str) -> str | None:
     # anything else relative: point at the live Soundscapes site
     clean = re.sub(r"^(\.\./)+", "", href)
     if href.startswith("../../"):
-        return ICCE + clean
-    return ICCE + "DATABASES/AWP/" + clean
+        return NEW + re.sub(r"\.shtml\b", ".html", clean.rsplit("/", 1)[-1])
+    return NEW + re.sub(r"\.shtml\b", ".html", clean)
 
 
 # --------------------------------------------------------------------------- inline markdown
@@ -543,7 +544,7 @@ def write_essay(path: Path):
         "author": page.get("author", "Alan W. Pollack"),
         "signoff": page.get("signoff"),
         "copyright": page.get("copyright"),
-        "source": ICCE + f"DATABASES/AWP/{slug}.shtml",
+        "source": NEW + f"{slug}.html",
     }
     if original:
         fm["current"] = f"../essays/{ORIGINAL_RE.match(slug).group(1)}.md"
@@ -730,7 +731,7 @@ def import_about_page(path: Path, slug: str, author: str, title: str):
         elif ev[0] == "pre":
             md.append("```text\n" + pre_text(ev[1]) + "\n```")
     fm = frontmatter({"title": title, "slug": slug, "author": author,
-                      "source": ICCE + str(path.relative_to(MIRROR)).replace(".shtml.html", ".shtml")})
+                      "source": NEW + path.name.replace(".shtml.html", ".html")})
     (ROOT / "content/pages" / f"{slug}.md").write_text(fm + "\n\n" + "\n\n".join(md) + "\n", encoding="utf-8")
 
 

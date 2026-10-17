@@ -7,7 +7,7 @@ code = "GN"
 author = "Alan W. Pollack"
 signoff = "092798#156"
 copyright = "Copyright © 1998 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/gn.shtml"
+source = "https://awpnoteson.info/notes/gn.html"
 
 [[parts]]
 id = "main"

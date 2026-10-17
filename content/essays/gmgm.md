@@ -7,7 +7,7 @@ code = "GMGM"
 author = "Alan W. Pollack"
 signoff = "052696#116"
 copyright = "Copyright © 1996 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/gmgm.shtml"
+source = "https://awpnoteson.info/notes/gmgm.html"
 
 [[parts]]
 id = "main"

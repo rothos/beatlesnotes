@@ -7,7 +7,7 @@ code = "QMEN.1"
 author = "Alan W. Pollack"
 signoff = "031300#197.1"
 copyright = "Copyright © 2000 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/qmen.shtml"
+source = "https://awpnoteson.info/notes/qmen.html"
 
 [[parts]]
 id = "main"

@@ -7,7 +7,7 @@ code = "IATW"
 author = "Alan W. Pollack"
 signoff = "112596#121"
 copyright = "Copyright © 1996 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/iatw.shtml"
+source = "https://awpnoteson.info/notes/iatw.html"
 
 [[parts]]
 id = "main"

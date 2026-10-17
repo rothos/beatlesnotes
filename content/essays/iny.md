@@ -7,7 +7,7 @@ code = "INY"
 author = "Alan W. Pollack"
 signoff = "120792#71"
 copyright = "Copyright © 1992 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/iny.shtml"
+source = "https://awpnoteson.info/notes/iny.html"
 
 [[parts]]
 id = "main"

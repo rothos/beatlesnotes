@@ -7,7 +7,7 @@ code = "IW"
 author = "Alan W. Pollack"
 signoff = "022298#144"
 copyright = "Copyright © 1998 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/iw.shtml"
+source = "https://awpnoteson.info/notes/iw.html"
 
 [[parts]]
 id = "main"

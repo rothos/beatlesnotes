@@ -7,7 +7,7 @@ code = "B.0"
 author = "Alan W. Pollack"
 signoff = "072290#20.0"
 copyright = "Copyright © 1990 by Alan W. Pollack. All Rights Reserved. This article may be reproduced, retransmitted, redistributed and otherwise propagated at will, provided that this notice remains intact and in place."
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/b.0.shtml"
+source = "https://awpnoteson.info/notes/b.0.html"
 current = "../essays/b.md"
 
 [[parts]]

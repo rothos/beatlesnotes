@@ -2,7 +2,7 @@
 title = "“I was nervously waiting …” — An interview with Alan W. Pollack"
 slug = "interview"
 author = "Ian Hammond"
-source = "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/interview.shtml"
+source = "https://awpnoteson.info/notes/interview.html"
 +++
 
 **An interview with Alan W. Pollack**
