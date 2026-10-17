@@ -1,7 +1,7 @@
 # Polythene Pam, outro (figure 187.3)
 # Twenty-two bars: eight times the two-bar double plagal phrase (D and A, two beats each, then a
 # bar of E), then six bars of E, then the A that begins the next track. The numbers over the typed
-# chart count the iterations and the six E bars; they are kept as a words row.
+# chart count the iterations and the six E bars; they are kept as bar marks.
 # The "Bassline:" in the typed chart is a label, not notes: the bassline is the downward scale
 # E D C# B in bars 3-6 of the E section, one note to a bar, leading to the A. Pollack's "I" under
 # the A marks it as the new tonic (E heard as V of A).
@@ -11,15 +11,9 @@
 #? Bass octave of the scale (E3 down to A2) is chosen for range; check against the record.
 key E
 
-system Iterations 1-4
-words               | 1 | r | 2 | r | 3 | r | 4 | r |
-chords              | D A | E | D A | E | D A | E | D A | E |
-
-system Iterations 5-8
-words               | 5 | r | 6 | r | 7 | r | 8 | r |
-chords              | D A | E | D A | E | D A | E | D A | E |
+system
+chords              | [1] D A | E | [2] D A | E | [3] D A | E | [4] D A | E | [5] D A | E | [6] D A | E | [7] D A | E | [8] D A | E |
 
 system
-words               | 1 | 2 | 3 | 4 | 5 | 6 | r |
-chords              | E | - | - | - | - | - | A{I} |
+chords              | [1] E | [2] - | [3] - | [4] - | [5] - | [6] - | A{I} |
 bass "Bassline"     | E3 | - | E3 | D3 | C#3 | B2 | A2 |

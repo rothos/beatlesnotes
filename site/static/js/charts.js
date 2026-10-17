@@ -567,13 +567,16 @@
     };
     // the events of one bar, each given its start ("at") and length in beats
     const bar = (src, role, prev, len) => {
+      // "[5]" at the start of a bar: a measure number or count, printed small above the bar
+      let mark = null;
+      src = src.replace(/^\s*\[([^\]]*)\]/, (x, t) => { mark = t; return ""; });
       const toks = src.match(/[^\s{]*(?:\{[^}]*\})?[^\s{]*(?:\{[^}]*\})?/g).filter((t) => t.trim());
       const beats = toks.map((t) => event(t, role, prev));
       const fixed = beats.reduce((a, b) => a + (b.dur || 0), 0), free = beats.filter((b) => !b.dur).length;
       const share = len === null ? 1 : free ? Math.max(0, len - fixed) / free : 0;
       let at = 0;
       beats.forEach((b) => { b.at = at; b.dur = b.dur || share; at += b.dur; });
-      return { beats, len: len === null ? at : len };
+      return { beats, len: len === null ? at : len, mark };
     };
     text.split("\n").forEach((raw) => {
       if (/^\s*#\?/.test(raw)) { model.doubts.push(raw.replace(/^\s*#\?\s*/, "")); return; }
@@ -988,7 +991,8 @@
           const real = cells[i];
           const bar = real || { beats: [] };
           const b = document.createElement("div");
-          b.className = "bar" + (real ? "" : " pad") + (sys.pickup && i === 0 ? " pickup" : "");
+          b.className = "bar" + (real ? "" : " pad") + (sys.pickup && i === 0 ? " pickup" : "") + (real && real.mark ? " marked" : "");
+          if (real && real.mark) b.dataset.mark = real.mark;
           if (sys.playable && i < drvBars + (sys.pickup ? 1 : 0)) b.dataset.slot = slot + i;
           // an empty bar holds the chord in a chord row; in a line of notes it is silence
           b.innerHTML = (bar.beats.length ? bar.beats : [{ hold: row.role === "chords", empty: row.role !== "chords", text: "" }]).map((bt) => {

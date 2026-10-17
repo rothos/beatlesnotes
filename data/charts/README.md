@@ -68,6 +68,10 @@ two quarters; events without `*n` share whatever is left equally. Events before 
 must have the same number of bars; use `-` for a bar where a part holds, or `r` for one where it is
 silent. Line rows up by meaning, not by spacing.
 
+**Bar marks.** `[5]` at the start of a bar prints a small mark above it: use it for measure numbers,
+iteration counts ("1", "2", ... over repeats) and rehearsal letters, which never get a row of their
+own. Put marks in the first row of a system. `| [5] D A | E |`.
+
 **Annotations.** `{...}` after an event (before or after `*n`) is a roman numeral or analysis
 label drawn under it: `f{i}`, `b-flat{iv 6/5}`, `E{V7}`, `D{IV7}`.
 
