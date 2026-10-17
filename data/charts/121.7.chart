@@ -1,6 +1,6 @@
 # I Am the Walrus, the passage into the outro, growing out of the final refrain (figure 121.7)
+# Pollack's "...Walrus..." cue sits over the E, so it is a bar mark there rather than a words row.
 key A
 
 system
-words    ...Walrus_... | r | r | r | r |
-chords   r | E{V} | D{IV} | C{flat-III} | B{V-of-V} |
+chords   | [...Walrus...] E{V} | D{IV} | C{flat-III} | B{V-of-V} |
