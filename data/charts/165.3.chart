@@ -1,0 +1,9 @@
+# Let It Be, coda before the guitar solo (figure 165.3): the four-bar phrase twice
+# The bracketed F (IV) at the end is implied, not played: a move toward the solo that follows.
+key C
+
+system
+chords   | F{IV} | C{I} | G{V} F{IV} | C{I} |
+
+system
+chords   | F{IV} | C{I} | G{V} F{IV} | C{I} F{(IV)} |

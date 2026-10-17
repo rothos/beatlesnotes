@@ -1,0 +1,10 @@
+# Honey Pie, intro (figure 152.1)
+# The first four bars are played twice (2X), making the twelve-bar AAB intro.
+key G
+
+system
+caption 2X
+chords   | e{ii} A{V-of-V} | D{V} | c{iv} | G{I} |
+
+system
+chords   | A{V9} | - | D{V} | - |

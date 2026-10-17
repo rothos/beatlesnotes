@@ -1,0 +1,9 @@
+# I Call Your Name, bridge (figure 47.4)
+# Pollack types "C (nat)": C natural, the flat-VI.
+key E
+
+system
+chords | A{IV} | - | c#{vi} | - |
+
+system
+chords | F#{V-of-V} | - | C{flat-VI} | B{V} |

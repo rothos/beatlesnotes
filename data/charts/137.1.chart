@@ -1,0 +1,18 @@
+# Martha My Dear, intro/verse (figure 137.1)
+# Fourteen and a half bars: Pollack marks the first bar "half" (the first phrase is six beats
+# short), so its E-flat is written as a two-beat pickup. "A-flat 9" and "B-flat 7" are A-flat9 and
+# B-flat7.
+key E-flat
+
+system
+caption the first bar is a half bar
+chords   E-flat{I}*2 | - | - D{V-of-iii} |
+
+system
+chords   | g{iii} | C{V-of-(V-of-V)} | F{V-of-V} | - |
+
+system
+chords   | B-flat{V} | A-flat9{IV} | B-flat7{V} | A-flat7{IV} |
+
+system
+chords   | B-flat7{V} | A-flat7{IV} | B-flat7{V} | - |

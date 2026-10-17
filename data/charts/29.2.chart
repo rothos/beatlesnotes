@@ -1,0 +1,10 @@
+# Misery, verse (figure 29.2)
+# Pollack labels the last chord "iv", a slip for vi (the essay: "the final measure shifts to the
+# vi chord"); it is labelled vi here. That a appears only when another verse follows.
+key C
+
+system
+chords | C{I} | F{IV} | C{I} | F{IV} |
+
+system
+chords | - | G{V} | C{I} | a{vi} |

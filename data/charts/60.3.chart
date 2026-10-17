@@ -1,0 +1,14 @@
+# I'll Follow the Sun, bridge (figure 60.3)
+# The descending line A Ab G (the "downward line cliché" that brings in the minor iv) is typed over
+# the first phrase only. Added: the same line in the parallel second phrase, and the G held
+# through the C7 bar (it belongs to the chord).
+#? Line octave (A3 down to G3) chosen as an inner voice.
+key C
+
+system
+voice    | An3 | Ab3 | G3 | - |
+chords   | d{ii} | f{iv} | C{I} | C7{V-of-IV} |
+
+system
+voice    | An3 | Ab3 | G3 | r |
+chords   | d{ii} | f{iv} | C{I} | d{ii} |

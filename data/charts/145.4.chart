@@ -1,0 +1,16 @@
+# Julia, outro from m. 9 of the last verse (figure 145.4)
+# Lyrics as Pollack typed them over the bars. In the second system he types "I" in the chord row
+# of the last bar; it is the D chord. The final D7 is his "I7", a last free dissonance.
+key D
+
+system
+chords   | D{I} | b7{vi} | A{V} | D{I} |
+words    | "So I | sing ... | Jul- i- a. | r |
+
+system
+chords   | A{V} | D{I} |
+words    | Jul- i- a. | r |
+
+system
+chords   | f#{iii} | A{V} | D7{I} | - |
+words    | Jul- | i- a. | r | r |

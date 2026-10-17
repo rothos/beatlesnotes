@@ -1,0 +1,14 @@
+# She's Leaving Home, refrain (figure 111.2)
+# Four whole bars and one three-quarters bar (three of the four big beats).
+#? Last bar: c# and F# share its three beats equally by rule; the typed columns suggest c# for two beats and F# for one.
+key E
+
+system
+chords | E{I} | - |
+
+system
+chords | - D{flat-VII} | c#{vi} F#{V7-of-V} |
+
+system
+caption the last bar is three-quarters long: the V-of-V resolves straight to I at the next verse
+chords | <3> c#{vi} F#{V9-of-V} |

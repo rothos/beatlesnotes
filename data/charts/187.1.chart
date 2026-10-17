@@ -1,0 +1,13 @@
+# Polythene Pam, intro: the double plagal cadence over an E pedal (figure 187.1)
+# The two bars are played twice (2X). Pollack's beat counts place the "Bom!"s and "Ba"s of his
+# rhythm row: Bom! on 1 and 3, then Ba, Ba, Ba on the "&" of 1, 2 and the "&" of 2, and Bom! on 3.
+# The bass E is restruck on beat 3 of bar 1, as typed.
+#? Bass octave (E2) chosen for range; check against the record.
+key E
+
+system
+caption 2X
+words "Beats"    | 1 2 3 4 | 1*0.5 &*0.5 2*0.5 &*0.5 3 4 |
+words "Rhythm"   | Bom!*2 Bom!*2 | r*0.5 Ba,*0.5 Ba,*0.5 Ba,*0.5 Bom!*2 |
+bass "Bass"      | E2*2 E2*2 | E2 |
+chords "Chords"  | D{flat-VII}*2 A{IV}*2 | E{I} |

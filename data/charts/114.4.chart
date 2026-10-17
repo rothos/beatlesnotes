@@ -1,0 +1,19 @@
+# When I'm Sixty-Four, bridge (figure 114.4)
+# Seventeen measures (16 + 1): a modal pivot to b-flat, then back to D-flat through e-flat
+# (iv in b-flat = ii in D-flat).
+key b-flat
+
+system
+chords   | b-flat{i} | - | A-flat{flat-VII} | b-flat{i} |
+
+system
+chords   | b-flat | - | F{V} | - |
+
+system
+chords   | b-flat{i} | - | e-flat{iv = D-flat: ii} | - |
+
+system
+chords   | G-flat{D-flat: IV} | A-flat{V} | D-flat{I} | A-flat{V} |
+
+system
+chords   | - |

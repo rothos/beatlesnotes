@@ -1,0 +1,11 @@
+# Octopus's Garden, verse (figure 181.2)
+key E
+
+system
+chords   | [2X] E{I} | - | c#{vi} | - | A{IV} | - | B{V} | - |
+
+system
+chords   | c#{vi} | - | - | - | A{IV} | - | B{V} | - |
+
+system
+chords   | E{I} | - | c#{vi} | - | A{IV} | B{V} | E{I} | - |

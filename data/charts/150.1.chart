@@ -1,0 +1,17 @@
+# Helter Skelter, intro (figure 150.1): twelve bars over a descending chromatic line
+# The rows of the second system are unlabeled; they continue Pollack's three rows (Upper voice 1,
+# Upper voice 2, Chords). Upper voice 2 carries the downward chromatic line D C# C B to G#; its D
+# under the E chord is the 4/2 seventh, and its C# under A the 6/3.
+# The pickup note before bar 1 and the vocal's entry (a pickup to bar 3) are not in the chart.
+#? Octaves (upper voice 1 at E4, voice 2 from D4 down to G#3, meeting in unison on C4 in bar 7) are a guess; check the register of these lines on the record.
+key E
+
+system
+voice "Upper voice 1"   | E4 | - | - | - | - | - |
+voice "Upper voice 2"   | D4 | - | - | - | C#4 | - |
+chords "Chords"         | E{V-of-IV4/2} | - | - | - | A{IV6/3} | - |
+
+system
+voice "Upper voice 1"   | C4 | - | D4 | - | E4 | - |
+voice "Upper voice 2"   | C4 | - | B3 | - | G#3 | - |
+chords "Chords"         | C{flat-VI} | - | G{flat-III} | - | E{I} | - |

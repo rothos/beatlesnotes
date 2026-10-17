@@ -1,0 +1,14 @@
+# Julia, refrain: 4 + 4 + 5 bars (figure 145.2)
+# The v chord takes a free 7 and then 9 ("a 7 | 9"). The g7/9 is g minor with seventh and ninth;
+# Pollack notes its root is delayed until beat 3. The final D, typed after the last bar line, is the
+# thirteenth bar, eliding with the next section.
+key D
+
+system
+chords | D{I} | b7{vi} | a{v} a7 | a9 |
+
+system
+chords | B{V-of-ii} | - | g7/9{iv} | - |
+
+system
+chords | D{I} | b7{vi} | f#{iii} | A{V} | D{I} |

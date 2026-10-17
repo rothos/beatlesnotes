@@ -1,0 +1,9 @@
+# When I Get Home, refrain (figure 54.1)
+# The last G pivots: flat-VII in A, and V in C.
+key A
+
+system
+chords   | A{I} | - | - | - |
+
+system
+chords   | D9{IV} | G{flat-VII} | a{i} | G{A: flat-VII / C: V} |

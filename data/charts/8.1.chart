@@ -1,0 +1,14 @@
+# No Reply, verse (figure 8.1)
+# AA'BA'': the first system is played twice. The d chord is ii 6/5 (F in the bass, per the bassline
+# in figure 8.2); Pollack's "I (added sixth)" is written C6.
+key C
+
+system
+caption 2X
+chords | d{ii6/5} | G{V} | C6{I (added sixth)} | - |
+
+system
+chords | a{vi} | e{iii} | F7{IV7} | e{iii} |
+
+system
+chords | d{ii6/5} | G{V} | C6{I (added sixth)} | - |

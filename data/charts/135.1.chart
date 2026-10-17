@@ -1,0 +1,15 @@
+# The Continuing Story Of Bungalow Bill, refrain (figure 135.1)
+# Eleven bars (ABA'B'), the second phrase cut to three; G is the pivot into A Major.
+key C
+
+system
+chords   | C{I} | G{V} | C{I} | f{iv} |
+
+system
+chords   | C{I} | f{iv} | G{C: V / A: flat-VII} |
+
+system
+chords   | A{A: I} | E{V} | A{I} | d{iv} |
+
+system
+chords   | A{I} | d{iv} | E{V} | - |

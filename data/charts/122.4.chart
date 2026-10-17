@@ -1,0 +1,17 @@
+# Magical Mystery Tour, instrumental bridge: ten bars (figure 122.4).
+# Pollack types "f" in bar 3 with "ii7" under it; read as f# (ii7 of E), as in the second system.
+# The G# in bar 8 is the syncopated bass note the essay describes, falling on the "and" of beat 3
+# by Pollack's beat count "1 2 3& 4" (kept as a words row). To show it as a bass note, the system
+# gets a bass row; its B and F# are added (the chord roots), not typed by Pollack.
+key E
+
+system
+chords   | B{E: V} | - | f#{ii7} | - |
+
+system
+words             | r | r | r | 1 2 3*0.5 &*0.5 4 |
+bass              | B2 | - | F#2 | -*2.5 G#2*1.5 |
+chords            | B{V} | - | f#{ii7} | - |
+
+system
+chords   | A{IV} | B{V} |

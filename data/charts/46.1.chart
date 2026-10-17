@@ -1,0 +1,8 @@
+# You Can't Do That, bridge (figure 46.1): two four-bar phrases with a fake modulation to e minor
+key G
+
+system
+chords   | B{e: V} | e{i} | a{iv = G: ii} b{G: iii} | G{e: flat-III = G: I} |
+
+system
+chords   | B{e: V} | e{i} | a{iv = G: ii} | b{G: iii} D{V} |

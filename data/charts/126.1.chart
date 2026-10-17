@@ -1,0 +1,18 @@
+# Your Mother Should Know, verse (figure 126.1)
+# Eleven measures, 4 + 3 + 4. The bassline works down the scale under the first phrase, putting
+# the A chord of bar 3 in second inversion (E in the bass); Pollack types it only for that phrase.
+# Pivot: d is iv in a = ii in C.
+#? Pollack's numerals for bars 6 and 9 read "V" under C and "I" under G; with G as V and C as I
+#? (as in his fig. 126.3, the same D G C progression) they look like slips. Shown here as G{V} and
+#? C{I}; check against the typed view.
+key a
+
+system
+chords              | a{i} | F{iv} | A{V-of-iv} | d{iv = C: ii} |
+bass "Bassline"     | A2 | F2 | E2 | D2 |
+
+system
+chords              | G{C: V} | C{I} | A{V-of-ii} |
+
+system
+chords              | D{V-of-V} | G{V} | C{I = a: VI} | E{a: V} |

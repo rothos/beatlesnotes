@@ -1,0 +1,13 @@
+# I Will, verse (figure 144.1)
+# Nine bars: an eight-bar verse elided with a two-bar interlude. Pollack's "V" under the F7 in
+# bar 4 is kept as typed; the chord leads to the B-flat (IV), i.e. it acts as V-of-IV.
+key F
+
+system
+chords  | F{I} d{vi} | g7{ii} C{V} | F{I} d{vi} | a{iii} F7{V} |
+
+system
+chords  | B-flat{IV} C{V} | d{vi} F{I} | B-flat{IV} C{V} | F{I} d{vi} |
+
+system
+chords  | g{ii} C{V} |

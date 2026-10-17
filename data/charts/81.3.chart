@@ -1,0 +1,15 @@
+# The Word, the last verse (figure 81.3)
+# The harmonium chord carries over the first two bars (Pollack's cue, kept as a words row); the
+# voices come in at bar 3. His phrase letters (X, Y) are kept as bar marks.
+# lyrics as typed by Pollack are omitted here
+key D
+
+system
+words    | harmonium | - | [X] r | r |
+chords   | D{I} | - | - | - |
+
+system
+chords   | [X] G{IV} | - | [X] D{I} | - |
+
+system
+chords   | [Y] A{V} | G{IV} | D{I} | - |

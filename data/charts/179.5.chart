@@ -1,0 +1,6 @@
+# Maxwell's Silver Hammer, interlude (figure 179.5)
+# Pollack's inversions "F# 6/3" and "D 4/3" are written as slash chords, F#/A# and D/A.
+key D
+
+system
+chords   | D{I} F#/A#{V-of-vi} | b{vi} D/A{V} | G{IV} | D{I} |

@@ -1,0 +1,13 @@
+# Yer Blues, the twelve-bar frame of all the sections (figure 146.1)
+# Pollack's spastic extra beat in measure 10 is not part of the typed chart and is left out.
+# The G chords in the last two bars carry no numeral in his chart (passing flat-III).
+key E
+
+system
+chords   | E{I} | - | - | - |
+
+system
+chords   | A{IV} | - | E{I} | - |
+
+system
+chords   | G{flat-III} | B{V} | E{I} G A{IV} G | E{I} D B{V} |

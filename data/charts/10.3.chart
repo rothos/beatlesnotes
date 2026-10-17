@@ -1,0 +1,13 @@
+# It Won't Be Long, voice leading through the #ii diminished seventh (figure 10.3)
+# The four voices from A (IV) through the F-double-sharp diminished seventh to E (I) in mm. 6-7 of
+# the intro: the outer voices hold, the inner two move up chromatically. The IV and the dim7
+# share m. 6 (two beats each, as in fig. 10.2); E is the downbeat of m. 7.
+# As spelled, soprano (C# down to B) and alto (A up to B) meet on the same B.
+#? Octaves are chosen for a close four-part voicing (bass A2, tenor E4, alto A4, soprano C#5); the record's guitar voicing may differ.
+key E
+
+system
+voice "S"   | C#5 - | B4 |
+voice "A"   | A4 A#4 | B4 |
+voice "T"   | E4 F##4 | G#4 |
+bass "B"    | A2 - | E2 |

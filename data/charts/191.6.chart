@@ -1,0 +1,15 @@
+# The End, Part 3, the 3/4 line (figure 191.6)
+# Four 3/4 bars: alto C and tenor A held while soprano and bass descend. The roman numerals Pollack
+# types under the first bar (the F chord, pivot to C) are attached to the bass note.
+# lyrics as typed by Pollack are omitted here
+#? Soprano bar 4 is typed "a"; the parallel sixths Pollack describes would want C (C over E).
+#? Kept as typed (A4, possibly the melody dropping before the leap to the next line); check.
+#? Octaves are my voicing (soprano F5 down, bass A2 down); the record may differ.
+meter 3/4
+
+system
+caption 3/4 (where quarter == quarter)
+voice "Soprano"    | F5 | E5 | D5 | A4 |
+voice "Alto"       | C5 | - | - | - |
+voice "Tenor"      | A4 | - | - | - |
+bass "Bass"        | A2{A: flat-VI / C: IV} | G2 | F2 | E2 |

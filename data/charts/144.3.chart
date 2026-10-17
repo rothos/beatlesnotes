@@ -1,0 +1,19 @@
+# I Will, final verse into the outro (figure 144.3)
+# Picked up in the bar before the change: the "once-twice-three-times" loop of three phrases, the
+# third strike growing into the long phrase that reaches the flat-VI (D-flat), then the scat-sung
+# variation on the bridge.
+# Lyrics as typed by Pollack are omitted here (his cues mark the start of each strike: a pickup
+# before bar 1, and the ends of bars 2 and 4 leading into bars 3 and 5).
+key F
+
+system
+chords  | B-flat{IV} C{V} | d{vi} e-dim7{vii} F{I} | B-flat{IV} C{V} | d{vi} e-dim7{vii} F{I} |
+
+system
+chords  | B-flat{IV} C{V} | d{vi} | g{ii} C{V} | D-flat{flat-VI} |
+
+system
+chords  | - | - | F{I} | - |
+
+system
+chords  | Bb{IV} a{iii} | d{vi} | g{ii} C{V} | F{I} |

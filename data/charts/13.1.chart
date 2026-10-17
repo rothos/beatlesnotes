@@ -1,0 +1,11 @@
+# You Never Give Me Your Money, Part X phrase (figure 13.1)
+# Eight measures, a diatonic circle of fifths. Pollack's "d9 -> 8" and "C4 -> 3" are suspensions
+# resolving within the bar (9 to 8 over d, 4 to 3 over C); each is shown as two halves of the bar,
+# the second half's chord being the resolution (my spelling).
+key a
+
+system
+chords   | a7{i} | d9{iv 9} d{8} | G7{VII} | Csus4{III 4} C{3} |
+
+system
+chords   | F{VI} | b-dim{ii} E{V} | a{I} | - |

@@ -1,0 +1,14 @@
+# The Word, verse (figure 81.1)
+# Pollack types the opening words of each phrase over the chart with his phrase letters (X, Y);
+# the letters are kept as bar marks.
+# lyrics as typed by Pollack are omitted here
+key D
+
+system
+chords   | [X] D{I} | - | [X] - | - |
+
+system
+chords   | [X] G{IV} | - | [X] D{I} | - |
+
+system
+chords   | [Y] A{V} | G{IV} | [X] D{I} | - |

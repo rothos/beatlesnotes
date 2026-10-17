@@ -1,0 +1,10 @@
+# She Loves You, textbook resolution of V7 to I in C (figure 5.1)
+# Four voices, the chord tones of G7 moving to C; numerals under the bass.
+# The inner-voice B drops to G (a "frustrated" leading tone) so the C chord is complete.
+key C
+
+system
+voice   | F4 | E4 |
+voice   | D4 | C4 |
+voice   | B3 | G3 |
+bass    | G2{V} | C3{I} |

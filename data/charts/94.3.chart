@@ -1,0 +1,6 @@
+# I'm Only Sleeping, bridge (figure 94.3)
+# Pollack's two rows of numerals: the d is vii in e and iv in a; the rest are in a.
+key e
+
+system
+chords   | d{e: vii = a: iv} | E{a: V} | a{a: i} | F{a: VI} |

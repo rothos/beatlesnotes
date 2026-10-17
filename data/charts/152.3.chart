@@ -1,0 +1,14 @@
+# Honey Pie, bridge (figure 152.3)
+# Paul's melodic bassline puts the chords in inversions: B under e (vi6/4), C# under A, D under G
+# (I6/4), B under E (V-of-ii6/4). In bar 4 the D holds a beat and the bass walks G A B up to the
+# C of bar 5.
+#? Bass octaves are a guess (B2 up to D3, walking G2 A2 B2 to C3); the last D could be D2, a fifth down rather than a fourth up, and the whole line may sit an octave higher.
+key G
+
+system
+chords "Chords"   | e{vi6/4} | A{V-of-V6/3} | G{I6/4} | - |
+bass "Bass"       | B2 | C#3 | D3 | - G2 A2 B2 |
+
+system
+chords "Chords"   | C{IV} | E{V-of-ii6/4} | a{ii} | D{V} |
+bass "Bass"       | C3 | B2 | A2 | D3 |

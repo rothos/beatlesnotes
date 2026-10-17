@@ -1,0 +1,7 @@
+# Magical Mystery Tour, intro: a four-bar phrase stretched to six by repeating its last two bars
+# (figure 122.1). Pollack's two readings (D: I ... V-of-V, or E: flat-VII ... I) are both kept.
+key D
+
+system
+chords   | D{D: I / E: flat-VII} | A{V / IV} | [2X] E{V-of-V / I} | - |
+caption 2X over the last two bars

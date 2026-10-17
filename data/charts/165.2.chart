@@ -1,0 +1,15 @@
+# Let It Be, refrain (figure 165.2)
+# Three upper voices over the chords in the first phrase, as Pollack types them; the E held through
+# bars 1-3 makes bar 2 (G in the bass) sound as much like V with added sixth as iii 6/5. Alto and
+# tenor move in parallel thirds. The second phrase is chords only.
+#? Octaves: a close voicing around middle C (soprano E4, alto E4-C4, tenor C4-G3), with soprano and alto in unison in bars 1 and 4 as typed; the voices may be spaced more widely on the record.
+key C
+
+system
+voice "Soprano"   | E4 | - | - | C4 |
+voice "Alto"      | E4 | D4 | C4 | - |
+voice "Tenor"     | C4 | B3 | A3 | G3 |
+chords "Chords"   | a{vi} | e{iii 6/5} | F{IV} | C{I} |
+
+system
+chords "Chords"   | C{I} | G{V} | F{IV} | C{I} |

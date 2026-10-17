@@ -1,0 +1,12 @@
+# Blue Jay Way, intro (figure 125.1)
+# Played ad libitum without meter, about eight measures long: a long stretch of C (Pollack's
+# "....." shows it held), then the bar of d# dim7 that carries the vocal pickup to the first verse.
+# The beat counts Pollack types over that bar (1 2 & 3 & 4 &) are kept: the pickup starts on 2
+# and moves in eighth notes. He types no pitches for the vocal, so none are added.
+# lyrics as typed by Pollack are omitted here
+key C
+
+system
+caption ad libitum, without meter: the C is held for most of the intro's roughly eight measures
+words "Counts" | r | 1 2*0.5 &*0.5 3*0.5 &*0.5 4*0.5 &*0.5 |
+chords         | C{I} | D#dim7{#ii dim} |

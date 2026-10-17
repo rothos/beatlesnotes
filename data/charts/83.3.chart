@@ -1,0 +1,17 @@
+# Wait, verse (figure 83.3)
+# Fourteen bars: the first four twice, then four, then a two-bar phrase. Tune notes share each bar
+# equally. The G# typed at the start of the E bar in the second system is held through the next bar (added
+# "-"); no tune is typed for the last two bars.
+#? Register of the tune (E4-B4) is a guess.
+key E
+
+system
+voice "Tune"     | [2X] B4 B4 B4 G#4 | A4 G#4 F#4 E4 | F#4 F#4 F#4 G#4 | A4 |
+chords           | E{I} | - | a{iv} | - |
+
+system
+voice "Tune"     | A4 A4 A4 A4 | G#4 F#4 E4 F#4 | G#4 | - |
+chords           | a{iv} | B{V} | E{I} | - |
+
+system
+chords           | B{V} | - |

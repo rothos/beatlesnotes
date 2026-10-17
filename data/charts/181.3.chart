@@ -1,0 +1,9 @@
+# Octopus's Garden, instrumental (figure 181.3)
+# Pollack's two rows of numerals (in E and in A, the pivot to IV) are joined in one label.
+key E
+
+system
+chords   | A{E: IV / A: I} | - | f#{A: vi} | - | D{A: IV} | - | E{A: V} | - |
+
+system
+chords   | A{A: I} | - | f#{A: vi} | - | D{A: IV} | E{A: V} | A{E: IV / A: I} | B{E: V} |

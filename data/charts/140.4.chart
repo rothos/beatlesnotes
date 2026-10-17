@@ -1,0 +1,14 @@
+# Piggies, bridge (figure 140.4): fourteen bars, 8 + 6
+key A
+
+system
+chords   | b{ii} | C#{V-of-vi} | D{IV} | A{I} |
+
+system
+chords   | E{V} | - | - | - |
+
+system
+chords   | b{ii} | C#{V-of-vi} | D{IV} | E{V} |
+
+system
+chords   | - | - |

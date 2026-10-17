@@ -1,0 +1,15 @@
+# You Won't See Me, bridge (figure 9.2)
+# The top row is the six-note descending chromatic line (F# down to C#, the C# landing on the
+# downbeat of the next verse). Pollack's 4 3 under the E bars is the 4-3 suspension over V7: spelled
+# here as E7sus4 then E7 (my spelling; he writes just E). The G# dim. 7 is in 4/3 inversion,
+# D in the bass, as he explains.
+#? Octave of the chromatic line (F#4 down) is a guess; Pollack doesn't say which part carries it.
+key A
+
+system
+voice    | F#4 | Fn4 | - | E4 |
+chords   | b{ii} | G#dim7/D{vii4/3} | D | A{I} |
+
+system
+voice    | D#4 | - | Dn4 | - |
+chords   | B{V-of-V} | - | E7sus4{V7 4} | E7{3} |

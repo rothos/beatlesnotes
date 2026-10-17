@@ -1,0 +1,8 @@
+# Oh! Darling, intro (figure 180.1)
+# A single chord on the third slow beat ("one, two, chord, Oh ..."): Pollack's beat counts put it
+# on beat 3, with nothing before it. He spells it "E-#5", the augmented chord E G# B#.
+key A
+
+system
+words "Beats"   | 1 2 3 4 |
+chords          | r*2 Eaug{V}*2 |

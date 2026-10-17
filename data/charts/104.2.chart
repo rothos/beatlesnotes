@@ -1,0 +1,10 @@
+# Penny Lane, verse mm. 3-8, the chromatic progression unembellished (figure 104.2)
+# Pollack transposes it to C (from B) and types four voices, one column to a bar; the parallel
+# octaves and fifths are his. His numerals are put under the bass notes.
+key C
+
+system
+voice "Soprano"   | C5 | - | - | - | B4 | - |
+voice "Alto"      | G4 | - | - | Ab4 | G4 | - |
+voice "Tenor"     | E4 | - | - | Eb4 | D4 | - |
+bass "Bass"       | C3{I} | - | - | Ab2{flat-VI} | G2{V} | - |

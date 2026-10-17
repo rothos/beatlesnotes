@@ -1,0 +1,21 @@
+# You Won't See Me, verse (figure 9.1)
+# The inner voice is the four-note descending chromatic line hidden in each phrase (piano at
+# first, later the backing vocals). The first system is phrases 1 and 2 (his "2X"), the second
+# the third phrase, the third the fourth phrase, whose last two bars are played twice (mm. 15-18).
+# In the third system Pollack's beat count fixes the rhythm: the A chord and C# arrive early,
+# between beats 2 and 3 (as the essay says), and the inner voice then rises C# D D# E, one note
+# a beat, the "mirror image" scale fragment.
+key A
+
+system
+voice "Inner voice"   | [2X] E4 | D#4 | Dn4 | C#4 |
+chords "Chords"       | A{I} | B{V-of-V} | D{IV} | A{I} |
+
+system
+voice "Inner voice"   | G4 | F#4 | Fn4 | E4 |
+chords "Chords"       | A7{V-of-IV} | D{IV} | d{iv} | A{I} |
+
+system
+words                 | r | r | [2X] 1*0.5 &*0.5 2*0.5 &*0.5 3 4 | 1 2 3 4 |
+voice "Inner voice"   | E4 | D#4 | D4*1.5 C#4*2.5 | C#4 D4 D#4 E4 |
+chords "Chords"       | A{I} | B{V-of-V} | D{IV}*1.5 A{I}*2.5 | - |

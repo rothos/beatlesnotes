@@ -1,0 +1,6 @@
+# Sun King, refrain (figure 185.4)
+# Pollack's "- Major 7th" in bar 2 is the C chord turned into Cmaj7.
+key C
+
+system
+chords   | C{I} | Cmaj7 | G{V} | A{V-of-V-of-V} |

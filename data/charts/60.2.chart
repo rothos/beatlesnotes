@@ -1,0 +1,14 @@
+# I'll Follow the Sun, verse (figure 60.2)
+# The inner line rises chromatically one note to a bar, D Eb E F#, and arrives on G at the start
+# of the second system (the lone "G" typed over that bar). It is not typed after that.
+# Pollack's text: the e chord is iii in the 6/4 inversion, with B in the bass.
+#? Inner-line octave (D4 to G4) chosen for range.
+key C
+
+system
+voice "Inner line" | D4 | Eb4 | En4 | F#4 |
+chords "Chords"    | G{V} | F7{IV} | C{I} | D{V-of-V} |
+
+system
+voice "Inner line" | G4 | r | r | r |
+chords "Chords"    | C{I} e{iii} | D{V-of-V} G{V} | C{I} G{V} | F{IV} C{I} |

@@ -2,13 +2,14 @@
 # Four lines of words over the two-bar riff, each line a two-bar frame of the verse, placed on
 # Pollack's eighth-note columns ("son" and "y" fall on the "&" of 3; "For" is the pickup on the
 # last eighth). The riff is as in fig. 4.1.
-#? Register of the riff: sounding pitch (E2-E3), as in fig. 4.1.
+# Riff register: sounding pitch (E2-E3), as in fig. 4.1.
 key E
 
 system
-words          | Got*0.5 a*0.5 good*0.5 rea-*1 son*1.5 | r*3.5 For*0.5 |
-words          | Tak-*0.5 ing*0.5 the*0.5 eas-*1 y*0.5 way*0.5 out*0.5 | r |
-words          | Got*0.5 a*0.5 good*0.5 rea-*1 son*1.5 | r*3.5 For*0.5 |
-words          | Tak-*0.5 ing*0.5 the*0.5 eas-*1 y*0.5 way*0.5 out*0.5 | r*0.5 yeah*0.5 r*3 |
+# lyrics as typed by Pollack are omitted here; x marks each sung syllable
+words "Sung rhythm" | x*0.5 x*0.5 x*0.5 x*1 x*1.5 | r*3.5 x*0.5 |
+words "Sung rhythm" | x*0.5 x*0.5 x*0.5 x*1 x*0.5 x*0.5 x*0.5 | r |
+words "Sung rhythm" | x*0.5 x*0.5 x*0.5 x*1 x*1.5 | r*3.5 x*0.5 |
+words "Sung rhythm" | x*0.5 x*0.5 x*0.5 x*1 x*0.5 x*0.5 x*0.5 | r*0.5 x*0.5 r*3 |
 words "Beats"  | 1*0.5 &*0.5 2*0.5 &*0.5 3*0.5 &*0.5 4*0.5 &*0.5 | 1*0.5 &*0.5 2*0.5 &*0.5 3*0.5 &*0.5 4*0.5 &*0.5 |
 voice "Riff"   | E2*1.5 F##2*0.5 G#2*0.5 B2*0.5 E3*0.5 D3*0.5 | -*1 B2*0.5 F#2*1 B2*0.5 D3*0.5 E3*0.5 |

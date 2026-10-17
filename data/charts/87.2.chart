@@ -1,0 +1,9 @@
+# Wait, bridge (figure 87.2)
+# Pollack's numerals in A and f# are joined in one label each.
+key f#
+
+system
+chords   | b{A: ii} | E{A: V} | A{A: I} | f#{A: vi} |
+
+system
+chords   | b{A: ii} | E{A: V} | A{A: I / f#: III} | C#{f#: V4 -> 3} |

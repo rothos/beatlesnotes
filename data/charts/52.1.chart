@@ -1,0 +1,7 @@
+# Tell Me Why, refrain (figure 52.1)
+# Each half is a four-bar phrase plus a two-bar "connector" that runs the progression in double time.
+key D
+
+system
+caption 2X
+chords | D{I} | b{vi} | e{ii} | A{V} | D{I} b{vi} | e{ii} A{V} |

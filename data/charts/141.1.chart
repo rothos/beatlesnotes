@@ -1,0 +1,15 @@
+# Rocky Raccoon: the eight-bar loop repeated seventeen times, with the descending chromatic inner
+# line (G F# F E) Pollack calls the "Midline" (figure 141.1).
+# The bass B in bar 8 is a passing note under a held C chord, as the essay insists.
+#? Octaves: midline G3 down to E3, bass A2 D3 G2 C3 B2; chosen for range, not checked against the record.
+key C
+
+system
+voice "Midline"     | G3 | - | F#3 | - |
+bass "Bassline"     | A2 | - | D3 | - |
+chords "Chords"     | a{vi7} | - | D{V-of-V} | - |
+
+system
+voice "Midline"     | Fn3 | - | E3 | - |
+bass "Bassline"     | G2 | - | C3 | B2 |
+chords "Chords"     | G{V} | - | C{I} | - |

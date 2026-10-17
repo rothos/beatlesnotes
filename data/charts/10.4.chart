@@ -1,0 +1,8 @@
+# It Won't Be Long, verse (figure 10.4): seven bars, the third elided with the start of the repeat.
+key E
+
+system
+chords   | E{I} | C{flat-VI} | E{I} |
+
+system
+chords   | E{I} | C{flat-VI} | E{I} | - |

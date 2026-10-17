@@ -1,0 +1,7 @@
+# You Know My Name (Look Up the Number), take 3 refrain extension (figure 166.7)
+# The I 6/3 is written D/F#. The final D comes on the last beat of the bar (essay: "that I chord
+# delayed to the final beat of the next measure").
+key D
+
+system
+chords | D{I} D/F#{I6/3} | G{IV} G#dim{vii-of-V} | A{V} | -*3 D{I} |

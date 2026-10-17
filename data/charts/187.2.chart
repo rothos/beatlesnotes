@@ -1,0 +1,14 @@
+# Polythene Pam, verse (figure 187.2)
+# The first and last pairs of bars are each played twice (2X): 4 + 2 + 4 = ten bars.
+key E
+
+system
+caption 2X
+chords   | D{flat-VII} A{IV} | E{I} |
+
+system
+chords   | G{V-of-flat-VI} | B{V} |
+
+system
+caption 2X
+chords   | C{flat-VI} D{flat-VII} | E{I} |

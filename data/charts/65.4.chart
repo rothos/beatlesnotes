@@ -1,0 +1,13 @@
+# Ticket to Ride, verse, start of the second phrase: Paul's counterpoint above John (figure 65.4)
+# Pollack types the two lines without bar lines; they are split into two bars here at the point
+# where both lines return to A/E, and each bar's notes share it equally, except John's closing
+# "rapid-fire sixteenth note run" E D C#, which is given sixteenths (the essay says so).
+# Mostly parallel open fourths (A over E, G over D); the opening B over G gives the added-ninth
+# flavor the essay mentions and John's G-natural the touch of blues.
+#? The bar division and the length of the first notes are my reading; Pollack marks no rhythm here
+#? beyond the sixteenth-note run.
+key A
+
+system
+voice "Paul"   | B4 B4 A4 G4 | A4*2 A4*2 |
+voice "John"   | G4 G4 E4 D4 | E4*2 E4*0.25 D4*0.25 C#4*1.5 |

@@ -1,0 +1,6 @@
+# Tell Me Why, outro (figure 52.4)
+# Pollack's "A4 -> 3": the A chord with a suspended fourth resolving to the third.
+key D
+
+system
+chords | b{vi} | B-flat{flat-VI} | Asus4{V} A | D{I} |

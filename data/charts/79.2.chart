@@ -1,0 +1,19 @@
+# Nowhere Man, bridge (figure 79.2)
+# Tune and chords as typed; notes share their bars equally (the typed spacing is not trusted for
+# rhythm). The first two bars are played twice.
+#? Octaves are a guess: the tune is set to climb B3 to B4 in the first phrase and peak on E5 in
+#? the third, giving the arch Pollack describes; parts of it may lie an octave lower on the record.
+key E
+
+system
+caption 2X
+voice "Tune"      | B3 C#4 | E4 F#4 G#4 B4 |
+chords "Chords"   | g#{iii} | A{IV} |
+
+system
+voice "Tune"      | B4 B4 | E5 D#5 C#5 B4 |
+chords "Chords"   | g#{iii} | A{IV} |
+
+system
+voice "Tune"      | C#5 B4 G#4 B4 | - |
+chords "Chords"   | - | B{V} |

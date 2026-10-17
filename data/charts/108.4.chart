@@ -1,0 +1,14 @@
+# Lucy in the Sky with Diamonds, refrain (figure 108.4)
+# Seven bars: the two-bar phrase three times, then a bar of D (V in G, IV in A) leading to the
+# verse's A. The "A 2 3" typed for the verse's first bar is its 3/4 count.
+#? The verse's 3/4 bar is drawn 3 beats long; if the refrain's quarter is two verse beats (as in
+#? the bridge, fig. 108.3), it should sound as 1.5 refrain beats. Check against the record.
+meter 4/4
+key G
+
+system
+chords   | [3X] G{I} C{IV} | D{V} |
+
+system
+chords   | D{V = A: IV} | [Verse] <3> A{A: I} |
+words    | r | <3> 1 2 3 |

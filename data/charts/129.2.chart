@@ -1,0 +1,24 @@
+# Revolution, verse (figure 129.2)
+# The bars Pollack marks "-half-" are two beats long. The last phrase is read in two keys: in B,
+# ii6/4 ... VI V; in c#, i VI flat-VII V (his asterisk ties the "flat-VII" to the B chord).
+# The A and B share the half bar equally; he says these chords are "heavily syncopated against
+# the beat" but doesn't mark where.
+key B
+
+system
+chords   | B{I} | - | <2> - |
+
+system
+chords   | E{IV} | - | B{I} | - |
+
+system
+chords   | B{I} | - | <2> - |
+
+system
+chords   | E{IV} | - | F#{V} | - |
+
+system
+chords   | c#{ii6/4} | F#{V} |
+
+system
+chords   | c#{B: ii6/4 / c#: i} | <2> A{VI} B{flat-VII} | G#{B: VI / c#: V} | F#{B: V} |

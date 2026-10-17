@@ -1,0 +1,15 @@
+# The Inner Light, intro (figure 128.1)
+# One melodic line over the static drone; Pollack's instrumentation labels are kept as bar marks.
+# He types the bars in quarter-note columns; the crowded last bar of the second line is read as two
+# quarters and four eighths (Ab G, F Eb G Ab).
+#? Octaves are a guess (the line around Ab4, the third phrase starting on Eb5); check the record.
+key Eb
+
+system
+voice "Melody"   | [Oboe lead/Harpsichord backing] C5 Bb4 Ab4 G4 | Ab4 G4 F4 Eb4 | [Harpsichord solo lead] Bb4 Ab4 G4 F4 | Ab4 G4 F4 Eb4 |
+
+system
+voice "Melody"   | [Duet in unison] Bb4 Ab4 G4 F4 | Ab4 G4 F4 Eb4 | Eb5 Db5 C5 Bb4 | Ab4 G4 F4*0.5 Eb4*0.5 G4*0.5 Ab4*0.5 |
+
+system
+voice "Melody"   | Bb4 | - |

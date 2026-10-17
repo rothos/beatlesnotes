@@ -1,0 +1,23 @@
+# Mother Nature's Son, bridge (figure 147.2)
+# Fifteen bars, 4 + 4 + 7: the first four-bar phrase is played twice (his "2X"). As in the verse
+# (fig. 147.1), two inner voices over a D pedal typed as the chord row; the upper one descends
+# chromatically C# C B B-flat A, lingering on the C-natural. Numerals in parentheses are the
+# passing labels Pollack puts under the held D.
+#? Octaves of the inner voices follow fig. 147.1 (upper A4-C#5, lower F#4-G4); they may sit an octave lower.
+key D
+
+system
+caption 2X
+voice "Inner voice"  | A4 | - | B4 | A4 |
+voice "Inner voice"  | F#4 | - | G4 | F#4 |
+chords "Chords"      | D{I} | - | -{(IV64)} | -{I} |
+
+system
+voice "Inner voice"  | C#5 | Cn5 | - |
+voice "Inner voice"  | F#4 | - | - |
+chords "Chords"      | D | -{(V-of-IV)} | - |
+
+system
+voice "Inner voice"  | B4 | Bb4 | A4 | - |
+voice "Inner voice"  | G4 | - | F#4 | - |
+chords "Chords"      | D{(IV6/4)} | -{(iv64)} | -{I} | - |

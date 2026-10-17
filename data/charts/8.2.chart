@@ -1,0 +1,10 @@
+# No Reply, bassline of the verse's third and fourth phrases (figure 8.2)
+# Pollack draws it as a pitch graph, one note to a bar: A E F E (under a e F7 e), then F G C (under
+# d, ii 6/5 with F in the bass, G and the two bars of C).
+# The C is placed lowest on his graph, so it is drawn below the E.
+#? Octaves follow the graph's heights (A2 down to E2, the final C2 lowest); the record may put the final C an octave higher.
+key C
+
+system
+caption ** In the first verse the second F may actually be a D.
+bass contour | A2 | E2 | F2 | E2 | F2{**} | G2 | C2 | - |

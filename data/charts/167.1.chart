@@ -1,0 +1,16 @@
+# Two of Us, verse (figure 167.1)
+# Pollack types the beats in each bar over it: 4 4 2 4 4, then 3 3 3 3 (the "C" phrases in 3/4),
+# then 3 2 4 4. The first system (phrases A and B) is played twice.
+key G
+
+system
+caption 2X. Beats per bar: 4 4 2 4 4
+chords | G{I} | - | <2> - | C{IV} | a{ii} |
+
+system
+caption beats per bar: 3 3 3 3
+chords | <3> G{I} | <3> D{V} C{IV} | <3> G{I} | <3> D{V} C{IV} |
+
+system
+caption beats per bar: 3 2 4 4
+chords | <3> G{I} | <2> C{IV} | G{I} | - |

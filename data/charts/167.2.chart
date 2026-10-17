@@ -1,0 +1,9 @@
+# Two of Us, bridge (figure 167.2)
+# In g minor: phrases of 2 + 4 bars, the a-minor chord held through two bars.
+key g
+
+system
+chords | B-flat{III} | d{v} | g{i} | a{ii} |
+
+system
+chords | - | D{V} |

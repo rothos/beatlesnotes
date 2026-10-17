@@ -1,0 +1,15 @@
+# She Said She Said, bridge (figure 12.4)
+# Nine bars of changing length (4 4 3 3 3 6 3 6 3), as Pollack counts them in the left margin; his
+# beat numbers are kept as a row. The chords change on bar lines, except the A-flat on beat 3 of
+# the first bar. The f chord is the pivot to E-flat (ii there), and the last E-flat pivots back
+# (IV of B-flat).
+# Lyrics as typed by Pollack are omitted here.
+key B-flat
+
+system
+words "Beats"   | 1 2 3 4 | 1 2 3 4 | <3> 1 2 3 | <3> 1 2 3 | <3> 1 2 3 |
+chords          | B-flat{I}*2 A-flat{flat-VII}*2 | B-flat{I} | <3> A-flat{flat-VII} | <3> B-flat{I} | <3> f{v; E-flat: ii (pivot)} |
+
+system
+words "Beats"   | <6> 1 2 3 4 5 6 | <3> 1 2 3 | <6> 1 2 3 4 5 6 | <3> 1 2 3 |
+chords          | <6> B-flat{E-flat: V} | <3> E-flat{I} | <6> B-flat{V} | <3> E-flat{I; B-flat: IV (pivot back)} |

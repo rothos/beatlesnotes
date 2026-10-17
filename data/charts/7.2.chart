@@ -1,0 +1,10 @@
+# You're Going to Lose That Girl, verse (figure 7.2)
+# BBA: phrase "B" (the first system) twice, then phrase "A", the intro's.
+key E
+
+system Phrase "B"
+caption 2X
+chords | E{I} | G#{V-of-vi} | f#{ii} | B{V} |
+
+system
+chords | E{I} | c#{vi} | f#9{ii} | B{V} |

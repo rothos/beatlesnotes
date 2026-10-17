@@ -1,0 +1,25 @@
+# I Want to Hold Your Hand, bridge (figure 43.3)
+# Eleven bars: a pivot modulation to C, then the intro riff returns (elided with the last bar of
+# an eight-bar bridge) to lead back to G. Pollack's "CCD" is the intro's riff, timed as in
+# fig. 43.1: C on the "&" of 3, C on 4, D on the "&" of 4 (his dashes fill the eighth-note slots
+# before it). The "- - - -" bars hold the D. The final G, after the double bar, is the verse's
+# downbeat.
+# Added from the essay: the two vocal parts on the three-syllable words sung three times on the
+# riff: John C C D each time, Paul E E F# twice, then G G A the third time, in parallel fifths
+# with John.
+#? The vocal octaves (John C4-D4, Paul E4-A4) and the placing of the three syllables on the riff's three hits are my reading; check against the record.
+key C
+
+system
+chords          | d{ii} | G{V} | C{I} | a{vi} |
+
+system
+voice "Paul"    | r | r | r*2.5 E4*0.5 E4*0.5 F#4*0.5 | -*2.5 E4*0.5 E4*0.5 F#4*0.5 |
+voice "John"    | r | r | r*2.5 C4*0.5 C4*0.5 D4*0.5 | -*2.5 C4*0.5 C4*0.5 D4*0.5 |
+chords          | d{ii} | G{V} | C{I; G: IV}*2.5 C{IV}*0.5 C{IV}*0.5 D{V}*0.5 | -*2.5 C{IV}*0.5 C{IV}*0.5 D{V}*0.5 |
+
+system
+voice "Paul"    | -*2.5 G4*0.5 G4*0.5 A4*0.5 | - | - | r |
+voice "John"    | -*2.5 C4*0.5 C4*0.5 D4*0.5 | - | - | r |
+chords          | -*2.5 C{IV}*0.5 C{IV}*0.5 D{V}*0.5 | - - - - | - - - - | G{I} |
+caption the G after the double bar begins the verse (G: I)

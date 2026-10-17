@@ -1,0 +1,9 @@
+# It's Only Love, outro (figure 73.4)
+# The last half-phrase of the refrain (reprise), stretched by John's falsetto melisma, capped by the
+# intro's C a played twice (his "2X" over mm. 5-6) to the final C. Pollack's brackets under the
+# chart are kept as bar marks and a caption.
+key C
+
+system
+chords   | [reprise] F{IV} | G{V} | [melisma] C{I} | a{vi} | [2X] C{I} | a{vi} | C{I} |
+caption reprise: mm. 1-2; melisma: mm. 3-5; 2nd time: intro (mm. 4-7)

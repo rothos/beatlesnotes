@@ -1,27 +1,28 @@
 # Good Morning Good Morning, tune phrases spanning a fourth split into a third and a second
 # (figure 116.1)
-# Pollack's list of examples, each phrase one system named by its words, its notes in equal
+# Pollack's list of examples, each phrase one system Example 1
 # shares (he gives pitches only). Octaves chosen so each phrase spans the fourth he describes.
-#? Octaves are a guess from the record (E4 up to D5); "To save his life" (E G A E) in particular may sit an octave higher.
+#? Octaves are a guess from the record (E4 up to D5); example 2 (E G A E) in particular may sit an octave higher.
+# lyrics as typed by Pollack are omitted here
 key A
 
-system Nothing to do
+system Example 2
 voice   | A4 F#4 B4 |
 
-system To save his life
+system Example 3
 voice   | E4 G4 A4 E4 |
 
-system Call his wife in
+system Example 4
 voice   | G4 A4 F#4 A4 |
 
-system I've got nothing
+system Example 5
 voice   | D5 C#5 A4 A4 |
 
-system (nothing) to say
+system Example 6
 voice   | A4 A4 F#4 B4 |
 
-system Everybody knows
+system Example 7
 voice   | C#5 C#5 C#5 A4 D5 |
 
-system Good morning
+system Example 8
 voice   | A4 F#4 E4 |

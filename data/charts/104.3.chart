@@ -1,0 +1,11 @@
+# Penny Lane, verse mm. 3-8, the chromatic progression as embellished (figure 104.3)
+# Transposed to C as in fig. 104.2, four voices, one column to a bar. The soprano's held C over G
+# is the 4-3 suspension resolving to B in the last bar (Pollack's "4 ---> 3").
+# The lower three voices are blank in the last column; they are shown holding.
+key C
+
+system
+voice "Soprano"   | C5 | Bb4 | C5 | - | -{4} | B4{3} |
+voice "Alto"      | G4 | - | - | Ab4 | G4 | - |
+voice "Tenor"     | E4 | Eb4 | - | - | D4 | - |
+bass "Bass"       | C3{I} | - | A2 | Ab2{flat-VI} | G2{V} | - |

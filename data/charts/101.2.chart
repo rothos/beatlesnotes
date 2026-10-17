@@ -1,0 +1,20 @@
+# I Want to Tell You, bridge (figure 101.2)
+# Four rows as Pollack types them: the top line (the vocal, with its 9-8 appoggiaturas), two inner
+# voices of the piano (Middle 2 above Middle 1) and the chords, most of them over B in the bass.
+# Pollack's "b-min" is written b, "B-Maj" B. His 9 -> 8 and 3 -> 4 -> 3 marks are kept as labels
+# under the chords of the bars where they occur.
+# Notes run together in the typing ("BA AG#", "AG#F#") are separate notes, equal shares.
+#? Octaves: top line read as the vocal at B4-F#4, inner voices just below (F#4, D4); check against the record, the vocal may lie an octave lower with the piano voices above it.
+key A
+
+system
+voice "Top"        | B4 | C#5 B4 | B4 A4 | B4 A4 A4 G#4 |
+voice "Middle 2"   | F#4 | Fn4 | E4 | F#4 |
+voice "Middle 1"   | Dn4 | - | C#4 | D#4 |
+chords "Chords"    | b | b-dim{9 -> 8} | A | B{9 -> 8} |
+
+system
+voice "Top"        | A4 G#4 F#4 | B4 A4 G#4 | B4 A4 A4 | - |
+voice "Middle 2"   | - | Fn4 | E4 | - |
+voice "Middle 1"   | Dn4 | - | C#4 D4 | C#4 |
+chords "Chords"    | b | b-dim | A{9 -> 8, 3 -> 4 -> 3} | - |

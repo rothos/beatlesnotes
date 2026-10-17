@@ -1,0 +1,7 @@
+# Thank You Girl, bridge (figure 16.7)
+#? The essay calls the bridge eight measures, but only seven bars are typed; a bar may be missing
+#? (perhaps a second bar of b or of D at the start).
+key D
+
+system
+chords   | b{vi} | D{I} | A{V} | - e{ii} | A{V} | D{I} | - |

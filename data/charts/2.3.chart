@@ -1,0 +1,21 @@
+# Eight Days a Week, bridge vocals, Paul above John (figure 2.3)
+# Pollack types the notes under the words without bars or rhythm. They are set here against the
+# bridge's chords (figure 2.2): A A b b, then E E G A7. Parallel fifths on the title phrase,
+# fourths on the melisma; in the second line sixths and thirds, with the E/B fourth over the G
+# chord (the "added-sixth" flash he describes) and the E resolving down to D over a held B.
+# One syllable of the melisma carries two notes (E, D), as typed. Octaves: John's lead around A4,
+# Paul a fifth above.
+# lyrics as typed by Pollack are omitted here
+#? Rhythm is not typed: each title phrase is given a bar of quarters, its last note held through the next bar, and the following note placed on that bar's last beat; the record will differ in detail.
+#? Placement of the chord changes against the vocal (b at the start of the melisma, G at the first E/B fourth of line 2) is inferred from Pollack's harmonic remarks, not typed.
+key D
+
+system
+voice "Paul"  | E5 E5 F#5 E5 | -*3 D5 | E5 D5 E5 D5 | E5 D5 B4*2 |
+voice "John"  | A4 A4 B4 A4 | -*3 A4 | B4 A4 B4 A4 | B4 A4 F#4*2 |
+chords        | A | - | b | - |
+
+system
+voice "Paul"  | E5 E5 F#5 E5 | -*3 D5 | E5 D5 E5 D5 | E5 E5 G5*2 |
+voice "John"  | G#4 G#4 A4 G#4 | -*3 B4 | B4 B4 B4 B4 | C#5 C#5 E5*2 |
+chords        | E | - | G | A7 |

@@ -1,0 +1,18 @@
+# While My Guitar Gently Weeps, verse (figure 25.1)
+# Sixteen bars, AB-AB'. The bassline descends A G F# F-natural, one note a bar, under the first
+# phrase (and, Pollack says, the third); he types it only once. The A after the final double bar
+# is the downbeat of the next section, kept as a bar of its own.
+key a
+
+system
+chords              | a{i} | - | - | F{VI} |
+bass "Bassline"     | A2 | G2 | F#2 | Fn2 |
+
+system
+chords              | a{i} | G{VII} | D{IV} | E{V} |
+
+system
+chords              | a{i} | - | - | F{VI} |
+
+system
+chords              | a{i} | G{V-of-III} | C{III} | E{V} | A{I} |

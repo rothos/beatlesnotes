@@ -1,0 +1,10 @@
+# I Will, bridge (figure 144.2)
+# Pollack's "(V-of-IV)" under the second half of bar 4 marks the F chord pivoting to IV (with an
+# added seventh, as the essay says of the verse); it is shown as a hold of the F with that label.
+key F
+
+system
+chords  | B-flat{IV} a{iii} | d{vi} | g{ii} C{V} | F{I} -{(V-of-IV)} |
+
+system
+chords  | B-flat{IV} a{iii} | d{vi} | G{V-of-V} | C{V} |

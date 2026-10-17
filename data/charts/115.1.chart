@@ -1,0 +1,6 @@
+# Lovely Rita, the diatonic circle of fifths in E (figure 115.1)
+# Pollack's demonstration of a progression, not a passage of the song: one chord to a bar here.
+key E
+
+system
+chords | E{I} | A{IV} | d#-half-dim7{VII half-dim} | g#{iii} | c#{vi} | f#{ii} | B{V} | E{I} |

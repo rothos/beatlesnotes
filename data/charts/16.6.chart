@@ -1,0 +1,9 @@
+# Thank You Girl, refrain ending in the later refrains: Paul's added upper part (figure 16.6)
+# In the first bar they sing in unison; in the second Paul splits off above John's tune, a fourth
+# then fourth then fifth above. Notes share each bar equally.
+#? Register: placed to match fig. 16.4 (John's tune ending on A4); may lie an octave lower.
+key D
+
+system
+voice "Paul"   | E5 D5 D5 | F#5 E5 E5 |
+voice "John"   | E5 D5 D5 | C#5 B4 A4 |

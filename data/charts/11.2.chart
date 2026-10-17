@@ -6,5 +6,6 @@ key A
 system
 words "Beats"     | 1 2 3 4 | 1 2 3 4 |
 words "Accents"   | >*3 > | r*2 >*2 |
-words "Words"     | Good Day*2 Sun | shine*3 I_take_a... |
+# lyrics as typed by Pollack are omitted here; x marks each sung syllable
+words "Sung rhythm" | x x*2 x | x*3 x |
 chords "Chords"   | E7{V} | - |

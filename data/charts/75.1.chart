@@ -1,0 +1,11 @@
+# Yesterday, verse (figure 75.1): seven bars, 3 + 2 + 2
+key F
+
+system
+chords   | F{I} | e-dim{ii-of-vi} A{V-of-vi} | d{vi} |
+
+system
+chords   | B-flat{IV} C{V} | F{I} |
+
+system
+chords   | d{vi} G{V-of-V} | B-flat{IV} F{I} |

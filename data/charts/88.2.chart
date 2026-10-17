@@ -1,0 +1,6 @@
+# If I Needed Someone, bridge (figure 88.2)
+# The b chord in bar 7 is the pivot back: i in b, ii in A.
+key b
+
+system
+chords   | e{iv} | F#{V} | - | b{i} | e{iv} | F#{V} | b{b: i / A: ii} | E{V} |

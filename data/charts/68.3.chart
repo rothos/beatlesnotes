@@ -1,0 +1,10 @@
+# You Like Me Too Much, bridge (figure 68.3): eight measures
+#? Bar 5: Pollack labels the b chord "ii", but b is iii in G (ii would be a); possibly a slip, or
+#? a reading in another key. Kept as typed.
+key G
+
+system
+chords   | e{iii} | - | A{V-of-V} | - |
+
+system
+chords   | b{ii} | A{V-of-V} | E{V-of-V-of-V} A{V-of-V} | A D{V} |

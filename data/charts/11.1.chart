@@ -7,5 +7,6 @@ key A
 system
 words "Beats"     | 1 2 3 4 | 1 2 3 4 |
 words "Accents"   | >*3 > | r*2 >*2 |
-words "Words"     | Good Day*2 Sun | shine*2 (daa-de-da-de)*2 |
+# lyrics as typed by Pollack are omitted here; x marks each sung syllable
+words "Sung rhythm" | x x*2 x | x*2 x*2 |
 chords "Chords"   | B{V-of-V}*3 F#{V-of-(V-of-V)} | - |

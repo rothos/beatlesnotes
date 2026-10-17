@@ -1,0 +1,8 @@
+# Maxwell's Silver Hammer, verse: the eight-bar AB phrase, played twice (figure 179.1)
+key D
+
+system
+chords   | D{I} | B{V-of-ii} | e{ii} | - |
+
+system
+chords   | A9{V} | - | D{I} | A{V} |

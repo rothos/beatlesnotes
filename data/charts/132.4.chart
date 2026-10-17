@@ -1,0 +1,11 @@
+# Glass Onion, outro (figure 132.4)
+# Pollack's beat counts over the first two bars place the chords: F7 on beat 2 of bar 1, E7 and
+# Eb7 on beats 3 and 4 of bar 2. He types no counts for bar 4; Eb7 and E7 are put on beats 3 and 4
+# there too, mirroring bar 2. The four bars are heard twice, into the fade.
+#? Bar 4: Eb7 and E7 placed on beats 3 and 4 by analogy with bar 2 (no counts typed there).
+key a
+
+system
+caption the four bars repeated twice, into the fade-out
+words "Beats"   | 1 2 3 4 | 1 2 3 4 | 1 | r |
+chords          | G*1 F7*3 | -*2 E7 Eb7 | D7 | -*2 Eb7 E7 |

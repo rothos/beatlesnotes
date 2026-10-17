@@ -1,0 +1,8 @@
+# Think for Yourself, intro (figure 80.2)
+# Pollack's beat count is kept as a words row. The "-triplet-" marked under beats 3-4 of bar 2:
+# G G G# as slow triplets (2/3 beat each), leading up to the A that begins the verse.
+key G
+
+system
+words "Beats"  | 1 2 3 4 | 1 2 3 4 | 1 |
+bass "Bass"    | G2{I} G2 G2 G2 | G2{-}*1 G2*1 G2*2/3 G2*2/3 G#2*2/3 | A2 |

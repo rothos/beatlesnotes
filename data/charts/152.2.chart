@@ -1,0 +1,9 @@
+# Honey Pie, verse (figure 152.2)
+# Pollack spells the bar-4 chord "E-natural", against the E-flat before it.
+key G
+
+system
+chords   | G{I} | - | E-flat{flat-VI} | E{V-of-V-of-V} |
+
+system
+chords   | A{V-of-V} | D{V} | G{I} | E-flat{flat-VI} D{V} |

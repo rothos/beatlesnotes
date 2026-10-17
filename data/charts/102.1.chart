@@ -1,0 +1,18 @@
+# Got to Get You into My Life, verse (figure 102.1)
+# A A B B C: the first system is played twice. In the B phrases the b-minor chord is held in the
+# upper voices over a chromatically descending bassline; the last bass note, G#, makes it a
+# half-diminished seventh on G# (vii half-dim of ii). The C phrase descends diatonically from C.
+#? Bass octave (B2 down to G2) chosen for range.
+key G
+
+system
+caption 2X
+chords             | G{I} | - | - | - |
+
+system
+chords "Harmony"   | b{iii} | - | b{iii} | - |
+bass "Bassline"    | B2 Bb2 | A2 G#2{vii half-dim of ii} | B2 Bb2 | A2 G#2{vii half-dim of ii} |
+
+system
+chords "Harmony"   | C{IV} | a{ii} D{V} | G{I} | - |
+bass "Bassline"    | C3 B2 | A2 D3 | G2 | - |

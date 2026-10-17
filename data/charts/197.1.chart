@@ -1,0 +1,11 @@
+# The twelve-bar blues frame, Pollack's example in A (figure 197.1)
+key A
+
+system
+chords  | A{I} | - | - | - |
+
+system
+chords  | D{IV} | - | A{I} | - |
+
+system
+chords  | E{V} | D{IV} | A{I} | - |

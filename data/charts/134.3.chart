@@ -1,0 +1,14 @@
+# Wild Honey Pie, outro (figure 134.3)
+# Pollack's "d half dim" (v7 with flat fifth) is spelled d-half-dim7: per the essay it is D with flat
+# third and fifth in first inversion, F - A-flat - C - D, with D held on top as a pedal. The bass
+# row G -> F -> G is from the essay's text, not the typed chart.
+#? Bass octave chosen for range.
+key G
+
+system
+chords   | [2X] G{I} | - | d-half-dim7/F{v7 (b5)} | - |
+bass     | G2 | - | F2 | - |
+
+system
+chords   | G{I} | - |
+bass     | G2 | - |

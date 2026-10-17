@@ -1,0 +1,11 @@
+# Octopus's Garden, intro (figure 181.1)
+# Pollack counts beats 1 2 3 4 over bars 2 and 4: the hold takes beat 1, the next chord beat 2,
+# the last chord beats 3-4 (the syncopated fanfare).
+# The numeral under c# is "iv" as typed (vi is meant: compare the verse, fig. 181.2).
+key E
+
+system
+chords   | E{I} | -*1 B9{V}*1 E{I}*2 | - | -*1 A{IV}*1 B{V}*2 |
+
+system
+chords   | E{I} | c#{iv} | A{IV} | B{V} |

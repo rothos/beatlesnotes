@@ -1,0 +1,17 @@
+# The End, Part 3 vamp (figure 191.5)
+# Eight bars on A (the typed bracket marks the first four as played twice), then four bars with a
+# G chord over the A pedal in the bass.
+# lyrics as typed by Pollack are omitted here
+meter 4/4
+key A
+
+system
+caption 2X
+words              | 1 2 3 4 | 1 2 3 4 | 1 2 3 4 | 1 2 3 4 |
+chords "Chords"    | A{I} | - | - | - |
+bass "Bass"        | A2 | - | - | - |
+
+system
+words              | 1 2 3 4 | 1 2 3 4 | 1 2 3 4 | 1 2 3 4 |
+chords "Chords"    | G | - | - | - |
+bass "Bass"        | A2 | - | - | - |

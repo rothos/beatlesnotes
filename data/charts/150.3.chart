@@ -1,0 +1,13 @@
+# Helter Skelter, later verses (figure 150.3): fourteen bars, the first line played twice
+# Pollack's numeral under the last E reads "IV", a slip for I; written I here.
+key E
+
+system
+caption 2X
+chords   | E{I} | - | - | - |
+
+system
+chords   | G{flat-III} | - | A{IV} | - |
+
+system
+chords   | E{I} | - |

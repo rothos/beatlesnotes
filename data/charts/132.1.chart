@@ -1,0 +1,13 @@
+# Glass Onion, verse (figure 132.1)
+# The first two bars are played twice (2X), making the nine-bar verse.
+key a
+
+system
+caption 2X
+chords   | a{i} G | F7{VI} G |
+
+system
+chords   | a{i} | g7{ii-of-VI} | C{V-of-VI} |
+
+system
+chords   | g7{ii-of-VI} | C{V-of-VI} |

@@ -1,0 +1,7 @@
+# It Won't Be Long, final cadence (figure 10.6)
+# In m. 3 the chromatically descending dominant sevenths share the bar after E (Pollack's
+# "F-nat7" is F7).
+key E
+
+system
+chords   | c#{vi} | A{IV} | E{I} G7 F#7 F7 | E |

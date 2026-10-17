@@ -1,0 +1,13 @@
+# She Loves You, verse (figure 5.3)
+# Pollack types "V" under the G6; it is the I chord with added sixth, so it is labelled I here.
+key G
+
+system
+caption 2X
+chords   | G{I} | e7{vi} | b{iii} | D{V} |
+
+system
+chords   | G6{I} | - | e{vi} | - |
+
+system
+chords   | c{iv} | - | D{V} | - |

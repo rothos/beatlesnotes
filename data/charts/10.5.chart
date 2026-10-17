@@ -1,0 +1,15 @@
+# It Won't Be Long, bridge (figure 10.5)
+# Eight bars over a descending chromatic bassline E D# D C#, with a middle voice moving down in
+# step with it (G# G F# F, then E D#). Pollack types no bass and no middle voice for the last two
+# bars; those are left to the chords. He notes the F# (V-of-V) is a ninth chord; kept as typed.
+#? Bass octave (E3 down to C#3) is a choice; it may sound an octave lower on Paul's bass.
+key E
+
+system
+chords "Chords"            | E{I} | Baug | b | C#7{V-of-II} |
+voice "Middle voice"       | G#4 | Gn4 | F#4 | Fn4 |
+bass "Bassline"            | E3 | D#3 | Dn3 | C#3 |
+
+system
+chords "Chords"            | A{IV} | B{V} | F#{V-of-V} | B{V} |
+voice "Middle voice"       | E4 | D#4 | r | r |

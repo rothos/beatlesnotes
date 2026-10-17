@@ -1,0 +1,12 @@
+# I'm So Tired, verse: twelve bars, AAB (figure 138.1)
+# Pollack's ** marks the augmented triad as a voice-leading transition, with no numeral of its own.
+key A
+
+system
+chords | A{I} | G#{V-of-III (?!)} | D{IV} | E{V} |
+
+system
+chords | A{I} | f#{vi} | D{IV} | E{V} |
+
+system
+chords | A{I} | G#aug{**} | f#{vi} | d{iv} |

@@ -1,0 +1,13 @@
+# Blue Jay Way, verse (figure 125.2)
+# Seven bars and three beats ("one beat shy of a full, even eight measures"): the last bar is
+# three beats long, as the counts typed over it show.
+# Pollack types bar 4's chord as "d#" but labels it #ii dim like bar 2, so it is the same d# dim7.
+# lyrics as typed by Pollack are omitted here
+key C
+
+system
+chords | C{I} | D#dim7{#ii dim} | C{I} | D#dim7{#ii dim} |
+
+system
+caption the last bar is three beats long
+chords | - | - | C{I} | <3> - |

@@ -1,0 +1,15 @@
+# Only A Northern Song, bridge (figure 157.3)
+# Fifteen bars, 4 + 6 + 5, modulating to b minor and back to A. The third phrase opens with one
+# interpolated bar of 3/4 (or 6/8), the D A bar; the format has one meter per chart, so that bar
+# is drawn in 2/4 with D and A sharing it, and the caption says so.
+key A
+
+system
+chords   | E{A: V} | b{ii / b: i} | G{VI} | C#{V-of-V} |
+
+system
+chords   | F#{b: V} | - | b{i} | - | F#{V} | - |
+
+system
+chords   | D{b: III / A: IV} A{I} | E{V} | - | - | - |
+caption the D A bar is a single bar of 3/4 (or 6/8)

@@ -1,0 +1,9 @@
+# Taxman, verse and refrain (figure 92.1)
+key D
+
+system Verse
+caption 2X
+chords   | D{I} | - | - | - |
+
+system Refrain
+chords   | C{flat-VII} | - | G{IV} | D{I} | - |

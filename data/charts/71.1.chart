@@ -1,0 +1,13 @@
+# I Need You, verse (figure 71.1)
+# The first eight bars (two phrases) are played twice (2X), then the short last phrase.
+key A
+
+system
+caption 2X
+chords   | A{I} | D{IV} | A{I} | - |
+
+system
+chords   | f#{vi} | c#{iii} | f#{vi} | b{ii} |
+
+system
+chords   | A{I} | - |

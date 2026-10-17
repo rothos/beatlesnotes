@@ -1,0 +1,10 @@
+# Strawberry Fields Forever, intro (figure 105.1): chords over the mellotron's bottom line.
+# The bracketed (a) is the a-minor chord Pollack hears implied in the second half of bar 1. The last
+# bar has two extra beats (essay), so it is six beats long; the E-flat over the held B-flat bass is
+# the "forced 6/4 -> 5/3 plagal cadence".
+#? Octave of the bottom line (F3 down to Bb2) is chosen for range.
+key B-flat
+
+system
+chords "Chords"   | F{V} (a) | c{ii} A-dim{vii-dim} | B-flat{I} F{V} | <6> E-flat{IV} B-flat{I} |
+bass "Bottom"     | F3 E3 | Eb3 | D3 C3 | <6> Bb2 |

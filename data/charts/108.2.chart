@@ -1,0 +1,38 @@
+# Lucy in the Sky with Diamonds, verse (figure 108.2)
+# Two long vocal phrases over four backing phrases of 4, 5, 4 and 6 bars (Pollack's "4/5/4/6"
+# phrasing); the typed systems are kept: 4 | 4+1 | 4 | 4+2. The bassline is the descending A G F# F
+# of the intro ostinato (fig. 108.1); the second phrase ends with a move to F ("F-nat C F"), the
+# fourth spells out D Major (F# A F# | A F# A | D) and descends through D to C, the V of the bridge's
+# B-flat. Melody notes are one to a beat (3/4).
+# Added: the melody's blank bars are shown as the last note held ("-"); Pollack leaves them empty.
+# Changed: the third bass note of the fourth phrase's third bar is typed "F" but the essay's last
+# section spells this lick "| F# - A - F# | A - F# - A | D", so it is written F#.
+#? Bar 3 of the fifth system: typed "F# A F", read as F# A F# per the essay; check the record.
+#? Phrases 2 and 3 start the bass on E (typed), not A as phrase 1 does; check it isn't a typo.
+#? Octaves (melody C#5, bass A2 and below) are a guess for register.
+meter 3/4
+key A
+
+system
+voice "Melody"     | C#5 C#5 C#5 | C#5 B4 A4 | C#5 B4 A4 | C#5 B4 A4 |
+bass "Bassline"    | A2 | G2 | F#2 | Fn2 |
+
+system
+voice "Melody"     | C#5 B4 A4 | C#5 - C#5 | E5 D5 C#5 | A4 |
+bass "Bassline"    | E2 | G2 | F#2 | Fn2 C3 F2 |
+
+system
+voice "Melody"     | - |
+bass "Bassline"    | C3 D3 |
+
+system
+voice "Melody"     | C#5 D5 E5 | C#5 B4 A4 | C#5 B4 A4 | C#5 B4 A4 |
+bass "Bassline"    | E2 | G2 | F#2 | Fn2 |
+
+system
+voice "Melody"     | C#5 B4 A4 | E5 D5 C#5 | A4 | - |
+bass "Bassline"    | E2 | G2 | F#2 A2 F#2 | A2 F#2 A2 |
+
+system
+voice "Melody"     | - | - |
+bass "Bassline"    | D3 D3 D3 | C3 C3 C3 |

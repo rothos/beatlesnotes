@@ -1,0 +1,8 @@
+# Yellow Submarine, verse (figure 97.1)
+# The four bars, with the G pickup, are played twice (2X). Pollack asks whether the chord on the
+# last beat of bar 3 is really a minor (as typed) or C, given the C he hears in the bass there.
+key G
+
+system
+caption 2X
+chords   G{I} | D{V} C{IV} | G{I} e{vi} | a{ii} a{ii} | D{V} G{I} |

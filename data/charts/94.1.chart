@@ -1,0 +1,10 @@
+# I'm Only Sleeping, verse (figure 94.1)
+# Pollack's "2X!!" sits over the G-C bar of the second phrase: that bar is played twice, which is
+# what makes the verse nine bars long. It is kept as a bar mark.
+key e
+
+system
+chords   | e{i} | a{iv} | G{III} C{VI} | G{III} B{V} |
+
+system
+chords   | e{i} | a{iv} | [2X!!] G{III} C{VI} | - a{iv} |

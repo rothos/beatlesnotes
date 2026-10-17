@@ -1,0 +1,10 @@
+# Penny Lane, refrain (figure 104.5)
+# Added: bars 2 and 6 are typed as held A, but the essay says they put the I chord in first
+# inversion, so they are drawn as A/C#.
+key A
+
+system
+chords   | A{I} | A/C# | D{IV} | - |
+
+system
+chords   | A{I} | A/C# | D{IV = B: III} | F#{B: V} |

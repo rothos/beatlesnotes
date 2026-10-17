@@ -1,0 +1,21 @@
+# Real Love, verse (figure 195.2)
+# Four voices over the descending bassline E D# C# B: the soprano holds B, the alto G# moves to
+# G-natural to make the augmented chord in bar 4, the tenor rises B D# E and falls to D#.
+# In bar 5 the upper voices are typed "C# ... A ... E ..." (an A chord) and not continued; they are
+# shown for that bar only and left silent after. The fourth row of the second system is chords
+# (A, B, E, A), labelled Bassline as typed. Pollack says the bass sustains E in the last two bars,
+# so his IV6/4 is written A/E.
+#? Voicing octaves (soprano B4, tenor B3, bass E3) are a choral-style guess.
+key E
+
+system
+voice "Soprano"     | B4 | - | - | - |
+voice "Alto"        | G#4 | - | - | Gn4 |
+voice "Tenor"       | B3 | D#4 | E4 | D#4 |
+bass "Bassline"     | E3{I} | D#3 | C#3 | B2 |
+
+system
+voice "Soprano"     | C#5 | r | r | r |
+voice "Alto"        | A4 | r | r | r |
+voice "Tenor"       | E4 | r | r | r |
+chords "Bassline"   | A{IV} | B{V} | E{I} A/E{IV6/4} | E{I} A/E{IV6/4} |

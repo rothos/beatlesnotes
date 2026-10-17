@@ -1,0 +1,9 @@
+# Think for Yourself, the refrain's tag line (figure 80.1)
+# Words over tune, one note per syllable; "you -----" holds over the B-flat and G.
+#? Octave of the tune (G4 area) is a guess; George may sing it an octave lower (G3).
+key G
+
+system
+# lyrics as typed by Pollack are omitted here; x marks each sung syllable
+words "Sung rhythm" | x x x x x | x x x x x | x - |
+voice "Tune"   | G4 Bb4 G4 Bb4 G4 | F4 D4 D4 F4 G4 | Bb4 G4 |

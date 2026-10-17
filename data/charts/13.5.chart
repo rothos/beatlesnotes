@@ -1,0 +1,16 @@
+# You Never Give Me Your Money, Part ZA introduction, mm. 5-8 (figure 13.5)
+# A cycle of minor thirds: the upper voice climbs one diminished-seventh arpeggio (E G Bb C#),
+# starting a minor third higher each bar, while the bass rises C Eb Gb A on the downbeats. Pollack
+# types the notes as a staircase graph, each held ("E-"), with a second bass note in each bar,
+# typed below the bassline under the upper voice's fourth note: so the bass drops a minor third
+# on beat 4 (C to A, Eb to C, Gb to Eb). In bar 4 the upper voice ends Bb B B# and the bass
+# Gb G G#, both squeezed into beat 4 (B# held longer, "B#--"), resolving to C# over A, typed after
+# the last bar line: that is the downbeat of the verse in A (fig. 13.6), added here as a fifth bar.
+# Beat placement follows the alignment of the two lines in the typed chart.
+#? Octaves are my guess: upper voice from E4 (which takes it to C#6 at the end), bass from C3.
+#? It may well sit an octave lower on the record.
+key A
+
+system
+voice "Upper voice"   | E4 G4 Bb4 C#5 | G4 Bb4 C#5 E5 | Bb4 C#5 E5 G5 | C#5 E5 G5 Bb5*0.25 B5*0.25 B#5*0.5 | C#6 |
+bass "Bassline"       | C3*3 A2 | Eb3*3 C3 | Gb3*3 Eb3 | A3*3 Gb3*0.25 G3*0.25 G#3*0.5 | A3 |

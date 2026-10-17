@@ -1,0 +1,8 @@
+# We Can Work It Out, outro (figure 1.3)
+# The G chord is in second inversion (6/4, over D) and the D chord returns to root position (5/3).
+# Pollack hears the G as neighbor motion in the upper voices over a held D.
+#? The essay says the outro uses the bridge's slow triplets, but not in which bars; none are marked.
+key D
+
+system
+chords   | D{I} | G/D{(IV?) 6/4} | D{I 5/3} | - |

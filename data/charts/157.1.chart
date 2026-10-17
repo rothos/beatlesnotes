@@ -1,0 +1,9 @@
+# Only A Northern Song, end of the intro (figure 157.1)
+# Pollack types a short melodic line over the first two bars (G, held, then A; then B), followed by
+# "...": the line goes on, untyped, so the row is silent after the B.
+#? The upper line is not named (presumably the trumpet/organ line of the intro); octave G4-B4 is a guess.
+key A
+
+system
+voice   | G4 - A4 | B4 | r | r | r | r |
+chords  | C7{flat-III} | e{v} | D{IV} | A{I} | E{V} | - |

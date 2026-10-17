@@ -6,4 +6,5 @@ key C
 
 system
 voice "Backing vocals"  | Ab4 E4 D4 C4 |
-words                   | Hel- lo Good- bye |
+# lyrics as typed by Pollack are omitted here; x marks each sung syllable
+words "Sung rhythm" | x x x x |

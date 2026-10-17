@@ -1,0 +1,13 @@
+# When I'm Sixty-Four, the subdominant diminished seventh of the final verse phrase (figure 114.1)
+# A voicing diagram: the four voices of #ii-dim7 (E G B-flat D-flat) and where each goes as it
+# resolves to I6/3; the top D-flat is sustained, the other three move. Pollack's "->" is shown as
+# two halves of one bar. The octaves are mine; the bottom E is put below the G so that the two
+# lower voices meet on F an octave apart (F in the bass of the I6/3).
+key D-flat
+
+system
+voice    | Db5 - |
+voice    | Bb4 Ab4 |
+voice    | G4 F4 |
+voice    | E3 F3 |
+chords   | e-dim7{#ii-dim7} D-flat/F{I6/3} |

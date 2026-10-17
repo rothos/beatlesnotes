@@ -1,0 +1,11 @@
+# The Continuing Story Of Bungalow Bill, verse (figure 135.2)
+#? Bar 2: Pollack labels the C chord "VI", the same as the F in bar 3; in a minor C is III, shown so here.
+#? Check whether that is a slip or he meant something else.
+key a
+
+system
+caption 2X
+chords   | a{i} | C{III} | F{VI} | - G{flat-VII} |
+
+system
+chords   | E{V} | G{flat-VII} | a{a: i / C: vi} | f{C: iv} |

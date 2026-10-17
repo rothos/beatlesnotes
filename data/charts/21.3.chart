@@ -1,0 +1,11 @@
+# Love Me Do, verse: the open fifths of the opening phrase (figure 21.3)
+# Two pitch graphs, Paul above and John below: (D over G) twice, then F over D and G over C.
+# The rhythm is taken from the verse chart (fig. 21.2), whose count row puts the four syllables on
+# beats 1, 3 and 4 and the next downbeat.
+#? Octaves: written at a male-voice sounding pitch (John G3 up to D4, Paul D4 up to G4, partial
+#? falsetto); could be shown an octave higher.
+key G
+
+system
+voice "Paul" contour   | D4*2 D4 F4 | G4 |
+voice "John" contour   | G3*2 G3 D4 | C4 |

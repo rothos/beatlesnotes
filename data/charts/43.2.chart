@@ -1,0 +1,10 @@
+# I Want to Hold Your Hand, verse (figure 43.2)
+# Twelve bars: the first four played twice ("2X", mm. 1-4 and 5-8), then mm. 9-12 in doubled
+# harmonic rhythm.
+key G
+
+system mm. 1-4, 5-8
+chords  | [2X] G{I} | D{V} | e{vi} | B{V-of-vi} |
+
+system mm. 9-12
+chords  | C{IV} D{V} | G{I} e{vi} | C{IV} D{V} | G{I} |

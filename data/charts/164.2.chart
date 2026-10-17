@@ -1,0 +1,16 @@
+# Old Brown Shoe, verse (figure 164.2)
+# Typed "C-flat 7" (C with a flat seventh), i.e. C7. The last phrase carries Pollack's second row
+# of numerals for the brief pivot to a minor.
+key C
+
+system
+chords   | C7{I} | - | - | - |
+
+system
+chords   | d7{ii} | - | - | - |
+
+system
+chords   | F{IV} | - | Ab{flat-VI} | - |
+
+system
+chords   | F{IV = a: VI} | Eaug{a: V} | a{vi = a: i} | - |

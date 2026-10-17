@@ -1,0 +1,11 @@
+# The End, Part 3, the slow 4/4 bar (figure 191.7)
+# Pollack's beat counts: d7 on beats 1-2, G7 on 3-4; the "&" marks the syncopated last word.
+# lyrics as typed by Pollack are omitted here
+meter 4/4
+key C
+
+system
+caption 4/4 (where 3/4 == quarter)
+words              | 1 2 3 4*0.5 &*0.5 |
+chords "Chords"    | d7{ii}*2 G7{V}*2 |
+bass "Bass"        | D3*2 G2*2 |

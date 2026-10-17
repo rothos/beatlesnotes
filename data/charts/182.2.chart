@@ -1,0 +1,27 @@
+# I Want You (She's So Heavy), verse in 4/4: phrases of 8.5, 2, 8.5 and 6 bars (figure 182.2).
+# The two "half measure" bars are written as two-beat bars. Pollack's "?" for an unknown chord (over
+# the bass G in the first half-measure) is a silent chord slot with "?" under it.
+# Bass octaves: the line climbs A C D F G G#, into the a of the next bar.
+#? First half-measure: the bass is typed "G G#+"; the "+" is unexplained and left out.
+#? Second half-measure: "g g# a" sit in the chord row with "?" numerals; they may be meant as a rising bass (G G# A, like the first half-measure's) rather than minor chords.
+meter 4/4
+key a
+
+system
+chords   | a{a: i} | - | - | - | - | - |
+
+system
+bass "Bass"  | A2 C3 | D3 F3 | [** half measure] <2> G3 G#3 |
+chords       | a{i} C{III} | G{VII6/4} F{IV} | <2> r{?} E{V} |
+
+system
+chords   | a{i} | A{I / d: V} |
+
+system
+chords   | d{d: i} | - | - | - | - | - |
+
+system
+chords   | d{i} F{III} | C{VII} Bb{VI} | [** half measure] <2> g{?} g#{?} a{?} |
+
+system
+chords   | E9{V-of-V} | - | - | - | - | - |

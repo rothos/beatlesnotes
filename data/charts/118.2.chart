@@ -1,15 +1,15 @@
 # All You Need Is Love, verse (figure 118.2)
-# Pollack's beat counts over the bars (4 3 4 3 / 4 4 4 3) set the bar lengths and are kept as marks.
-# The bassline is typed under the chords; the "(V)" is the passing bass D between the e chords,
-# and "4/2" is the bass C under the D chord (D7 over C), both shown under the bass notes.
-# The last bar's five bass notes (B C D D E) share its three beats equally; the rhythm isn't typed.
-#? Last bar: the outro text speaks of a "rhythmically dotted D-E-G bassline motif"; the even spacing of B C D D E is not the recorded rhythm.
+# Pollack counts the bars out above the chart (4 3 4 3 / 4 4 4 3); the 3-beat bars are marked <3>.
+# The Bassline moves in parallel tenths with the tune, as the essay says. "(V)" under the bass D in
+# bars 2 and 4 is a passing V over the e chord; "4/2" under the C in bar 7 makes the held D a V 4/2.
+#? Last bar: Pollack types five bass notes (B C D D E) in three beats; equal shares are used, but on
+#? the record this is probably the dotted D-E-G rising motif the essay describes. Check the rhythm.
 key G
 
 system
-chords "Chords"     | [4] G{I} D{V6/3} | [3] <3> e{vi} | [4] G{I} D{V6/3} | [3] <3> e{vi} |
+chords              | G{I} D{V6/3} | <3> e{vi} | G{I} D{V6/3} | <3> e{vi} |
 bass "Bassline"     | G2 F#2 | <3> E2 D2{(V)} E2 | G2 F#2 | <3> E2 D2{(V)} E2 |
 
 system
-chords "Chords"     | [4] a{ii} e{vi6/3} | [4] D{V} e{vi} | [4] D{V} | [3] <3> G{I6/3} D{V} |
-bass "Bassline"     | A2 G2 | F#2 E2 | D2 C2{4/2} | <3> B1 C2 D2 D2 E2 |
+chords              | a{ii} e{vi6/3} | D{V} e{vi} | D{V} -{4/2} | <3> G{I6/3} D{V} |
+bass "Bassline"     | A2 G2 | F#2 E2 | D2 C2 | <3> B1 C2 D2 D2 E2 |

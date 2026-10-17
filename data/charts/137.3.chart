@@ -1,0 +1,16 @@
+# Martha My Dear, bridge extension (figure 137.3): three-bar phrases, then back to E-flat
+# Pollack's "-7" over the B-flat's second bar adds the seventh, written B-flat7. The g7 is the
+# pivot: ii in F, iii in E-flat.
+key F
+
+system
+chords   | d{vi} | G9{V-of-V} | - |
+
+system
+chords   | d{vi} | G9{V-of-V} | - |
+
+system
+chords   | C7{V} | - | B-flat{IV} | B-flat7 |
+
+system
+chords   | d{vi} | - | g7{F: ii / E-flat: iii} | - | E-flat{E-flat: I} |

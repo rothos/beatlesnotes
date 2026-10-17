@@ -1,0 +1,10 @@
+# It Won't Be Long, intro (figure 10.2)
+# Pollack's "Fx" in m. 6 is the F-double-sharp diminished seventh (#ii-dim.7) over the static bass
+# A, on the second half of the bar (fig. 10.3 shows the voice leading).
+key E
+
+system
+chords   | c#{vi} | - | E{I} | - |
+
+system
+chords   | c#{vi} | A{IV} Fxdim7{#ii-dim.7} | E{I} | - |

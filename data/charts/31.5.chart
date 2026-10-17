@@ -1,0 +1,11 @@
+# There's a Place, bridge (figure 31.5)
+# Pollack's two rows of numerals: c# minor, and the abandoned pivot to B (the "?" under the G#).
+# The B in the last bar is the stretched vocal pickup into the verse, as in figs. 31.1 and 31.2.
+key E
+
+system
+caption 2X. Under the G# in B: "(modulation abandoned)"
+chords   | c#{c#: i = B: ii} | F#{B: V} | E{B: IV ->} | G#{c#: V = B: ?} |
+
+system
+chords   | c#{c#: i} | -*2 B{E: V}*2 |

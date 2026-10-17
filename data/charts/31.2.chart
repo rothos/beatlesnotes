@@ -1,0 +1,21 @@
+# There's a Place, verse (figure 31.2)
+# m. 12: Pollack's second row of numerals reads the A and f# in c#. m. 15: as in the intro, the B
+# and "think" fall on the stretched third beat ("~~~~~"), "you" on the next downbeat.
+#? m. 11: typed "E7" like the intro's chord, which the essay says is a Major seventh; left as E7
+#? here, but with John singing the harmonica's D# over it (fig. 31.3) it may be Emaj7 too.
+key E
+
+system
+chords   | [1] E{I} | A{IV} | E{I} | A{IV} |
+
+system
+chords   | [5] E{I} | c#{vi} | B{V} | - |
+
+system
+chords   | [9] g#{iii} | A{IV} | E7{I} | A{IV = c#: vi} f#{c#: iv} |
+
+system
+caption "I ------ think of you..." ("you" on the next downbeat)
+words "Beats"    | [13] r | r*2 3 4 | 1 2 3~~~~~ 4 |
+words "Words"    | r | r*2 I_------*2 | -*2 think of |
+chords           | c#{c#: i} | - | -*2 B{E: V}*2 |

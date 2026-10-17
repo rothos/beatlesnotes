@@ -1,0 +1,8 @@
+# Think for Yourself, refrain (figure 80.5)
+# Pollack's lyric cues are a words row and his three melodic phrases are bar marks. The E-flat is
+# written Eb/Bb: the essay says it is in second inversion (6/4), from Paul's bass flourish.
+key G
+
+system
+words      | "Do_... | ..._and | Go_... | r | Think | r | r | r |
+chords     | [Phrase #1] C{IV} | - | [Phrase #2] G{I} | - | [Phrase #3] Eb/Bb{flat-VI} | D{V} | G{I} | - |

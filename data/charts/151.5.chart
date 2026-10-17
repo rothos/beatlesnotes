@@ -1,0 +1,13 @@
+# Long, Long, Long, final verse and outro: the shortened phrase three times, then once more onto V
+# (figure 151.5). Pollack's "rattling ..." over the held C at the end is kept as a bar mark.
+key F
+
+system
+chords   | C{V} | - | g{ii} | - | F{I} | C{V} |
+
+system
+chords   | [3X] g{ii} | - | F{I} | C{V} |
+
+system
+chords   | g{ii} | - | F{I} | C{V} | [rattling ...] - | - |
+caption ...

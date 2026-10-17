@@ -1,0 +1,6 @@
+# Lady Madonna, verse: the bassline riff (figure 127.2). Pollack spells the third note B# (an
+# appoggiatura to the C#) and discusses whether it is really C-natural (a blue note); kept as B#.
+key A
+
+system
+bass "Bassline"   | A2 A2 B#2 C#3 | D3 D3 F#3 A3 |

@@ -1,0 +1,14 @@
+# Ticket to Ride, the twelve-string guitar ostinato (figure 65.1)
+# Pollack's count row puts each note on an eighth: A on 1, E on 2, C# on 2&, A on 3, B on 3&,
+# E on 4&. The A and B ring on until the next note. His accent marks (typed both above and below the
+# notes) fall on 2, 3& and 4&; they are kept once, as the accent row.
+# Octaves are the guitar's sounding pitches in the usual open-A fingering (A string, then E, C#, A, B,
+# E on the upper strings).
+#? Octaves: check the register against the record (the twelve-string adds octave doublings).
+meter 4/4
+key A
+
+system
+words "Accents"      | r*1 >*1.5 >*1 >*0.5 |
+words "Beats"        | 1 & 2 & 3 & 4 & |
+voice "Ostinato"     | A2*1 E3*0.5 C#4*0.5 A3*0.5 B3*1 E4*0.5 |

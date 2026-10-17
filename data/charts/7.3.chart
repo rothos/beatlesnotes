@@ -1,0 +1,6 @@
+# You're Going to Lose That Girl, Verse' extension (figure 7.3)
+# The D chord is the pivot: flat-VII in E, V in G, the key of the bridge.
+key E
+
+system
+chords | f#{ii} | D{flat-VII = G: V} |

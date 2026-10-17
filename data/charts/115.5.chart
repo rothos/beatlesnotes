@@ -1,0 +1,13 @@
+# Lovely Rita, bridge (figure 115.5)
+# Fourteen bars: two six-bar phrases on the non-diatonic circle of fifths, then (the second time
+# only) the two-bar "This Boy" cliché.
+key E
+
+system
+chords | E{I} | A{IV} | D{flat-VII} | G{flat-III} | E{I} | B{V} |
+
+system
+chords | E{I} | A{IV} | D{flat-VII} | G{flat-III} | E{I} | B{V} |
+
+system
+chords | E{I} c#{vi} | f#{ii} B{V} |

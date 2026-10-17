@@ -1,0 +1,11 @@
+# Lovely Rita, the non-diatonic circle of fifths from E (figure 115.2)
+# Pollack's demonstration, not a passage of the song: twelve major chords by falling fifth back
+# to E, one to a bar here. He types the chords after G in parentheses ("etc."), and Gb as
+# "Gb/F#" (the enharmonic turn back toward E).
+key E
+
+system
+chords | E{I} | A{IV} | D{flat-VII} | G{flat-III} | C | F |
+
+system
+chords | Bb | Eb | Ab | Db | Gb | B | E |

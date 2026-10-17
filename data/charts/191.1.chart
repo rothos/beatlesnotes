@@ -1,0 +1,15 @@
+# The End, Part 1 phrase (figure 191.1)
+# Pollack's beat counts (a two-beat pickup, then 1 2 3 4) place each chord change: B on beat 3 of
+# bar 2, the B#7 and both A chords on beat 4. His "B#7" is the diminished seventh he discusses
+# below (fig. 191.2), labelled #ii dim. 4/2, i.e. with the A in the bass; written B#dim7/A.
+#? Bar 2: the B is typed under beat 3, though the essay stresses chord changes on beat 4; check.
+meter 4/4
+key A
+
+system
+words    3 4 | 1 2 3 4 | 1 2 3 4 | 1 2 3 4 | 1 2 3 4 |
+chords   A{V-of-IV}*2 | D{IV} | -*2 B{V-of-V}*2 | E{V} | -*3 A{I} |
+
+system
+words    | 1 2 3 4 | 1 2 3 4 | 1 2 3 4 | 1 2 3 4 |
+chords   | - | -*3 B#dim7/A{#ii dim. 4/2} | - | -*3 A{I} |

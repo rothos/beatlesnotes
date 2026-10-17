@@ -1,0 +1,16 @@
+# Please Please Me, verse (figure 22.1)
+# Bar 4 is typed in eighth-note pairs "EG GA AB BB": E, then G, A and B each arriving on an offbeat
+# (Pollack: "three Major chords moving step-wise in a row and changing on the offbeat").
+key E
+
+system
+chords   | E{I} | - | A{IV} E{I} | E{I}*0.5 G{flat-III} A{IV} B{V}*1.5 |
+
+system
+chords   | E{I} | - | A{IV} E{I} | - |
+
+system
+chords   | A{IV} | f#{ii} | c#{vi} | A{IV} |
+
+system
+chords   | E{I} | A{IV} B{V} | E{I} | A{IV} B{V} |

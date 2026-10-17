@@ -1,0 +1,16 @@
+# She's Leaving Home, verse (figure 111.1)
+# Pollack counts the song in slow 12/8, each bar four big beats (four bars of fast 3/4).
+# The B chord is embellished with a ninth and with the 4-3 appoggiatura typed under its two bars
+# ("4 3 4 3", one figure to each half bar). Added: that appoggiatura drawn as notes, E falling to
+# D#, the fourth and third above B.
+#? Bar 1 shares its beats equally by rule; the typed columns suggest E and b on beats 1 and 2, f# on beats 3-4.
+#? Octave of the 4-3 line (E4-D#4) chosen; the essay doesn't say which part carries it.
+key E
+
+system
+chords          | E{I} b{v7} f#{ii7} | c#{vi} F#{V9-of-V} |
+
+system
+voice "4-3"     | E4*2 D#4*2 | E4*2 D#4*2 |
+words           | 4*2 3*2 | 4*2 3*2 |
+chords          | B{V9} | - |

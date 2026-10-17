@@ -1,6 +1,5 @@
 # Here, There and Everywhere, bridge (figure 96.3)
-# From B-flat (I, vi, ii) into g minor; the c chord is ii in B-flat and iv in g.
-key G
+key B-flat
 
 system
-chords | B-flat{B-flat: I} g{vi} | c{ii = g: iv} D{V} | g{i} | c{iv} D{V} |
+chords              | B-flat{B-flat: I} g{vi} | c{ii / g: iv} D{V} | g{i} | c{iv} D{V} |

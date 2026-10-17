@@ -1,0 +1,7 @@
+# I Want You (She's So Heavy), intro: five bars in 6/8, ending open on augmented V (figure 182.1).
+# The essay's bass move from C down to Bb in bar 3 is not typed in the chart.
+meter 6/8
+key d
+
+system
+chords   | d{i} | - | E9/7{V-of-V} | Bb7{VI} | A-aug.{V} |

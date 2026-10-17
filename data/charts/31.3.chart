@@ -1,0 +1,8 @@
+# There's a Place, verse mm. 9-12, the climax on a fourth (figure 31.3)
+# Paul's G# over John's D# (a fourth), John's E-D# turn, then contrary motion: Paul up to A, John
+# down to C#. Rhythm not given; equal shares.
+key E
+
+system
+voice "Paul"   | G#4 | A4 |
+voice "John"   | D#4 E4 D#4 | C#4 |

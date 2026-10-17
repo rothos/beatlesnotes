@@ -1,0 +1,9 @@
+# I Should Have Known Better, Verse' (figure 15.3)
+# The C in bar 7 pivots to e minor (IV in G, VI in e), ending on e's V.
+key G
+
+system
+chords   | G{I} D{V} | G{I} D{V} | G{I} D{V} | G{I} D{V} |
+
+system
+chords   | G{I} D{V} | e{vi6/3} -{vi} | C{G: IV / e: VI} | B{V} |

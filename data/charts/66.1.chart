@@ -1,0 +1,17 @@
+# Yes It Is, verse (figure 66.1)
+# Fifteen measures (4 + 4 + 6 + 1) in verse 1; verses 2 and 3 add the sixteenth, where the
+# sustained E is heard as V of A, leading into the bridge (Pollack's "verse #2 & 3" mark).
+# The I6/3 in bar 9 is first inversion with G# in the bass, as he notes; spelled E/G# here.
+key E
+
+system
+chords   | E{I} | A{IV} | f#{ii} | B{V} |
+
+system
+chords   | E{I} | A{IV} | D{flat-VII} | B{V} |
+
+system
+chords   | E/G#{I6/3} | - | A{IV} | D{flat-VII} |
+
+system
+chords   | c#{vi} | E{I} | - | [verse 2 & 3] E{A: V} |

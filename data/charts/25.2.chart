@@ -1,0 +1,8 @@
+# While My Guitar Gently Weeps, bridge phrase (figure 25.2): eight bars, played twice
+key A
+
+system
+chords   | A{I} | c#{iii = c#: I} | f#{c#: iv} | c#{A: iii = c#: I} |
+
+system
+chords   | b{A: ii} | - | E{V} | - |

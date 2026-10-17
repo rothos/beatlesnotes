@@ -1,0 +1,7 @@
+# I Should Have Known Better, intro (figure 15.1)
+# The one bar is played four times (4X), making the four-bar intro.
+key G
+
+system
+caption 4X
+chords   | G{I} D{V} |

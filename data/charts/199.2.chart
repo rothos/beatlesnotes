@@ -1,0 +1,9 @@
+# That'll Be the Day (Quarry Men), verse (figure 199.2)
+# "(B?)" in bar 7: Buddy Holly's V-of-V, which the Quarry Men vamp through on E instead.
+key A
+
+system
+chords  | D{IV} | A{I} | D{IV} | A{I} |
+
+system
+chords  | D{IV} | A{I} | (B){V-of-V} | E{V} |

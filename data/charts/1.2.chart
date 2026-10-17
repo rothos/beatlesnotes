@@ -1,0 +1,19 @@
+# We Can Work It Out, bridge (figure 1.2)
+# Twelve bars, repeated. Pollack's leaning-tone figures are kept as their own row: over G, 6->5;
+# over F#, the 4 (the harmonium's B, held from the b and G chords) falling to 3 (A#) in the next bar;
+# over b, 4->3.
+# The third phrase is in "3/4 oom-pah-pah" slow triplets but the bars keep the same length, so the
+# bars stay four beats long here and a count row of 1 2 3 shows the three slow beats.
+key b
+
+system
+chords                 | b{D: vi / b: i} | - | - | - |
+
+system
+chords                 | G{VI} | - | F#{V} | - |
+words "Leaning tones"  | r | - 6->5 | 4-> | - 3 |
+
+system
+words "Slow triplets"  | 1 2 3 | 1 2 3 | 1 2 3 | 1 2 3 |
+chords                 | b{b: i / D: vi} | - | - | - |
+words "Leaning tones"  | 4->3 | r | r | r |

@@ -1,0 +1,24 @@
+# Mean Mr Mustard, verse (figure 186.1)
+# Fourteen bars, 4 + 6 + 4. In the middle phrase Pollack types the bassline with a beat row above
+# it (1 2 3& 4 &): the bass climbs B C C# D and later falls C# C B in eighths on the "&" of 3, 4
+# and the "&" of 4, so the D and B chords arrive in the bass just before their downbeats.
+# Added: the bass B in the first bar of the middle phrase (he starts typing the bass in its second
+# bar, on the downbeat B). The "1" over the B chord's first bar is kept in the beat row.
+#? Bass octave (B2 up to D3) is a choice for range; check against the record.
+key E
+
+system
+chords                | E{I} | - | - | - |
+
+system
+words "Beats"         | r | 1 2 3*0.5 &*0.5 4*0.5 &*0.5 | r | 1 2 3*0.5 &*0.5 4*0.5 &*0.5 |
+chords                | B{V} | - | D{flat-VII} | - |
+bass "Bass"           | B2 | B2*2.5 C3*0.5 C#3*0.5 D3*0.5 | - | -*2.5 C#3*0.5 Cn3*0.5 B2*0.5 |
+
+system
+words "Beats"         | 1 | r |
+chords                | B{V} | - |
+bass "Bass"           | - | - |
+
+system
+chords                | E{I} C{flat-VI} | B{V} | E{I} C{flat-VI} | B{V} |

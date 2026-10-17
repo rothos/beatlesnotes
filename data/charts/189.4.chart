@@ -1,14 +1,14 @@
-# Golden Slumbers, refrain: lines of 6 + 4 + 5 + 4 bars (figure 189.4)
+# Golden Slumbers, refrain (figure 189.4): four lines of 6 + 4 + 5 + 4 bars
 key C
 
 system
-chords | C{I} | - | F7{IV} | - | C{I} | - |
+chords              | C{I} | - | F7{IV} | - | C{I} | - |
 
 system
-chords | C{I} | - | F7{IV} | - |
+chords              | C{I} | - | F7{IV} | - |
 
 system
-chords | C{I} | E{V-of-vi} | a{vi} | d9{ii} | - |
+chords              | C{I} | E{V-of-vi} | a{vi} | d9{ii} | - |
 
 system
-chords | G7{V} | - | C{I} | - |
+chords              | G7{V} | - | C{I} | - |

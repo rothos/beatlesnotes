@@ -1,0 +1,14 @@
+# Julia, bridge: a two-bar wind-down, then 4 + 2 + 4 bars, toward f# minor (figure 145.3)
+key D
+
+system
+chords | D{I = f#: VI} | - |
+
+system
+chords | c#{f#: v} | - | D{VI} | - |
+
+system
+chords | b7{f#: iv} | - |
+
+system
+chords | f#{f#: i = D: iii} | - | - | - |

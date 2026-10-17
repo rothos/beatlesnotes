@@ -1,0 +1,25 @@
+# Her Majesty, verse (figure 193.1)
+# Eighteen bars: an AA'BA'' quatrain of sixteen, then a two-bar reprise of the last phrase, cut
+# off after the second beat. Pollack types the walking bassline only for the opening: D C# B A
+# under the held D chord (his "harmonic envelope"), then E.
+# Added: the bass A and D at the end of the first system are not typed; they are the chord roots.
+# Pollack's E# chord is the diminished seventh E# G# B D with D in the bass (#ii 4/2 dim).
+#? Bass octave (D3 down to E2) chosen for range; check against the record.
+key D
+
+system
+chords "Chords"    | D{I} | - | E9{V-of-V} A{V} | D{I} |
+bass "Bassline"    | D3 C#3 | B2 A2 | E2 A2 | D3 |
+
+system
+chords             | D{I} | - | E9{V-of-V} | A{V} |
+
+system
+chords             | b{vi} | - | D7{V-of-IV} | G{IV} |
+
+system
+chords             | E#dim7{#ii4/2 dim} | D{I} B{V-of-ii} | e{ii} A13{V} | D{I} B{V-of-ii} |
+
+system
+caption cut off after the second beat
+chords             | e{ii} A13{V} | <2> D{I} |

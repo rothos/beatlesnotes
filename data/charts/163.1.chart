@@ -1,0 +1,10 @@
+# The Ballad Of John And Yoko, verse (figure 163.1)
+# The letters over the bars are Pollack's parsing of the poetic lines (AA/A'A'/A''), with the long
+# pickup to the refrain starting in the last bar; they are kept as bar marks.
+key E
+
+system
+chords   | [A] E{I} | - | [A] - | - |
+
+system
+chords   | [A'] E7{V-of-IV} | [A'] - | [A''] - | [Pickup ...] - |

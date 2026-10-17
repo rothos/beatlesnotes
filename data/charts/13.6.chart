@@ -1,0 +1,17 @@
+# You Never Give Me Your Money, Part ZA verse (figure 13.6)
+# Seven and a half measures; the B marked ** is a half measure (Pollack's footnote). The C after
+# the double bar is the first chord of the next section (ZB), kept as a bar of its own.
+key A
+
+system
+chords   | A{I} | B{V-of-V} |
+
+system
+chords   | C{flat-III} E{V} | A{I} |
+
+system
+chords   | d{iv} | - |
+
+system
+chords   | A{I} | <2> B{V-of-V} | C{flat-III} |
+caption ** = half measure

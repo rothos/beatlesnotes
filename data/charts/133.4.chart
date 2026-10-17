@@ -1,0 +1,17 @@
+# Ob-La-Di, Ob-La-Da, bridge (figure 133.4)
+# Pollack's "(V-of-IV)" sits late under the held B of bar 4 (the B chord turning toward E); kept as
+# a label on the hold. His "F# 6/4 | 5/3" is the cadential 6/4 over F# in the bass resolving to
+# root position: written B/F# then F#.
+key B
+
+system
+chords   | E{IV} | - |
+
+system
+chords   | B{I} | -{(V-of-IV)} |
+
+system
+chords   | E{IV} | - |
+
+system
+chords   | B/F#{V 6/4} | F#{5/3} |

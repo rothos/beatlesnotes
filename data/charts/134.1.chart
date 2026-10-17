@@ -1,0 +1,12 @@
+# Wild Honey Pie, opening instrumental break (figure 134.1)
+# Seven bars. The essay says all the chords are dominant sevenths, so they are spelled G7, F7 ...
+# here (Pollack types the plain letters). The harpsichord's right hand plays descending parallel
+# tritones, F/B -> E-flat/A -> D/G# -> C/F#: one to each of the G7, F7, E7 and D7 chords.
+# The tritone in the E-flat bar (D-flat/G) is added, following the parallel descent.
+#? The essay lists four tritones for five chords; check whether the E-flat bar really has D-flat/G.
+#? Octave of the tritones is a guess.
+key G
+
+system
+chords                 | G7{I} | - | F7 | - | E7 | Eb7 | D7{V} |
+voice "Harpsichord RH" | F4+B4 | - | Eb4+A4 | - | D4+G#4 | Db4+G4 | C4+F#4 |

@@ -1,0 +1,9 @@
+# When I'm Sixty-Four, intro (figure 114.2)
+# Four measures plus a two-measure vamp; Pollack's bare "D" in bar 4 is D-flat (his I).
+key D-flat
+
+system
+chords   | D-flat{I} | - | G-flat{IV} A-flat{V} | D-flat{I} |
+
+system
+chords   | - | - |

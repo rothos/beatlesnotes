@@ -4,5 +4,6 @@
 key A
 
 system
-words    | Please | please help | me | r |
+# lyrics as typed by Pollack are omitted here; x marks each sung syllable
+words "Sung rhythm" | x | x x | x | r |
 chords   | A{I} | - E{(V)} | A{I} | - |

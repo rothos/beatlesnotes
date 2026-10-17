@@ -1,0 +1,12 @@
+# Magical Mystery Tour, refrain: eight bars over a descending bassline into a V-I cadence in D
+# (figure 122.3).
+#? Bass octave of the final D (D3, up a fourth from A2, rather than D2) is a guess.
+key D
+
+system
+bass "Bassline"   | D3 | C3 | B2 | Bb2 |
+chords "Chords"   | D{D: I} | -{V4/2 of IV} | G{IV6/3} | g{iv6/3} |
+
+system
+bass "Bassline"   | A2 | A2 | D3 | - |
+chords "Chords"   | D{I6/4} | A{V} | D{I / E: flat-VII} | - |

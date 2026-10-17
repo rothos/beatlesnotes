@@ -1,0 +1,16 @@
+# It's Only Love, verse (figure 73.2)
+# Twelve bars, AAB: the first four-bar phrase is played twice (his "2X"). The chromatic bassline
+# C B B-flat F puts the e chord in 6/4 position over B; after the F Pollack types "...", and the
+# bass G under the next two bars is added from the chord roots.
+# Figures: the 4-3 suspension over G (resolving on beat 3), the augmented fifth on the second G,
+# and the 6-5 appoggiatura over the C in the second phrase, each in a split bar.
+#? Bass octave (C3 down to F2) is a choice; the G bass in bars 3-4 is added.
+key C
+
+system
+caption 2X
+chords "Chords"      | C{I} e{iii6/4} | B-flat{flat-VII} F{IV} | G{V 4} -{3} | Gaug{#5} |
+bass "Bassline"      | C3 B2 | Bb2 F2 | G2 | - |
+
+system
+chords "Chords"      | F{IV} | G{V} | C{I 6} -{5} | a{vi} |

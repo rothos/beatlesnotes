@@ -1,0 +1,7 @@
+# Get Back, refrain after a verse (figure 161.3)
+#? Bar 4 is split into equal thirds by rule; the typed spacing suggests A for two beats, then G and D on beats 3 and 4.
+key A
+
+system
+caption 2X
+chords | A{I} | - | D{IV} | A{I} G{flat-VII} D{IV} |

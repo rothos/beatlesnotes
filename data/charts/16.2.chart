@@ -1,0 +1,15 @@
+# Thank You Girl, intro: the neighbor-tone embellishment of the A and G chords (figure 16.2)
+# Each typed pair ("E-E-") is two eighths. Over A, the top E steps up to its neighbor F# on beats 2
+# and 4 while C# and A sound on 1 and 3; over G, the top D steps up to E on 2 and 4 over B and G.
+# Pollack draws the top notes on two rows as a little pitch graph; they are one line here.
+# The chord row (A, G) is added from fig. 16.1; Pollack types only the notes.
+#? The second note of each upper pair is typed "F-", read as F# (the same neighbor as "F#-");
+#? check whether it is really an F-natural.
+#? Octaves (A3 up to F#4) are a guess at the guitar/harmonica register.
+key D
+
+system
+voice contour   | E4 E4 F#4 F#4 E4 E4 F#4 F#4 | D4 D4 E4 E4 D4 D4 E4 E4 |
+voice           | C#4*2 C#4*2 | B3 |
+voice           | A3*2 A3*2 | G3 |
+chords          | A | G |

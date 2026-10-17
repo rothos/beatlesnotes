@@ -1,0 +1,19 @@
+# Martha My Dear, bridge (figure 137.2), in F
+# Pollack's "F-added 6th" is written F6. His "bass pedal tone on C ..." covers the first three
+# bars of the third phrase (the essay: "sustained through the first three measures"); the bass row
+# is added to show it, with the chord roots C and A in the fourth bar (not typed).
+key F
+
+system
+chords   | d7{vi} | - | g7{ii} | - |
+
+system
+chords   | F6{I} | - | - | - |
+
+system
+chords   | g{ii} | C{V} | g{ii} | C{V} A{V-of-vi} |
+bass "Pedal" | C3 | - | - | C3 A2 |
+caption bass pedal tone on C ...
+
+system
+chords   | d{vi} | - | g7{ii} | - |

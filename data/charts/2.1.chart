@@ -1,0 +1,15 @@
+# Eight Days a Week, verse (figure 2.1)
+# AABA': the first system is played twice. Pollack's notes on which G each chord uses (the
+# cross-relations) are kept as captions.
+key D
+
+system
+caption 2X. The E chord uses G#; the G chord uses G-natural.
+chords | D{I} | E{V-of-V} | G{IV} | D{I} |
+
+system
+caption The e chord uses G-natural (in the bass: first inversion); the E chord uses G#.
+chords | b{vi} | e{ii6/3} | b{vi} | E{V-of-V} |
+
+system
+chords | D{I} | E{V-of-V} | G{IV} | D{I} |

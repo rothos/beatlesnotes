@@ -1,0 +1,6 @@
+# When I Get Home, verse (figure 54.2)
+# The "3X" spans the first two bars only (C F three times, then G for two bars: eight in all).
+key C
+
+system
+chords   | [3X] C{I} | F{IV} | G{V} | - |

@@ -1,0 +1,10 @@
+# Long, Long, Long, refrain: a four-bar phrase, then the sitar riff over B-flat and F (figure 151.2).
+# The essay puts the C on the last beat of bar 3 (so g gets two beats), and says the tune's D makes
+# it a V9 (typed as C). The bass has G under the B-flat chord on the downbeat of bar 5.
+key F
+
+system
+chords   | B-flat{IV} | a{iii} | g{ii}*2 C{V} | F{I} |
+
+system
+chords   | B-flat{IV} | F{I} |

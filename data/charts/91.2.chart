@@ -1,0 +1,10 @@
+# Paperback Writer, verse (figure 91.2)
+# The first four bars are played twice (2X).
+key G
+
+system
+caption 2X
+chords   | G{I} | C{IV6/4} | G{I} | - |
+
+system
+chords   | C{IV} | - | G{I} | - |

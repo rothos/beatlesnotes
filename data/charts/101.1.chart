@@ -1,0 +1,8 @@
+# I Want to Tell You, verse (figure 101.1): eleven bars, the chord changing mid-bar in bar 4
+key A
+
+system
+chords   | A{I} | - | - | - B{V-of-V} | - |
+
+system
+chords   | E{V} | - | - | - | A{I} | - |

@@ -1,0 +1,11 @@
+# Please Please Me, bridge (figure 22.2): ten bars, 4 + 3 + 3
+key E
+
+system
+chords   | A{IV} | B{V} | E{I} | - |
+
+system
+chords   | A{IV} | B{V} | E{I} |
+
+system
+chords   | A{IV} B{V} | E{I} | A{IV} B{V} |

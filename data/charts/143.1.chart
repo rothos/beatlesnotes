@@ -1,0 +1,12 @@
+# Why Don't We Do It In The Road?, refrain (figure 143.1): a stretched-out blues frame
+#? Pollack types "V" under both G chords (IV in D, as a blues frame implies); kept as typed.
+key D
+
+system
+chords   | D{I} | - | - | - | - | - | - | - |
+
+system
+chords   | G{V} | - | - | - | D{I} | - | - | - |
+
+system
+chords   | A{V} | - | G{V} | - | D{I} | - | - | - |

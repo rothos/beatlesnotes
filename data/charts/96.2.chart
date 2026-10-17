@@ -1,10 +1,11 @@
 # Here, There and Everywhere, verse (figure 96.2)
-# Bars 2 and 4: the C is typed in the second half of the bar, after the G is held.
-# The f# chord (Pollack's ii*) is half-diminished (F# A C E).
+# Bars 2 and 4: Pollack types the C only in the second half of the bar, the first half left blank;
+# read as the G held from the bar before. The C is also VI of e, the key the second line visits.
 key G
 
 system
-chords | G{I} | - C{IV} | G{I} | - C{IV = e: VI} |
+chords              | G{I} | - C{IV} | G{I} | - C{IV / e: VI} |
 
 system
-chords | f#-half-dim7{e: ii*} B{V} | f#-half-dim7{ii*} B{V} | e{i = G: vi} a{ii} | C{IV} D{V} |
+chords              | f#{e: ii*} B{V} | f#{ii*} B{V} | e{e: i / G: vi} a{ii} | C{IV} D{V} |
+caption * the f# chord is a "half-diminished" seventh: a diminished triad (F# A C) with a minor seventh (E)

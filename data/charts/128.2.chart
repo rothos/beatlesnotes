@@ -1,0 +1,15 @@
+# The Inner Light, verse (figure 128.2)
+# Pollack's phrase letters (A A' A' A' B C C') are kept as bar marks.
+key Eb
+
+system
+chords   | [A] Eb{I} | f{ii} | [A'] Eb{I} | Ab{IV} |
+
+system
+chords   | [A'] Eb{I} | f{ii} | [A'] Eb{I} | Ab{IV} |
+
+system
+chords   | [B] Ab{IV} | Eb{I} | [C] - | - |
+
+system
+chords   | [C'] Eb{I} | Ab{IV} | Eb{I} |

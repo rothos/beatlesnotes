@@ -1,0 +1,7 @@
+# P.S. I Love You, intro (figure 30.1)
+# The first two bars are played three times ("3X"). Pollack's "C# VII 7 #5 #3" is a C# seventh
+# chord with raised fifth and major third, i.e. C#aug7.
+key D
+
+system
+chords  | [3X] G{IV} C#aug7{VII 7 #5 #3} | D{I} | D A{V} | D{I} |

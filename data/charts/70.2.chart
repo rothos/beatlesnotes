@@ -1,0 +1,17 @@
+# The Night Before, verse (figure 70.2)
+# Verses followed by another verse replace the last bar with F G; Pollack types it as an
+# alternative under that bar, given here as its own system.
+key D
+
+system
+caption 2X
+chords   | D{I} | C{flat-VII} | G{IV} | A{V} |
+
+system
+chords   | b{vi} | g{iv} | b{vi} | g{iv} |
+
+system
+chords   | D{I} | G{IV} | D{I} | - |
+
+system verses which are followed by another verse
+chords   | F{flat-III} G{IV} |

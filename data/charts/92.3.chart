@@ -1,0 +1,13 @@
+# Taxman, last refrain into the outro (figure 92.3)
+# The bassline is typed only under the two F bars and the D that follows: F held for a bar and a
+# beat, then E D C down to D. It is split into its own system so the earlier bars carry no bass.
+#? Bass octave (F2 down to C2, then D2) is a guess for Paul's line; check against the record.
+key D
+
+system
+chords "Chords"     | [Refrain] C{flat-VII} | - | G{IV} | D{I} |
+
+system
+chords "Chords"     | F{flat-III} | - | [Outro] D |
+bass "Bassline"     | F2 | - E2 D2 C2 | D2 |
+caption ... (the outro fades out on D)

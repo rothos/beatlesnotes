@@ -1,0 +1,10 @@
+# Helter Skelter, refrain (figure 150.4): the four-bar phrase twice, then the two-bar vamp twice
+key E
+
+system
+caption 2X
+chords   | A{IV} | - | E{I} | - |
+
+system Vamp
+caption 2X
+chords   | - | - |

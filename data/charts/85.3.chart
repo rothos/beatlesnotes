@@ -7,7 +7,8 @@
 key Ab
 
 system
-words              | r I'm look- ing | through you |
+# lyrics as typed by Pollack are omitted here; x marks each sung syllable
+words "Sung rhythm" | r x x x | x x |
 voice "Tune"       | r C4 Db4 F4 | Ab4 F4 |
 bass "Bassline"    | Ab2*2 Db3 C3 | Bb2 |
 chords "Chords"    | Ab{I}*2 Db{IV}*2 | bb{ii} |

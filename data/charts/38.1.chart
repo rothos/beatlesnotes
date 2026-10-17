@@ -1,0 +1,6 @@
+# Little Child, intro (figure 38.1)
+# The E9 in bar 3 is the harmonica's F# over the E chord, which Pollack still labels I.
+key E
+
+system
+chords  | E{I} | A{IV} | E9{I} | - |

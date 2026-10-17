@@ -1,0 +1,15 @@
+# Think for Yourself, verse m. 2: tune, chord and bass (figure 80.4)
+# The bass holds D, then the marked slow triplet E D C (2/3 beat each) to B-flat. The essay puts
+# the bass's E (a 9-8 appoggiatura) at the moment the tune resolves B to A (6-5), so the tune's B
+# is given beats 1-2 and the two A's beats 3-4.
+# Pollack's chart runs on to the bass B-flat at the start of m. 3; the tune isn't typed there, and
+# the B-flat chord is taken from the verse chart (fig. 80.3).
+#? Tune octave (B4 A4) follows fig. 80.1; it may be an octave lower.
+#? Second bar: tune and words left as rests because nothing is typed (the vocal continues on the record).
+key G
+
+system
+words              | word*2 or two_... | r |
+voice "Tune"       | B4*2 A4 A4 | r |
+chords "Chords"    | d | Bb |
+bass "Bass"        | D3*2 E3*2/3 D3*2/3 C3*2/3 | Bb2 |

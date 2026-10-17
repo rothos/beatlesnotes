@@ -1,0 +1,9 @@
+# It's Only Love, refrain (figure 73.3); the "6 -> 5" is an appoggiatura over the F, resolving
+# halfway through the bar.
+key C
+
+system
+chords   | B-flat{flat-VII} | G{V} | C{I} | a{vi} |
+
+system
+chords   | B-flat{flat-VII} | G{V} | F{IV 6} -{5} | G{V} |

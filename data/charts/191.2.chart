@@ -1,0 +1,11 @@
+# The End, voice leading of the B# diminished seventh into A (figure 191.2)
+# Pollack's four lines, top to bottom: F# and D# both to E, B# up to C#, A held (the bass).
+# The chord names are added (from fig. 191.1). Octaves are a plain close voicing over A3.
+key A
+
+system
+voice    | F#4 | E4 |
+voice    | D#4 | E4 |
+voice    | B#3 | C#4 |
+bass     | A3 | - |
+chords   | B#dim7/A | A |

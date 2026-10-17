@@ -1,0 +1,9 @@
+# Lady Madonna, outro: the chromatic lick of the last two bars, outer voices in parallel tenths
+# (figure 127.4). Pollack types the two lines with no bar lines or rhythm.
+#? The bar line (four notes, then the final C#/A in bar 2) and the equal note lengths are my placement; Pollack gives no rhythm.
+#? Octaves (lower line A3, upper C#5, a tenth apart) are chosen for range; check against the record.
+key A
+
+system
+voice "Upper voice"   | C#5 D5 Eb5 D5 | C#5 |
+voice "Lower voice"   | A3 B3 Cn4 B3 | A3 |

@@ -1,0 +1,11 @@
+# Wait, refrain (figure 83.2)
+# The first eight bars (two phrases) are played twice; Pollack's double bar lines after each four
+# bars mark the phrase ends. The "4---->3" over the V is the 4-3 suspension (E to D#), kept as a row.
+key E
+
+system
+chords              | [2X] E{I} | - | - | - | E{I} | - | A{IV} | - |
+
+system
+words "Suspension"  | 4 | - 3 | r | r |
+chords              | B{V} | - | E{I} | - |

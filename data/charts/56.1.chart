@@ -1,0 +1,12 @@
+# She's a Woman, intro (figure 56.1)
+# Pollack types a count "1*2*3 4" over the last bar, where the syncopated V arrives; it is kept
+# as a caption, since the stars (probably the offbeats) can't be lined up reliably.
+#? Where in bar 8 the E lands (typed "- E"); it is played on beat 3 here. Pollack calls it syncopated.
+key A
+
+system
+chords   | E{V} | - | D{IV} | - |
+
+system
+chords   | A{I} | - | - | - E{V} |
+caption bar 8 counted 1*2*3 4

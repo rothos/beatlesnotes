@@ -1,0 +1,14 @@
+# There's a Place, intro (figure 31.1)
+# Pollack's beat count and lyric run over the last two bars: "There" comes in on beat 3 of bar 4,
+# the B chord and "there's" on the stretched third beat of bar 5 (his "~~~~~"), "a" on beat 4,
+# and "place" on the downbeat of the verse (his final "1"), which is left in the caption.
+# Typed "E7", but the essay calls the opening chord a "dissonant Major seventh chord", so it is
+# drawn as Emaj7.
+key E
+
+system
+caption "There,-- there's a place ..." ("place" on the next downbeat)
+words "Beats"    | r | r | r | 1 2 3 4 | 1 2 3~~~~~ 4 |
+# lyrics as typed by Pollack are omitted here; x marks each sung syllable
+words "Sung rhythm" | r | r | r | r*2 x*2 | -*2 x x |
+chords           | Emaj7{I} | A{IV} | Emaj7{I} | A{IV} | -*2 B{V}*2 |

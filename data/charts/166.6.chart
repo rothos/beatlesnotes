@@ -1,0 +1,6 @@
+# You Know My Name (Look Up the Number), take 3 intro (figure 166.6)
+# The I chord in first inversion (I 6/3) is written D/F#.
+key D
+
+system
+chords | D{I} D/F#{I6/3} | G{IV} A{V} | D{I} D/F#{I6/3} | G{IV} A{V} |

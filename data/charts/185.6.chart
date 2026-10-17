@@ -1,0 +1,6 @@
+# Sun King, Refrain' (figure 185.6)
+# Pollack's "- Major 7th" and "- Dominant 7th" are the C chord turned into Cmaj7 and C7.
+key C
+
+system
+chords   | C{I} | Cmaj7 | C7{V-of-IV} | F{C: IV / E: flat-II} |

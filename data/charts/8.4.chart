@@ -1,0 +1,6 @@
+# No Reply, coda (figure 8.4)
+# The final chord is C with an added sixth and added ninth (A and D on top), Pollack's "I 9/6".
+key C
+
+system
+chords | a{vi} | e{iii} | F7{IV} | C6/9{I 9/6} |

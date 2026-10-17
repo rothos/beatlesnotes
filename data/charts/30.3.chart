@@ -1,0 +1,6 @@
+# P.S. I Love You, bridge (figure 30.3)
+# The first two bars are played three times ("3X").
+key D
+
+system
+chords  | [3X] G{IV} | D{I} | D A{V} | D{I} |

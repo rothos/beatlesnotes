@@ -1,0 +1,7 @@
+# The End, final cadence (figure 191.8)
+# Pollack brackets the E-flat as an interpolation: "(flat-III)".
+key C
+
+system
+chords "Chords"    | C{I} | D{V-of-V} | Eb{(flat-III)} F{IV} | C{I} |
+bass "Bass"        | C3 | - | Eb3 F3 | C3 |

@@ -1,0 +1,7 @@
+# Sun King, verse (figure 185.2)
+# The B13 comes on the fourth beat of the second bar (typed "& B13"; the essay confirms the
+# change on beat four). Pollack's "E added 6th" is written E6.
+key E
+
+system
+chords   | f#7{ii} | -*3 B13{V} | E6{I} | - |

@@ -1,0 +1,7 @@
+# Penny Lane, end of the second verse of each pair, pivoting to A (figure 104.4)
+# The 4-3 suspension over F# ("V4 - 3") shares the first bar equally; F# is also VI with a raised
+# third in A.
+key B
+
+system
+chords   | F#sus4{V4 = A: VI#3} - F#{3} | E{A: V} |

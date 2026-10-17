@@ -1,0 +1,18 @@
+# Lucy in the Sky with Diamonds, bridge (figure 108.3)
+# The top row is the tune: a repeated D over the chords (a ninth chord on C, a thirteenth on F),
+# sliding down to B-flat ("B-f|lat" typed across the bar line, so held into bar 8). The bridge
+# pivots from B-flat to G (C is V-of-V in B-flat and IV in G).
+# The last bar is the switch to 4/4, counted "D 2 3 4" in the typed chart. Pollack says the 3/4
+# quarter equals the new eighth, so that bar is written 8 of the old beats long, each count 2 beats.
+#? Check that the 4/4 bar really lasts 8 of the bridge's 3/4 beats when played (tempo change).
+meter 3/4
+key Bb
+
+system
+voice "Melody"   | D5 | - | - | - | - | - | - Bb4 | - |
+chords           | B-flat{I} | - | C{V-of-V} | - | F{V} | - | B-flat{I} | - |
+
+system
+voice "Melody"   | D5 | - | - | - C5 B4 | <8> A4*2 -*2 -*2 -*2 |
+chords           | C{V-of-V = G: IV} | - | G{G: I} | - | <8> D{G: V}*8 |
+words            | r | r | r | r | <8> 1*2 2*2 3*2 4*2 |

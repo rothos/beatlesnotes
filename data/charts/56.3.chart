@@ -1,0 +1,6 @@
+# She's a Woman, bridge (figure 56.3)
+#? Pollack himself doubts whether the chord on F# is minor (vi, as typed) or Major (then V-of-ii).
+key A
+
+system
+chords   | c#{iii} | f#{vi} | c#{iii} | D{IV} E{V} |

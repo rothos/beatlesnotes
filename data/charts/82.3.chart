@@ -1,0 +1,9 @@
+# Michelle, bridge (figure 82.3): six bars of new music, then the intro
+key f
+
+system
+chords   | f{i} | - | A-flat{V-of-VI} | D-flat{VI} |
+
+system
+chords   | C{V} | f{i} |
+caption ----> Intro

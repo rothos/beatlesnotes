@@ -1,0 +1,7 @@
+# Misery, intro (figure 29.1)
+# Starts "Adagio" and arrives "A Tempo" over the four bars.
+key C
+
+system
+caption "Adagio" ----> "A Tempo"
+chords | F{IV} | G{V} | C{I} | a{vi} G{V} |

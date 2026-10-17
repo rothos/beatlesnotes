@@ -1,0 +1,11 @@
+# The Ballad Of John And Yoko, bridge (figure 163.3)
+# Pollack notes "plus 2 extra beats!" after the last bar; they are written out as a two-beat ninth
+# bar on the B chord (the essay's "ninth and partial measure").
+key E
+
+system
+chords   | A{IV} | - | - | - |
+
+system
+chords   | A | - | B{V} | - | <2> - |
+caption plus 2 extra beats!

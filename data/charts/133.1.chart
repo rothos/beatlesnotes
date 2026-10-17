@@ -1,0 +1,6 @@
+# Ob-La-Di, Ob-La-Da, intro (figure 133.1)
+# One bar of piano fanfare on F#, then the two-bar vamp on B played twice ("2X", kept as a bar mark).
+key B
+
+system
+chords   | F# | [2X] B | - |

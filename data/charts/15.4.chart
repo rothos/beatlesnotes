@@ -1,0 +1,15 @@
+# I Should Have Known Better, bridge (figure 15.4)
+# The C in bar 9 is the pivot back to G (VI in e, IV in G).
+key e
+
+system
+chords   | e{i} | C{VI} | G{III} | B{V} |
+
+system
+chords   | e{i} | - | G{III} | G7{V-of-VI} |
+
+system
+chords   | C{e: VI / G: IV} | D{V} | G{I} | e{vi} |
+
+system
+chords   | C{IV} | D{V} | G{I} D{V} | G{I} D{V} |

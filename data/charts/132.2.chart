@@ -1,0 +1,10 @@
+# Glass Onion, refrain (figure 132.2)
+# The first two bars are played twice (2X).
+key a
+
+system
+caption 2X
+chords   | F7{VI} | D7{V-of-flat-VII} |
+
+system
+chords   | F7{VI} | G{flat-VII} |

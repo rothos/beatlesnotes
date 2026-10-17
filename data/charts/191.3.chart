@@ -1,0 +1,9 @@
+# The End, last bar of the first drum solo (figure 191.3)
+# Four bars of drum solo (typed "-", written here as rests: there is no chord under the drums),
+# the last of which brings back the phrase's pickup A on beat 3.
+meter 4/4
+key A
+
+system
+words    | 1 2 3 4 | 1 2 3 4 | 1 2 3 4 | 1 2 3 4 |
+chords   | r | r | r | r*2 A{V-of-IV}*2 |

@@ -1,0 +1,13 @@
+# You Know My Name (Look Up the Number), take 1 intro (figure 166.1)
+# Two bars over a pedal point in the bass, then the four-bar refrain progression twice over.
+# Pollack's "G6/4" (G with D in the bass) is written G/D. Added: the D pedal in the bass of the
+# first system (the essay names it; it is not typed).
+#? Is the A in bar 2 also over the D pedal (A/D)? The essay implies it; Pollack types only "A".
+key D
+
+system
+chords             | G/D{IV} | A{V} |
+bass               | D2 | - |
+
+system
+chords             | D{I} f#{iii} | G{IV} A{V} | D{I} f#{iii} | G{IV} A{V} |

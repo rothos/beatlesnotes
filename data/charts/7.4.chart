@@ -1,0 +1,10 @@
+# You're Going to Lose That Girl, bridge (figure 7.4)
+# In G, seven bars (4 + 3). At the end the C and F pivot back to E: in E they are V-of-flat-II and
+# flat-II.
+key G
+
+system
+chords | G{I} | C{IV} | G{I} | - |
+
+system
+chords | G{I} | C{IV = E: V-of-flat-II} | F{flat-VII = E: flat-II} | E{E: I} |

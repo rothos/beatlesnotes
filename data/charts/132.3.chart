@@ -1,0 +1,16 @@
+# Glass Onion, bridge (figure 132.3)
+# The chromatically rising middle voice E F F# G over eight bars of a-minor pedal, then the
+# refrain ending (F7 G), where Pollack types no middle voice.
+#? Middle voice octave (E4 up to G4) chosen for range; check against the record.
+key a
+
+system
+voice "Middle voice"  | E4 | - | F4 | - |
+chords "Chords"       | a{i} | - | - | - |
+
+system
+voice "Middle voice"  | F#4 | - | G4 | - |
+chords "Chords"       | - | - | - | - |
+
+system
+chords "Chords"       | F7{VI} | G{flat-VII} |

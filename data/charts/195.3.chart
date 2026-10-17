@@ -1,0 +1,9 @@
+# Real Love, refrain (figure 195.3)
+# The chord on A in bars 2 and 4 is, per Pollack, a half-diminished F# chord in 6/5 inversion.
+key E
+
+system
+chords   | E{I} | f#-half-dim7/A{ii6/5 half dim} | E{I} | f#-half-dim7/A{ii6/5 half dim} |
+
+system
+chords   | E{I} c#{vi} | A{IV} B{V} | E{I} c#{vi} | A{IV} B{V} |

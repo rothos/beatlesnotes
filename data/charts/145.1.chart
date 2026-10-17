@@ -1,0 +1,11 @@
+# Julia, verse: 4 + 5 bars (figure 145.1)
+# Pollack types "f" for the iii chord; it is f# (as he spells it in fig. 145.2).
+# The final D, typed after the last bar line, is the ninth bar, which elides with the first bar of
+# the next section.
+key D
+
+system
+chords | D{I} | b7{vi} | f#{iii} | - |
+
+system
+chords | D{I} | b7{vi} | f#{iii} | A{V} | D{I} |

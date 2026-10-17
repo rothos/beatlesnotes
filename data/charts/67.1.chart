@@ -1,0 +1,16 @@
+# Tell Me What You See, verse (figure 67.1)
+#? System 4, bar 2: Pollack types the chord G but labels it "V"; shown here as I. Check whether
+#? the chord should be D (V) or the label is a slip.
+key G
+
+system
+chords   | G{I} C{IV} | D{V} G{I} | G{I} C{IV} | G{I} |
+
+system
+chords   | G{I} C{IV} | D{V} G{I} | C{IV} D{V} | G{I} |
+
+system
+chords   | C{IV} | G{I} | C{IV} | G{I} |
+
+system
+chords   | C{IV} | G{I} | C{IV} D{V} | G{I} |

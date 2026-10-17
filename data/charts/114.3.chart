@@ -1,0 +1,20 @@
+# When I'm Sixty-Four, verse (figure 114.3)
+# Four four-bar phrases. The chromatic bassline of phrase 2 moves on each beat under the V chord
+# (Ab Bb B-natural C, then Db); in phrase 4 each bass note lasts two beats, as Pollack says.
+# Added: in phrase 4 he types only the Eb of bar 3; the Ab and the final Db are the chord roots.
+# The I6/4 of phrase 4 has A-flat in the bass, as his bassline shows.
+key D-flat
+
+system
+chords              | D-flat{I} | - | - | A-flat{V} |
+
+system
+chords              | A-flat{V} | - | - | D-flat{I} |
+bass "Bassline"     | Ab2 | - | Ab2 Bb2 Bn2 C3 | Db3 |
+
+system
+chords              | D-flat{I} | - | D-flat7{V-of-IV} | G-flat{IV} |
+
+system
+chords              | G-flat{IV} e-dim7{#ii6/5} | D-flat/A-flat{I6/4} B-flat{V-of-ii} | e-flat{ii} A-flat{V} | D-flat{I} |
+bass "Bassline"     | Gb2 Gn2 | Ab2 Bb2 | Eb3 Ab2 | Db3 |

@@ -1,0 +1,7 @@
+# If I Needed Someone, verse (figure 88.1)
+# Pollack's phrase labels (2 + 3 + 3 bars) are kept as bar marks. The A at bar 7 is I in A and
+# also flat-VII in b.
+key A
+
+system
+chords   | [phrase 1] A{I} | - | [phrase 2] - | - | A/G{flat-VII susp} | - | [phrase 3] A{A: I / b: flat-VII} | - |

@@ -1,0 +1,20 @@
+# I Saw Her Standing There, bridge vocal parts, bars 5-10 (figure 26.4)
+# lyrics as typed by Pollack are omitted here
+# Pollack types three rows for bars 7-10 (a top line B...C#, a middle line, and a low B); his
+# narrative below the chart says the top line is John, who sings the low B at the start of bar 7
+# and jumps an octave to the high B on beat 2, sustaining it until the C# of bar 9. So the top and
+# bottom typed rows are drawn here as one row, John's. Paul holds F# through bars 7-8, then E for
+# bar 9 and the start of bar 10, then the lead-in A G into the next verse.
+# Added: the last bar is the downbeat of the next verse (Paul's E, typed trailing past the chart).
+# Pollack types plain G in Paul's line (bar 5 and the lead-in); kept as G natural.
+#? Is Paul's G really G natural (the blue third / seventh of A) in "held her" and the lead-in, or
+#? did Pollack drop a sharp? Also: how long John holds the C# into bar 10.
+key E
+
+system
+voice "Paul"        E4 | [5] G4 F#4 | E4 E4 |
+voice "John"        A3 | A3 A3 | A3 A3 |
+
+system
+voice "Paul"        | [7] F#4 | - | E4 | - A4 G4 | E4 |
+voice "John"        | B3 B4*3 | - | C#5 | - | r |

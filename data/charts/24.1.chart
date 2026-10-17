@@ -1,0 +1,7 @@
+# Things We Said Today, verse, third phrase from m. 9 (figure 24.1)
+# Pollack's "C9/7" (C with seventh and ninth) is written C9. The last bar, a, is the start of the
+# next phrase; the numerals follow his modulation to F and back to a.
+key a
+
+system m. 9
+chords   | C{a: III / F: V} | C9 | F{F: I} | B-flat{a: flat-II / F: IV} | a{a: i} |

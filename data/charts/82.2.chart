@@ -1,0 +1,9 @@
+# Michelle, verse (figure 82.2)
+# Pollack's "E-flat ... VII (added 6th)" is written E-flat6.
+key F
+
+system
+chords   | F{I} | b-flat{iv7} | E-flat6{VII (added 6th)} | Bdim7{vii-of-V} |
+
+system
+chords   | C{V} Bdim{vii-of-V} | C{V} |

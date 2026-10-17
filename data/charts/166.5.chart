@@ -1,0 +1,9 @@
+# You Know My Name (Look Up the Number), take 2 intro (figure 166.5)
+# The simplified harmony over a bassline D B A (e B A), the A a passing V.
+#? Bass rhythm: equal thirds by rule; the typed spacing suggests D (or E) for two beats, then B and A a beat each.
+#? Bass octave chosen for range. Pollack types the bar-4 bass note as "E" where bar 2 has "e"; taken as the same note.
+key D
+
+system
+chords "Chords"  | D{I} | e7{ii} | D{I} | e7{ii} |
+bass "Bass"      | D3 B2 A2 | E3 B2 A2{(V)} | D3 B2 A2 | E3 B2 A2{(V)} |

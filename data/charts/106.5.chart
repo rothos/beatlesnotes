@@ -1,0 +1,14 @@
+# Sgt. Pepper's Lonely Hearts Club Band, refrain (figure 106.5)
+# Pollack's "i6/3" is the g minor in first inversion. In the last bar the D (his "(V)", the implied
+# V9) falls in the middle of the bar, as the essay says, so the C takes the first half.
+#? Third phrase, bar 2: Pollack types "V" under the G chord (I in G); kept as typed, possibly a slip.
+key G
+
+system
+chords   | G{I} g{i6/3} | C{IV} G{I} | C{IV} | G{I} |
+
+system
+chords   | G{I} g{i6/3} | C{IV} G{I} | A{V-of-V} | D{V} |
+
+system
+chords   | C{IV} | G{V} | A{V-of-V} | C{IV}*2 D{(V)} G{I} |

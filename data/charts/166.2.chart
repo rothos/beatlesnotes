@@ -1,0 +1,9 @@
+# You Know My Name (Look Up the Number), take 1 verse (figure 166.2)
+# Seven bars. The augmented chord has A# in the bass: F#aug in first inversion (essay).
+key D
+
+system
+chords | G{IV} | F#aug/A#{V-of-vi} | b{vi} | E{V-of-V} |
+
+system
+chords | G{IV} D{I} | e{ii} | A{V} |

@@ -1,0 +1,12 @@
+# Octopus's Garden, outro (figure 181.4)
+# The beat count over the last bar puts B on beat 2 and E on beats 3-4.
+key E
+
+system
+chords   | A{IV} | B{V} | c#{vi} | - |
+
+system
+chords   | A{IV} | B{V} | c#{vi} | - |
+
+system
+chords   | A{IV} | B{V} | E{I} | -*1 B{V}*1 E{I}*2 |

@@ -1,0 +1,15 @@
+# What You're Doing, verse (figure 63.2)
+# Eight bars; verses followed by another verse add a ninth bar, with a two-bar repeat of the
+# ostinato over the last two (marked "-- ostinato ---"). Added: the ostinato's notes, from
+# figure 63.1.
+# Pollack labels the ninth bar's G "V", a slip for IV (the essay: V is held back until the end of
+# the bridge); it is labelled IV here.
+key D
+
+system
+chords             | D{I} | G{IV} | D{I} | G{IV} |
+
+system
+caption the ninth bar is only in verses followed by another verse
+voice "Ostinato"   | r | r | r | D4*1.5 F#4*0.5 B4*0.5 A4*0.5 F#4*0.5 E4*0.5 | -*1 E4*0.5 D4*0.5 E4*0.5 F#4*1.5 |
+chords             | b{vi} | G{IV} | - | D{I} | G{IV} |

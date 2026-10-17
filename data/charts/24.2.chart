@@ -1,0 +1,13 @@
+# Things We Said Today, bridge (figure 24.2)
+# Pollack's "structural backbone" of the melody over the chords; the last bar of the second system
+# is the start of the following verse (C-natural over a).
+#? Melody octave (C#5-D5) is my guess at Paul's sung register; it may sit an octave lower.
+key A
+
+system
+voice "Melody"    | C#5 | D5 | D#5 | Dn5 |
+chords "Chords"   | A{I} | D{IV} | B{V of V} | E7{V7} |
+
+system
+voice "Melody"    | C#5 | D5 | D#5 | Dn5 | Cn5 |
+chords "Chords"   | A{I} | D{IV} | B{V of V} | B-flat{flat-II} | a{i} |

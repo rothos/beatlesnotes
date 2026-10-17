@@ -1,0 +1,20 @@
+# Something, verse (figure 178.2)
+# Bar 3 is typed "Maj.-7th" (C major seventh). In bars 14-15 the typed "Ab" and "G" are the
+# descending bass under the chords Pollack names in the text: A-flat augmented and C Major 6/4.
+# The last bar (C) elides with the next section.
+key C
+
+system
+chords   | C{I} | - | Cmaj7 | - |
+
+system
+chords   | C7{V-of-IV} | - | F{IV} | - |
+
+system
+chords   | D{V-of-V} | - | G{V} | - |
+
+system
+chords   | a{vi} | A-flat-aug | C/G | D{V-of-V} |
+
+system
+chords   | F{IV} | Eb{flat-III} G6/4{V} | C{I} |

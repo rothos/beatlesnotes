@@ -1,0 +1,8 @@
+# You've Got To Hide Your Love Away, refrain (figure 18.2)
+# Pollack's "4 -> 3 -> 2 -> 3" under the D chord is the turn around its F# (G F# E F# over D),
+# kept as an annotation since he gives no rhythm for it.
+key G
+
+system
+caption 2X
+chords   | G{I} | - | C{IV} | - | D{V 4 -> 3 -> 2 -> 3} | - |

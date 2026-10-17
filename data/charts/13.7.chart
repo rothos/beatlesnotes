@@ -1,0 +1,8 @@
+# You Never Give Me Your Money, Part ZB phrase (figure 13.7): two measures, repeated fourteen times
+# The G comes in "twixt 2 & 3", the syncopation Pollack says the harmonic rhythm underscores in
+# the first measure, so C lasts a beat and a half.
+key A
+
+system
+chords "Chords"     | C{flat-III}*1.5 G{flat-VII}*2.5 | A{I} |
+bass "Bassline"     | C3*1.5 B2*2.5 | A2 |

@@ -1,0 +1,20 @@
+# Wait, verse / refrain (figure 87.1)
+# Pollack's pulse, composite-rhythm and tambourine rows are kept as words rows in eighth notes
+# (">" an accent, "r" an empty eighth). Their counts mark the rhythm: the chords and inner line
+# change on the "&" of 2 (beat 2.5), where the typed changes line up.
+# The inner line is the descending line cliche E D# D C# over the F# pedal: f#7, B6/4 (B/F#),
+# b6/4 (b/F#), f#. Bar 3's inner line is blank as typed: the C# held.
+# The "2X" and "3X" are bar marks; Pollack's numerals in f# and A are joined in one label each.
+#? Inner line octave (E4 down to C#4) is a guess.
+meter 4/4
+key f#
+
+system
+words "Pulse"             | [2X] 1 & 2 & 3 & 4 & | 1 & 2 & 3 & 4 & | 1 & 2 & 3 & 4 & |
+words "Composite rhythm"  | > r > > r > > r | > r > > r > > r | > r > > r > > r |
+words "Tambourine"        | r r > r r > > r | r r > r r > > r | r r > r r > > r |
+voice "Inner voice"       | E4*1.5 D#4 | Dn4*1.5 C#4 | - |
+chords                    | f#7{i}*1.5 B/F# | b/F#*1.5 f# | C#{V}*1.5 f#{I} |
+
+system
+chords                    | [3X] A{A: I} D{A: IV} | A{A: I / f#: III} C#{f#: V} | f#{f#: i} |

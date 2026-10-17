@@ -1,0 +1,12 @@
+# Run for Your Life, verse / refrain (figure 89.1)
+# Pollack notes the e minor is in 6/3 inversion (e/G); typed as plain "e".
+key D
+
+system
+chords   | [2X] D{I} | - | b{vi} | - |
+
+system
+chords   | b{vi} | E{V-of-V} | b{vi} | E{V-of-V} |
+
+system
+chords   | b{vi} | e{ii = b: iv} F#{b: V} | b{b: i} | - |

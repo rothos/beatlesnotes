@@ -1,0 +1,9 @@
+# I'm Only Sleeping, refrain (figure 94.2)
+# Typed "C7", but the essay calls it "that juicy C-Major seventh", so it is drawn as Cmaj7.
+key e
+
+system
+chords   | G{III} | a{iv} | b{v} | a{iv} |
+
+system
+chords   | Cmaj7{VI} | - | e{i} | - |

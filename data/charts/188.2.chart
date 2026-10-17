@@ -1,0 +1,25 @@
+# She Came In Through The Bathroom Window, bridge (figure 188.2)
+# Fifteen bars: three four-bar phrases and a three-bar one; the first phrase overlaps the end of
+# the verse. The lines typed above the chords in phrases 2 and 3 are the two "downward scalewise"
+# basslines Pollack describes. Phrase 3's bass is counted out in beats (C three beats, B three,
+# A two: the 3+3+2 pattern); phrase 4's A arrives on the last beat of the section.
+# The empty last bar of phrase 3 is read as the C chord held over the bass's B and A.
+#? Phrase 3, bar 4 is blank in the typed chords; check that the C chord really holds (rather than,
+#? say, a minor over the bass A).
+key A
+
+system
+chords   | A{I} | - | d{iv} | - |
+
+system
+chords   | A{I} | - | d{A: iv / C: ii} | - |
+bass     | A2 | - | D3 C3 | B2 A2 |
+
+system
+words    | 1 2 3 4 | 1 2 3 4 | 1 2 3 4 | 1 2 3 4 |
+chords   | G{C: V} | - | C{I} | - |
+bass     | G2 | - | C3*3 B2 | -*2 A2*2 |
+
+system
+words    | 1 2 3 4 | 1 2 3 4 | 1 2 3 4 |
+chords   | G{C: V} | - | C*3{C: I / A: flat-III} A{A: I} |

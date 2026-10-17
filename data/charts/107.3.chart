@@ -1,0 +1,9 @@
+# With a Little Help from My Friends, first refrain (figure 107.3)
+# The "3X" spans the first two bars only; the last two bars are the instrumental tag.
+key E
+
+system
+chords   | [3X] D{flat-VII} A{IV} | E{I} |
+
+system
+chords   | B{V} | - |

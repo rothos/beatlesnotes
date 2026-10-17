@@ -1,0 +1,23 @@
+# Something, bridge (figure 178.4)
+# The typed letters are the descending bassline; Pollack gives the in-between chords in the text
+# (G# supports c# minor 6/4, E supports A 6/4) and marks F# as vi, so the chords row spells them
+# out and the typed letters are kept as the bass row.
+# The last bar (C) elides with the next verse.
+#? Bass octave (A2 down to D2) is a guess.
+key A
+
+system
+chords             | A{I} c#/G# | f#{vi} A/E |
+bass "Bassline"    | A2 G#2 | F#2 E2 |
+
+system
+chords             | D{IV} G{flat-VII} | A{I} |
+bass "Bassline"    | D2 G2 | A2 |
+
+system
+chords             | A{I} c#/G# | f#{vi} A/E |
+bass "Bassline"    | A2 G#2 | F#2 E2 |
+
+system
+chords             | D{IV = C: V-of-V} G{flat-VII = C: V} | C{C: I} |
+bass "Bassline"    | D2 G2 | C2 |

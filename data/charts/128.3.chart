@@ -1,0 +1,15 @@
+# The Inner Light, break (figure 128.3)
+# As fig. 128.1: one line, the instrumentation labels as bar marks, quarter-note columns. In bars
+# 3-4 the oboe plays a free riff after its G that Pollack draws as "/\/\/\"; it is shown as text.
+#? Octaves are a guess, matching fig. 128.1.
+key Eb
+
+system
+voice "Melody"   | [Harpsichord solo] Eb5 Db5 C5 Bb4 | Eb5 Db5 C5 Bb4 | [Oboe solo/Harpsichord backing] G4 r*3 | r |
+words            | r | r | r /\/\/\/\/\/\*3 | /\/\/\/\/\/\/\/\ |
+
+system
+voice "Melody"   | [Harpsichord solo] Bb4 Ab4 G4 F4 | Ab4 G4 F4 Eb4 | [Duet in unison] Eb5 Db5 C5 Bb4 | Ab4 G4 F4*0.5 Eb4*0.5 G4*0.5 Ab4*0.5 |
+
+system
+voice "Melody"   | Bb4 | - |

@@ -11,15 +11,16 @@ key F
 
 system mm. 1-4
 words "Count"  | 1 2 3 4 | 1 2 3 4 | 1 2 3 4 | 1 2 3 4 |
-words          | Can...*4 | where...*4 | can...*3 back? | r |
+# lyrics as typed by Pollack are omitted here; x marks each sung syllable
+words "Sung rhythm" | x*4 | x*4 | x*3 x | r |
 chords         | F7{I} | - | - | - |
 
 system mm. 5-8
 words "Count"  | 1 2 3 4 | 1 2 3 4 | 1 2 3 4*0.5 &*0.5 | 1 2 3 4 |
-words          | Can...*4 | where...*4 | brother*2 take me*0.5 back*0.5 | - |
+words "Sung rhythm" | x*4 | x*4 | x*2 x x*0.5 x*0.5 | - |
 chords         | F7{I} | - | - | - |
 
 system mm. 9-12
 words "Count"  | 1 2 3 4 | 1 2 ..3 4*0.5 &*0.5 | 1 2 3 4 | 1 2 3 4 |
-words          | - | -*1 can.. take me*0.5 back*0.5 | - | - |
+words "Sung rhythm" | - | -*1 x x x*0.5 x*0.5 | - | - |
 chords         | F7{I} | - | - | - |

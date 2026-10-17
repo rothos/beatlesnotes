@@ -1,0 +1,14 @@
+# Not a Second Time, refrain (figure 41.3)
+# Chords, Pollack's bass notes, and numerals. His "G or e?" in bar 3 (G with an added sixth, or e
+# minor in first inversion over G) is written G with his "I or vi?" kept as the label; "f# dim" is
+# F#dim, over the bass A. His bass row stops at the E in bar 9; the last bar holds it.
+#? Bass octave (E2 to B2) chosen for range.
+key G
+
+system
+chords "Chords"   | a{ii} | b{iii} | G{I or vi?} | e{vi} |
+bass "Bass"       | A2 | B2 | G2 | E2 |
+
+system
+chords "Chords"   | a{ii} | F#dim{vii} | b{iii} | F#dim{vii} | e{vi} | - |
+bass "Bass"       | A2 | A2 | B2 | A2 | E2 | - |

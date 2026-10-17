@@ -6,7 +6,7 @@
 
   // ------------------------------------------------------------------ chord grammar
   const PC = { c: 0, d: 2, e: 4, f: 5, g: 7, a: 9, b: 11 };
-  const CHORD_RE = /^\(?([A-Ga-g])(#|b(?![a-z])|-flat|-sharp|x)?((?:-?(?:Major|Maj|minor|maj7|maj9|maj|M7|min7|min|m7|m|dim7|dim\.?|o7|o|aug\.?|\+|sus4|sus2|sus|add9|add2|7sus4|6\/9|13|11|9|7|6|half-dim|ø)\.?)*)(\/[A-Ga-g](?:#|b|-flat)?)?\)?$/;
+  const CHORD_RE = /^\(?([A-Ga-g])(#|b|-flat|-sharp|x)?((?:-?(?:Major|Maj|minor|maj7|maj9|maj|M7|min7|min|m7|m|dim7|dim\.?|o7|o|aug\.?|\+|sus4|sus2|sus|add9|add2|7sus4|6\/9|13|11|9|7|6|half-dim|ø)\.?)*)(\/[A-Ga-g](?:#|b|-flat)?)?\)?$/;
   const QUALITY_ONLY = /^-?(7|6|9|dim\.?|dim7|aug\.?|o7|\+|maj7|sus4)$/;
   const HOLD = /^-+$|^%$/;
   const NUMERAL_RE = /^\(?(?:flat-|sharp-|b|#|♭|♯)?(?:VII|VI|V|IV|III|II|I|vii|vi|v|iv|iii|ii|i)(?:[-\w\/°ø+#]*)\)?[,.]?$/;

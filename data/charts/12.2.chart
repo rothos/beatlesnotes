@@ -1,0 +1,10 @@
+# She Said She Said, verse (figure 12.2)
+# Ten bars: the first two-bar phrase three times ("3X", mm. 1-6), then the syncopated mm. 7-8 and
+# their instrumental reprise ("2X", mm. 9-10).
+key B-flat
+
+system
+chords  | [3X] B-flat{I} A-flat{flat-VII} | E-flat{IV} |
+
+system
+chords  | [2X] B-flat{I} A-flat{flat-VII} | E-flat{IV} B-flat{I} |

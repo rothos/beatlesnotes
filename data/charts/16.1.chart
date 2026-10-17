@@ -1,0 +1,8 @@
+# Thank You Girl, intro (figure 16.1)
+# Pollack's "Harmonica ----" and "Voices ----" spans are kept as cue words over bars 1-2 and 3-4;
+# "Verse" marks the downbeat of the verse.
+key D
+
+system
+words           | Harmonica | - | Voices | - | Verse |
+chords          | A{V} | G{IV} | A{V} | G{IV} | D{I} |

@@ -1,0 +1,7 @@
+# Get Back, intro (figure 161.1)
+# The G and D in the last bar are heavily accented, over an A pedal in the bass (per the essay).
+#? Bar 4 is split into equal thirds by rule; the typed spacing (and the record) suggest A for two beats, then G and D on beats 3 and 4, or as offbeat stabs.
+key A
+
+system
+chords | A{I} | - | - | - G{flat-VII} D{IV} |

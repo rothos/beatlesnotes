@@ -1,0 +1,13 @@
+# Strawberry Fields Forever, refrain (figure 105.2), with a half-measure ("nothing to get") and a
+# 6/8 bar ("Strawberry Fields for ..."); the eighth-note pulse holds, so they are written as two- and
+# three-beat bars. The vocal starts mid-bar 1, so the felt downbeat is bar 2 ("down").
+key B-flat
+
+system
+chords   | B-flat{I} | - | f{v} | - |
+
+system
+chords   | D-dim{vii-of-IV} | - | [half measure] <2> E-flat{IV} F{V} | G{V-of-ii} |
+
+system
+chords   | [6/8] <3> E-flat{IV} | B-flat{I} |

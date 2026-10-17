@@ -1,0 +1,7 @@
+# Lucy in the Sky with Diamonds, the song's overall progression (figure 108.6)
+# A schematic, one chord per bar, read through three keys: A, B-flat and G. Pollack puts the C in
+# parentheses (a chord the scheme implies), kept as "(C)" with its "(IV)".
+key A
+
+system
+chords   | A{A: I} | F{A: flat-VI = Bb: V} | B-flat{Bb: I = G: flat-III} | (C){G: (IV)} | G{G: I} | D{G: V = A: IV} | A{A: I} |

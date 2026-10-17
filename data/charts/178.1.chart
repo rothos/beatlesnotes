@@ -1,0 +1,10 @@
+# Something, intro hook (figure 178.1)
+# Treble rises A B-flat B C against the bass falling F E-flat D C, which puts the G (V) in 6/4
+# inversion. The last bar (C) elides with the first bar of the verse.
+#? Octaves (treble A4-C5, bass F2-C2) are a guess.
+key C
+
+system
+voice "Treble"   | A4 | Bb4 Bn4 | C5 |
+chords "Chords"  | F{IV} | Eb{flat-III} G{V} | C{I} |
+bass "Bass"      | F2 | Eb2 D2 | C2 |

@@ -1,0 +1,14 @@
+# We Can Work It Out, verse (figure 1.1)
+# The first six bars are played twice (6 + 6 + 4). Pollack's interval figures for the melodic
+# leaning tones are kept as a row of their own: 9->8 over D is E falling to D; the 9 in bar 4 is
+# the E that resolves only in bar 5, where over C it is 3->2 (E to D, the D now the dissonance);
+# 9->8 over G is A falling to G.
+key D
+
+system
+chords                 | [2X] D{I} | - | - | - | C{flat-VII} | D{I} |
+words "Leaning tones"  | r | - 9->8 | r | - 9 | 3->2 | r |
+
+system
+chords                 | G{IV} | D{I} | G{IV} | A{V} |
+words "Leaning tones"  | 9->8 | r | 9->8 | r |

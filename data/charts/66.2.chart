@@ -1,0 +1,11 @@
+# Yes It Is, bridge (figure 66.2): ten measures, 4 + 6, moving from A back to E
+key A
+
+system
+chords   | b{ii} | E{V} | A{I} | f#{vi} |
+
+system
+chords   | b{ii} | E{V} | c#{iii = E: vi} | E{E: I} |
+
+system
+chords   | F#{V-of-V} | B{V} |

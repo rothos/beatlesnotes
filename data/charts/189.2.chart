@@ -1,15 +1,15 @@
-# Golden Slumbers, verse: phrases of 8 + 4 + 5 + 4 bars (figure 189.2)
-# Pollack types "iv" under the first a7; it is vi in C (as in fig. 189.1), corrected here.
+# Golden Slumbers, verse (figure 189.2): four phrases of 8 + 4 + 5 + 4 bars
+# Pollack types "iv" under the opening a7; read as vi, as he labels the same chord in fig. 189.1.
 key C
 
 system
-chords | a7{vi} | - | - | - | d{ii} | - | - | - |
+chords              | a7{vi} | - | - | - | d{ii} | - | - | - |
 
 system
-chords | G7{V} | - | - | - |
+chords              | G7{V} | - | - | - |
 
 system
-chords | C{I} | e{iii} | a{vi} | d9{ii} | - |
+chords              | C{I} | e{iii} | a{vi} | d9{ii} | - |
 
 system
-chords | G7{V} | - | C{I} | - |
+chords              | G7{V} | - | C{I} | - |
