@@ -222,13 +222,12 @@ main { min-height: 60vh; }
 .lg-hollow { background: transparent !important; box-shadow: inset 0 0 0 1.5px var(--pencil); }
 .canon[data-color="read"] .tile { background: var(--paper-3); }
 .canon[data-color="read"] .tile.is-read { background: var(--staff); }
-.canon figcaption { margin-top: 1.4rem; display: flex; flex-direction: column; align-items: flex-start; gap: 0.6rem; font-size: 0.88rem; color: var(--ink-2); }
-/* reserve two lines so the page doesn't jump as the label changes */
-.canon-tip { display: block; min-height: 2.9em; max-width: 70ch; }
+/* the hover label, between the legend and the grid; home.js reserves its tallest height so nothing below it moves */
+.canon-tip { margin: 0 0 1.2rem; min-height: 2.9em; max-width: 70ch; font-size: 0.88rem; color: var(--ink-2); }
 .canon-tip strong { color: var(--ink); font-weight: 600; }
 /* the legend sits between the controls and the grid; home.js sizes it to the tallest mode so switching doesn't shift the grid */
 .canon-legend { display: flex; flex-wrap: wrap; gap: 0.35rem 0.3rem; align-items: center; font-size: 0.85rem; color: var(--ink-2);
-  align-content: flex-start; margin: 0 0 1.75rem; }
+  align-content: flex-start; margin: 0 0 1.1rem; }
 .canon-legend button.lg { font: inherit; color: inherit; background: none; border: 1px solid transparent; border-radius: 999px;
   padding: 0.2rem 0.55rem 0.2rem 0.45rem; cursor: pointer; }
 .canon-legend button.lg:hover, .canon-legend button.lg.on { border-color: var(--rule); background: var(--paper-2); }

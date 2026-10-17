@@ -128,14 +128,29 @@
     highlight(pinned);
   }
   let rz;
-  window.addEventListener("resize", () => { clearTimeout(rz); rz = setTimeout(sizeLegend, 150); });
+  window.addEventListener("resize", () => { clearTimeout(rz); rz = setTimeout(() => { sizeLegend(); sizeTip(); }, 150); });
 
-  function show(t) {
+  function tipHTML(t, mode) {
     const [title, key, rel, written, writer, vocal] = (t.dataset.tip || "").split("|");
     const read = t.classList.contains("is-read") ? ", read" : "";
-    const mode = fig.dataset.color;
     const who = mode === "writer" && writer ? `. Written by ${esc(writer)}` : mode === "vocal" && vocal ? `. Sung by ${esc(vocal)}` : "";
-    tip.innerHTML = `<strong>${esc(title)}</strong>${key ? ", " + esc(key) : ""}. ${esc(rel)}${who}${written ? ". Note first posted " + esc(written) : ""}${read}.`;
+    return `<strong>${esc(title)}</strong>${key ? ", " + esc(key) : ""}. ${esc(rel)}${who}${written ? ". Note first posted " + esc(written) : ""}${read}.`;
+  }
+  const show = (t) => { tip.innerHTML = tipHTML(t, fig.dataset.color); };
+
+  // the label sits above the grid, so reserve the height of the longest thing it can say
+  // (at the current width) and the grid never moves as it changes
+  function sizeTip() {
+    const probe = tip.cloneNode(false);
+    probe.removeAttribute("id"); probe.setAttribute("aria-hidden", "true");
+    probe.style.cssText = `position: absolute; visibility: hidden; min-height: 0; width: ${tip.clientWidth}px`;
+    tip.parentNode.appendChild(probe);
+    const says = [defaultTip, `<strong>Lennon and McCartney together</strong>: 212 songs highlighted. Click or tap it again to clear.`];
+    for (const t of tiles) for (const m of ["key", "writer", "vocal"]) says.push(tipHTML(t, m) + ", read");
+    let h = 0;
+    for (const html of says) { probe.innerHTML = html; h = Math.max(h, probe.offsetHeight); }
+    probe.remove();
+    tip.style.minHeight = h + "px";
   }
   fig.addEventListener("mouseover", (e) => { const t = e.target.closest(".tile"); if (t) show(t); });
   fig.addEventListener("focusin", (e) => { const t = e.target.closest(".tile"); if (t) show(t); });
@@ -144,5 +159,6 @@
   markRead();
   setMode((window.PN && PN.store.get("pn-canon-color", "key")) || "key");
   sizeLegend();
+  sizeTip();
   document.addEventListener("pn:read", () => { markRead(); if (fig.dataset.color === "read") legend.innerHTML = LEGENDS.read(); });
 })();

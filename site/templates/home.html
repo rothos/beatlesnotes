@@ -8,7 +8,7 @@
     <p class="lede">Between May 1989 and February 2000 the musicologist Alan W. Pollack wrote a close analysis of every song the Beatles released: its key, its form, its chords and the small surprises that make it work. This is all {{ n_essays }} of his notes, re-set for reading.</p>
   </div>
 
-  <figure class="canon" aria-labelledby="canon-cap">
+  <figure class="canon" aria-label="Every song in the canon, by release">
     <div class="canon-controls" role="group" aria-label="Colour the songs by">
       <span>Colour by</span>
       <button type="button" data-color="key" aria-pressed="true">Key</button>
@@ -18,6 +18,7 @@
       <button type="button" data-color="read" aria-pressed="false">What you’ve read</button>
     </div>
     <div class="canon-legend" id="canon-legend"></div>
+    <p class="canon-tip" id="canon-tip" aria-live="polite">The official canon, in order of first release: one square per song. Point at a square to see what it is.</p>
     <ol class="canon-grid" id="canon-grid">
       {% for rel in releases %}
         {% set fresh = rel.tracks | selectattr('first') | rejectattr('double') | list %}
@@ -39,9 +40,6 @@
         {% endif %}
       {% endfor %}
     </ol>
-    <figcaption id="canon-cap">
-      <span class="canon-tip" id="canon-tip" aria-live="polite">The official canon, in order of first release: one square per song. Point at a square to see what it is.</span>
-    </figcaption>
   </figure>
 </section>
 
