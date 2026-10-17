@@ -890,6 +890,19 @@
 
   // A stacked system too wide for the page breaks into pieces of whole bars, each repeating the row
   // labels; it rejoins and breaks again when the page is resized.
+  // a bar that starts a line (the first, or the first after a wrap) shows the key names in its gutter
+  function markLineStarts(wrap) {
+    const mark = () => wrap.querySelectorAll(".bar-row.keyed").forEach((row) => {
+      let top = null;
+      row.querySelectorAll(".bar").forEach((b) => {
+        b.classList.toggle("line-start", top === null || b.offsetTop > top + 2);
+        top = b.offsetTop;
+      });
+    });
+    mark();
+    if (typeof ResizeObserver !== "undefined") new ResizeObserver(() => requestAnimationFrame(mark)).observe(wrap);
+  }
+
   function fitSystems(wrap) {
     const items = [...wrap.querySelectorAll(".bar-system.stacked")].map((box) => ({ box, n: box.style.getPropertyValue("--n"), parts: [] }));
     if (!items.length) return;
@@ -991,16 +1004,15 @@
       }
       const home = keys.indexOf(sameKey(model.key));
       if (home > 0) keys.unshift(keys.splice(home, 1)[0]);
-      const named = new Set();
+      // the keys are named once, hanging left of the staff at the start of each line (see markLineStarts)
+      sys.keys = keys.map((k) => (k ? prettyKey(k) + ":" : ""));
       rows.forEach((r) => {
         if (!r.parts.some(Boolean)) return;
         r.beats.forEach((bt, i) => {
           const lines = keys.map(() => "");
           (r.parts[i] || []).forEach((p) => {
-            const label = plain || named.has(p.key) || !p.key ? "" : prettyKey(p.key) + ": ";
-            if (p.key) named.add(p.key);
             const j = Math.max(0, keys.indexOf(p.key));
-            lines[j] += (lines[j] ? p.sep : "") + label + p.text;
+            lines[j] += (lines[j] ? p.sep : "") + p.text;
           });
           bt.rns = lines;
         });
@@ -1040,6 +1052,8 @@
       sys.rows.forEach((row) => {
         const r = document.createElement("div");
         r.className = "bar-row role-" + row.role;
+        const keyed = sys.keys && row.bars.some((b) => b && b.beats.some((bt) => bt.rns));
+        if (keyed) r.classList.add("keyed");
         if (showLabels) {
           const l = document.createElement("span");
           l.className = "row-label"; l.textContent = row.label || "";
@@ -1069,10 +1083,11 @@
             const cls = bt.hold || bt.empty ? "ch hold" : bt.word ? "ch word" : bt.pitch !== undefined || bt.rest ? "ch note" : "ch";
             const grow = model.explicit && bt.dur ? `--d:${+bt.dur.toFixed(3)};` : "";
             const st = drop(bt).replace(/^ style="|"$/g, "");
-            return `<span class="beat"${grow || st ? ` style="${grow}${st}"` : ""}><span class="${cls}">${ch || "&nbsp;"}${bt.fig ? `<sup class="fig">${escapeHtml(bt.fig)}</sup>` : ""}</span>` + (bt.rns ? bt.rns.map((t, k) => `<span class="rn${k ? " rn2" : ""}">${prettyNumeral(t)}</span>`).join("") : `<span class="rn">${bt.rn ? prettyNumeral(bt.rn) : ""}</span>`) +
+            return `<span class="beat"${grow || st ? ` style="${grow}${st}"` : ""}><span class="${cls}">${ch || "&nbsp;"}${bt.fig ? `<sup class="fig">${escapeHtml(bt.fig)}</sup>` : ""}</span>` + (bt.rns ? bt.rns.map((t) => `<span class="rn">${prettyNumeral(t)}</span>`).join("") : `<span class="rn">${bt.rn ? prettyNumeral(bt.rn) : ""}</span>`) +
               (bt.rn2 ? `<span class="rn rn2">${prettyNumeral(bt.rn2)}</span>` : "") +
               (bt.note ? `<span class="bnote">${escapeHtml(bt.note)}</span>` : "") + `</span>`;
           }).join("");
+          if (keyed) b.insertAdjacentHTML("afterbegin", `<span class="keys" aria-hidden="true"><span class="ch">&nbsp;</span>${sys.keys.map((k) => `<span class="rn">${escapeHtml(k)}</span>`).join("")}</span>`);
           r.appendChild(b);
         }
         box.appendChild(r);
@@ -1084,6 +1099,7 @@
     });
     fig.insertBefore(wrap, pre);
     fitSystems(wrap);
+    if (wrap.querySelector(".bar-row.keyed")) markLineStarts(wrap);
     fig.classList.add("drawn");
     const cap = fig.querySelector("figcaption") || fig.appendChild(document.createElement("figcaption"));
     const tg = document.createElement("button");
