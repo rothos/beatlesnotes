@@ -524,8 +524,8 @@
       return m;
     });
     notes.sort((a, b) => a - b);
-    let bass = 40 + chord.bass;   // E2 to D#3: low, but high enough for small speakers
-    if (bass > 51) bass -= 12;
+    let bass = 36 + chord.bass;   // C2 + pitch class, then lifted to E2-D#3: low, but high enough for small speakers
+    if (bass < 40) bass += 12;
     return { notes, bass };
   }
 
@@ -707,7 +707,9 @@
       const tr = tracks[ev.track] || (tracks[ev.track] = {});
       held[ev.track] = ev.kind === "rest" ? null : sound(ev, tr) || held[ev.track];
     }
-    Object.entries(held).forEach(([k, h]) => { if (h) tracks[k].sounding = strike(bus, oscs, anchorTime, h.notes, h.vel * 0.8); });
+    // (a part that starts something new on that very beat needn't sound what came before)
+    const fresh = new Set(events.slice(next).filter((e) => e.track && e.beat === anchorBeat).map((e) => e.track));
+    Object.entries(held).forEach(([k, h]) => { if (h && !fresh.has(k)) tracks[k].sounding = strike(bus, oscs, anchorTime, h.notes, h.vel * 0.8); });
 
     const tick = () => {
       const horizon = ctx.currentTime + 0.15;
