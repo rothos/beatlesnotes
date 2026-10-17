@@ -268,10 +268,20 @@
   }
 
   // A tune drawn as a graph: each note on its own line by height, placed across the bar by when it
-  // falls (Norwegian Wood, 78.1). If no two lines have notes in the same place, lay them over one
-  // another as a single line of notes.
+  // falls (Norwegian Wood 78.1; the riff over Lucy's descending line, 108.1). Lines next to one another
+  // that never have notes in the same place are laid over one another as a single line of notes.
+  function mergeGraphs(heads) {
+    const out = [];
+    for (let i = 0; i < heads.length; ) {
+      let j = heads.length;
+      while (j > i + 1 && !mergeGraph(heads.slice(i, j))) j--;
+      out.push(j > i + 1 ? mergeGraph(heads.slice(i, j)) : heads[i]);
+      i = j > i + 1 ? j : i + 1;
+    }
+    return out.length < heads.length ? out : null;
+  }
   function mergeGraph(heads) {
-    if (heads.length < 3 || heads.some((h) => h.label || h.pickup || h.key || h.caption || h.bl.prefix.trim())) return null;
+    if (heads.length < 2 || heads.some((h) => h.label || h.pickup || h.key || h.caption || h.bl.prefix.trim())) return null;
     const bars = (l) => [...l].map((c, i) => (c === "|" ? i : -1)).filter((i) => i >= 0).join(",");
     if (heads.some((h) => bars(h.line) !== bars(heads[0].line))) return null;
     const width = Math.max(...heads.map((h) => h.line.length));
@@ -279,7 +289,7 @@
     let rowsWithNotes = 0;
     for (let r = 0; r < heads.length; r++) {
       const toks = tokens(heads[r].line, 0).filter((x) => x.t !== "|");
-      if (toks.some((x) => pitchOf(x.t) === null && !HOLD.test(x.t))) return null;
+      if (toks.some((x) => pitchOf(x.t) === null && !RUN_RE.test(x.t) && !HOLD.test(x.t))) return null;
       if (toks.some((x) => pitchOf(x.t) !== null)) rowsWithNotes++;
       for (const x of toks) for (let c = x.c; c < x.c + x.t.length; c++) {
         if (from[c] >= 0) return null;   // two lines have notes in the same place: these sound together
@@ -287,7 +297,17 @@
       }
       [...heads[r].line].forEach((ch, c) => { if (ch !== " " && out[c] === " ") out[c] = ch; });
     }
-    if (rowsWithNotes < 3) return null;
+    if (rowsWithNotes < heads.length - 1 || rowsWithNotes < 2) return null;
+    // two lines: only a graph if they take turns within bars, not one line simply resting while the other plays
+    if (heads.length === 2) {
+      const bl = [...heads[0].line].map((c, i) => (c === "|" ? i : -1)).filter((i) => i >= 0);
+      let turns = 0;
+      for (let k = 0; k + 1 < bl.length; k++) {
+        const rows = new Set(from.slice(bl[k], bl[k + 1]).filter((r) => r >= 0));
+        if (rows.size === 2) turns++;
+      }
+      if (turns < 2) return null;
+    }
     for (let c = 1; c < width; c++) if (from[c] >= 0 && from[c - 1] >= 0 && from[c] !== from[c - 1]) return null;  // notes would run together
     const h = rowHead(out.join("").replace(/\s+$/, ""));
     h.role = "voice";
@@ -295,13 +315,17 @@
     const rowMidi = [];
     let last = null;
     for (let r = heads.length - 1; r >= 0; r--) {
-      const t = tokens(heads[r].line, 0).find((x) => pitchOf(x.t) !== null);
+      const t = tokens(heads[r].line, 0).find((x) => pitchOf(x.t) !== null || RUN_RE.test(x.t));
       if (!t) continue;
-      const pc = pitchOf(t.t);
+      const pc = pitchOf(t.t) ?? pitchOf(t.t.match(/^[A-G](#|b)?/)[0]);
       let m = last === null ? 57 : last + 1;   // the lowest note between A3 and G#4
       while (((m % 12) + 12) % 12 !== pc) m++;
       rowMidi[r] = last = m;
     }
+    // a tune: its top note between F#4 and F5
+    const hi = Math.max(...rowMidi.filter((x) => x !== undefined));
+    const lift = hi < 66 ? 12 : 0;
+    rowMidi.forEach((x, r) => { if (x !== undefined) rowMidi[r] = x + lift; });
     h.graphMidi = from.map((r) => (r >= 0 ? rowMidi[r] : undefined));
     return h;
   }
@@ -323,6 +347,7 @@
     if (chordsAt < 0 && musical.length === 1 && !heads.some((h) => h.role === "chords")) chordsAt = musical[0];
     let v = 0;
     heads.forEach((h, n) => {
+      if (h.graphMidi) v++;   // a tune drawn as a graph counts as the top voice
       if (h.role) return;
       if (!info[n].musical) h.role = "other";
       else if (n === chordsAt) h.role = "chords";
@@ -343,8 +368,8 @@
       // bar lines typed directly under one another
       let heads = [rowHead(line)];
       while (i + 1 < lines.length && isBarLine(lines[i + 1])) heads.push(rowHead(lines[++i]));
-      const graph = mergeGraph(heads);
-      if (graph) heads = [graph];
+      const merged = mergeGraphs(heads);
+      if (merged) heads = merged;
       const first = heads[heads.length - 1].bl.first;
 
       // the annotation lines that follow: numerals, notes, and labelled note lines without bars
@@ -391,7 +416,17 @@
           const segs = segments(h.line, h.bl);
           let r = readBars(h.line, segs, role);
           const pk = h.pickup ? readBars(h.line, [h.pickup], role).bars[0] : null;
-          if (h.graphMidi) r.bars.forEach((b) => b.beats.forEach((bt) => { if (bt.pitch !== undefined) bt.midi = h.graphMidi[bt.c]; }));
+          // each note at the height of its line in the graph (the notes of a run, the nearest octave to it)
+          if (h.graphMidi) r.bars.forEach((b) => b.beats.forEach((bt) => {
+            if (bt.pitch === undefined) return;
+            let c = bt.c;
+            while (c > 0 && h.graphMidi[c] === undefined) c--;
+            const at = h.graphMidi[c];
+            if (at === undefined) return;
+            let m = at + ((((bt.pitch - at) % 12) + 12) % 12);
+            if (m - at > 6) m -= 12;
+            bt.midi = m;
+          }));
           return { label: h.label, role, r, segs, line: h.line, raw: h.raw, bl: h.bl, explicit: !!h.label, pickup: pk, voiceIndex: h.voiceIndex, pkHead: h.pickup };
         });
         // a line whose bars are empty and whose words come after them ("||3rd refrain, only") is a caption
@@ -810,6 +845,15 @@
           l.className = "row-label"; l.textContent = row.label || "";
           r.appendChild(l);
         }
+        // a tune drawn as a graph keeps its shape: each note set lower by how far it is below the top
+        const mids = row.bars.flatMap((b) => b.beats.map((x) => x.midi)).filter((x) => x !== undefined);
+        const top = mids.length ? Math.max(...mids) : null;
+        let lastMidi = top;
+        const drop = (bt) => {
+          if (top === null) return "";
+          if (bt.midi !== undefined) lastMidi = bt.midi;
+          return ` style="padding-top:${((top - lastMidi) * 0.3).toFixed(2)}em"`;
+        };
         const cells = (sys.pickup ? [row.pickup || null] : []).concat(Array.from({ length: sys.rows.length > 1 ? nBars : row.bars.length }, (_, i) => row.bars[i] || null));
         for (let i = 0; i < cells.length; i++) {
           const real = cells[i];
@@ -821,7 +865,7 @@
           b.innerHTML = (bar.beats.length ? bar.beats : [{ hold: row.role === "chords", empty: row.role !== "chords", text: "" }]).map((bt) => {
             const ch = bt.chord ? prettyChord(bt.text) : bt.hold ? (real ? "–" : "") : bt.pitch !== undefined ? prettyNote(bt.text) : escapeHtml(bt.text || "");
             const cls = bt.hold || bt.empty ? "ch hold" : bt.word ? "ch word" : bt.pitch !== undefined || bt.rest ? "ch note" : "ch";
-            return `<span class="beat"><span class="${cls}">${ch || "&nbsp;"}${bt.fig ? `<sup class="fig">${escapeHtml(bt.fig)}</sup>` : ""}</span><span class="rn">${bt.rn ? prettyNumeral(bt.rn) : ""}</span>` +
+            return `<span class="beat"${drop(bt)}><span class="${cls}">${ch || "&nbsp;"}${bt.fig ? `<sup class="fig">${escapeHtml(bt.fig)}</sup>` : ""}</span><span class="rn">${bt.rn ? prettyNumeral(bt.rn) : ""}</span>` +
               (bt.rn2 ? `<span class="rn rn2">${prettyNumeral(bt.rn2)}</span>` : "") +
               (bt.note ? `<span class="bnote">${escapeHtml(bt.note)}</span>` : "") + `</span>`;
           }).join("");

@@ -416,6 +416,9 @@ figure.chart.drawn.show-src .chart-src { display: block; margin-top: 0.6rem; }
 .bar:last-child { border-right: 1.5px solid var(--ink); }
 .bar-row { border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); background: repeating-linear-gradient(to bottom, transparent 0 calc(20% - 1px), color-mix(in srgb, var(--rule) 45%, transparent) calc(20% - 1px) 20%); }
 .beat { display: flex; flex-direction: column; min-width: 2.2rem; }
+/* a single row that wraps: each line its own staff, with space between */
+.bar-system:not(.stacked) .bar-row { background: none; border: 0; row-gap: 0.8rem; }
+.bar-system:not(.stacked) .bar { border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); background-image: repeating-linear-gradient(to bottom, transparent 0 calc(20% - 1px), color-mix(in srgb, var(--rule) 45%, transparent) calc(20% - 1px) 20%); }
 .beat .ch { font: 600 1.15em/1.2 var(--serif); color: var(--ink); white-space: nowrap; }
 .beat .ch sup { font-size: 0.68em; font-weight: 500; margin-left: 0.04em; }
 .beat .ch.hold { color: var(--pencil); font-weight: 400; }
