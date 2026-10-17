@@ -218,7 +218,10 @@ class Renderer:
             cap = f"<figcaption>Figure {html.escape(num)}</figcaption>" if num else ""
             idattr = f' id="{fid}"' if fid and fid not in self.ids else ""
             self.ids.add(fid)
-            return f'<figure class="chart"{idattr} data-fig="{html.escape(num)}"><pre class="chart-src">{body}</pre>{cap}</figure>\n'
+            # a hand transcription of the chart, if there is one (data/charts/<figure>.chart)
+            sc = ROOT / "data/charts" / f"{num}.chart"
+            score = f'<pre class="chart-score" hidden>{html.escape(sc.read_text(encoding="utf-8"))}</pre>' if num and sc.exists() else ""
+            return f'<figure class="chart"{idattr} data-fig="{html.escape(num)}"><pre class="chart-src">{body}</pre>{score}{cap}</figure>\n'
         return f'<pre class="plain">{body}</pre>\n'
 
     def render(self, text: str) -> str:

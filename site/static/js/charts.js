@@ -410,7 +410,6 @@
         const sysRows = group.map((h) => {
           if (h.key) key = key || h.key;
           let role = h.role || "chords";
-          if (role === "bass" && opts.bassChords) role = "chords";
           if (role === "voice" && !isPitchLine(h.line, h.bl.first)) role = "other";
           if (role === "other") h.line = h.raw || h.line;
           const segs = segments(h.line, h.bl);
@@ -427,7 +426,7 @@
             if (m - at > 6) m -= 12;
             bt.midi = m;
           }));
-          return { label: h.label, role, r, segs, line: h.line, raw: h.raw, bl: h.bl, explicit: !!h.label, pickup: pk, voiceIndex: h.voiceIndex, pkHead: h.pickup };
+          return { label: h.label, role, r, segs, line: h.line, raw: h.raw, bl: h.bl, explicit: !!h.label, pickup: pk, voiceIndex: h.voiceIndex, pkHead: h.pickup, contour: !!h.graphMidi };
         });
         // a line whose bars are empty and whose words come after them ("||3rd refrain, only") is a caption
         for (let k = sysRows.length - 1; k >= 0 && sysRows.length > 1; k--) {
@@ -482,7 +481,7 @@
         labelBuf = [];
         const out = {
           label: sysRows.length === 1 && sysRows[0].label && sysRows[0].role === "other" ? [label, sysRows[0].label].filter(Boolean).join(" — ") : label,
-          rows: sysRows.map((r) => ({ label: r.label, role: r.role, bars: r.r.bars, virtual: !!r.virtual, pickup: r.pickup, voiceIndex: r.voiceIndex })),
+          rows: sysRows.map((r) => ({ label: r.label, role: r.role, bars: r.r.bars, virtual: !!r.virtual, pickup: r.pickup, voiceIndex: r.voiceIndex, contour: r.contour })),
           driver: (() => { const d = ["chords", "bass", "voice"].map((rl) => sysRows.findIndex((r) => r.role === rl)).find((x) => x >= 0); return d === undefined ? 0 : d; })(),
           note: lastGroup && prose.length ? prose.join(" ") : null,
         };
@@ -524,6 +523,91 @@
   const prettyNote = (t) => escapeHtml(t.replace(/-flat/, "♭").replace(/-sharp/, "♯").replace(/-nat(ural)?/, "♮").replace(/^([A-Ga-g])b$/, "$1♭").replace(/#/, "♯").replace(/^([a-g])/, (c) => c.toUpperCase()));
   const prettyKey = (k) => k.replace(/-flat/, "♭").replace(/-sharp/, "♯").replace(/^([A-Ga-g])b$/, "$1♭").replace(/#/, "♯");
   function escapeHtml(s) { return s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]); }
+
+  // ------------------------------------------------------------------ transcriptions
+  // A chart written out by hand in data/charts/<figure>.chart (format in data/charts/README.md):
+  // read it into the same model the automatic reader makes, with each event's time spelled out.
+  const NOTE_RE = /^([A-Ga-g])(##|bb|#|b|n)?(-?\d)$/;
+  const ACC = { "#": 1, "##": 2, b: -1, bb: -2, n: 0, "": 0 };
+  const ACC_TEXT = { "#": "#", "##": "##", b: "-flat", bb: "bb", n: "-nat", "": "" };
+
+  function parseScore(text, beatsPerBar) {
+    const model = { systems: [], key: null, meter: null, explicit: true, doubts: [] };
+    let bpb = beatsPerBar, sys = null;
+    const meterBeats = (m) => {
+      const [n, d] = m.split("/").map(Number);
+      return d === 8 && n % 3 === 0 && n > 3 ? n / 3 : n;
+    };
+    // one event: name{numeral}*beats, in either order
+    const event = (tok, role, prev) => {
+      const m = /^([^{*]*)(?:\{([^}]*)\})?(?:\*([\d.\/]+))?(?:\{([^}]*)\})?$/.exec(tok);
+      if (!m) return { text: tok, word: true };
+      const [, name, rn1, dur, rn2] = m;
+      const b = {};
+      if (rn1 || rn2) b.rn = rn1 || rn2;
+      if (dur) b.dur = dur.includes("/") ? dur.split("/").reduce((a, c) => a / c) : +dur;
+      if (name === "-" || name === "") Object.assign(b, { hold: true, text: "–" });
+      else if (name === "r") Object.assign(b, { rest: true, text: "" });
+      else if (role === "words") Object.assign(b, { text: name.replace(/_/g, " "), word: true });
+      else if (role === "chords") {
+        const ch = parseChord(name, prev.chord);
+        if (ch) { Object.assign(b, { chord: ch, text: ch.text }); prev.chord = ch; } else Object.assign(b, { text: name, word: true });
+      } else {
+        const notes = name.split("+").map((n) => NOTE_RE.exec(n));
+        if (notes.every(Boolean)) {
+          const midis = notes.map(([, l, a = "", o]) => 12 * (+o + 1) + PC[l.toLowerCase()] + ACC[a]);
+          Object.assign(b, {
+            midi: Math.max(...midis), pitch: ((Math.max(...midis) % 12) + 12) % 12,
+            text: notes.map(([, l, a = ""]) => l.toUpperCase() + ACC_TEXT[a]).join("+"),
+          });
+          if (midis.length > 1) { b.midis = midis; b.texts = b.text.split("+"); }
+        } else Object.assign(b, { text: name, word: true });
+      }
+      return b;
+    };
+    // the events of one bar, each given its start ("at") and length in beats
+    const bar = (src, role, prev, len) => {
+      const toks = src.match(/[^\s{]*(?:\{[^}]*\})?[^\s{]*(?:\{[^}]*\})?/g).filter((t) => t.trim());
+      const beats = toks.map((t) => event(t, role, prev));
+      const fixed = beats.reduce((a, b) => a + (b.dur || 0), 0), free = beats.filter((b) => !b.dur).length;
+      const share = len === null ? 1 : free ? Math.max(0, len - fixed) / free : 0;
+      let at = 0;
+      beats.forEach((b) => { b.at = at; b.dur = b.dur || share; at += b.dur; });
+      return { beats, len: len === null ? at : len };
+    };
+    text.split("\n").forEach((raw) => {
+      if (/^\s*#\?/.test(raw)) { model.doubts.push(raw.replace(/^\s*#\?\s*/, "")); return; }
+      const line = raw.replace(/(^|\s)#(\s.*)?$/, "").trim();
+      if (!line) return;
+      let m;
+      if ((m = /^skip\b\s*(.*)$/.exec(line))) { model.skip = m[1] || true; return; }
+      if ((m = /^meter\s+(\d+\/\d+)/.exec(line))) { model.meter = m[1]; bpb = meterBeats(m[1]); return; }
+      if ((m = /^key\s+(\S+)/.exec(line))) { model.key = m[1]; return; }
+      if ((m = /^system\b\s*(.*)$/.exec(line))) { sys = { label: m[1] || null, rows: [], note: null }; model.systems.push(sys); return; }
+      if ((m = /^caption\s+(.*)$/.exec(line))) { if (sys) sys.note = m[1]; return; }
+      if ((m = /^(chords|bass|voice|words)(?:\s+"([^"]*)")?(\s+contour)?\s*(.*)$/.exec(line))) {
+        if (!sys) { sys = { label: null, rows: [], note: null }; model.systems.push(sys); }
+        const [, role, label, contour, rest] = m;
+        const parts = rest.split("|");
+        const prev = {};
+        const pick = parts[0].trim() ? bar(parts[0], role, prev, null) : null;
+        const bars = parts.slice(1).filter((x, i, a) => i < a.length - 1 || x.trim()).map((x) => bar(x, role, prev, bpb));
+        sys.rows.push({ label: label || null, role: role === "words" ? "other" : role, contour: !!contour, bars, pickup: pick });
+      }
+    });
+    model.systems.forEach((x) => {
+      x.rows.forEach((r) => { r.register = registerOf(r); });
+      x.pickup = x.rows.some((r) => r.pickup);
+      x.pickupLen = x.pickup ? Math.max(...x.rows.map((r) => (r.pickup ? r.pickup.len : 0))) : 0;
+      const d = ["chords", "bass", "voice"].map((rl) => x.rows.findIndex((r) => r.role === rl)).find((i) => i >= 0);
+      x.driver = d === undefined ? 0 : d;
+      x.playable = x.rows.some((r) => r.role !== "other");
+      x.length = Math.max(0, ...x.rows.map((r) => r.bars.length));
+    });
+    model.bpb = bpb;
+    model.ok = !model.skip && model.systems.some((x) => x.playable);
+    return model;
+  }
 
   // ------------------------------------------------------------------ audio
   let ctx = null, master = null, current = null;
@@ -638,7 +722,8 @@
     function barEvents(sys, row, ri, bar, start, len, hasBass, voices) {
       // the notes and chords in a bar share it equally (Pollack's spacing is too loose to read rhythm from)
       const evs = bar.beats.filter((b) => b.chord || b.pitch !== undefined || b.rest || b.hold || b.empty);
-      evs.forEach((b, n) => (evs[n] = { b, at: (n * len) / evs.length }));
+      // (a transcription spells out each event's time)
+      evs.forEach((b, n) => (evs[n] = { b, at: b.at !== undefined ? b.at : (n * len) / evs.length }));
       if (row.role === "chords" && (!evs.length || evs[0].at > 0)) evs.unshift({ b: { hold: true }, at: 0 });
       // a note line falls silent at the bar line unless the bar begins with a hold ("-")
       if (row.role !== "chords" && !(evs.length && evs[0].at === 0)) evs.unshift({ b: { rest: true }, at: 0 });
@@ -646,7 +731,7 @@
         const b = e.b;
         const ev = { beat: start + e.at, track: b.riff ? "r" : trackOf(sys, row), role: b.riff ? "voice" : row.role, register: b.riff ? 64 : row.register };
         if (b.chord) Object.assign(ev, { kind: "chord", chord: b.chord, noBass: hasBass, soft: voices > 0 });
-        else if (b.pitch !== undefined) Object.assign(ev, { kind: "note", pitch: b.pitch, midi: b.midi });
+        else if (b.pitch !== undefined) Object.assign(ev, { kind: "note", pitch: b.pitch, midi: b.midi, midis: b.midis });
         else if (b.rest) ev.kind = "rest";
         else if (row.role === "chords") Object.assign(ev, { kind: "hold", noBass: hasBass, soft: voices > 0 });
         else return;  // a held note simply keeps sounding
@@ -666,7 +751,7 @@
       if (sys.pickup) {
         // a pickup lasts as many beats as it has notes or chords (up to a bar less one)
         const n = Math.max(...sys.rows.map((r) => (r.pickup ? r.pickup.beats.filter((b) => b.chord || b.pitch !== undefined).length : 0)));
-        const len = Math.max(1, Math.min(beatsPerBar - 1, n));
+        const len = sys.pickupLen || Math.max(1, Math.min(beatsPerBar - 1, n));
         events.push({ beat, slot: slot++ });
         sys.rows.forEach((row, ri) => { if (row.pickup && row.role !== "other") barEvents(sys, row, ri, row.pickup, beat, len, hasBass, voices); });
         beat += len;
@@ -728,7 +813,8 @@
         }
       }
       tr.midi = m;
-      return { notes: [[m, ev.role === "bass" ? 0.28 : ev.register >= 66 ? 0.24 : 0.17]], vel: 1 };
+      const amp = ev.role === "bass" ? 0.28 : ev.register >= 66 ? 0.24 : 0.17;
+      return { notes: (ev.midis || [m]).map((x) => [x, ev.midis ? amp * 0.8 : amp]), vel: 1 };
     };
     // run silently through the bars before the start, then sound whatever is still held there
     const held = {};
@@ -787,37 +873,16 @@
   const STOP_ICON = '<svg viewBox="0 0 12 12" aria-hidden="true"><rect x="2" y="2" width="8" height="8" fill="currentColor"/></svg>';
 
   // ------------------------------------------------------------------ rendering
-  // charts that can't be read as typed: the reading drawn and played instead ("Show as typed" still
-  // shows Pollack's original). bassChords: the bass line is also the chords.
-  const HINTS = {
-    // I Am the Walrus, intro: the Topline and Bassline carry on through the last two systems (Pollack
-    // labels only the first, and leaves the IV7's D in the bass unwritten); the bass notes are the
-    // chords, and the top line makes E7 and D7 of the held E and D
-    "121.1": { bassChords: true, text: [
-      "          |B               |-      |",
-      "       A:  V-of-V (4 beats in the US, and 6 beats in the UK!)",
-      "",
-      " Topline: |D#      C#  F#  |B       A   D   |",
-      "Bassline: |B       A       |G       F       |",
-      "       A:  V-of-V",
-      "",
-      " Topline: |B             C |D               |",
-      "Bassline: |E               |-               |",
-      "           V7",
-      "",
-      " Topline: |D             B |C               |",
-      "Bassline: |D               |-               |",
-      "           IV7",
-    ].join("\n") },
-  };
+
 
   function render(fig, opts = {}) {
     const pre = fig.querySelector(".chart-src");
     if (!pre || fig.classList.contains("drawn")) return;
-    const hint = HINTS[fig.dataset.fig];
-    const model = parse(hint ? hint.text : pre.textContent, { bassChords: hint && hint.bassChords });
+    const score = fig.querySelector(".chart-score");
+    const model = score ? parseScore(score.textContent, opts.beatsPerBar || 4) : parse(pre.textContent);
     if (!model.ok) { fig.classList.add("undrawn"); return; }
-    const beatsPerBar = opts.beatsPerBar || 4;
+    if (score) fig.classList.add("transcribed");
+    const beatsPerBar = model.meter ? model.bpb : opts.beatsPerBar || 4;
     const wrap = document.createElement("div");
     wrap.className = "bars";
     const key = model.key ? prettyKey(model.key) : null;
@@ -846,7 +911,7 @@
           r.appendChild(l);
         }
         // a tune drawn as a graph keeps its shape: each note set lower by how far it is below the top
-        const mids = row.bars.flatMap((b) => b.beats.map((x) => x.midi)).filter((x) => x !== undefined);
+        const mids = row.contour ? row.bars.flatMap((b) => b.beats.map((x) => x.midi)).filter((x) => x !== undefined) : [];
         const top = mids.length ? Math.max(...mids) : null;
         let lastMidi = top;
         const drop = (bt) => {
@@ -863,7 +928,8 @@
           if (sys.playable && i < drvBars + (sys.pickup ? 1 : 0)) b.dataset.slot = slot + i;
           // an empty bar holds the chord in a chord row; in a line of notes it is silence
           b.innerHTML = (bar.beats.length ? bar.beats : [{ hold: row.role === "chords", empty: row.role !== "chords", text: "" }]).map((bt) => {
-            const ch = bt.chord ? prettyChord(bt.text) : bt.hold ? (real ? "–" : "") : bt.pitch !== undefined ? prettyNote(bt.text) : escapeHtml(bt.text || "");
+            const ch = bt.chord ? prettyChord(bt.text) : bt.hold ? (real ? "–" : "") : bt.texts ? bt.texts.slice().reverse().map(prettyNote).join("<br>")
+              : bt.pitch !== undefined ? prettyNote(bt.text) : escapeHtml(bt.text || "");
             const cls = bt.hold || bt.empty ? "ch hold" : bt.word ? "ch word" : bt.pitch !== undefined || bt.rest ? "ch note" : "ch";
             return `<span class="beat"${drop(bt)}><span class="${cls}">${ch || "&nbsp;"}${bt.fig ? `<sup class="fig">${escapeHtml(bt.fig)}</sup>` : ""}</span><span class="rn">${bt.rn ? prettyNumeral(bt.rn) : ""}</span>` +
               (bt.rn2 ? `<span class="rn rn2">${prettyNumeral(bt.rn2)}</span>` : "") +
@@ -902,7 +968,7 @@
     wrap.querySelectorAll(".bar[data-slot]").forEach((b) => (b.title = "Play from here"));
   }
 
-  const api = { parse, parseChord, render, stop, timeline, HINTS };
+  const api = { parse, parseScore, parseChord, render, stop, timeline };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else {
     global.PNCharts = api;

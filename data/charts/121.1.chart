@@ -1,0 +1,22 @@
+# I Am the Walrus, intro (figure 121.1)
+# Pollack labels the Topline and Bassline only in the second system; they carry on through the last
+# two, moving in parallel tenths ("the persuasive downward motion of bassline and upper voice").
+# The bass notes are the chords (B A G F E D on the record); the top line's D over E makes E7, and
+# its C over D makes D7. The D under the last system is implied by his IV7; he doesn't type it.
+key A
+
+system
+caption 4 beats in the US, and 6 beats in the UK!
+chords              | B{V-of-V} | - |
+
+system
+voice "Topline"     | D#5*2 C#5 F#5 | B4*2 A4 D5 |
+chords "Bassline"   | B{V-of-V}*2 A | G*2 F |
+
+system
+voice "Topline"     | B4*3 C5 | D5 |
+chords "Bassline"   | E{V7} | - |
+
+system
+voice "Topline"     | D5*3 B4 | C5 |
+chords "Bassline"   | D{IV7} | - |
