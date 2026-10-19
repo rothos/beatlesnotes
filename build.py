@@ -150,10 +150,10 @@ class Renderer:
 
     def __init__(self):
         self.md = MarkdownIt("commonmark", {"html": True, "typographer": True}).enable(["table", "smartquotes"])
-        self.md.add_render_rule("fence", self._fence)
-        self.md.add_render_rule("link_open", self._link_open)
-        self.md.add_render_rule("image", self._image)
-        self.md.add_render_rule("heading_open", self._heading_open)
+        self.md.renderer.rules["fence"] = self._fence
+        self.md.renderer.rules["link_open"] = self._link_open
+        self.md.renderer.rules["image"] = self._image
+        self.md.renderer.rules["heading_open"] = self._heading_open
         self.reset("")
 
     def reset(self, root: str, here: str = "notes"):
