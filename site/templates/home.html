@@ -2,7 +2,7 @@
 {% from "_macros.html" import keychip %}
 {% block bodyclass %}page-home{% endblock %}
 {% block main %}
-<section class="hero">
+<section class="hero" data-first="{{ root }}{{ config.note_urls[0] }}">
   <div class="hero-text">
     <h1>Notes on … every Beatles song</h1>
     <p class="lede">Between May 1989 and February 2000 the musicologist Alan W. Pollack wrote a close analysis of every song the Beatles released: its key, its form, its chords and the small surprises that make it work. This is all {{ n_essays }} of his notes, re-set for reading.</p>

@@ -117,7 +117,7 @@ try{var s=JSON.parse(localStorage.getItem('pn-settings')||'{}'),d=document.docum
   <p>The essays are © 1989–2001 Alan W. Pollack and may be freely redistributed with the copyright notice intact (<a href="{{ root }}note-copyright.html">his terms</a>). Indexes after Ger Tillekens and Tuomas Eerola, originally published in <a class="ext" href="https://awpnoteson.info/notes/awp-notes_on.html"><i>Soundscapes</i></a>. This edition re-typesets that material; <a href="{{ root }}about.html">about this edition</a>.</p>
   <p>{% if config.feedback_email %}Spot an error, or something not working? <a href="mailto:{{ config.feedback_email }}" data-feedback{% if config.base_url %} data-url="{{ config.base_url }}/{{ page_path }}"{% endif %}>Let me know</a>.{% endif %}{% if config.repo_url %} This edition&rsquo;s source is <a class="ext" href="{{ config.repo_url }}">on GitHub</a>.{% endif %}</p>
   <p><button type="button" class="linkbtn" data-random data-urls="{{ config.note_urls | join(' ') }}">Open a note at random</button></p>
-  <p class="keys">Press <kbd>/</kbd> to search, <kbd>[</kbd> and <kbd>]</kbd> to step through the series, <kbd>t</kbd> to show the outline.</p>
+  <p class="keys">Press <kbd>/</kbd> to search, and <kbd>[</kbd> and <kbd>]</kbd> to step through the series.</p>
 </footer>
 
 <dialog class="search" id="search" aria-label="Search">

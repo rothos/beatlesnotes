@@ -230,6 +230,7 @@
     const art = document.querySelector("article.essay");
     if (e.key === "]" && art && art.dataset.next) location.href = art.dataset.next;
     else if (e.key === "[" && art && art.dataset.prev) location.href = art.dataset.prev;
-    else if (e.key === "t") document.dispatchEvent(new CustomEvent("pn:toggle-outline"));
+    // on the home page, "]" opens the first note in the series
+    else if (e.key === "]" && !art && document.querySelector("[data-first]")) location.href = document.querySelector("[data-first]").dataset.first;
   });
 })();

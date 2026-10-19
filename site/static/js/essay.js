@@ -42,10 +42,6 @@
     const setOpen = (on) => { rail.classList.toggle("open", on); fab.setAttribute("aria-expanded", String(on)); };
     fab.addEventListener("click", () => setOpen(!rail.classList.contains("open")));
     rail.addEventListener("click", (e) => { if (e.target.closest("a")) setOpen(false); });
-    document.addEventListener("pn:toggle-outline", () => {
-      if (getComputedStyle(fab).display !== "none") setOpen(!rail.classList.contains("open"));
-      else rail.hidden = !rail.hidden;
-    });
     document.addEventListener("keydown", (e) => { if (e.key === "Escape") setOpen(false); });
   }
 
