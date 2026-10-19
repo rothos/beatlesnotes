@@ -574,13 +574,16 @@
         src = src.replace(/^\s*\[([^\]]*)\]/, (x, t) => { mark = t; return ""; });
         src = src.replace(/^\s*<([\d.]+)>/, (x, n) => { if (len !== null) len = +n; return ""; });
       }
+      // ":" at the end of a bar closes a repeat begun by a "[2X]" mark ("| [2X] A D :| A |")
+      let close = false;
+      src = src.replace(/(^|\s):\s*$/, () => { close = true; return ""; });
       const toks = src.match(/[^\s{]*(?:\{[^}]*\})?[^\s{]*(?:\{[^}]*\})?/g).filter((t) => t.trim());
       const beats = toks.map((t) => event(t, role, prev));
       const fixed = beats.reduce((a, b) => a + (b.dur || 0), 0), free = beats.filter((b) => !b.dur).length;
       const share = len === null ? 1 : free ? Math.max(0, len - fixed) / free : 0;
       let at = 0;
       beats.forEach((b) => { b.at = at; b.dur = b.dur || share; at += b.dur; });
-      return { beats, len: len === null ? at : len, mark };
+      return { beats, len: len === null ? at : len, mark, close };
     };
     text.split("\n").forEach((raw) => {
       if (/^\s*#\?/.test(raw)) { model.doubts.push(raw.replace(/^\s*#\?\s*/, "")); return; }
@@ -750,6 +753,21 @@
       });
     }
 
+    // the order a system's bars are played in: a bar marked "[3X]" ("2x", "m.1/3, 2x" …) starts a
+    // passage played that many times, running to a bar closed with ":" or to the end of the system
+    function playOrder(sys) {
+      const order = [];
+      const at = (k) => sys.rows.map((r) => r.bars[k]).filter(Boolean);
+      for (let i = 0; i < sys.length; ) {
+        const m = at(i).map((b) => b.mark && /(?:^|[\s,])(\d+)\s*x\b/i.exec(b.mark)).find(Boolean);
+        let end = i;
+        if (m) while (end < sys.length - 1 && !at(end).some((b) => b.close)) end++;
+        for (let n = 0; n < (m ? +m[1] : 1); n++) for (let k = i; k <= end; k++) order.push(k);
+        i = end + 1;
+      }
+      return order;
+    }
+
     const heard = new Set();   // tracks that have sounded so far
     model.systems.forEach((sys) => {
       if (!sys.playable) return;
@@ -767,10 +785,13 @@
         sys.rows.forEach((row, ri) => { if (row.pickup && row.role !== "other") barEvents(sys, row, ri, row.pickup, beat, len, hasBass, voices); });
         beat += len;
       }
-      for (let i = 0; i < sys.length; i++) {
+      // a repeated bar lights up again each time round, so slots follow the drawn bars
+      const first = slot;
+      slot += sys.length;
+      playOrder(sys).forEach((i) => {
         // a transcribed bar may have its own length ("<3>")
         const barLen = Math.max(0, ...sys.rows.map((r) => (r.bars[i] && r.bars[i].len) || 0)) || beatsPerBar;
-        events.push({ beat, slot: slot++ });
+        events.push({ beat, slot: first + i });
         sys.rows.forEach((row, ri) => {
           if (row.role === "other") return;
           const bar = row.bars[i];
@@ -778,7 +799,7 @@
           barEvents(sys, row, ri, bar, beat, barLen, hasBass, voices);
         });
         beat += barLen;
-      }
+      });
     });
     events.sort((a, b) => a.beat - b.beat || (a.slot !== undefined ? -1 : 0) - (b.slot !== undefined ? -1 : 0));
     return { events, total: beat };
@@ -1082,6 +1103,7 @@
           const b = document.createElement("div");
           b.className = "bar" + (real ? "" : " pad") + (sys.pickup && i === 0 ? " pickup" : "") + (real && real.mark ? " marked" : "");
           if (real && real.mark) b.dataset.mark = real.mark;
+          if (real && real.close) b.classList.add("repeat-end");
           if (sys.playable && i < drvBars + (sys.pickup ? 1 : 0)) b.dataset.slot = slot + i;
           // an empty bar holds the chord in a chord row; in a line of notes it is silence
           b.innerHTML = (bar.beats.length ? bar.beats : [{ hold: row.role === "chords", empty: row.role !== "chords", text: "" }]).map((bt) => {

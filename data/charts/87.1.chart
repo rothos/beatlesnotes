@@ -17,4 +17,4 @@ voice "Inner voice"       | E4*1.5 D#4 | Dn4*1.5 C#4 | - |
 chords                    | f#7{i}*1.5 B/F# | b/F#*1.5 f# | C#{V}*1.5 f#{I} |
 
 system
-chords                    | [3X] A{A: I} D{A: IV} | A{A: I / f#: III} C#{f#: V} | f#{f#: i} |
+chords                    | [3X] A{A: I} D{A: IV} :| A{A: I / f#: III} C#{f#: V} | f#{f#: i} |

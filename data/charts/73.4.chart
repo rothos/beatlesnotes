@@ -5,5 +5,5 @@
 key C
 
 system
-chords   | [reprise] F{IV} | G{V} | [melisma] C{I} | a{vi} | [2X] C{I} | a{vi} | C{I} |
+chords   | [reprise] F{IV} | G{V} | [melisma] C{I} | a{vi} | [2X] C{I} | a{vi} :| C{I} |
 caption reprise: mm. 1-2; melisma: mm. 3-5; 2nd time: intro (mm. 4-7)

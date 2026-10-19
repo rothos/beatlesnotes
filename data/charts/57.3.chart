@@ -3,7 +3,7 @@
 key G
 
 system
-chords  | [2X] a7{ii} | D{V} | G{I} | e{vi} |
+chords  | [2X] a7{ii} | D{V} :| G{I} | e{vi} |
 
 system
 chords  | a{ii} | F{flat-VII} D{V} |

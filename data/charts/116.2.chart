@@ -5,4 +5,4 @@ key A
 
 system
 words "Beats"       | 1 2*0.5 &*0.5 3 4 | [2X] 1 2 3 4 | 1*0.5 &*0.5 2 3 4 |
-chords              | A{I}*1.5 D{IV}*2.5 | A{I}*2 D{IV}*2 | A{I}*0.5 (E){(V)}*3.5 |
+chords              | A{I}*1.5 D{IV}*2.5 | A{I}*2 D{IV}*2 :| A{I}*0.5 (E){(V)}*3.5 |
